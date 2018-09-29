@@ -1,0 +1,3655 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr User 25536 11735
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2750 4150 2400 4150
+Text Label 2400 4150 2    70   ~ 0
+STEPM1
+Wire Wire Line
+	5850 5975 6025 5975
+Text Label 6025 5975 0    70   ~ 0
+STEPM1
+Wire Wire Line
+	4750 4150 5150 4150
+Text Label 5150 4150 0    70   ~ 0
+DIRM1
+Wire Wire Line
+	3050 6075 3000 6075
+Text Label 3000 6075 2    70   ~ 0
+DIRM1
+Wire Wire Line
+	4950 4450 4950 4350
+Wire Wire Line
+	4950 4350 4750 4350
+Wire Wire Line
+	4950 4350 4950 2150
+Wire Wire Line
+	4950 2150 4750 2150
+Connection ~ 4950 4350
+Text Label 4950 4450 0    10   ~ 0
+GND
+Wire Wire Line
+	1600 4450 1600 4400
+Text Label 1600 4450 0    10   ~ 0
+GND
+Wire Wire Line
+	1650 3700 1650 3550
+Wire Wire Line
+	1650 3550 1650 3200
+Wire Wire Line
+	2750 3550 1650 3550
+Connection ~ 1650 3550
+Text Label 1650 3700 0    10   ~ 0
+GND
+Wire Wire Line
+	6800 3350 6800 3450
+Wire Wire Line
+	6800 3450 6400 3450
+Wire Wire Line
+	6400 3450 6400 3350
+Wire Wire Line
+	6400 3450 5950 3450
+Wire Wire Line
+	5950 3450 5950 3350
+Wire Wire Line
+	6400 3600 6400 3450
+Wire Wire Line
+	5700 2950 5700 3550
+Wire Wire Line
+	5700 3550 5950 3550
+Wire Wire Line
+	5950 3550 5950 3450
+Wire Wire Line
+	5550 2950 5700 2950
+Wire Wire Line
+	5550 3550 5700 3550
+Connection ~ 6400 3450
+Connection ~ 5950 3450
+Connection ~ 5700 3550
+Text Label 6800 3350 0    10   ~ 0
+GND
+Wire Wire Line
+	1350 6175 1350 6350
+Wire Wire Line
+	3050 6175 2950 6175
+Wire Wire Line
+	2950 6175 1350 6175
+Wire Wire Line
+	1450 5950 1350 5950
+Wire Wire Line
+	1350 5950 1350 6175
+Wire Wire Line
+	3050 6375 2950 6375
+Wire Wire Line
+	2950 6375 2950 6175
+Connection ~ 1350 6175
+Connection ~ 2950 6175
+Text Label 1350 6175 0    10   ~ 0
+GND
+Wire Wire Line
+	5850 7075 7025 7075
+Wire Wire Line
+	7025 7075 7025 7225
+Wire Wire Line
+	7025 7225 7025 7650
+Connection ~ 7025 7225
+Text Label 5850 7075 0    10   ~ 0
+GND
+Wire Wire Line
+	925  7275 925  7425
+Wire Wire Line
+	925  7425 1150 7425
+Wire Wire Line
+	1150 7425 1375 7425
+Wire Wire Line
+	1375 7425 1375 7275
+Wire Wire Line
+	1150 7425 1150 7575
+Connection ~ 1150 7425
+Text Label 925  7275 0    10   ~ 0
+GND
+Wire Wire Line
+	6750 8300 6750 8350
+Text Label 6750 8300 0    10   ~ 0
+GND
+Wire Wire Line
+	10775 4475 10775 4350
+Wire Wire Line
+	10775 4350 10575 4350
+Wire Wire Line
+	10775 4350 10775 2150
+Wire Wire Line
+	10775 2150 10575 2150
+Connection ~ 10775 4350
+Text Label 10775 4475 0    10   ~ 0
+GND
+Wire Wire Line
+	7425 4450 7425 4400
+Text Label 7425 4450 0    10   ~ 0
+GND
+Wire Wire Line
+	7475 3700 7475 3550
+Wire Wire Line
+	7475 3550 7475 3200
+Wire Wire Line
+	8575 3550 7475 3550
+Connection ~ 7475 3550
+Text Label 7475 3700 0    10   ~ 0
+GND
+Wire Wire Line
+	12625 3350 12625 3450
+Wire Wire Line
+	12625 3450 12225 3450
+Wire Wire Line
+	12225 3450 12225 3350
+Wire Wire Line
+	12225 3450 11775 3450
+Wire Wire Line
+	11775 3450 11775 3350
+Wire Wire Line
+	12225 3600 12225 3450
+Wire Wire Line
+	11525 2950 11525 3550
+Wire Wire Line
+	11525 3550 11775 3550
+Wire Wire Line
+	11775 3550 11775 3450
+Wire Wire Line
+	11375 2950 11525 2950
+Wire Wire Line
+	11375 3550 11525 3550
+Connection ~ 12225 3450
+Connection ~ 11775 3450
+Connection ~ 11525 3550
+Text Label 12625 3350 0    10   ~ 0
+GND
+Wire Wire Line
+	16575 4425 16575 4300
+Wire Wire Line
+	16575 4300 16375 4300
+Wire Wire Line
+	16575 4300 16575 2100
+Wire Wire Line
+	16575 2100 16375 2100
+Connection ~ 16575 4300
+Text Label 16575 4425 0    10   ~ 0
+GND
+Wire Wire Line
+	12975 4425 12975 4350
+Text Label 12975 4425 0    10   ~ 0
+GND
+Wire Wire Line
+	13275 3650 13275 3500
+Wire Wire Line
+	13275 3500 13275 3150
+Wire Wire Line
+	14375 3500 13275 3500
+Connection ~ 13275 3500
+Text Label 13275 3650 0    10   ~ 0
+GND
+Wire Wire Line
+	18425 3300 18425 3400
+Wire Wire Line
+	18425 3400 18025 3400
+Wire Wire Line
+	18025 3400 18025 3300
+Wire Wire Line
+	18025 3400 17575 3400
+Wire Wire Line
+	17575 3400 17575 3300
+Wire Wire Line
+	18025 3550 18025 3400
+Wire Wire Line
+	17325 2900 17325 3500
+Wire Wire Line
+	17325 3500 17575 3500
+Wire Wire Line
+	17575 3500 17575 3400
+Wire Wire Line
+	17175 2900 17325 2900
+Wire Wire Line
+	17175 3500 17325 3500
+Connection ~ 18025 3400
+Connection ~ 17575 3400
+Connection ~ 17325 3500
+Text Label 18425 3300 0    10   ~ 0
+GND
+Wire Wire Line
+	22475 4450 22475 4300
+Wire Wire Line
+	22475 4300 22275 4300
+Wire Wire Line
+	22475 4300 22475 2100
+Wire Wire Line
+	22475 2100 22275 2100
+Connection ~ 22475 4300
+Text Label 22475 4450 0    10   ~ 0
+GND
+Wire Wire Line
+	19125 4400 19125 4350
+Text Label 19125 4400 0    10   ~ 0
+GND
+Wire Wire Line
+	19175 3650 19175 3500
+Wire Wire Line
+	19175 3500 19175 3150
+Wire Wire Line
+	20275 3500 19175 3500
+Connection ~ 19175 3500
+Text Label 19175 3650 0    10   ~ 0
+GND
+Wire Wire Line
+	24325 3300 24325 3400
+Wire Wire Line
+	24325 3400 23925 3400
+Wire Wire Line
+	23925 3400 23925 3300
+Wire Wire Line
+	23925 3400 23475 3400
+Wire Wire Line
+	23475 3400 23475 3300
+Wire Wire Line
+	23925 3550 23925 3400
+Wire Wire Line
+	23225 2900 23225 3500
+Wire Wire Line
+	23225 3500 23475 3500
+Wire Wire Line
+	23475 3500 23475 3400
+Wire Wire Line
+	23075 2900 23225 2900
+Wire Wire Line
+	23075 3500 23225 3500
+Connection ~ 23925 3400
+Connection ~ 23475 3400
+Connection ~ 23225 3500
+Text Label 24325 3300 0    10   ~ 0
+GND
+Wire Wire Line
+	3850 8575 2900 8575
+Text Label 3850 8575 0    10   ~ 0
+GND
+Wire Wire Line
+	5050 8475 5825 8475
+Wire Wire Line
+	5825 8475 5825 8625
+Text Label 5050 8475 0    10   ~ 0
+GND
+Wire Wire Line
+	21150 7525 21075 7525
+Wire Wire Line
+	21075 7525 21075 7625
+Text Label 21150 7525 0    10   ~ 0
+GND
+Wire Wire Line
+	20775 7775 20775 7850
+Text Label 20775 7775 0    10   ~ 0
+GND
+Wire Wire Line
+	2900 9325 2900 9400
+Text Label 2900 9325 0    10   ~ 0
+GND
+Wire Wire Line
+	5875 9375 5875 9300
+Text Label 5875 9375 0    10   ~ 0
+GND
+Wire Wire Line
+	5150 9325 5150 9425
+Text Label 5150 9325 0    10   ~ 0
+GND
+Wire Wire Line
+	22500 6775 22500 6675
+Text Label 22500 6775 0    10   ~ 0
+GND
+Wire Wire Line
+	22975 6675 22975 6775
+Text Label 22975 6675 0    10   ~ 0
+GND
+Wire Wire Line
+	8500 6850 8500 6950
+Wire Wire Line
+	8325 6850 8500 6850
+Text Label 8500 6850 0    10   ~ 0
+GND
+Wire Wire Line
+	20550 9275 20725 9275
+Text Label 20725 9275 0    70   ~ 0
+GND
+Wire Wire Line
+	22525 9100 22625 9100
+Text Label 22625 9100 0    70   ~ 0
+GND
+Wire Wire Line
+	23475 6675 23475 6775
+Text Label 23475 6675 0    10   ~ 0
+GND
+Wire Wire Line
+	22525 7750 22625 7750
+Text Label 22625 7750 0    70   ~ 0
+GND
+Wire Wire Line
+	22525 8475 22625 8475
+Text Label 22625 8475 0    70   ~ 0
+GND
+Wire Wire Line
+	20325 5900 20800 5900
+Text Label 20800 5900 0    70   ~ 0
+GND
+Wire Wire Line
+	20550 9775 20725 9775
+Text Label 20725 9775 0    70   ~ 0
+GND
+Wire Wire Line
+	16875 6750 16925 6750
+Wire Wire Line
+	16925 6750 16925 7075
+Text Label 16875 6750 0    10   ~ 0
+GND
+Wire Wire Line
+	10250 6475 10175 6475
+Wire Wire Line
+	10175 6475 10175 6725
+Text Label 10250 6475 0    10   ~ 0
+GND
+Wire Wire Line
+	13925 6525 13925 6600
+Wire Wire Line
+	13925 6600 13675 6600
+Wire Wire Line
+	13675 6600 13425 6600
+Wire Wire Line
+	13425 6600 13425 6525
+Wire Wire Line
+	13675 6600 13675 6750
+Connection ~ 13675 6600
+Text Label 13925 6525 0    10   ~ 0
+GND
+Wire Wire Line
+	11825 7575 12050 7575
+Wire Wire Line
+	12050 7575 12050 7850
+Text Label 11825 7575 0    10   ~ 0
+GND
+Wire Wire Line
+	23175 9125 23175 9075
+Text Label 23175 9125 0    10   ~ 0
+GND
+Wire Wire Line
+	23775 9150 23775 9275
+Wire Wire Line
+	23775 9275 23875 9275
+Wire Wire Line
+	23875 9275 24000 9275
+Wire Wire Line
+	24000 9275 24000 9150
+Connection ~ 23875 9275
+Text Label 23775 9150 0    10   ~ 0
+GND
+Wire Wire Line
+	4750 2550 5150 2550
+Text Label 5150 2550 0    70   ~ 0
+2BM1
+Wire Wire Line
+	22550 10100 22650 10100
+Text Label 22650 10100 0    70   ~ 0
+2BM1
+Wire Wire Line
+	4750 3150 5150 3150
+Text Label 5150 3150 0    70   ~ 0
+2AM1
+Wire Wire Line
+	22550 9950 22650 9950
+Text Label 22650 9950 0    70   ~ 0
+2AM1
+Wire Wire Line
+	4750 3350 5150 3350
+Text Label 5150 3350 0    70   ~ 0
+1AM1
+Wire Wire Line
+	22550 9800 22650 9800
+Text Label 22650 9800 0    70   ~ 0
+1AM1
+Wire Wire Line
+	4750 3950 5150 3950
+Text Label 5100 3950 0    70   ~ 0
+1BM1
+Wire Wire Line
+	22550 9650 22650 9650
+Text Label 22650 9650 0    70   ~ 0
+1BM1
+Wire Wire Line
+	2600 2150 2750 2150
+Wire Wire Line
+	2750 2350 2300 2350
+Wire Wire Line
+	2300 2350 2300 2150
+Wire Wire Line
+	2750 3150 2500 3150
+Text Label 2500 3150 2    70   ~ 0
+MS2
+Wire Wire Line
+	8575 3150 8225 3150
+Text Label 8225 3150 2    70   ~ 0
+MS2
+Wire Wire Line
+	14375 3100 14025 3100
+Text Label 14025 3100 2    70   ~ 0
+MS2
+Wire Wire Line
+	20275 3100 19925 3100
+Text Label 19925 3100 2    70   ~ 0
+MS2
+Wire Wire Line
+	3050 7175 2550 7175
+Text Label 2550 7175 2    70   ~ 0
+MS2
+Wire Wire Line
+	1650 2900 1650 2750
+Wire Wire Line
+	1650 2750 2750 2750
+Wire Wire Line
+	1950 2450 1950 2550
+Wire Wire Line
+	1950 2550 2750 2550
+Wire Wire Line
+	1900 3800 1900 3950
+Wire Wire Line
+	1900 3950 2200 3950
+Wire Wire Line
+	2200 3950 2500 3950
+Wire Wire Line
+	2500 3950 2750 3950
+Wire Wire Line
+	1600 4100 1600 3950
+Wire Wire Line
+	1600 3950 1900 3950
+Wire Wire Line
+	2500 3950 2500 4350
+Wire Wire Line
+	2200 3950 2200 3750
+Wire Wire Line
+	2200 3350 2200 3750
+Wire Wire Line
+	2750 4350 2500 4350
+Wire Wire Line
+	2200 3350 2750 3350
+Wire Wire Line
+	2200 3750 2750 3750
+Connection ~ 2500 3950
+Text Label 1900 3800 0    70   ~ 0
++5V
+Connection ~ 1900 3950
+Connection ~ 2200 3950
+Connection ~ 2200 3750
+Wire Wire Line
+	5050 1825 5050 1775
+Text Label 5050 1775 0    70   ~ 0
++5V
+Wire Wire Line
+	1825 5950 1825 5825
+Wire Wire Line
+	3050 6475 2850 6475
+Wire Wire Line
+	2850 6475 1825 6475
+Wire Wire Line
+	1825 6475 1825 5950
+Wire Wire Line
+	1750 5950 1825 5950
+Wire Wire Line
+	3050 6275 2850 6275
+Wire Wire Line
+	2850 6275 2850 6475
+Connection ~ 1825 5950
+Text Label 1825 5825 0    70   ~ 0
++5V
+Connection ~ 2850 6475
+Wire Wire Line
+	5850 7375 7250 7375
+Wire Wire Line
+	7250 7375 7250 7275
+Text Label 7250 7275 0    70   ~ 0
++5V
+Wire Wire Line
+	7825 5775 7825 5675
+Text Label 7825 5675 0    70   ~ 0
++5V
+Text Label 7825 5775 0    70   ~ 0
++5V
+Wire Wire Line
+	7725 3800 7725 3950
+Wire Wire Line
+	7725 3950 8025 3950
+Wire Wire Line
+	8025 3950 8325 3950
+Wire Wire Line
+	8325 3950 8575 3950
+Wire Wire Line
+	7425 4100 7425 3950
+Wire Wire Line
+	7425 3950 7725 3950
+Wire Wire Line
+	8325 3950 8325 4350
+Wire Wire Line
+	8025 3950 8025 3750
+Wire Wire Line
+	8025 3350 8025 3750
+Wire Wire Line
+	8575 4350 8325 4350
+Wire Wire Line
+	8025 3350 8575 3350
+Wire Wire Line
+	8025 3750 8575 3750
+Connection ~ 8325 3950
+Text Label 7725 3800 0    70   ~ 0
++5V
+Connection ~ 7725 3950
+Connection ~ 8025 3950
+Connection ~ 8025 3750
+Wire Wire Line
+	10875 1825 10875 1775
+Text Label 10875 1775 0    70   ~ 0
++5V
+Wire Wire Line
+	13525 3750 13525 3900
+Wire Wire Line
+	13525 3900 13825 3900
+Wire Wire Line
+	13825 3900 14125 3900
+Wire Wire Line
+	14125 3900 14375 3900
+Wire Wire Line
+	12975 4050 12975 3900
+Wire Wire Line
+	12975 3900 13525 3900
+Wire Wire Line
+	14125 3900 14125 4300
+Wire Wire Line
+	13825 3900 13825 3700
+Wire Wire Line
+	13825 3300 13825 3700
+Wire Wire Line
+	14375 4300 14125 4300
+Wire Wire Line
+	13825 3300 14375 3300
+Wire Wire Line
+	13825 3700 14375 3700
+Connection ~ 14125 3900
+Text Label 13525 3750 0    70   ~ 0
++5V
+Connection ~ 13525 3900
+Connection ~ 13825 3900
+Connection ~ 13825 3700
+Wire Wire Line
+	16675 1775 16675 1725
+Text Label 16675 1725 0    70   ~ 0
++5V
+Wire Wire Line
+	19425 3750 19425 3900
+Wire Wire Line
+	19425 3900 19725 3900
+Wire Wire Line
+	19725 3900 20025 3900
+Wire Wire Line
+	20025 3900 20275 3900
+Wire Wire Line
+	19125 4050 19125 3900
+Wire Wire Line
+	19125 3900 19425 3900
+Wire Wire Line
+	20025 3900 20025 4300
+Wire Wire Line
+	19725 3900 19725 3700
+Wire Wire Line
+	19725 3300 19725 3700
+Wire Wire Line
+	20275 4300 20025 4300
+Wire Wire Line
+	19725 3300 20275 3300
+Wire Wire Line
+	19725 3700 20275 3700
+Connection ~ 20025 3900
+Text Label 19425 3750 0    70   ~ 0
++5V
+Connection ~ 19425 3900
+Connection ~ 19725 3900
+Connection ~ 19725 3700
+Wire Wire Line
+	22575 1775 22575 1725
+Text Label 22575 1725 0    70   ~ 0
++5V
+Wire Wire Line
+	5050 8575 5950 8575
+Wire Wire Line
+	5950 8575 5950 8425
+Text Label 5500 8575 0    70   ~ 0
++5V
+Wire Wire Line
+	20425 7125 20425 6925
+Wire Wire Line
+	20600 7125 20425 7125
+Text Label 20425 6925 0    70   ~ 0
++5V
+Wire Wire Line
+	22500 5775 22500 5925
+Text Label 22500 5775 0    70   ~ 0
++5V
+Wire Wire Line
+	20550 9025 20725 9025
+Text Label 20725 9025 0    70   ~ 0
++5V
+Wire Wire Line
+	22525 8800 22925 8800
+Wire Wire Line
+	22925 8800 22925 8550
+Wire Wire Line
+	22925 8550 23775 8550
+Wire Wire Line
+	23775 8550 24000 8550
+Wire Wire Line
+	24000 8550 24125 8550
+Wire Wire Line
+	23775 8850 23775 8550
+Wire Wire Line
+	24000 8850 24000 8550
+Text Label 24125 8550 0    70   ~ 0
++5V
+Connection ~ 23775 8550
+Connection ~ 24000 8550
+Wire Wire Line
+	22525 7450 22650 7450
+Text Label 22650 7450 0    70   ~ 0
++5V
+Wire Wire Line
+	22525 8175 22625 8175
+Text Label 22625 8175 0    70   ~ 0
++5V
+Wire Wire Line
+	20325 5800 20525 5800
+Text Label 20525 5800 0    70   ~ 0
++5V
+Wire Wire Line
+	17425 7125 17425 7225
+Wire Wire Line
+	17425 7225 17250 7225
+Wire Wire Line
+	17250 7225 17250 7050
+Text Label 17425 7125 0    10   ~ 0
++5V
+Wire Wire Line
+	13650 5850 13650 6175
+Wire Wire Line
+	12250 6175 13425 6175
+Wire Wire Line
+	13425 6175 13425 6225
+Wire Wire Line
+	13425 6175 13650 6175
+Wire Wire Line
+	13650 6175 13925 6175
+Wire Wire Line
+	13925 6175 13925 6225
+Connection ~ 13425 6175
+Connection ~ 13650 6175
+Text Label 13650 5850 0    70   ~ 0
++5V
+Wire Wire Line
+	1950 2150 1950 2000
+Text Label 1950 2000 0    70   ~ 0
++12V
+Wire Wire Line
+	4750 3750 5050 3750
+Wire Wire Line
+	5050 3750 5050 2750
+Wire Wire Line
+	5050 2750 4750 2750
+Wire Wire Line
+	5050 2750 6400 2750
+Wire Wire Line
+	6400 2750 6400 2650
+Wire Wire Line
+	6400 2950 6400 2750
+Wire Wire Line
+	5950 3050 5950 2950
+Wire Wire Line
+	5950 2950 6400 2950
+Wire Wire Line
+	6400 3050 6400 2950
+Wire Wire Line
+	6400 2950 6800 2950
+Wire Wire Line
+	6800 2950 6800 3050
+Connection ~ 5050 2750
+Text Label 6400 2650 0    70   ~ 0
++12V
+Connection ~ 6400 2750
+Connection ~ 6400 2950
+Wire Wire Line
+	7775 2150 7775 2000
+Text Label 7775 2000 0    70   ~ 0
++12V
+Wire Wire Line
+	10575 3750 10875 3750
+Wire Wire Line
+	10875 3750 10875 2750
+Wire Wire Line
+	10875 2750 10575 2750
+Wire Wire Line
+	10875 2750 12225 2750
+Wire Wire Line
+	12225 2750 12225 2650
+Wire Wire Line
+	12225 2950 12225 2750
+Wire Wire Line
+	11775 3050 11775 2950
+Wire Wire Line
+	11775 2950 12225 2950
+Wire Wire Line
+	12225 3050 12225 2950
+Wire Wire Line
+	12225 2950 12625 2950
+Wire Wire Line
+	12625 2950 12625 3050
+Connection ~ 10875 2750
+Text Label 12225 2650 0    70   ~ 0
++12V
+Connection ~ 12225 2750
+Connection ~ 12225 2950
+Wire Wire Line
+	13575 2100 13575 1950
+Text Label 13575 1950 0    70   ~ 0
++12V
+Wire Wire Line
+	16375 3700 16675 3700
+Wire Wire Line
+	16675 3700 16675 2700
+Wire Wire Line
+	16675 2700 16375 2700
+Wire Wire Line
+	16675 2700 18025 2700
+Wire Wire Line
+	18025 2700 18025 2600
+Wire Wire Line
+	18025 2900 18025 2700
+Wire Wire Line
+	17575 3000 17575 2900
+Wire Wire Line
+	17575 2900 18025 2900
+Wire Wire Line
+	18025 3000 18025 2900
+Wire Wire Line
+	18025 2900 18425 2900
+Wire Wire Line
+	18425 2900 18425 3000
+Connection ~ 16675 2700
+Text Label 18025 2600 0    70   ~ 0
++12V
+Connection ~ 18025 2700
+Connection ~ 18025 2900
+Wire Wire Line
+	19475 2100 19475 1950
+Text Label 19475 1950 0    70   ~ 0
++12V
+Wire Wire Line
+	22275 3700 22575 3700
+Wire Wire Line
+	22575 3700 22575 2700
+Wire Wire Line
+	22575 2700 22275 2700
+Wire Wire Line
+	22575 2700 23925 2700
+Wire Wire Line
+	23925 2700 23925 2600
+Wire Wire Line
+	23925 2900 23925 2700
+Wire Wire Line
+	23475 3000 23475 2900
+Wire Wire Line
+	23475 2900 23925 2900
+Wire Wire Line
+	23925 3000 23925 2900
+Wire Wire Line
+	23925 2900 24325 2900
+Wire Wire Line
+	24325 2900 24325 3000
+Connection ~ 22575 2700
+Text Label 23925 2600 0    70   ~ 0
++12V
+Connection ~ 23925 2700
+Connection ~ 23925 2900
+Wire Wire Line
+	22975 5800 22975 5925
+Text Label 22975 5800 0    70   ~ 0
++12V
+Wire Wire Line
+	20550 8775 20725 8775
+Text Label 20725 8775 0    70   ~ 0
++12V
+Wire Wire Line
+	22525 7300 22625 7300
+Text Label 22625 7300 0    70   ~ 0
++12V
+Wire Wire Line
+	22525 8025 22625 8025
+Text Label 22625 8025 0    70   ~ 0
++12V
+Wire Wire Line
+	13250 6850 13250 6950
+Text Label 13250 6850 0    70   ~ 0
++12V
+Wire Wire Line
+	4750 3550 5150 3550
+Wire Wire Line
+	5150 2950 4750 2950
+Wire Wire Line
+	6725 7225 6625 7225
+Wire Wire Line
+	6625 7225 6625 7175
+Wire Wire Line
+	6625 7175 5850 7175
+Wire Wire Line
+	5850 6275 7825 6275
+Wire Wire Line
+	7825 6175 7825 6275
+Wire Wire Line
+	7825 6275 8025 6275
+Wire Wire Line
+	7825 6275 7825 6850
+Wire Wire Line
+	7925 6850 7825 6850
+Connection ~ 7825 6275
+Wire Wire Line
+	8325 6275 8375 6275
+Text Label 8375 6275 0    70   ~ 0
+DTR
+Wire Wire Line
+	3850 8275 3650 8275
+Wire Wire Line
+	3650 8275 3650 8325
+Wire Wire Line
+	3650 8325 3575 8325
+Text Label 3575 8325 2    70   ~ 0
+DTR
+Wire Wire Line
+	6750 8000 6350 8000
+Wire Wire Line
+	5850 6675 6850 6675
+Text Label 6850 6675 0    70   ~ 0
+ELEMAGTOG
+Wire Wire Line
+	15275 6250 15100 6250
+Text Label 15100 6250 2    70   ~ 0
+ELEMAGTOG
+Wire Wire Line
+	8425 2150 8575 2150
+Wire Wire Line
+	8575 2350 8125 2350
+Wire Wire Line
+	8125 2350 8125 2150
+Wire Wire Line
+	7475 2900 7475 2750
+Wire Wire Line
+	7475 2750 8575 2750
+Wire Wire Line
+	7775 2450 7775 2550
+Wire Wire Line
+	7775 2550 8575 2550
+Wire Wire Line
+	10575 3550 10975 3550
+Wire Wire Line
+	10975 2950 10575 2950
+Wire Wire Line
+	14225 2100 14375 2100
+Wire Wire Line
+	14375 2300 13925 2300
+Wire Wire Line
+	13925 2300 13925 2100
+Wire Wire Line
+	13275 2850 13275 2700
+Wire Wire Line
+	13275 2700 14375 2700
+Wire Wire Line
+	13575 2400 13575 2500
+Wire Wire Line
+	13575 2500 14375 2500
+Wire Wire Line
+	16375 3500 16775 3500
+Wire Wire Line
+	16775 2900 16375 2900
+Wire Wire Line
+	20125 2100 20275 2100
+Wire Wire Line
+	20275 2300 19825 2300
+Wire Wire Line
+	19825 2300 19825 2100
+Wire Wire Line
+	19175 2850 19175 2700
+Wire Wire Line
+	19175 2700 20275 2700
+Wire Wire Line
+	19475 2400 19475 2500
+Wire Wire Line
+	19475 2500 20275 2500
+Wire Wire Line
+	22275 3500 22675 3500
+Wire Wire Line
+	22675 2900 22275 2900
+Wire Wire Line
+	8575 4150 8225 4150
+Text Label 8225 4150 2    70   ~ 0
+STEPM2
+Wire Wire Line
+	5850 6375 6025 6375
+Text Label 6025 6375 0    70   ~ 0
+STEPM2
+Wire Wire Line
+	10575 2550 10975 2550
+Text Label 10975 2550 0    70   ~ 0
+2BM2
+Wire Wire Line
+	23600 10100 23700 10100
+Text Label 23700 10100 0    70   ~ 0
+2BM2
+Wire Wire Line
+	10575 3150 10975 3150
+Text Label 10975 3150 0    70   ~ 0
+2AM2
+Wire Wire Line
+	23600 9950 23700 9950
+Text Label 23700 9950 0    70   ~ 0
+2AM2
+Wire Wire Line
+	10575 3350 10975 3350
+Text Label 10975 3350 0    70   ~ 0
+1AM2
+Wire Wire Line
+	23600 9800 23700 9800
+Text Label 23700 9800 0    70   ~ 0
+1AM2
+Wire Wire Line
+	10575 3950 10975 3950
+Text Label 10975 3950 0    70   ~ 0
+1BM2
+Wire Wire Line
+	23600 9650 23700 9650
+Text Label 23700 9650 0    70   ~ 0
+1BM2
+Wire Wire Line
+	16375 3900 16775 3900
+Text Label 16775 3900 0    70   ~ 0
+1BM3
+Wire Wire Line
+	22550 10325 22650 10325
+Text Label 22650 10325 0    70   ~ 0
+1BM3
+Wire Wire Line
+	16375 3300 16775 3300
+Text Label 16775 3300 0    70   ~ 0
+1AM3
+Wire Wire Line
+	22550 10475 22650 10475
+Text Label 22650 10475 0    70   ~ 0
+1AM3
+Wire Wire Line
+	16375 3100 16775 3100
+Text Label 16775 3100 0    70   ~ 0
+2AM3
+Wire Wire Line
+	22550 10625 22650 10625
+Text Label 22650 10625 0    70   ~ 0
+2AM3
+Wire Wire Line
+	16375 2500 16775 2500
+Text Label 16775 2500 0    70   ~ 0
+2BM3
+Wire Wire Line
+	22550 10775 22650 10775
+Text Label 22650 10775 0    70   ~ 0
+2BM3
+Wire Wire Line
+	20275 4100 19925 4100
+Text Label 19925 4100 2    70   ~ 0
+STEPM4
+Wire Wire Line
+	3050 7075 3000 7075
+Text Label 3000 7075 2    70   ~ 0
+STEPM4
+Wire Wire Line
+	22275 4100 22675 4100
+Text Label 22675 4100 0    70   ~ 0
+DIRM4
+Wire Wire Line
+	3050 6875 3000 6875
+Text Label 3000 6875 2    70   ~ 0
+DIRM4
+Wire Wire Line
+	22275 3900 22675 3900
+Text Label 22675 3900 0    70   ~ 0
+1BM4
+Wire Wire Line
+	23600 10325 23700 10325
+Text Label 23700 10325 0    70   ~ 0
+1BM4
+Wire Wire Line
+	22275 3300 22675 3300
+Text Label 22675 3300 0    70   ~ 0
+1AM4
+Wire Wire Line
+	23600 10475 23700 10475
+Text Label 23700 10475 0    70   ~ 0
+1AM4
+Wire Wire Line
+	22275 3100 22675 3100
+Text Label 22675 3100 0    70   ~ 0
+2AM4
+Wire Wire Line
+	23600 10625 23700 10625
+Text Label 23700 10625 0    70   ~ 0
+2AM4
+Wire Wire Line
+	22275 2500 22675 2500
+Text Label 22675 2500 0    70   ~ 0
+2BM4
+Wire Wire Line
+	23600 10775 23700 10775
+Text Label 23700 10775 0    70   ~ 0
+2BM4
+Wire Wire Line
+	925  6975 925  6800
+Wire Wire Line
+	925  6800 1050 6800
+Wire Wire Line
+	3050 6575 925  6575
+Wire Wire Line
+	925  6575 925  6800
+Connection ~ 925  6800
+Wire Wire Line
+	1375 6975 1375 6800
+Wire Wire Line
+	1375 6800 1250 6800
+Wire Wire Line
+	3050 6675 1375 6675
+Wire Wire Line
+	1375 6675 1375 6800
+Connection ~ 1375 6800
+Wire Wire Line
+	5050 8775 5150 8775
+Wire Wire Line
+	5150 8775 5150 8675
+Wire Wire Line
+	5150 8675 5150 7900
+Wire Wire Line
+	5150 7900 3750 7900
+Wire Wire Line
+	3750 7900 3750 8375
+Wire Wire Line
+	3750 8375 3850 8375
+Wire Wire Line
+	5050 8675 5150 8675
+Wire Wire Line
+	5150 9025 5150 8775
+Wire Wire Line
+	5225 7900 5150 7900
+Connection ~ 5150 8675
+Connection ~ 5150 8775
+Connection ~ 5150 7900
+Text Label 5050 8775 0    10   ~ 0
+VCCIO
+Wire Wire Line
+	3775 9675 3775 9750
+Wire Wire Line
+	3775 9750 3950 9750
+Text Label 3950 9750 0    70   ~ 0
+VCCIO
+Wire Wire Line
+	21150 7325 20300 7325
+Text Label 20300 7325 2    70   ~ 0
+USBD+
+Wire Wire Line
+	2900 8875 2800 8875
+Wire Wire Line
+	2900 9025 2900 8875
+Wire Wire Line
+	3075 8875 2900 8875
+Text Label 2800 8875 2    70   ~ 0
+USBD+
+Connection ~ 2900 8875
+Wire Wire Line
+	6100 8875 5875 8875
+Wire Wire Line
+	5875 8875 5600 8875
+Wire Wire Line
+	5875 8875 5875 9000
+Text Label 6100 8875 0    70   ~ 0
+USBD-
+Text Label 6100 8875 2    70   ~ 0
+USBD-
+Connection ~ 5875 8875
+Wire Wire Line
+	21150 7225 20575 7225
+Wire Wire Line
+	20575 7175 20575 7225
+Wire Wire Line
+	20275 7175 20575 7175
+Text Label 21150 7225 0    10   ~ 0
+USBD-
+Wire Wire Line
+	3850 8175 3575 8175
+Text Label 3575 8175 2    70   ~ 0
+TXFTDI
+Wire Wire Line
+	5850 6175 6025 6175
+Text Label 6025 6175 0    70   ~ 0
+TXFTDI
+Wire Wire Line
+	3850 8475 3600 8475
+Text Label 3600 8475 2    70   ~ 0
+RXFTDI
+Wire Wire Line
+	5850 6075 6500 6075
+Text Label 6500 6075 0    70   ~ 0
+RXFTDI
+Wire Wire Line
+	5200 8875 5050 8875
+Wire Wire Line
+	3850 8675 3600 8675
+Text Label 3600 8675 2    70   ~ 0
+CTS
+Wire Wire Line
+	5050 8375 5675 8375
+Wire Wire Line
+	5675 8375 5675 8350
+Wire Wire Line
+	3775 8925 3775 8775
+Wire Wire Line
+	3775 8775 3850 8775
+Wire Wire Line
+	3775 9275 3775 9225
+Wire Wire Line
+	5675 8050 5675 7900
+Wire Wire Line
+	5675 7900 5625 7900
+Wire Wire Line
+	22500 6375 22500 6325
+Wire Wire Line
+	22975 6375 22975 6325
+Wire Wire Line
+	20550 9525 20725 9525
+Text Label 20725 9525 0    70   ~ 0
+ELEMAG+
+Wire Wire Line
+	17850 7050 17850 7200
+Wire Wire Line
+	17850 6050 17850 5925
+Wire Wire Line
+	17850 5925 18050 5925
+Wire Wire Line
+	18050 5925 18050 7200
+Wire Wire Line
+	18050 7200 17850 7200
+Wire Wire Line
+	18050 5925 18300 5925
+Connection ~ 18050 5925
+Text Label 18300 5925 0    70   ~ 0
+ELEMAG+
+Wire Wire Line
+	21150 7125 20775 7125
+Wire Wire Line
+	20775 7125 20775 7475
+Wire Wire Line
+	20775 7125 20700 7125
+Connection ~ 20775 7125
+Wire Wire Line
+	3050 6775 2275 6775
+Text Label 2275 6775 2    70   ~ 0
+FRONTSERVO
+Wire Wire Line
+	22525 7600 22625 7600
+Text Label 22625 7600 0    70   ~ 0
+FRONTSERVO
+Wire Wire Line
+	22525 8325 22625 8325
+Text Label 22625 8325 0    70   ~ 0
+BACKSERVO
+Wire Wire Line
+	3050 5975 2625 5975
+Text Label 2625 5975 2    70   ~ 0
+BACKSERVO
+Wire Wire Line
+	22975 8700 22975 8950
+Wire Wire Line
+	22975 8950 22525 8950
+Wire Wire Line
+	22975 8700 23175 8700
+Wire Wire Line
+	23175 8700 23175 8775
+Wire Wire Line
+	23175 8700 24125 8700
+Text Label 24125 8700 0    70   ~ 0
+ANALOGPDATA
+Connection ~ 23175 8700
+Wire Wire Line
+	5850 6775 6025 6775
+Text Label 6025 6775 0    70   ~ 0
+ANALOGPDATA
+Wire Wire Line
+	23475 5775 23475 5925
+Text Label 23475 5925 2    70   ~ 0
++48V
+Wire Wire Line
+	20550 8525 20725 8525
+Text Label 20725 8525 0    70   ~ 0
++48V
+Wire Wire Line
+	16725 7675 16525 7675
+Text Label 16525 7675 2    70   ~ 0
++48V
+Wire Wire Line
+	4750 2350 5050 2350
+Wire Wire Line
+	5050 2350 5150 2350
+Wire Wire Line
+	5050 2225 5050 2350
+Text Label 5150 2350 0    70   ~ 0
+ENSTEP
+Connection ~ 5050 2350
+Wire Wire Line
+	10575 2350 10875 2350
+Wire Wire Line
+	10875 2350 10975 2350
+Wire Wire Line
+	10875 2225 10875 2350
+Text Label 10975 2350 0    70   ~ 0
+ENSTEP
+Connection ~ 10875 2350
+Wire Wire Line
+	16375 2300 16675 2300
+Wire Wire Line
+	16675 2300 16775 2300
+Wire Wire Line
+	16675 2175 16675 2300
+Text Label 16775 2300 0    70   ~ 0
+ENSTEP
+Connection ~ 16675 2300
+Wire Wire Line
+	22275 2300 22575 2300
+Wire Wire Line
+	22575 2300 22675 2300
+Wire Wire Line
+	22575 2175 22575 2300
+Text Label 22675 2300 0    70   ~ 0
+ENSTEP
+Connection ~ 22575 2300
+Wire Wire Line
+	3050 6975 2275 6975
+Text Label 2275 6975 2    70   ~ 0
+ENSTEP
+Wire Wire Line
+	5850 6575 6025 6575
+Text Label 6025 6575 0    70   ~ 0
+ACTXTOG
+Wire Wire Line
+	10250 6375 10100 6375
+Text Label 10100 6375 2    70   ~ 0
+ACTXTOG
+Wire Wire Line
+	6600 6475 5850 6475
+Text Label 6600 6475 0    70   ~ 0
+DIRM2
+Wire Wire Line
+	10575 4150 10975 4150
+Text Label 10975 4150 0    70   ~ 0
+DIRM2
+Wire Wire Line
+	20500 10350 20625 10350
+Text Label 20625 10350 0    70   ~ 0
+ACOUS+
+Wire Wire Line
+	13150 7475 13250 7475
+Wire Wire Line
+	13250 7475 13250 7350
+Text Label 13150 7475 2    70   ~ 0
+ACOUS+
+Wire Wire Line
+	23475 6375 23475 6325
+Wire Wire Line
+	5850 7475 6350 7475
+Wire Wire Line
+	6350 7475 6350 7600
+Wire Wire Line
+	6350 7475 6550 7475
+Connection ~ 6350 7475
+Text Label 6550 7475 0    70   ~ 0
+SCK
+Wire Wire Line
+	20325 6000 20525 6000
+Text Label 20525 6000 0    70   ~ 0
+SCK
+Wire Wire Line
+	12250 6275 12325 6275
+Text Label 12325 6275 0    70   ~ 0
+SCK
+Wire Wire Line
+	3050 7375 2125 7375
+Text Label 2125 7375 2    70   ~ 0
+MS1/MOSI
+Wire Wire Line
+	2750 2950 2500 2950
+Text Label 2500 2950 2    70   ~ 0
+MS1/MOSI
+Wire Wire Line
+	8575 2950 8350 2950
+Text Label 8350 2950 2    70   ~ 0
+MS1/MOSI
+Wire Wire Line
+	14375 2900 14200 2900
+Text Label 14200 2900 2    70   ~ 0
+MS1/MOSI
+Wire Wire Line
+	20275 2900 20050 2900
+Text Label 20050 2900 2    70   ~ 0
+MS1/MOSI
+Wire Wire Line
+	21150 6250 21150 6200
+Wire Wire Line
+	21150 6200 20325 6200
+Text Label 21150 6250 0    70   ~ 0
+MS1/MOSI
+Wire Wire Line
+	12250 6475 12325 6475
+Wire Wire Line
+	12325 6475 12325 6575
+Text Label 12325 6575 0    70   ~ 0
+MS1/MOSI
+Wire Wire Line
+	3050 7475 2900 7475
+Text Label 2900 7475 2    70   ~ 0
+STEPM3/MISO
+Wire Wire Line
+	14375 4100 14025 4100
+Text Label 14025 4100 2    70   ~ 0
+STEPM3/MISO
+Wire Wire Line
+	20325 6100 21100 6100
+Text Label 21100 6100 0    70   ~ 0
+STEPM3/MISO
+Wire Wire Line
+	12250 6375 12325 6375
+Wire Wire Line
+	12325 6375 12325 6425
+Text Label 12325 6425 0    70   ~ 0
+STEPM3/MISO
+Wire Wire Line
+	6850 6875 5850 6875
+Text Label 6850 6875 0    70   ~ 0
+DIRM3
+Wire Wire Line
+	16375 4100 16775 4100
+Text Label 16775 4100 0    70   ~ 0
+DIRM3
+Wire Wire Line
+	3850 8875 3475 8875
+Wire Wire Line
+	16875 6650 16950 6650
+Wire Wire Line
+	16950 6650 16950 5975
+Wire Wire Line
+	16950 5975 17250 5975
+Wire Wire Line
+	17250 5975 17250 6050
+Wire Wire Line
+	15375 6650 15275 6650
+Wire Wire Line
+	10250 6275 9450 6275
+Wire Wire Line
+	9450 6275 9450 7475
+Wire Wire Line
+	9450 7475 9700 7475
+Wire Wire Line
+	10100 7475 10325 7475
+Wire Wire Line
+	11825 7475 12100 7475
+Text Label 12100 7475 0    70   ~ 0
+ACOUS-
+Wire Wire Line
+	20500 10500 20625 10500
+Text Label 20625 10500 0    70   ~ 0
+ACOUS-
+Wire Wire Line
+	10250 6175 9975 6175
+Wire Wire Line
+	9975 6175 9975 6075
+Wire Wire Line
+	3050 7275 2950 7275
+Wire Wire Line
+	2950 7275 2950 7950
+Wire Wire Line
+	2650 7875 2650 7950
+Wire Wire Line
+	2650 7950 2950 7950
+Wire Wire Line
+	2550 7875 2550 7950
+Wire Wire Line
+	2550 7950 2300 7950
+Text Label 2300 7950 2    70   ~ 0
+SS/RESET
+Wire Wire Line
+	9875 6075 9875 6175
+Wire Wire Line
+	9875 6175 9725 6175
+Text Label 9725 6175 2    70   ~ 0
+SS/RESET
+Wire Wire Line
+	20325 6300 20525 6300
+Text Label 20525 6300 0    70   ~ 0
+SS/RESET
+Wire Wire Line
+	17550 6050 17250 6050
+Wire Wire Line
+	17075 6050 17075 7425
+Wire Wire Line
+	17125 7675 17550 7675
+Wire Wire Line
+	17550 7675 17550 7425
+Wire Wire Line
+	17550 7425 17550 7050
+Wire Wire Line
+	17075 7425 17550 7425
+Connection ~ 17550 7425
+$Comp
+L Junction_Box-eagle-import:A4982 U$1
+U 1 0 89E33A62
+P 3750 3150
+F 0 "U$1" H 3750 3150 50  0001 C CNN
+F 1 "A4982" H 3550 1650 59  0001 L BNN
+F 2 "Junction Box:A4982" H 3750 3150 50  0001 C CNN
+F 3 "" H 3750 3150 50  0001 C CNN
+	1    3750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND01
+U 1 0 8DA2BB24
+P 4950 4550
+F 0 "#GND01" H 4950 4550 50  0001 C CNN
+F 1 "GND" H 4850 4450 59  0000 L BNN
+F 2 "" H 4950 4550 50  0001 C CNN
+F 3 "" H 4950 4550 50  0001 C CNN
+	1    4950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C1
+U 1 0 7A0BA227
+P 1600 4200
+F 0 "C1" H 1640 4225 59  0000 L BNN
+F 1 "0.22uF" H 1640 4035 59  0000 L BNN
+F 2 "Junction Box:C0603" H 1600 4200 50  0001 C CNN
+F 3 "" H 1600 4200 50  0001 C CNN
+	1    1600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND02
+U 1 0 4877C9E2
+P 1600 4550
+F 0 "#GND02" H 1600 4550 50  0001 C CNN
+F 1 "GND" H 1500 4450 59  0000 L BNN
+F 2 "" H 1600 4550 50  0001 C CNN
+F 3 "" H 1600 4550 50  0001 C CNN
+	1    1600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C2
+U 1 0 C8DDE19D
+P 2500 2150
+F 0 "C2" V 2425 2190 59  0000 L BNN
+F 1 "0.1uF" V 2665 2090 59  0000 L BNN
+F 2 "Junction Box:C0603" H 2500 2150 50  0001 C CNN
+F 3 "" H 2500 2150 50  0001 C CNN
+	1    2500 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND03
+U 1 0 21137572
+P 6400 3700
+F 0 "#GND03" H 6400 3700 50  0001 C CNN
+F 1 "GND" H 6300 3600 59  0000 L BNN
+F 2 "" H 6400 3700 50  0001 C CNN
+F 3 "" H 6400 3700 50  0001 C CNN
+	1    6400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C4
+U 1 0 D5A41634
+P 1650 3000
+F 0 "C4" H 1690 3025 59  0000 L BNN
+F 1 "0.22uF" H 1690 2835 59  0000 L BNN
+F 2 "Junction Box:C0603" H 1650 3000 50  0001 C CNN
+F 3 "" H 1650 3000 50  0001 C CNN
+	1    1650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND04
+U 1 0 12C122FD
+P 1650 3800
+F 0 "#GND04" H 1650 3800 50  0001 C CNN
+F 1 "GND" H 1550 3700 59  0000 L BNN
+F 2 "" H 1650 3800 50  0001 C CNN
+F 3 "" H 1650 3800 50  0001 C CNN
+	1    1650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C5
+U 1 0 2BF069D8
+P 1950 2250
+F 0 "C5" H 2160 2375 59  0000 R TNN
+F 1 "0.1uF" H 2040 2085 59  0000 L BNN
+F 2 "Junction Box:C0603" H 1950 2250 50  0001 C CNN
+F 3 "" H 1950 2250 50  0001 C CNN
+	1    1950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C6
+U 1 0 5203C020
+P 6400 3150
+F 0 "C6" H 6610 3275 59  0000 R TNN
+F 1 "0.22uF" H 6490 2985 59  0000 L BNN
+F 2 "Junction Box:C0603" H 6400 3150 50  0001 C CNN
+F 3 "" H 6400 3150 50  0001 C CNN
+	1    6400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C7
+U 1 0 C15D389E
+P 6800 3150
+F 0 "C7" H 7010 3275 59  0000 R TNN
+F 1 "0.1uF" H 6890 2985 59  0000 L BNN
+F 2 "Junction Box:C0603" H 6800 3150 50  0001 C CNN
+F 3 "" H 6800 3150 50  0001 C CNN
+	1    6800 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R3
+U 1 0 5E3BF956
+P 5050 2025
+F 0 "R3" V 5041 2100 59  0000 L BNN
+F 1 "100K" V 5030 1750 59  0000 L BNN
+F 2 "Junction Box:R0603" H 5050 2025 50  0001 C CNN
+F 3 "" H 5050 2025 50  0001 C CNN
+	1    5050 2025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+01
+U 1 0 6A081B6E
+P 1900 3700
+F 0 "#P+01" H 1900 3700 50  0001 C CNN
+F 1 "+5V" V 1800 3500 59  0001 L BNN
+F 2 "" H 1900 3700 50  0001 C CNN
+F 3 "" H 1900 3700 50  0001 C CNN
+	1    1900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+02
+U 1 0 637B3A6A
+P 1950 1900
+F 0 "#P+02" H 1950 1900 50  0001 C CNN
+F 1 "+12V" V 1850 1700 59  0001 L BNN
+F 2 "" H 1950 1900 50  0001 C CNN
+F 3 "" H 1950 1900 50  0001 C CNN
+	1    1950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+03
+U 1 0 48C2C5DB
+P 6400 2550
+F 0 "#P+03" H 6400 2550 50  0001 C CNN
+F 1 "+12V" V 6300 2350 59  0001 L BNN
+F 2 "" H 6400 2550 50  0001 C CNN
+F 3 "" H 6400 2550 50  0001 C CNN
+	1    6400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+04
+U 1 0 459FCD94
+P 5050 1675
+F 0 "#P+04" H 5050 1675 50  0001 C CNN
+F 1 "+5V" V 4950 1475 59  0001 L BNN
+F 2 "" H 5050 1675 50  0001 C CNN
+F 3 "" H 5050 1675 50  0001 C CNN
+	1    5050 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0805 R2
+U 1 0 2B793C21
+P 5350 3550
+F 0 "R2" H 5125 3584 59  0000 L BNN
+F 1 "0.27" H 5425 3595 59  0000 L BNN
+F 2 "Junction Box:R0805" H 5350 3550 50  0001 C CNN
+F 3 "" H 5350 3550 50  0001 C CNN
+	1    5350 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0805 R4
+U 1 0 14B9BA0E
+P 5350 2950
+F 0 "R4" H 5125 2984 59  0000 L BNN
+F 1 "0.27" H 5425 2995 59  0000 L BNN
+F 2 "Junction Box:R0805" H 5350 2950 50  0001 C CNN
+F 3 "" H 5350 2950 50  0001 C CNN
+	1    5350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC1206 C3
+U 1 0 22CBA535
+P 5950 3150
+F 0 "C3" H 5990 3175 59  0000 L BNN
+F 1 "47uF" H 5990 2985 59  0000 L BNN
+F 2 "Junction Box:C1206" H 5950 3150 50  0001 C CNN
+F 3 "" H 5950 3150 50  0001 C CNN
+	1    5950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:ATMEGA328P-AUR U1
+U 1 0 94FABF20
+P 1650 5975
+F 0 "U1" H 4264 6334 69  0001 L BNN
+F 1 "ATMEGA328P-AUR" H 3989 6234 69  0000 L BNN
+F 2 "Junction Box:32A" H 1650 5975 50  0001 C CNN
+F 3 "" H 1650 5975 50  0001 C CNN
+	1    1650 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND05
+U 1 0 5B6A58CA
+P 1350 6450
+F 0 "#GND05" H 1350 6450 50  0001 C CNN
+F 1 "GND" H 1250 6350 59  0000 L BNN
+F 2 "" H 1350 6450 50  0001 C CNN
+F 3 "" H 1350 6450 50  0001 C CNN
+	1    1350 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND06
+U 1 0 F6847280
+P 7025 7750
+F 0 "#GND06" H 7025 7750 50  0001 C CNN
+F 1 "GND" H 6925 7650 59  0000 L BNN
+F 2 "" H 7025 7750 50  0001 C CNN
+F 3 "" H 7025 7750 50  0001 C CNN
+	1    7025 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C8
+U 1 0 A7E76009
+P 1650 5950
+F 0 "C8" V 1775 5960 59  0000 R TNN
+F 1 "0.1uF" V 1515 5765 59  0000 L BNN
+F 2 "Junction Box:C0603" H 1650 5950 50  0001 C CNN
+F 3 "" H 1650 5950 50  0001 C CNN
+	1    1650 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+05
+U 1 0 57F4DC09
+P 1825 5725
+F 0 "#P+05" H 1825 5725 50  0001 C CNN
+F 1 "+5V" V 1725 5525 59  0001 L BNN
+F 2 "" H 1825 5725 50  0001 C CNN
+F 3 "" H 1825 5725 50  0001 C CNN
+	1    1825 5725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+06
+U 1 0 4B6CF0C8
+P 7250 7175
+F 0 "#P+06" H 7250 7175 50  0001 C CNN
+F 1 "+5V" V 7150 6975 59  0001 L BNN
+F 2 "" H 7250 7175 50  0001 C CNN
+F 3 "" H 7250 7175 50  0001 C CNN
+	1    7250 7175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C9
+U 1 0 F5E906B6
+P 6825 7225
+F 0 "C9" V 6875 7360 59  0000 R TNN
+F 1 "0.1uF" V 6790 7240 59  0000 L BNN
+F 2 "Junction Box:C0603" H 6825 7225 50  0001 C CNN
+F 3 "" H 6825 7225 50  0001 C CNN
+	1    6825 7225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C10
+U 1 0 6EEB2871
+P 8125 6275
+F 0 "C10" V 8250 6310 59  0000 R TNN
+F 1 "0.1uF" V 7990 6115 59  0000 L BNN
+F 2 "Junction Box:C0603" H 8125 6275 50  0001 C CNN
+F 3 "" H 8125 6275 50  0001 C CNN
+	1    8125 6275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R5
+U 1 0 40871C63
+P 7825 5975
+F 0 "R5" H 7675 6034 59  0000 L BNN
+F 1 "10K" H 7675 5845 59  0000 L BNN
+F 2 "Junction Box:R0603" H 7825 5975 50  0001 C CNN
+F 3 "" H 7825 5975 50  0001 C CNN
+	1    7825 5975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+07
+U 1 0 FAFE20BD
+P 7825 5575
+F 0 "#P+07" H 7825 5575 50  0001 C CNN
+F 1 "+5V" V 7725 5375 59  0001 L BNN
+F 2 "" H 7825 5575 50  0001 C CNN
+F 3 "" H 7825 5575 50  0001 C CNN
+	1    7825 5575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:CRYSTAL Q1
+U 1 0 22BC07EB
+P 1150 6800
+F 0 "Q1" H 1150 6800 50  0001 C CNN
+F 1 "CRYSTAL" H 1150 6800 50  0001 C CNN
+F 2 "Junction Box:CRYSTAL" H 1150 6800 50  0001 C CNN
+F 3 "" H 1150 6800 50  0001 C CNN
+	1    1150 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C11
+U 1 0 863C519D
+P 925 7075
+F 0 "C11" H 965 7100 59  0000 L BNN
+F 1 "22pF" H 965 6910 59  0000 L BNN
+F 2 "Junction Box:C0603" H 925 7075 50  0001 C CNN
+F 3 "" H 925 7075 50  0001 C CNN
+	1    925  7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C12
+U 1 0 93E5FA1B
+P 1375 7075
+F 0 "C12" H 1415 7100 59  0000 L BNN
+F 1 "22pF" H 1415 6910 59  0000 L BNN
+F 2 "Junction Box:C0603" H 1375 7075 50  0001 C CNN
+F 3 "" H 1375 7075 50  0001 C CNN
+	1    1375 7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND07
+U 1 0 C2693486
+P 1150 7675
+F 0 "#GND07" H 1150 7675 50  0001 C CNN
+F 1 "GND" H 1050 7575 59  0000 L BNN
+F 2 "" H 1150 7675 50  0001 C CNN
+F 3 "" H 1150 7675 50  0001 C CNN
+	1    1150 7675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R8
+U 1 0 80905056
+P 6350 7800
+F 0 "R8" V 6441 7875 59  0000 L BNN
+F 1 "330" V 6430 7575 59  0000 L BNN
+F 2 "Junction Box:R0603" H 6350 7800 50  0001 C CNN
+F 3 "" H 6350 7800 50  0001 C CNN
+	1    6350 7800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:LEDCHIP-LED0603 LED1
+U 1 0 7DC8C285
+P 6750 8100
+F 0 "LED1" V 7080 8165 59  0000 R TNN
+F 1 "LEDCHIP-LED0603" V 6975 7920 59  0000 L BNN
+F 2 "Junction Box:CHIP-LED0603" H 6750 8100 50  0001 C CNN
+F 3 "" H 6750 8100 50  0001 C CNN
+	1    6750 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND08
+U 1 0 E3161DBF
+P 6750 8450
+F 0 "#GND08" H 6750 8450 50  0001 C CNN
+F 1 "GND" H 6650 8350 59  0000 L BNN
+F 2 "" H 6750 8450 50  0001 C CNN
+F 3 "" H 6750 8450 50  0001 C CNN
+	1    6750 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:A4982 U$2
+U 1 0 87B7DF34
+P 9575 3150
+F 0 "U$2" H 9575 3150 50  0001 C CNN
+F 1 "A4982" H 9375 1650 59  0001 L BNN
+F 2 "Junction Box:A4982" H 9575 3150 50  0001 C CNN
+F 3 "" H 9575 3150 50  0001 C CNN
+	1    9575 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND09
+U 1 0 FD0A31A1
+P 10775 4575
+F 0 "#GND09" H 10775 4575 50  0001 C CNN
+F 1 "GND" H 10675 4475 59  0000 L BNN
+F 2 "" H 10775 4575 50  0001 C CNN
+F 3 "" H 10775 4575 50  0001 C CNN
+	1    10775 4575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C13
+U 1 0 BFF277C9
+P 7425 4200
+F 0 "C13" H 7465 4225 59  0000 L BNN
+F 1 "0.22uF" H 7465 4035 59  0000 L BNN
+F 2 "Junction Box:C0603" H 7425 4200 50  0001 C CNN
+F 3 "" H 7425 4200 50  0001 C CNN
+	1    7425 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND010
+U 1 0 0087CD10
+P 7425 4550
+F 0 "#GND010" H 7425 4550 50  0001 C CNN
+F 1 "GND" H 7325 4450 59  0000 L BNN
+F 2 "" H 7425 4550 50  0001 C CNN
+F 3 "" H 7425 4550 50  0001 C CNN
+	1    7425 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C14
+U 1 0 15A508F3
+P 8325 2150
+F 0 "C14" V 8250 2190 59  0000 L BNN
+F 1 "0.1uF" V 8490 2090 59  0000 L BNN
+F 2 "Junction Box:C0603" H 8325 2150 50  0001 C CNN
+F 3 "" H 8325 2150 50  0001 C CNN
+	1    8325 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND011
+U 1 0 5518330F
+P 12225 3700
+F 0 "#GND011" H 12225 3700 50  0001 C CNN
+F 1 "GND" H 12125 3600 59  0000 L BNN
+F 2 "" H 12225 3700 50  0001 C CNN
+F 3 "" H 12225 3700 50  0001 C CNN
+	1    12225 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C15
+U 1 0 1009FFA7
+P 7475 3000
+F 0 "C15" H 7515 3025 59  0000 L BNN
+F 1 "0.22uF" H 7515 2835 59  0000 L BNN
+F 2 "Junction Box:C0603" H 7475 3000 50  0001 C CNN
+F 3 "" H 7475 3000 50  0001 C CNN
+	1    7475 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND012
+U 1 0 8C4C494A
+P 7475 3800
+F 0 "#GND012" H 7475 3800 50  0001 C CNN
+F 1 "GND" H 7375 3700 59  0000 L BNN
+F 2 "" H 7475 3800 50  0001 C CNN
+F 3 "" H 7475 3800 50  0001 C CNN
+	1    7475 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C16
+U 1 0 5DE9A54D
+P 7775 2250
+F 0 "C16" H 7985 2375 59  0000 R TNN
+F 1 "0.1uF" H 7865 2085 59  0000 L BNN
+F 2 "Junction Box:C0603" H 7775 2250 50  0001 C CNN
+F 3 "" H 7775 2250 50  0001 C CNN
+	1    7775 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C17
+U 1 0 90B80CF4
+P 12225 3150
+F 0 "C17" H 12435 3275 59  0000 R TNN
+F 1 "0.22uF" H 12315 2985 59  0000 L BNN
+F 2 "Junction Box:C0603" H 12225 3150 50  0001 C CNN
+F 3 "" H 12225 3150 50  0001 C CNN
+	1    12225 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C18
+U 1 0 9D5497DE
+P 12625 3150
+F 0 "C18" H 12835 3275 59  0000 R TNN
+F 1 "0.1uF" H 12715 2985 59  0000 L BNN
+F 2 "Junction Box:C0603" H 12625 3150 50  0001 C CNN
+F 3 "" H 12625 3150 50  0001 C CNN
+	1    12625 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R1
+U 1 0 AA571318
+P 10875 2025
+F 0 "R1" V 10866 2100 59  0000 L BNN
+F 1 "100K" V 10855 1750 59  0000 L BNN
+F 2 "Junction Box:R0603" H 10875 2025 50  0001 C CNN
+F 3 "" H 10875 2025 50  0001 C CNN
+	1    10875 2025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+08
+U 1 0 E32DC4A8
+P 7725 3700
+F 0 "#P+08" H 7725 3700 50  0001 C CNN
+F 1 "+5V" V 7625 3500 59  0001 L BNN
+F 2 "" H 7725 3700 50  0001 C CNN
+F 3 "" H 7725 3700 50  0001 C CNN
+	1    7725 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+09
+U 1 0 DD8F0AB4
+P 7775 1900
+F 0 "#P+09" H 7775 1900 50  0001 C CNN
+F 1 "+12V" V 7675 1700 59  0001 L BNN
+F 2 "" H 7775 1900 50  0001 C CNN
+F 3 "" H 7775 1900 50  0001 C CNN
+	1    7775 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+010
+U 1 0 6665561A
+P 12225 2550
+F 0 "#P+010" H 12225 2550 50  0001 C CNN
+F 1 "+12V" V 12125 2350 59  0001 L BNN
+F 2 "" H 12225 2550 50  0001 C CNN
+F 3 "" H 12225 2550 50  0001 C CNN
+	1    12225 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+011
+U 1 0 4D46F757
+P 10875 1675
+F 0 "#P+011" H 10875 1675 50  0001 C CNN
+F 1 "+5V" V 10775 1475 59  0001 L BNN
+F 2 "" H 10875 1675 50  0001 C CNN
+F 3 "" H 10875 1675 50  0001 C CNN
+	1    10875 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0805 R9
+U 1 0 8779EE69
+P 11175 3550
+F 0 "R9" H 10950 3584 59  0000 L BNN
+F 1 "0.27" H 11250 3595 59  0000 L BNN
+F 2 "Junction Box:R0805" H 11175 3550 50  0001 C CNN
+F 3 "" H 11175 3550 50  0001 C CNN
+	1    11175 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0805 R10
+U 1 0 6534F182
+P 11175 2950
+F 0 "R10" H 10950 2984 59  0000 L BNN
+F 1 "0.27" H 11250 2995 59  0000 L BNN
+F 2 "Junction Box:R0805" H 11175 2950 50  0001 C CNN
+F 3 "" H 11175 2950 50  0001 C CNN
+	1    11175 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC1206 C19
+U 1 0 9CA42FFB
+P 11775 3150
+F 0 "C19" H 11815 3175 59  0000 L BNN
+F 1 "47uF" H 11815 2985 59  0000 L BNN
+F 2 "Junction Box:C1206" H 11775 3150 50  0001 C CNN
+F 3 "" H 11775 3150 50  0001 C CNN
+	1    11775 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:A4982 U$3
+U 1 0 6E1B97F5
+P 15375 3100
+F 0 "U$3" H 15375 3100 50  0001 C CNN
+F 1 "A4982" H 15175 1600 59  0001 L BNN
+F 2 "Junction Box:A4982" H 15375 3100 50  0001 C CNN
+F 3 "" H 15375 3100 50  0001 C CNN
+	1    15375 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND013
+U 1 0 85B66688
+P 16575 4525
+F 0 "#GND013" H 16575 4525 50  0001 C CNN
+F 1 "GND" H 16475 4425 59  0000 L BNN
+F 2 "" H 16575 4525 50  0001 C CNN
+F 3 "" H 16575 4525 50  0001 C CNN
+	1    16575 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C20
+U 1 0 A2F75ABD
+P 12975 4150
+F 0 "C20" H 13015 4175 59  0000 L BNN
+F 1 "0.22uF" H 13015 3985 59  0000 L BNN
+F 2 "Junction Box:C0603" H 12975 4150 50  0001 C CNN
+F 3 "" H 12975 4150 50  0001 C CNN
+	1    12975 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND014
+U 1 0 B9C9B342
+P 12975 4525
+F 0 "#GND014" H 12975 4525 50  0001 C CNN
+F 1 "GND" H 12875 4425 59  0000 L BNN
+F 2 "" H 12975 4525 50  0001 C CNN
+F 3 "" H 12975 4525 50  0001 C CNN
+	1    12975 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C21
+U 1 0 2890C4D1
+P 14125 2100
+F 0 "C21" V 14050 2140 59  0000 L BNN
+F 1 "0.1uF" V 14290 2040 59  0000 L BNN
+F 2 "Junction Box:C0603" H 14125 2100 50  0001 C CNN
+F 3 "" H 14125 2100 50  0001 C CNN
+	1    14125 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND015
+U 1 0 7499CEA7
+P 18025 3650
+F 0 "#GND015" H 18025 3650 50  0001 C CNN
+F 1 "GND" H 17925 3550 59  0000 L BNN
+F 2 "" H 18025 3650 50  0001 C CNN
+F 3 "" H 18025 3650 50  0001 C CNN
+	1    18025 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C22
+U 1 0 D3FA4F18
+P 13275 2950
+F 0 "C22" H 13315 2975 59  0000 L BNN
+F 1 "0.22uF" H 13315 2785 59  0000 L BNN
+F 2 "Junction Box:C0603" H 13275 2950 50  0001 C CNN
+F 3 "" H 13275 2950 50  0001 C CNN
+	1    13275 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND016
+U 1 0 12C6E2A1
+P 13275 3750
+F 0 "#GND016" H 13275 3750 50  0001 C CNN
+F 1 "GND" H 13175 3650 59  0000 L BNN
+F 2 "" H 13275 3750 50  0001 C CNN
+F 3 "" H 13275 3750 50  0001 C CNN
+	1    13275 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C23
+U 1 0 365EA109
+P 13575 2200
+F 0 "C23" H 13785 2325 59  0000 R TNN
+F 1 "0.1uF" H 13665 2035 59  0000 L BNN
+F 2 "Junction Box:C0603" H 13575 2200 50  0001 C CNN
+F 3 "" H 13575 2200 50  0001 C CNN
+	1    13575 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C24
+U 1 0 04F4C4E3
+P 18025 3100
+F 0 "C24" H 18235 3225 59  0000 R TNN
+F 1 "0.22uF" H 18115 2935 59  0000 L BNN
+F 2 "Junction Box:C0603" H 18025 3100 50  0001 C CNN
+F 3 "" H 18025 3100 50  0001 C CNN
+	1    18025 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C25
+U 1 0 FAA9EF8F
+P 18425 3100
+F 0 "C25" H 18635 3225 59  0000 R TNN
+F 1 "0.1uF" H 18515 2935 59  0000 L BNN
+F 2 "Junction Box:C0603" H 18425 3100 50  0001 C CNN
+F 3 "" H 18425 3100 50  0001 C CNN
+	1    18425 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R11
+U 1 0 C30C49FB
+P 16675 1975
+F 0 "R11" V 16666 2050 59  0000 L BNN
+F 1 "100K" V 16655 1700 59  0000 L BNN
+F 2 "Junction Box:R0603" H 16675 1975 50  0001 C CNN
+F 3 "" H 16675 1975 50  0001 C CNN
+	1    16675 1975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+012
+U 1 0 BC83E68F
+P 13525 3650
+F 0 "#P+012" H 13525 3650 50  0001 C CNN
+F 1 "+5V" V 13425 3450 59  0001 L BNN
+F 2 "" H 13525 3650 50  0001 C CNN
+F 3 "" H 13525 3650 50  0001 C CNN
+	1    13525 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+013
+U 1 0 1A067FB7
+P 13575 1850
+F 0 "#P+013" H 13575 1850 50  0001 C CNN
+F 1 "+12V" V 13475 1650 59  0001 L BNN
+F 2 "" H 13575 1850 50  0001 C CNN
+F 3 "" H 13575 1850 50  0001 C CNN
+	1    13575 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+014
+U 1 0 C5FBB535
+P 18025 2500
+F 0 "#P+014" H 18025 2500 50  0001 C CNN
+F 1 "+12V" V 17925 2300 59  0001 L BNN
+F 2 "" H 18025 2500 50  0001 C CNN
+F 3 "" H 18025 2500 50  0001 C CNN
+	1    18025 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+015
+U 1 0 836A5F30
+P 16675 1625
+F 0 "#P+015" H 16675 1625 50  0001 C CNN
+F 1 "+5V" V 16575 1425 59  0001 L BNN
+F 2 "" H 16675 1625 50  0001 C CNN
+F 3 "" H 16675 1625 50  0001 C CNN
+	1    16675 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0805 R13
+U 1 0 F303C506
+P 16975 3500
+F 0 "R13" H 16750 3534 59  0000 L BNN
+F 1 "0.27" H 17050 3545 59  0000 L BNN
+F 2 "Junction Box:R0805" H 16975 3500 50  0001 C CNN
+F 3 "" H 16975 3500 50  0001 C CNN
+	1    16975 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0805 R14
+U 1 0 FC932622
+P 16975 2900
+F 0 "R14" H 16750 2934 59  0000 L BNN
+F 1 "0.27" H 17050 2945 59  0000 L BNN
+F 2 "Junction Box:R0805" H 16975 2900 50  0001 C CNN
+F 3 "" H 16975 2900 50  0001 C CNN
+	1    16975 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC1206 C26
+U 1 0 01F3DC0D
+P 17575 3100
+F 0 "C26" H 17615 3125 59  0000 L BNN
+F 1 "47uF" H 17615 2935 59  0000 L BNN
+F 2 "Junction Box:C1206" H 17575 3100 50  0001 C CNN
+F 3 "" H 17575 3100 50  0001 C CNN
+	1    17575 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:A4982 U$4
+U 1 0 649D799B
+P 21275 3100
+F 0 "U$4" H 21275 3100 50  0001 C CNN
+F 1 "A4982" H 21075 1600 59  0001 L BNN
+F 2 "Junction Box:A4982" H 21275 3100 50  0001 C CNN
+F 3 "" H 21275 3100 50  0001 C CNN
+	1    21275 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND017
+U 1 0 CBB20165
+P 22475 4550
+F 0 "#GND017" H 22475 4550 50  0001 C CNN
+F 1 "GND" H 22375 4450 59  0000 L BNN
+F 2 "" H 22475 4550 50  0001 C CNN
+F 3 "" H 22475 4550 50  0001 C CNN
+	1    22475 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C27
+U 1 0 BAF610AA
+P 19125 4150
+F 0 "C27" H 19165 4175 59  0000 L BNN
+F 1 "0.22uF" H 19165 3985 59  0000 L BNN
+F 2 "Junction Box:C0603" H 19125 4150 50  0001 C CNN
+F 3 "" H 19125 4150 50  0001 C CNN
+	1    19125 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND018
+U 1 0 195191A6
+P 19125 4500
+F 0 "#GND018" H 19125 4500 50  0001 C CNN
+F 1 "GND" H 19025 4400 59  0000 L BNN
+F 2 "" H 19125 4500 50  0001 C CNN
+F 3 "" H 19125 4500 50  0001 C CNN
+	1    19125 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C28
+U 1 0 0E636C87
+P 20025 2100
+F 0 "C28" V 19950 2140 59  0000 L BNN
+F 1 "0.1uF" V 20190 2040 59  0000 L BNN
+F 2 "Junction Box:C0603" H 20025 2100 50  0001 C CNN
+F 3 "" H 20025 2100 50  0001 C CNN
+	1    20025 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND019
+U 1 0 F278BC0E
+P 23925 3650
+F 0 "#GND019" H 23925 3650 50  0001 C CNN
+F 1 "GND" H 23825 3550 59  0000 L BNN
+F 2 "" H 23925 3650 50  0001 C CNN
+F 3 "" H 23925 3650 50  0001 C CNN
+	1    23925 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C29
+U 1 0 CF09A02E
+P 19175 2950
+F 0 "C29" H 19215 2975 59  0000 L BNN
+F 1 "0.22uF" H 19215 2785 59  0000 L BNN
+F 2 "Junction Box:C0603" H 19175 2950 50  0001 C CNN
+F 3 "" H 19175 2950 50  0001 C CNN
+	1    19175 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND020
+U 1 0 E53A484A
+P 19175 3750
+F 0 "#GND020" H 19175 3750 50  0001 C CNN
+F 1 "GND" H 19075 3650 59  0000 L BNN
+F 2 "" H 19175 3750 50  0001 C CNN
+F 3 "" H 19175 3750 50  0001 C CNN
+	1    19175 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C30
+U 1 0 B580FF4E
+P 19475 2200
+F 0 "C30" H 19685 2325 59  0000 R TNN
+F 1 "0.1uF" H 19565 2035 59  0000 L BNN
+F 2 "Junction Box:C0603" H 19475 2200 50  0001 C CNN
+F 3 "" H 19475 2200 50  0001 C CNN
+	1    19475 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C31
+U 1 0 740AB6EF
+P 23925 3100
+F 0 "C31" H 24135 3225 59  0000 R TNN
+F 1 "0.22uF" H 24015 2935 59  0000 L BNN
+F 2 "Junction Box:C0603" H 23925 3100 50  0001 C CNN
+F 3 "" H 23925 3100 50  0001 C CNN
+	1    23925 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C32
+U 1 0 534E3B97
+P 24325 3100
+F 0 "C32" H 24535 3225 59  0000 R TNN
+F 1 "0.1uF" H 24415 2935 59  0000 L BNN
+F 2 "Junction Box:C0603" H 24325 3100 50  0001 C CNN
+F 3 "" H 24325 3100 50  0001 C CNN
+	1    24325 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R15
+U 1 0 18909564
+P 22575 1975
+F 0 "R15" V 22566 2050 59  0000 L BNN
+F 1 "100K" V 22555 1700 59  0000 L BNN
+F 2 "Junction Box:R0603" H 22575 1975 50  0001 C CNN
+F 3 "" H 22575 1975 50  0001 C CNN
+	1    22575 1975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+016
+U 1 0 DA826A5A
+P 19425 3650
+F 0 "#P+016" H 19425 3650 50  0001 C CNN
+F 1 "+5V" V 19325 3450 59  0001 L BNN
+F 2 "" H 19425 3650 50  0001 C CNN
+F 3 "" H 19425 3650 50  0001 C CNN
+	1    19425 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+017
+U 1 0 C06B3C1E
+P 19475 1850
+F 0 "#P+017" H 19475 1850 50  0001 C CNN
+F 1 "+12V" V 19375 1650 59  0001 L BNN
+F 2 "" H 19475 1850 50  0001 C CNN
+F 3 "" H 19475 1850 50  0001 C CNN
+	1    19475 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+018
+U 1 0 4FF0227B
+P 23925 2500
+F 0 "#P+018" H 23925 2500 50  0001 C CNN
+F 1 "+12V" V 23825 2300 59  0001 L BNN
+F 2 "" H 23925 2500 50  0001 C CNN
+F 3 "" H 23925 2500 50  0001 C CNN
+	1    23925 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+019
+U 1 0 2B0BC8EA
+P 22575 1625
+F 0 "#P+019" H 22575 1625 50  0001 C CNN
+F 1 "+5V" V 22475 1425 59  0001 L BNN
+F 2 "" H 22575 1625 50  0001 C CNN
+F 3 "" H 22575 1625 50  0001 C CNN
+	1    22575 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0805 R17
+U 1 0 09B967BB
+P 22875 3500
+F 0 "R17" H 22650 3534 59  0000 L BNN
+F 1 "0.27" H 22950 3545 59  0000 L BNN
+F 2 "Junction Box:R0805" H 22875 3500 50  0001 C CNN
+F 3 "" H 22875 3500 50  0001 C CNN
+	1    22875 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0805 R18
+U 1 0 98A86D50
+P 22875 2900
+F 0 "R18" H 22650 2934 59  0000 L BNN
+F 1 "0.27" H 22950 2945 59  0000 L BNN
+F 2 "Junction Box:R0805" H 22875 2900 50  0001 C CNN
+F 3 "" H 22875 2900 50  0001 C CNN
+	1    22875 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC1206 C33
+U 1 0 C42865C4
+P 23475 3100
+F 0 "C33" H 23515 3125 59  0000 L BNN
+F 1 "47uF" H 23515 2935 59  0000 L BNN
+F 2 "Junction Box:C1206" H 23475 3100 50  0001 C CNN
+F 3 "" H 23475 3100 50  0001 C CNN
+	1    23475 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:FT230XS IC1
+U 1 0 22F7723E
+P 4450 8475
+F 0 "IC1" H 3950 8925 59  0001 L BNN
+F 1 "FT230XS" H 4300 8925 59  0000 L BNN
+F 2 "Junction Box:SSOP16" H 4450 8475 50  0001 C CNN
+F 3 "" H 4450 8475 50  0001 C CNN
+	1    4450 8475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+020
+U 1 0 9D43D020
+P 5950 8325
+F 0 "#P+020" H 5950 8325 50  0001 C CNN
+F 1 "+5V" V 5850 8125 59  0001 L BNN
+F 2 "" H 5950 8325 50  0001 C CNN
+F 3 "" H 5950 8325 50  0001 C CNN
+	1    5950 8325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND021
+U 1 0 FF2A2D77
+P 2900 8675
+F 0 "#GND021" H 2900 8675 50  0001 C CNN
+F 1 "GND" H 2800 8575 59  0000 L BNN
+F 2 "" H 2900 8675 50  0001 C CNN
+F 3 "" H 2900 8675 50  0001 C CNN
+	1    2900 8675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND022
+U 1 0 A44C21B7
+P 5825 8725
+F 0 "#GND022" H 5825 8725 50  0001 C CNN
+F 1 "GND" H 5725 8625 59  0000 L BNN
+F 2 "" H 5825 8725 50  0001 C CNN
+F 3 "" H 5825 8725 50  0001 C CNN
+	1    5825 8725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:MINI-USB-32005-201 X1
+U 1 0 8679BB61
+P 21350 7325
+F 0 "X1" H 21375 7700 59  0000 L BNN
+F 1 "MINI-USB-32005-201" V 21750 7025 59  0001 L BNN
+F 2 "Junction Box:32005-201" H 21350 7325 50  0001 C CNN
+F 3 "" H 21350 7325 50  0001 C CNN
+	1    21350 7325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+021
+U 1 0 091B6EC0
+P 20425 6825
+F 0 "#P+021" H 20425 6825 50  0001 C CNN
+F 1 "+5V" V 20325 6625 59  0001 L BNN
+F 2 "" H 20425 6825 50  0001 C CNN
+F 3 "" H 20425 6825 50  0001 C CNN
+	1    20425 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND023
+U 1 0 D027D65F
+P 21075 7725
+F 0 "#GND023" H 21075 7725 50  0001 C CNN
+F 1 "GND" H 20975 7625 59  0000 L BNN
+F 2 "" H 21075 7725 50  0001 C CNN
+F 3 "" H 21075 7725 50  0001 C CNN
+	1    21075 7725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C34
+U 1 0 B0CB0F63
+P 20775 7575
+F 0 "C34" H 20490 7400 59  0000 L BNN
+F 1 "10uF" H 20710 7690 59  0000 R TNN
+F 2 "Junction Box:C0603" H 20775 7575 50  0001 C CNN
+F 3 "" H 20775 7575 50  0001 C CNN
+	1    20775 7575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND024
+U 1 0 157BD418
+P 20775 7950
+F 0 "#GND024" H 20775 7950 50  0001 C CNN
+F 1 "GND" H 20675 7850 59  0000 L BNN
+F 2 "" H 20775 7950 50  0001 C CNN
+F 3 "" H 20775 7950 50  0001 C CNN
+	1    20775 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R19
+U 1 0 08F04F61
+P 3275 8875
+F 0 "R19" H 3175 8841 59  0000 R TNN
+F 1 "27" H 3425 8830 59  0000 R TNN
+F 2 "Junction Box:R0603" H 3275 8875 50  0001 C CNN
+F 3 "" H 3275 8875 50  0001 C CNN
+	1    3275 8875
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C35
+U 1 0 0A003241
+P 2900 9125
+F 0 "C35" H 2940 9150 59  0000 L BNN
+F 1 "47pF" H 2940 8960 59  0000 L BNN
+F 2 "Junction Box:C0603" H 2900 9125 50  0001 C CNN
+F 3 "" H 2900 9125 50  0001 C CNN
+	1    2900 9125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND025
+U 1 0 F212C7DE
+P 2900 9500
+F 0 "#GND025" H 2900 9500 50  0001 C CNN
+F 1 "GND" H 2800 9400 59  0000 L BNN
+F 2 "" H 2900 9500 50  0001 C CNN
+F 3 "" H 2900 9500 50  0001 C CNN
+	1    2900 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R20
+U 1 0 16C83484
+P 5400 8875
+F 0 "R20" H 5300 8991 59  0000 R TNN
+F 1 "27" H 5300 8830 59  0000 R TNN
+F 2 "Junction Box:R0603" H 5400 8875 50  0001 C CNN
+F 3 "" H 5400 8875 50  0001 C CNN
+	1    5400 8875
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C36
+U 1 0 62F7B2A5
+P 5875 9100
+F 0 "C36" H 5915 9125 59  0000 L BNN
+F 1 "47pF" H 5915 8935 59  0000 L BNN
+F 2 "Junction Box:C0603" H 5875 9100 50  0001 C CNN
+F 3 "" H 5875 9100 50  0001 C CNN
+	1    5875 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND026
+U 1 0 3890F70B
+P 5875 9475
+F 0 "#GND026" H 5875 9475 50  0001 C CNN
+F 1 "GND" H 5775 9375 59  0000 L BNN
+F 2 "" H 5875 9475 50  0001 C CNN
+F 3 "" H 5875 9475 50  0001 C CNN
+	1    5875 9475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C37
+U 1 0 848A987C
+P 5150 9125
+F 0 "C37" H 4890 8950 59  0000 L BNN
+F 1 "0.1uF" H 5085 9215 59  0000 R TNN
+F 2 "Junction Box:C0603" H 5150 9125 50  0001 C CNN
+F 3 "" H 5150 9125 50  0001 C CNN
+	1    5150 9125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND027
+U 1 0 F8638A93
+P 5150 9525
+F 0 "#GND027" H 5150 9525 50  0001 C CNN
+F 1 "GND" H 5050 9425 59  0000 L BNN
+F 2 "" H 5150 9525 50  0001 C CNN
+F 3 "" H 5150 9525 50  0001 C CNN
+	1    5150 9525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:LEDCHIP-LED0603 LED2
+U 1 0 221661FE
+P 5675 8150
+F 0 "LED2" V 5580 8240 59  0000 R TNN
+F 1 "LEDCHIP-LED0603" V 5900 7970 59  0000 L BNN
+F 2 "Junction Box:CHIP-LED0603" H 5675 8150 50  0001 C CNN
+F 3 "" H 5675 8150 50  0001 C CNN
+	1    5675 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:LEDCHIP-LED0603 LED3
+U 1 0 E9052FDA
+P 3775 9125
+F 0 "LED3" V 4080 9015 59  0000 R TNN
+F 1 "LEDCHIP-LED0603" V 4000 8945 59  0000 L BNN
+F 2 "Junction Box:CHIP-LED0603" H 3775 9125 50  0001 C CNN
+F 3 "" H 3775 9125 50  0001 C CNN
+	1    3775 9125
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R21
+U 1 0 BDD8892F
+P 3775 9475
+F 0 "R21" V 3834 9700 59  0000 R TNN
+F 1 "330" V 3670 9700 59  0000 R TNN
+F 2 "Junction Box:R0603" H 3775 9475 50  0001 C CNN
+F 3 "" H 3775 9475 50  0001 C CNN
+	1    3775 9475
+	0    1    1    0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R22
+U 1 0 1750E397
+P 5425 7900
+F 0 "R22" H 5550 7934 59  0000 L BNN
+F 1 "330" H 5175 7945 59  0000 L BNN
+F 2 "Junction Box:R0603" H 5425 7900 50  0001 C CNN
+F 3 "" H 5425 7900 50  0001 C CNN
+	1    5425 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+022
+U 1 0 2342D0ED
+P 22500 5675
+F 0 "#P+022" H 22500 5675 50  0001 C CNN
+F 1 "+5V" V 22400 5475 59  0001 L BNN
+F 2 "" H 22500 5675 50  0001 C CNN
+F 3 "" H 22500 5675 50  0001 C CNN
+	1    22500 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+023
+U 1 0 F3D13277
+P 22975 5700
+F 0 "#P+023" H 22975 5700 50  0001 C CNN
+F 1 "+12V" V 22875 5500 59  0001 L BNN
+F 2 "" H 22975 5700 50  0001 C CNN
+F 3 "" H 22975 5700 50  0001 C CNN
+	1    22975 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R23
+U 1 0 AE8C3E2E
+P 22500 6125
+F 0 "R23" V 22691 6175 59  0000 L BNN
+F 1 "180" V 22355 6175 59  0000 L BNN
+F 2 "Junction Box:R0603" H 22500 6125 50  0001 C CNN
+F 3 "" H 22500 6125 50  0001 C CNN
+	1    22500 6125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND028
+U 1 0 D1DF28FE
+P 22500 6875
+F 0 "#GND028" H 22500 6875 50  0001 C CNN
+F 1 "GND" H 22400 6775 59  0000 L BNN
+F 2 "" H 22500 6875 50  0001 C CNN
+F 3 "" H 22500 6875 50  0001 C CNN
+	1    22500 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:LEDCHIP-LED0603 LED4
+U 1 0 9949CB52
+P 22500 6475
+F 0 "LED4" V 22430 6290 59  0000 R TNN
+F 1 "LEDCHIP-LED0603" V 22725 6295 59  0000 L BNN
+F 2 "Junction Box:CHIP-LED0603" H 22500 6475 50  0001 C CNN
+F 3 "" H 22500 6475 50  0001 C CNN
+	1    22500 6475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R24
+U 1 0 0591A790
+P 22975 6125
+F 0 "R24" V 23191 6150 59  0000 L BNN
+F 1 "1K" V 22855 6175 59  0000 L BNN
+F 2 "Junction Box:R0603" H 22975 6125 50  0001 C CNN
+F 3 "" H 22975 6125 50  0001 C CNN
+	1    22975 6125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:LEDCHIP-LED0603 LED5
+U 1 0 69414D15
+P 22975 6475
+F 0 "LED5" V 22930 6290 59  0000 R TNN
+F 1 "LEDCHIP-LED0603" V 23200 6295 59  0000 L BNN
+F 2 "Junction Box:CHIP-LED0603" H 22975 6475 50  0001 C CNN
+F 3 "" H 22975 6475 50  0001 C CNN
+	1    22975 6475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND029
+U 1 0 B0E7A0AF
+P 22975 6875
+F 0 "#GND029" H 22975 6875 50  0001 C CNN
+F 1 "GND" H 22875 6775 59  0000 L BNN
+F 2 "" H 22975 6875 50  0001 C CNN
+F 3 "" H 22975 6875 50  0001 C CNN
+	1    22975 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND030
+U 1 0 A606055F
+P 8500 7050
+F 0 "#GND030" H 8500 7050 50  0001 C CNN
+F 1 "GND" H 8400 6950 59  0000 L BNN
+F 2 "" H 8500 7050 50  0001 C CNN
+F 3 "" H 8500 7050 50  0001 C CNN
+	1    8500 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:RINGSCREW U$5
+U 1 0 BCE09641
+P 20250 8775
+F 0 "U$5" H 20250 8775 50  0001 C CNN
+F 1 "RINGSCREW" H 20250 8775 50  0001 C CNN
+F 2 "Junction Box:RINGSCREW" H 20250 8775 50  0001 C CNN
+F 3 "" H 20250 8775 50  0001 C CNN
+	1    20250 8775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:RINGSCREW U$6
+U 1 0 CE08125E
+P 20250 9025
+F 0 "U$6" H 20250 9025 50  0001 C CNN
+F 1 "RINGSCREW" H 20250 9025 50  0001 C CNN
+F 2 "Junction Box:RINGSCREW" H 20250 9025 50  0001 C CNN
+F 3 "" H 20250 9025 50  0001 C CNN
+	1    20250 9025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:RINGSCREW U$7
+U 1 0 63C62AE7
+P 20250 9275
+F 0 "U$7" H 20250 9275 50  0001 C CNN
+F 1 "RINGSCREW" H 20250 9275 50  0001 C CNN
+F 2 "Junction Box:RINGSCREW" H 20250 9275 50  0001 C CNN
+F 3 "" H 20250 9275 50  0001 C CNN
+	1    20250 9275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:RINGSCREW U$8
+U 1 0 59F585D1
+P 20250 9775
+F 0 "U$8" H 20250 9775 50  0001 C CNN
+F 1 "RINGSCREW" H 20250 9775 50  0001 C CNN
+F 2 "Junction Box:RINGSCREW" H 20250 9775 50  0001 C CNN
+F 3 "" H 20250 9775 50  0001 C CNN
+	1    20250 9775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:RINGSCREW U$9
+U 1 0 9E0009A5
+P 20250 9525
+F 0 "U$9" H 20250 9525 50  0001 C CNN
+F 1 "RINGSCREW" H 20250 9525 50  0001 C CNN
+F 2 "Junction Box:RINGSCREW" H 20250 9525 50  0001 C CNN
+F 3 "" H 20250 9525 50  0001 C CNN
+	1    20250 9525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-03-70553 X4
+U 1 0 38D8100C
+P 22425 9100
+F 0 "X4" H 22525 9070 51  0000 L BNN
+F 1 "C-GRID-03-70553" H 22395 9155 59  0001 L BNN
+F 2 "Junction Box:70553-03" H 22425 9100 50  0001 C CNN
+F 3 "" H 22425 9100 50  0001 C CNN
+	1    22425 9100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-03-70553 X4
+U 2 0 38D81000
+P 22425 8950
+F 0 "X4" H 22525 8920 51  0000 L BNN
+F 1 "C-GRID-03-70553" H 22395 9005 59  0001 L BNN
+F 2 "Junction Box:70553-03" H 22425 8950 50  0001 C CNN
+F 3 "" H 22425 8950 50  0001 C CNN
+	2    22425 8950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-03-70553 X4
+U 3 0 38D81004
+P 22425 8800
+F 0 "X4" H 22525 8770 51  0000 L BNN
+F 1 "C-GRID-03-70553" H 22395 8855 59  0001 L BNN
+F 2 "Junction Box:70553-03" H 22425 8800 50  0001 C CNN
+F 3 "" H 22425 8800 50  0001 C CNN
+	3    22425 8800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X5
+U 1 0 2CAC95E3
+P 22450 10100
+F 0 "X5" H 22550 10070 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22420 10155 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22450 10100 50  0001 C CNN
+F 3 "" H 22450 10100 50  0001 C CNN
+	1    22450 10100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X5
+U 2 0 2CAC95EF
+P 22450 9950
+F 0 "X5" H 22550 9920 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22420 10005 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22450 9950 50  0001 C CNN
+F 3 "" H 22450 9950 50  0001 C CNN
+	2    22450 9950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X5
+U 3 0 2CAC95EB
+P 22450 9800
+F 0 "X5" H 22550 9770 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22420 9855 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22450 9800 50  0001 C CNN
+F 3 "" H 22450 9800 50  0001 C CNN
+	3    22450 9800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X5
+U 4 0 2CAC95F7
+P 22450 9650
+F 0 "X5" H 22550 9620 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22420 9705 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22450 9650 50  0001 C CNN
+F 3 "" H 22450 9650 50  0001 C CNN
+	4    22450 9650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X6
+U 1 0 5678603C
+P 22450 10775
+F 0 "X6" H 22550 10745 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22420 10830 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22450 10775 50  0001 C CNN
+F 3 "" H 22450 10775 50  0001 C CNN
+	1    22450 10775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X6
+U 2 0 56786030
+P 22450 10625
+F 0 "X6" H 22550 10595 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22420 10680 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22450 10625 50  0001 C CNN
+F 3 "" H 22450 10625 50  0001 C CNN
+	2    22450 10625
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X6
+U 3 0 56786034
+P 22450 10475
+F 0 "X6" H 22550 10445 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22420 10530 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22450 10475 50  0001 C CNN
+F 3 "" H 22450 10475 50  0001 C CNN
+	3    22450 10475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X6
+U 4 0 56786028
+P 22450 10325
+F 0 "X6" H 22550 10295 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22420 10380 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22450 10325 50  0001 C CNN
+F 3 "" H 22450 10325 50  0001 C CNN
+	4    22450 10325
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X7
+U 1 0 E2351FF5
+P 23500 10775
+F 0 "X7" H 23600 10745 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 23470 10830 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 23500 10775 50  0001 C CNN
+F 3 "" H 23500 10775 50  0001 C CNN
+	1    23500 10775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X7
+U 2 0 E2351FF9
+P 23500 10625
+F 0 "X7" H 23600 10595 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 23470 10680 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 23500 10625 50  0001 C CNN
+F 3 "" H 23500 10625 50  0001 C CNN
+	2    23500 10625
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X7
+U 3 0 E2351FFD
+P 23500 10475
+F 0 "X7" H 23600 10445 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 23470 10530 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 23500 10475 50  0001 C CNN
+F 3 "" H 23500 10475 50  0001 C CNN
+	3    23500 10475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X7
+U 4 0 E2351FE1
+P 23500 10325
+F 0 "X7" H 23600 10295 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 23470 10380 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 23500 10325 50  0001 C CNN
+F 3 "" H 23500 10325 50  0001 C CNN
+	4    23500 10325
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X8
+U 1 0 EA8F4CDD
+P 23500 10100
+F 0 "X8" H 23600 10070 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 23470 10155 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 23500 10100 50  0001 C CNN
+F 3 "" H 23500 10100 50  0001 C CNN
+	1    23500 10100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X8
+U 2 0 EA8F4CD1
+P 23500 9950
+F 0 "X8" H 23600 9920 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 23470 10005 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 23500 9950 50  0001 C CNN
+F 3 "" H 23500 9950 50  0001 C CNN
+	2    23500 9950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X8
+U 3 0 EA8F4CD5
+P 23500 9800
+F 0 "X8" H 23600 9770 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 23470 9855 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 23500 9800 50  0001 C CNN
+F 3 "" H 23500 9800 50  0001 C CNN
+	3    23500 9800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X8
+U 4 0 EA8F4CC9
+P 23500 9650
+F 0 "X8" H 23600 9620 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 23470 9705 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 23500 9650 50  0001 C CNN
+F 3 "" H 23500 9650 50  0001 C CNN
+	4    23500 9650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-02-70553 X9
+U 1 0 6121001D
+P 20400 10350
+F 0 "X9" H 20500 10320 51  0000 L BNN
+F 1 "C-GRID-02-70553" H 20370 10405 59  0000 L BNN
+F 2 "Junction Box:70553-02" H 20400 10350 50  0001 C CNN
+F 3 "" H 20400 10350 50  0001 C CNN
+	1    20400 10350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-02-70553 X9
+U 2 0 61210011
+P 20400 10500
+F 0 "X9" H 20500 10470 51  0000 L BNN
+F 1 "C-GRID-02-70553" H 20370 10555 59  0001 L BNN
+F 2 "Junction Box:70553-02" H 20400 10500 50  0001 C CNN
+F 3 "" H 20400 10500 50  0001 C CNN
+	2    20400 10500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:VCC #+48V0101
+U 1 0 7DE9BDF8
+P 23475 5675
+F 0 "#+48V0101" H 23475 5675 50  0001 C CNN
+F 1 "VCC" V 23375 5575 59  0001 L BNN
+F 2 "" H 23475 5675 50  0001 C CNN
+F 3 "" H 23475 5675 50  0001 C CNN
+	1    23475 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:RINGSCREW U$10
+U 1 0 2B263A79
+P 20250 8525
+F 0 "U$10" H 20250 8525 50  0001 C CNN
+F 1 "RINGSCREW" H 20250 8525 50  0001 C CNN
+F 2 "Junction Box:RINGSCREW" H 20250 8525 50  0001 C CNN
+F 3 "" H 20250 8525 50  0001 C CNN
+	1    20250 8525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:JP1E JP2
+U 1 0 BAFA783C
+P 20600 7025
+F 0 "JP2" V 20925 7150 59  0000 R TNN
+F 1 "JP1E" V 20825 7025 59  0000 L BNN
+F 2 "Junction Box:JP1" H 20600 7025 50  0001 C CNN
+F 3 "" H 20600 7025 50  0001 C CNN
+	1    20600 7025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:LEDCHIP-LED0603 LED6
+U 1 0 3E6DA659
+P 23475 6475
+F 0 "LED6" V 23405 6290 59  0000 R TNN
+F 1 "LEDCHIP-LED0603" V 23700 6295 59  0000 L BNN
+F 2 "Junction Box:CHIP-LED0603" H 23475 6475 50  0001 C CNN
+F 3 "" H 23475 6475 50  0001 C CNN
+	1    23475 6475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND031
+U 1 0 01958B23
+P 23475 6875
+F 0 "#GND031" H 23475 6875 50  0001 C CNN
+F 1 "GND" H 23375 6775 59  0000 L BNN
+F 2 "" H 23475 6875 50  0001 C CNN
+F 3 "" H 23475 6875 50  0001 C CNN
+	1    23475 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X2
+U 1 0 EE6A8C5B
+P 22425 7750
+F 0 "X2" H 22525 7720 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22395 7805 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22425 7750 50  0001 C CNN
+F 3 "" H 22425 7750 50  0001 C CNN
+	1    22425 7750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X2
+U 2 0 EE6A8C57
+P 22425 7600
+F 0 "X2" H 22525 7570 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22395 7655 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22425 7600 50  0001 C CNN
+F 3 "" H 22425 7600 50  0001 C CNN
+	2    22425 7600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X2
+U 3 0 EE6A8C53
+P 22425 7450
+F 0 "X2" H 22525 7420 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22395 7505 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22425 7450 50  0001 C CNN
+F 3 "" H 22425 7450 50  0001 C CNN
+	3    22425 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X2
+U 4 0 EE6A8C4F
+P 22425 7300
+F 0 "X2" H 22525 7270 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22395 7355 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22425 7300 50  0001 C CNN
+F 3 "" H 22425 7300 50  0001 C CNN
+	4    22425 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X3
+U 1 0 D0EFEB30
+P 22425 8475
+F 0 "X3" H 22525 8445 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22395 8530 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22425 8475 50  0001 C CNN
+F 3 "" H 22425 8475 50  0001 C CNN
+	1    22425 8475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X3
+U 2 0 D0EFEB3C
+P 22425 8325
+F 0 "X3" H 22525 8295 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22395 8380 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22425 8325 50  0001 C CNN
+F 3 "" H 22425 8325 50  0001 C CNN
+	2    22425 8325
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X3
+U 3 0 D0EFEB38
+P 22425 8175
+F 0 "X3" H 22525 8145 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22395 8230 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22425 8175 50  0001 C CNN
+F 3 "" H 22425 8175 50  0001 C CNN
+	3    22425 8175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-GRID-04-70553 X3
+U 4 0 D0EFEB24
+P 22425 8025
+F 0 "X3" H 22525 7995 51  0000 L BNN
+F 1 "C-GRID-04-70553" H 22395 8080 59  0001 L BNN
+F 2 "Junction Box:70553-04" H 22425 8025 50  0001 C CNN
+F 3 "" H 22425 8025 50  0001 C CNN
+	4    22425 8025
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:RESETSWITCH U$11
+U 1 0 ABBF7E6D
+P 8125 6850
+F 0 "U$11" H 7925 7050 59  0001 L BNN
+F 1 "RESETSWITCH" H 7925 6650 59  0001 L BNN
+F 2 "Junction Box:RESETSWITCH" H 8125 6850 50  0001 C CNN
+F 3 "" H 8125 6850 50  0001 C CNN
+	1    8125 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:PINHD-1X6 JP3
+U 1 0 8182258E
+P 20225 6000
+F 0 "JP3" H 19975 6425 59  0000 L BNN
+F 1 "PINHD-1X6" H 19975 5600 59  0000 L BNN
+F 2 "Junction Box:1X06" H 20225 6000 50  0001 C CNN
+F 3 "" H 20225 6000 50  0001 C CNN
+	1    20225 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:EERLOGO U$12
+U 1 0 FCFA34DC
+P 14225 8750
+F 0 "U$12" H 14225 8750 50  0001 C CNN
+F 1 "EERLOGO" H 14225 8750 50  0001 C CNN
+F 2 "Junction Box:EERLOGO" H 14225 8750 50  0001 C CNN
+F 3 "" H 14225 8750 50  0001 C CNN
+	1    14225 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:RELAY U$13
+U 1 0 33430DC8
+P 17550 6550
+F 0 "U$13" H 17550 6550 50  0001 C CNN
+F 1 "RELAY" H 17550 6550 50  0001 C CNN
+F 2 "Junction Box:RELAY" H 17550 6550 50  0001 C CNN
+F 3 "" H 17550 6550 50  0001 C CNN
+	1    17550 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:ATTINY45-20XU U2
+U 1 0 4E0AB7A9
+P 10150 6175
+F 0 "U2" H 11064 6534 69  0000 L BNN
+F 1 "ATTINY45-20XU" H 11039 6434 69  0000 L BNN
+F 2 "Junction Box:8X" H 10150 6175 50  0001 C CNN
+F 3 "" H 10150 6175 50  0001 C CNN
+	1    10150 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:BC817-40 U3
+U 1 0 C6A83FC2
+P 9425 7475
+F 0 "U3" H 10939 7834 69  0000 L BNN
+F 1 "BC817-40" H 10914 7734 69  0000 L BNN
+F 2 "Junction Box:SOT23" H 9425 7475 50  0001 C CNN
+F 3 "" H 9425 7475 50  0001 C CNN
+	1    9425 7475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:BC817-40 U4
+U 1 0 AA9079E4
+P 14475 6650
+F 0 "U4" H 15989 7009 69  0000 L BNN
+F 1 "BC817-40" H 15964 6909 69  0000 L BNN
+F 2 "Junction Box:SOT23" H 14475 6650 50  0001 C CNN
+F 3 "" H 14475 6650 50  0001 C CNN
+	1    14475 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND032
+U 1 0 FD501343
+P 16925 7175
+F 0 "#GND032" H 16925 7175 50  0001 C CNN
+F 1 "GND" H 16825 7075 59  0000 L BNN
+F 2 "" H 16925 7175 50  0001 C CNN
+F 3 "" H 16925 7175 50  0001 C CNN
+	1    16925 7175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+024
+U 1 0 26131AF3
+P 17425 7025
+F 0 "#P+024" H 17425 7025 50  0001 C CNN
+F 1 "+5V" V 17325 6825 59  0001 L BNN
+F 2 "" H 17425 7025 50  0001 C CNN
+F 3 "" H 17425 7025 50  0001 C CNN
+	1    17425 7025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R6
+U 1 0 AA290F87
+P 15275 6450
+F 0 "R6" V 15384 6375 59  0000 R TNN
+F 1 "6.2K" V 15195 6375 59  0000 R TNN
+F 2 "Junction Box:R0603" H 15275 6450 50  0001 C CNN
+F 3 "" H 15275 6450 50  0001 C CNN
+	1    15275 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND033
+U 1 0 C5585B8D
+P 10175 6825
+F 0 "#GND033" H 10175 6825 50  0001 C CNN
+F 1 "GND" H 10075 6725 59  0000 L BNN
+F 2 "" H 10175 6825 50  0001 C CNN
+F 3 "" H 10175 6825 50  0001 C CNN
+	1    10175 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C38
+U 1 0 1703D5AC
+P 13425 6325
+F 0 "C38" H 13360 6425 59  0000 R TNN
+F 1 "0.1uF" H 13190 6160 59  0000 L BNN
+F 2 "Junction Box:C0603" H 13425 6325 50  0001 C CNN
+F 3 "" H 13425 6325 50  0001 C CNN
+	1    13425 6325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C39
+U 1 0 2A789F43
+P 13925 6325
+F 0 "C39" H 13715 6350 59  0000 L BNN
+F 1 "10uF" H 13910 6215 59  0000 R TNN
+F 2 "Junction Box:C0603" H 13925 6325 50  0001 C CNN
+F 3 "" H 13925 6325 50  0001 C CNN
+	1    13925 6325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND034
+U 1 0 85A992D2
+P 13675 6850
+F 0 "#GND034" H 13675 6850 50  0001 C CNN
+F 1 "GND" H 13575 6750 59  0000 L BNN
+F 2 "" H 13675 6850 50  0001 C CNN
+F 3 "" H 13675 6850 50  0001 C CNN
+	1    13675 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R7
+U 1 0 57B4F999
+P 9900 7475
+F 0 "R7" H 10175 7566 59  0000 R TNN
+F 1 "6.2K" H 9800 7580 59  0000 R TNN
+F 2 "Junction Box:R0603" H 9900 7475 50  0001 C CNN
+F 3 "" H 9900 7475 50  0001 C CNN
+	1    9900 7475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND035
+U 1 0 A522C48C
+P 12050 7950
+F 0 "#GND035" H 12050 7950 50  0001 C CNN
+F 1 "GND" H 11950 7850 59  0000 L BNN
+F 2 "" H 12050 7950 50  0001 C CNN
+F 3 "" H 12050 7950 50  0001 C CNN
+	1    12050 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_R0603 R12
+U 1 0 0E74A47C
+P 13250 7150
+F 0 "R12" V 13441 7200 59  0000 L BNN
+F 1 "180" V 13105 7200 59  0000 L BNN
+F 2 "Junction Box:R0603" H 13250 7150 50  0001 C CNN
+F 3 "" H 13250 7150 50  0001 C CNN
+	1    13250 7150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+12V #P+025
+U 1 0 F90ABA34
+P 13250 6750
+F 0 "#P+025" H 13250 6750 50  0001 C CNN
+F 1 "+12V" V 13150 6550 59  0001 L BNN
+F 2 "" H 13250 6750 50  0001 C CNN
+F 3 "" H 13250 6750 50  0001 C CNN
+	1    13250 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:+5V #P+026
+U 1 0 4777B23A
+P 13650 5750
+F 0 "#P+026" H 13650 5750 50  0001 C CNN
+F 1 "+5V" V 13550 5550 59  0001 L BNN
+F 2 "" H 13650 5750 50  0001 C CNN
+F 3 "" H 13650 5750 50  0001 C CNN
+	1    13650 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:JP1E JP1
+U 1 0 0B60073D
+P 9875 5975
+F 0 "JP1" V 10200 6100 59  0000 R TNN
+F 1 "JP1E" V 10100 5975 59  0000 L BNN
+F 2 "Junction Box:JP1" H 9875 5975 50  0001 C CNN
+F 3 "" H 9875 5975 50  0001 C CNN
+	1    9875 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:JP1E JP4
+U 1 0 193933AB
+P 2550 7775
+F 0 "JP4" V 2875 7900 59  0000 R TNN
+F 1 "JP1E" V 2775 7775 59  0000 L BNN
+F 2 "Junction Box:JP1" H 2550 7775 50  0001 C CNN
+F 3 "" H 2550 7775 50  0001 C CNN
+	1    2550 7775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:EERLOGOLONG U$14
+U 1 0 0B5D2212
+P 14225 9200
+F 0 "U$14" H 14225 9200 50  0001 C CNN
+F 1 "EERLOGOLONG" H 14225 9200 50  0001 C CNN
+F 2 "Junction Box:EERLOGOLONG" H 14225 9200 50  0001 C CNN
+F 3 "" H 14225 9200 50  0001 C CNN
+	1    14225 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:MUNLOGO U$15
+U 1 0 0C3EC839
+P 14200 9625
+F 0 "U$15" H 14200 9625 50  0001 C CNN
+F 1 "MUNLOGO" H 14200 9625 50  0001 C CNN
+F 2 "Junction Box:MUNLOGO" H 14200 9625 50  0001 C CNN
+F 3 "" H 14200 9625 50  0001 C CNN
+	1    14200 9625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:MILOGO U$16
+U 1 0 44B01CF5
+P 16450 9625
+F 0 "U$16" H 16450 9625 50  0001 C CNN
+F 1 "MILOGO" H 16450 9625 50  0001 C CNN
+F 2 "Junction Box:MILOGO" H 16450 9625 50  0001 C CNN
+F 3 "" H 16450 9625 50  0001 C CNN
+	1    16450 9625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:R-US_M1206 R16
+U 1 0 2C1EADC6
+P 23475 6125
+F 0 "R16" V 23691 6175 59  0000 L BNN
+F 1 "6.2K" V 23405 6175 59  0000 L BNN
+F 2 "Junction Box:M1206" H 23475 6125 50  0001 C CNN
+F 3 "" H 23475 6125 50  0001 C CNN
+	1    23475 6125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C1S_1.5 F1
+U 1 0 BAEBDDEB
+P 16725 7675
+F 0 "F1" H 16839 7756 116 0000 L BNN
+F 1 "C1S_1.5" H 16572 7481 116 0001 L BNN
+F 2 "Junction Box:C1" H 16725 7675 50  0001 C CNN
+F 3 "" H 16725 7675 50  0001 C CNN
+	1    16725 7675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C40
+U 1 0 3EDB7E5C
+P 23175 8875
+F 0 "C40" H 23385 8975 59  0000 R TNN
+F 1 "0.01uF" H 23215 8710 59  0000 L BNN
+F 2 "Junction Box:C0603" H 23175 8875 50  0001 C CNN
+F 3 "" H 23175 8875 50  0001 C CNN
+	1    23175 8875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND036
+U 1 0 CF583ECA
+P 23175 9225
+F 0 "#GND036" H 23175 9225 50  0001 C CNN
+F 1 "GND" H 23075 9125 59  0000 L BNN
+F 2 "" H 23175 9225 50  0001 C CNN
+F 3 "" H 23175 9225 50  0001 C CNN
+	1    23175 9225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C41
+U 1 0 208FF91D
+P 23775 8950
+F 0 "C41" H 23710 9050 59  0000 R TNN
+F 1 "0.01uF" H 23440 8760 59  0000 L BNN
+F 2 "Junction Box:C0603" H 23775 8950 50  0001 C CNN
+F 3 "" H 23775 8950 50  0001 C CNN
+	1    23775 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:C-USC0603 C42
+U 1 0 2700CD46
+P 24000 8950
+F 0 "C42" H 24260 9050 59  0000 R TNN
+F 1 "1uF" H 24115 8785 59  0000 L BNN
+F 2 "Junction Box:C0603" H 24000 8950 50  0001 C CNN
+F 3 "" H 24000 8950 50  0001 C CNN
+	1    24000 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Junction_Box-eagle-import:GND #GND037
+U 1 0 A56E8B01
+P 23875 9375
+F 0 "#GND037" H 23875 9375 50  0001 C CNN
+F 1 "GND" H 23775 9275 59  0000 L BNN
+F 2 "" H 23875 9375 50  0001 C CNN
+F 3 "" H 23875 9375 50  0001 C CNN
+	1    23875 9375
+	1    0    0    -1  
+$EndComp
+Text Notes 1850 1000 0    215  ~ 0
+Stepper Drivers
+Text Notes 3450 1550 0    127  ~ 0
+Motor 1
+Text Notes 1950 5275 0    215  ~ 0
+Microcontroller
+Text Notes 10400 5350 0    215  ~ 0
+Acoustic Tx
+Text Notes 14725 5350 0    215  ~ 0
+Electromagnet Switch
+Text Notes 19625 5325 0    215  ~ 0
+Connectors / Misc
+Text Notes 1075 6700 0    34   ~ 0
+16MHz
+Text Notes 9275 1550 0    127  ~ 0
+Motor 2
+Text Notes 15075 1500 0    127  ~ 0
+Motor 3
+Text Notes 20975 1500 0    127  ~ 0
+Motor 4
+Text Notes 5575 8275 0    59   ~ 0
+Orange
+Text Notes 3700 9200 0    59   ~ 0
+Green
+Text Notes 22300 5575 0    59   ~ 0
+Power Indicator LEDs
+Text Notes 8050 6700 0    59   ~ 0
+Reset
+Text Notes 22150 6425 0    59   ~ 0
+Green
+Text Notes 23225 6425 0    59   ~ 0
+Red
+Text Notes 20125 8225 0    59   ~ 0
+Ring Screw Terminals
+Text Notes 22175 7200 0    59   ~ 0
+Front Cam
+Text Notes 22175 7925 0    59   ~ 0
+Back Cam
+Text Notes 22125 8675 0    59   ~ 0
+Pressure Sensor
+Text Notes 22150 9525 0    59   ~ 0
+Stepper Motors
+Text Notes 20150 5575 0    59   ~ 0
+ISP Header
+Text Notes 20150 10200 0    59   ~ 0
+Acoustic Tx
+Text Notes 22625 6425 0    59   ~ 0
+Orange
+Text Notes 20175 6675 0    59   ~ 0
+Mini USB Connector
+Text Notes 6700 8250 0    59   ~ 0
+Green
+Text Notes 17625 6525 0    59   ~ 0
+Relay
+Text Notes 15825 7075 0    59   ~ 0
+NPN Transistor
+Text Notes 10700 7925 0    59   ~ 0
+NPN Transistor
+Text Notes 16825 7825 0    59   ~ 0
+1.5A
+Connection ~ 17250 6050
+Wire Wire Line
+	17250 6050 17075 6050
+$EndSCHEMATC
