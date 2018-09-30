@@ -21,10 +21,10 @@
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
-    (40 Dwgs.User user hide)
-    (41 Cmts.User user hide)
+    (40 Dwgs.User user)
+    (41 Cmts.User user)
     (42 Eco1.User user)
-    (43 Eco2.User user hide)
+    (43 Eco2.User user)
     (44 Edge.Cuts user)
     (45 Margin user)
     (46 B.CrtYd user)
@@ -315,14 +315,14 @@
     (pad "" thru_hole circle (at 0 0) (size 3.5 3.5) (drill 3.5) (layers *.Cu *.Mask))
   )
 
-  (module "CamCon Board Rev 1.1:SOLDERPAD-CAMCON" (layer Top) (tedit 5BB02CA1) (tstamp 5BA7EB85)
+  (module "CamCon Board Rev 1.1:SOLDERPAD-CAMCON" (layer Top) (tedit 0) (tstamp 5BA7EB85)
     (at 151.070669 98.578905 90)
     (descr "CamCon Board solder pad")
     (path /89E33A62)
     (fp_text reference U$1 (at 0 0 90) (layer F.SilkS) hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
     )
-    (fp_text value SOLDERPAD-CAMCON (at 0.639045 1.395371 90) (layer F.SilkS) hide
+    (fp_text value SOLDERPAD-CAMCON (at 0 0 90) (layer F.SilkS) hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
     )
     (pad P$1 smd rect (at 0 0 90) (size 1 1.5) (layers Top F.Paste F.Mask)
@@ -343,7 +343,7 @@
       (net 1 GND) (solder_mask_margin 0.1016))
   )
 
-  (module "CamCon Board Rev 1.1:SOLDERPAD-CAMCON" (layer Top) (tedit 5BB02CAB) (tstamp 5BA7EB8D)
+  (module "CamCon Board Rev 1.1:SOLDERPAD-CAMCON" (layer Top) (tedit 0) (tstamp 5BA7EB8D)
     (at 151.070669 99.858905 90)
     (descr "CamCon Board solder pad")
     (path /6E1B97F5)
