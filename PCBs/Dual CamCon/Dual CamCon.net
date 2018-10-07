@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "D:\\ROV 2019\\Github\\2019\\PCBs\\Dual CamCon\\Dual CamCon\\_saved_Dual CamCon.sch")
-    (date "2018-10-07 12:28:15 AM")
+    (source "D:\\ROV 2019\\Github\\2019\\PCBs\\Dual CamCon\\Dual CamCon.sch")
+    (date "2018-10-07 3:14:26 PM")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -9,7 +9,7 @@
         (company)
         (rev)
         (date)
-        (source "_saved_Dual CamCon.sch")
+        (source "Dual CamCon.sch")
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
