@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Dual CamCon-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -267,17 +268,17 @@ Connection ~ 3250 5700
 Wire Wire Line
 	3250 5700 3250 6300
 Text Label 3350 2750 0    50   ~ 0
-CAM1_DN0
+CAM1_D0-
 Text Label 3350 2850 0    50   ~ 0
-CAM1_DP0
+CAM1_D0+
 Text Label 3350 3050 0    50   ~ 0
-CAM1_DN1
+CAM1_D1-
 Text Label 3350 3150 0    50   ~ 0
-CAM1_DP1
+CAM1_D1+
 Text Label 3350 3350 0    50   ~ 0
-CAM1_CN
+CAM1_C-
 Text Label 3350 3450 0    50   ~ 0
-CAM1_CP
+CAM1_C+
 Text Label 3350 3650 0    50   ~ 0
 CAM1_GPIO
 Text Label 3350 3750 0    50   ~ 0
@@ -311,17 +312,17 @@ Wire Wire Line
 Wire Wire Line
 	3350 4050 3750 4050
 Text Label 3350 4900 0    50   ~ 0
-CAM2_DN0
+CAM2_D0-
 Text Label 3350 5000 0    50   ~ 0
-CAM2_DP0
+CAM2_D0+
 Text Label 3350 5200 0    50   ~ 0
-CAM2_DN1
+CAM2_D1-
 Text Label 3350 5300 0    50   ~ 0
-CAM2_DP1
+CAM2_D1+
 Text Label 3350 5500 0    50   ~ 0
-CAM2_CN
+CAM2_C-
 Text Label 3350 5600 0    50   ~ 0
-CAM2_CP
+CAM2_C+
 Text Label 3350 5800 0    50   ~ 0
 CAM2_GPIO
 Text Label 3350 5900 0    50   ~ 0
@@ -419,9 +420,9 @@ Wire Wire Line
 Wire Wire Line
 	5850 2700 6000 2700
 Text Label 5850 4400 0    50   ~ 0
-CAM1_DN0
+CAM1_D0-
 Text Label 5850 4200 0    50   ~ 0
-CAM1_DP0
+CAM1_D0+
 Wire Wire Line
 	5850 4000 6350 4000
 Wire Wire Line
@@ -443,13 +444,13 @@ Wire Wire Line
 Wire Wire Line
 	5850 3500 6250 3500
 Text Label 5850 4100 0    50   ~ 0
-CAM1_DN1
+CAM1_D1-
 Text Label 5850 3900 0    50   ~ 0
-CAM1_DP1
+CAM1_D1+
 Text Label 5850 3800 0    50   ~ 0
-CAM1_CN
+CAM1_C-
 Text Label 5850 3600 0    50   ~ 0
-CAM1_CP
+CAM1_C+
 Text Label 5850 3500 0    50   ~ 0
 CAM1_GPIO
 Text Label 5850 3300 0    50   ~ 0
@@ -525,17 +526,17 @@ Wire Wire Line
 Wire Wire Line
 	5850 6550 6250 6550
 Text Label 5850 6550 0    50   ~ 0
-CAM2_DN0
+CAM2_D0-
 Text Label 5850 6350 0    50   ~ 0
-CAM2_DP0
+CAM2_D0+
 Text Label 5850 6250 0    50   ~ 0
-CAM2_DN1
+CAM2_D1-
 Text Label 5850 6050 0    50   ~ 0
-CAM2_DP1
+CAM2_D1+
 Text Label 5850 5950 0    50   ~ 0
-CAM2_CN
+CAM2_C-
 Text Label 5850 5750 0    50   ~ 0
-CAM2_CP
+CAM2_C+
 Text Label 5850 5650 0    50   ~ 0
 CAM2_GPIO
 Text Label 5850 5450 0    50   ~ 0
