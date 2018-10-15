@@ -460,17 +460,17 @@ Wire Wire Line
 	5850 6350 6250 6350
 Wire Wire Line
 	5850 6550 6250 6550
-Text Label 5850 6550 0    50   ~ 0
-CAM2_D0-
-Text Label 5850 6350 0    50   ~ 0
-CAM2_D0+
-Text Label 5850 6250 0    50   ~ 0
-CAM2_D1-
-Text Label 5850 6050 0    50   ~ 0
-CAM2_D1+
-Text Label 5850 5950 0    50   ~ 0
-CAM2_C-
 Text Label 5850 5750 0    50   ~ 0
+CAM2_D0-
+Text Label 5850 5950 0    50   ~ 0
+CAM2_D0+
+Text Label 5850 6050 0    50   ~ 0
+CAM2_D1-
+Text Label 5850 6250 0    50   ~ 0
+CAM2_D1+
+Text Label 5850 6350 0    50   ~ 0
+CAM2_C-
+Text Label 5850 6550 0    50   ~ 0
 CAM2_C+
 Text Label 5850 5650 0    50   ~ 0
 CAM2_GPIO
