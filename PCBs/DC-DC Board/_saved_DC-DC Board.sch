@@ -1866,7 +1866,7 @@ Wire Wire Line
 Text Notes 1500 1045 0    39   Italic 0
 Because of layout considerations, this current sensor is wired "backwards"\nfrom what it normally should be. This just means we are reading a negative \ncurrent when it should be positive. Simple software fix.\n
 Text Notes 3230 3605 0    50   Italic 10
-Reverse Polarity\nVoltage Protection\n
+Reverse Voltage\nPolarity Protection\n
 $Comp
 L Device:R R1
 U 1 1 5BCB877B
