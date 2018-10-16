@@ -34,23 +34,23 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J1
 U 1 1 5BBFE9D3
-P 1400 1690
-F 0 "J1" H 1320 1465 50  0000 C CNN
-F 1 "Conn_01x01" H 1320 1556 50  0000 C CNN
-F 2 "EER:RingTerminal" H 1400 1690 50  0001 C CNN
-F 3 "~" H 1400 1690 50  0001 C CNN
-	1    1400 1690
+P 2350 4390
+F 0 "J1" H 2270 4165 50  0000 C CNN
+F 1 "Conn_01x01" H 2270 4256 50  0000 C CNN
+F 2 "EER:RingTerminal" H 2350 4390 50  0001 C CNN
+F 3 "~" H 2350 4390 50  0001 C CNN
+	1    2350 4390
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J2
 U 1 1 5BBFEA57
-P 2350 4390
-F 0 "J2" H 2270 4165 50  0000 C CNN
-F 1 "Conn_01x01" H 2270 4256 50  0000 C CNN
-F 2 "EER:RingTerminal" H 2350 4390 50  0001 C CNN
-F 3 "~" H 2350 4390 50  0001 C CNN
-	1    2350 4390
+P 1355 1690
+F 0 "J2" H 1275 1465 50  0000 C CNN
+F 1 "Conn_01x01" H 1275 1556 50  0000 C CNN
+F 2 "EER:RingTerminal" H 1355 1690 50  0001 C CNN
+F 3 "~" H 1355 1690 50  0001 C CNN
+	1    1355 1690
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -62,23 +62,23 @@ GND_Surface
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5BBFEB9B
-P 9150 4390
-F 0 "J4" H 9230 4432 50  0000 L CNN
-F 1 "Conn_01x01" H 9230 4341 50  0000 L CNN
-F 2 "EER:RingTerminal" H 9150 4390 50  0001 C CNN
-F 3 "~" H 9150 4390 50  0001 C CNN
-	1    9150 4390
+P 9150 3190
+F 0 "J4" H 9230 3232 50  0000 L CNN
+F 1 "Conn_01x01" H 9230 3141 50  0000 L CNN
+F 2 "EER:RingTerminal" H 9150 3190 50  0001 C CNN
+F 3 "~" H 9150 3190 50  0001 C CNN
+	1    9150 3190
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5BBFEBF1
-P 9150 3190
-F 0 "J3" H 9230 3232 50  0000 L CNN
-F 1 "Conn_01x01" H 9230 3141 50  0000 L CNN
-F 2 "EER:RingTerminal" H 9150 3190 50  0001 C CNN
-F 3 "~" H 9150 3190 50  0001 C CNN
-	1    9150 3190
+P 9150 4390
+F 0 "J3" H 9230 4432 50  0000 L CNN
+F 1 "Conn_01x01" H 9230 4341 50  0000 L CNN
+F 2 "EER:RingTerminal" H 9150 4390 50  0001 C CNN
+F 3 "~" H 9150 4390 50  0001 C CNN
+	1    9150 4390
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -115,26 +115,6 @@ F 1 "ACS711" H 2850 2364 50  0000 C CNN
 F 2 "EER:ACS711" H 2750 1940 50  0001 C CNN
 F 3 "" H 2750 1940 50  0001 C CNN
 	1    2850 1940
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 1690 1650 1690
-Wire Wire Line
-	2400 1790 2200 1790
-Wire Wire Line
-	2200 1790 2200 1690
-Connection ~ 2200 1690
-Wire Wire Line
-	2200 1690 2400 1690
-$Comp
-L Device:R R1
-U 1 1 5BC01520
-P 3600 4090
-F 0 "R1" H 3670 4136 50  0000 L CNN
-F 1 "0" H 3670 4045 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 3530 4090 50  0001 C CNN
-F 3 "~" H 3600 4090 50  0001 C CNN
-	1    3600 4090
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -178,17 +158,6 @@ F 3 "" H 3450 2390 50  0001 C CNN
 	1    3450 2390
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 3190 2200 3190
-Wire Wire Line
-	2200 2090 2200 2190
-Wire Wire Line
-	2400 2090 2200 2090
-Wire Wire Line
-	2400 2190 2200 2190
-Connection ~ 2200 2190
-Wire Wire Line
-	2200 2190 2200 3190
 Wire Wire Line
 	5800 3540 5950 3540
 Wire Wire Line
@@ -697,46 +666,41 @@ $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5BC9A5C8
-P 1650 1990
-F 0 "D1" V 1688 1873 50  0000 R CNN
-F 1 "LED" V 1597 1873 50  0000 R CNN
-F 2 "LEDs:LED_0805" H 1650 1990 50  0001 C CNN
-F 3 "~" H 1650 1990 50  0001 C CNN
-	1    1650 1990
+P 1465 2515
+F 0 "D1" V 1503 2398 50  0000 R CNN
+F 1 "LED" V 1412 2398 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 1465 2515 50  0001 C CNN
+F 3 "~" H 1465 2515 50  0001 C CNN
+	1    1465 2515
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5BC9A716
-P 1650 2440
-F 0 "R2" H 1720 2486 50  0000 L CNN
-F 1 "10k" H 1720 2395 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 1580 2440 50  0001 C CNN
-F 3 "~" H 1650 2440 50  0001 C CNN
-	1    1650 2440
+P 1465 2965
+F 0 "R2" H 1535 3011 50  0000 L CNN
+F 1 "10k" H 1535 2920 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 1395 2965 50  0001 C CNN
+F 3 "~" H 1465 2965 50  0001 C CNN
+	1    1465 2965
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR0111
 U 1 1 5BC9A890
-P 1650 2740
-F 0 "#PWR0111" H 1650 2490 50  0001 C CNN
-F 1 "Earth" H 1650 2590 50  0001 C CNN
-F 2 "" H 1650 2740 50  0001 C CNN
-F 3 "~" H 1650 2740 50  0001 C CNN
-	1    1650 2740
+P 1465 3265
+F 0 "#PWR0111" H 1465 3015 50  0001 C CNN
+F 1 "Earth" H 1465 3115 50  0001 C CNN
+F 2 "" H 1465 3265 50  0001 C CNN
+F 3 "~" H 1465 3265 50  0001 C CNN
+	1    1465 3265
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 1840 1650 1690
-Connection ~ 1650 1690
-Wire Wire Line
-	1650 1690 2200 1690
-Wire Wire Line
-	1650 2290 1650 2140
+	1465 2815 1465 2665
 Wire Wire Line
 	9880 5260 9880 5110
-Text Notes 950  2440 0    50   ~ 0
+Text Notes 765  2965 0    50   ~ 0
 1/4 W MINIMUM\n
 Text Notes 5800 1990 0    50   ~ 0
 1/8 W MINIMUM\n
@@ -759,7 +723,7 @@ Connection ~ 8390 5760
 Wire Wire Line
 	8390 5760 8640 5760
 Wire Wire Line
-	1650 2740 1650 2590
+	1465 3265 1465 3115
 Text Notes 2600 1290 0    50   ~ 0
 Current Sensor\n
 Text Notes 7840 4910 0    50   ~ 0
@@ -1890,4 +1854,39 @@ Wire Wire Line
 	10020 5760 9640 5760
 Wire Wire Line
 	7550 3340 7550 4390
+Wire Wire Line
+	1555 1690 2200 1690
+Wire Wire Line
+	1465 2365 1465 2265
+Wire Wire Line
+	1465 2265 1840 2265
+Connection ~ 1840 2265
+Wire Wire Line
+	1840 2265 1840 3190
+Text Notes 2340 4080 0    50   Italic 10
+NEED TO ADD FET FOR REVERSE +/- \n
+Wire Wire Line
+	2200 1690 2200 2090
+Wire Wire Line
+	2200 2090 2400 2090
+Wire Wire Line
+	2400 2190 2200 2190
+Wire Wire Line
+	2200 2190 2200 2090
+Connection ~ 2200 2090
+Wire Wire Line
+	1840 1790 2340 1790
+Wire Wire Line
+	1840 1790 1840 2265
+Wire Wire Line
+	2400 1690 2340 1690
+Wire Wire Line
+	2340 1690 2340 1790
+Connection ~ 2340 1790
+Wire Wire Line
+	2340 1790 2400 1790
+Text Notes 1500 1045 0    39   Italic 0
+Because of layout considerations, this current sensor is wired "backwards"\nfrom what it normally should be. This just means we are reading a negative \ncurrent when it should be positive. Simple software fix.\n
+Wire Wire Line
+	1840 3190 3900 3190
 $EndSCHEMATC
