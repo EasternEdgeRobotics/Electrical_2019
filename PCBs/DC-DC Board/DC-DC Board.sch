@@ -34,12 +34,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J1
 U 1 1 5BBFE9D3
-P 1855 4390
-F 0 "J1" H 1775 4165 50  0000 C CNN
-F 1 "Conn_01x01" H 1775 4256 50  0000 C CNN
-F 2 "EER:RingTerminal" H 1855 4390 50  0001 C CNN
-F 3 "~" H 1855 4390 50  0001 C CNN
-	1    1855 4390
+P 1490 4390
+F 0 "J1" H 1410 4165 50  0000 C CNN
+F 1 "Conn_01x01" H 1410 4256 50  0000 C CNN
+F 2 "EER:RingTerminal" H 1490 4390 50  0001 C CNN
+F 3 "~" H 1490 4390 50  0001 C CNN
+	1    1490 4390
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -55,8 +55,6 @@ F 3 "~" H 1355 1690 50  0001 C CNN
 $EndComp
 Text Label 1850 1690 0    50   ~ 0
 +48V
-Text Label 2135 4390 0    50   ~ 0
-GND_Surface
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5BBFEB9B
@@ -272,36 +270,6 @@ F 3 "~" H 6950 1940 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 2090 6550 2290
-Text GLabel 6400 2290 0    50   Input ~ 0
-PG
-Wire Wire Line
-	6400 2290 6550 2290
-$Comp
-L Device:R R5
-U 1 1 5BC29904
-P 6550 1940
-F 0 "R5" H 6620 1986 50  0000 L CNN
-F 1 "1k" H 6620 1895 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 6480 1940 50  0001 C CNN
-F 3 "~" H 6550 1940 50  0001 C CNN
-	1    6550 1940
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5BC29944
-P 6550 1490
-F 0 "D2" V 6588 1373 50  0000 R CNN
-F 1 "LED" V 6497 1373 50  0000 R CNN
-F 2 "LEDs:LED_0805" H 6550 1490 50  0001 C CNN
-F 3 "~" H 6550 1490 50  0001 C CNN
-	1    6550 1490
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6550 1790 6550 1640
-Wire Wire Line
 	6950 2090 6950 2340
 $Comp
 L power:GND #PWR0105
@@ -314,28 +282,17 @@ F 3 "" H 6950 2340 50  0001 C CNN
 	1    6950 2340
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6950 1190 6950 1340
 $Comp
 L power:+12V #PWR0106
 U 1 1 5BC2C731
-P 6750 1040
-F 0 "#PWR0106" H 6750 890 50  0001 C CNN
-F 1 "+12V" H 6765 1213 50  0000 C CNN
-F 2 "" H 6750 1040 50  0001 C CNN
-F 3 "" H 6750 1040 50  0001 C CNN
-	1    6750 1040
+P 6950 1040
+F 0 "#PWR0106" H 6950 890 50  0001 C CNN
+F 1 "+12V" H 6965 1213 50  0000 C CNN
+F 2 "" H 6950 1040 50  0001 C CNN
+F 3 "" H 6950 1040 50  0001 C CNN
+	1    6950 1040
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6750 1040 6750 1190
-Wire Wire Line
-	6750 1190 6950 1190
-Wire Wire Line
-	6550 1340 6550 1190
-Wire Wire Line
-	6550 1190 6750 1190
-Connection ~ 6750 1190
 $Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5BC30749
@@ -452,16 +409,10 @@ Text GLabel 8600 1890 0    50   Input ~ 0
 VIOUT
 Text GLabel 4390 1790 2    50   Input ~ 0
 VIOUT
-Text GLabel 6050 3440 2    50   Input ~ 0
-SMBALERT
-Text GLabel 6050 3640 2    50   Input ~ 0
-PG
 Text GLabel 6050 3740 2    50   Input ~ 0
 SDA
 Text GLabel 6050 3840 2    50   Input ~ 0
 SCL
-Wire Wire Line
-	6050 3640 5800 3640
 Wire Wire Line
 	6050 3740 5800 3740
 Wire Wire Line
@@ -684,7 +635,7 @@ Wire Wire Line
 	9880 5260 9880 5110
 Text Notes 765  2965 0    50   ~ 0
 1/4 W MINIMUM\n
-Text Notes 5800 1990 0    50   ~ 0
+Text Notes 6190 1970 0    50   ~ 0
 1/8 W MINIMUM\n
 $Comp
 L power:GND #PWR0112
@@ -712,8 +663,6 @@ Text Notes 7975 4915 0    50   ~ 0
 12V-5V-3V3 for Current Sensor\n
 Text Notes 8100 3090 0    50   ~ 0
 Output Filtering
-Text Notes 5400 1540 0    50   ~ 0
-LED lights if fault detected
 Text Notes 8900 1240 0    50   ~ 0
 SMBUS\n
 Text Notes 8600 1790 0    50   ~ 0
@@ -722,7 +671,7 @@ Text Notes 9100 3040 0    50   ~ 0
 12V Output\n
 Text Notes 9100 4240 0    50   ~ 0
 ROV Ground\n
-Text Notes 3450 4690 0    50   ~ 0
+Text Notes 1270 4580 0    50   ~ 0
 Surface Ground
 $Bitmap
 Pos 9145 6880
@@ -1790,8 +1739,6 @@ Wire Wire Line
 	4150 1790 4390 1790
 Wire Wire Line
 	6150 4620 6150 4390
-Wire Wire Line
-	5800 3440 6050 3440
 $Comp
 L Device:C C12
 U 1 1 5BC5134E
@@ -1865,8 +1812,8 @@ Wire Wire Line
 	2340 1790 2400 1790
 Text Notes 1500 1045 0    39   Italic 0
 Because of layout considerations, this current sensor is wired "backwards"\nfrom what it normally should be. This just means we are reading a negative \ncurrent when it should be positive. Simple software fix.\n
-Text Notes 3230 3605 0    50   Italic 10
-Reverse Polarity\nVoltage Protection\n
+Text Notes 1950 3960 0    50   Italic 10
+Reverse Voltage\nPolarity Protection\n
 $Comp
 L Device:R R1
 U 1 1 5BCB877B
@@ -1883,44 +1830,16 @@ L Device:R R7
 U 1 1 5BCB87F5
 P 2960 3990
 F 0 "R7" H 3030 4036 50  0000 L CNN
-F 1 "100k" H 3030 3945 50  0000 L CNN
+F 1 "200k" H 3030 3945 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603" V 2890 3990 50  0001 C CNN
 F 3 "~" H 2960 3990 50  0001 C CNN
 	1    2960 3990
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2960 3720 2960 3780
-Wire Wire Line
 	1840 3190 2960 3190
 Wire Wire Line
-	2055 4390 2960 4390
-Wire Wire Line
-	3300 4085 3250 4085
-Wire Wire Line
-	3250 4085 3250 3780
-Wire Wire Line
-	3250 3780 2960 3780
-Connection ~ 2960 3780
-Wire Wire Line
-	2960 3780 2960 3840
-Wire Wire Line
-	3600 3885 3600 3790
-Wire Wire Line
 	3300 4390 3600 4390
-$Comp
-L Device:Q_NMOS_DGS Q1
-U 1 1 5BCCC58A
-P 3500 4085
-F 0 "Q1" H 3705 4131 50  0000 L CNN
-F 1 "Q_NMOS_DGS" H 3080 3910 50  0000 L CNN
-F 2 "EER:SOT-23-NMOS" H 3700 4185 50  0001 C CNN
-F 3 "~" H 3500 4085 50  0001 C CNN
-	1    3500 4085
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 4285 3600 4390
 Connection ~ 3600 4390
 Wire Wire Line
 	3600 4390 3900 4390
@@ -1940,7 +1859,54 @@ Wire Wire Line
 	2960 3190 3900 3190
 Wire Wire Line
 	2960 4140 2960 4390
-Connection ~ 2960 4390
 Wire Wire Line
 	2960 4390 3300 4390
+NoConn ~ 5800 3440
+NoConn ~ 5800 3640
+$Comp
+L Device:R R9
+U 1 1 5BD454F0
+P 3600 4080
+F 0 "R9" H 3670 4126 50  0000 L CNN
+F 1 "0" H 3670 4035 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 3530 4080 50  0001 C CNN
+F 3 "~" H 3600 4080 50  0001 C CNN
+	1    3600 4080
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3790 3600 3930
+Wire Wire Line
+	3600 4230 3600 4390
+Wire Wire Line
+	2960 3720 2960 3780
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5BD739CF
+P 2340 4490
+F 0 "Q1" V 2683 4490 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 2592 4490 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2" H 2540 4590 50  0001 C CNN
+F 3 "~" H 2340 4490 50  0001 C CNN
+	1    2340 4490
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2540 4390 2960 4390
+Wire Wire Line
+	2960 4390 2960 4380
+Connection ~ 2960 4390
+Wire Wire Line
+	2140 4390 1690 4390
+Wire Wire Line
+	2340 4690 2740 4690
+Wire Wire Line
+	2740 4690 2740 3780
+Wire Wire Line
+	2740 3780 2960 3780
+Connection ~ 2960 3780
+Wire Wire Line
+	2960 3780 2960 3840
+Wire Wire Line
+	6950 1040 6950 1340
 $EndSCHEMATC
