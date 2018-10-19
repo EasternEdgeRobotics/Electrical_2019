@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>D:\ROV 2019\Github\2019\PCBs\DC-DC Board\DC-DC Board.sch</source>
-    <date>2018-10-17 7:12:17 PM</date>
+    <date>2018-10-18 10:43:33 PM</date>
     <tool>Eeschema (5.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -20,8 +20,9 @@
   </design>
   <components>
     <comp ref="U1">
-      <value>MurataDC-DC</value>
+      <value>DBQ0135V2</value>
       <footprint>EER:MurataDC-DC</footprint>
+      <datasheet>S5801-05-ND</datasheet>
       <libsource lib="EER" part="MurataDC-DC" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BBFE839</tstamp>
@@ -29,7 +30,7 @@
     <comp ref="J1">
       <value>Conn_01x01</value>
       <footprint>EER:RingTerminal</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>36-7770-ND</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BBFE9D3</tstamp>
@@ -37,7 +38,7 @@
     <comp ref="J2">
       <value>Conn_01x01</value>
       <footprint>EER:RingTerminal</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>36-7770-ND</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BBFEA57</tstamp>
@@ -45,7 +46,7 @@
     <comp ref="J4">
       <value>Conn_01x01</value>
       <footprint>EER:RingTerminal</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>36-7770-ND</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BBFEB9B</tstamp>
@@ -53,7 +54,7 @@
     <comp ref="J3">
       <value>Conn_01x01</value>
       <footprint>EER:RingTerminal</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>36-7770-ND</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BBFEBF1</tstamp>
@@ -61,6 +62,7 @@
     <comp ref="U2">
       <value>ACS711</value>
       <footprint>EER:ACS711</footprint>
+      <datasheet>620-1482-1-ND</datasheet>
       <libsource lib="EER" part="ACS711" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC00C05</tstamp>
@@ -68,7 +70,7 @@
     <comp ref="R4">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>RNCP0805FTD10K0CT-ND</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC145EC</tstamp>
@@ -76,7 +78,7 @@
     <comp ref="R3">
       <value>0</value>
       <footprint>Resistors_SMD:R_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>RMCF0805FT22K0CT-ND</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC1462A</tstamp>
@@ -84,7 +86,7 @@
     <comp ref="C3">
       <value>4.7nF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-9092-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC18DB2</tstamp>
@@ -92,7 +94,7 @@
     <comp ref="C4">
       <value>4.7nF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-9092-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC18EA9</tstamp>
@@ -100,7 +102,7 @@
     <comp ref="D3">
       <value>LED</value>
       <footprint>LEDs:LED_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>732-4982-1-ND</datasheet>
       <libsource lib="Device" part="LED" description="LED generic"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC24964</tstamp>
@@ -108,7 +110,7 @@
     <comp ref="R6">
       <value>1k</value>
       <footprint>Resistors_SMD:R_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>RNCP0805FTD1K00CT-ND</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC257C7</tstamp>
@@ -116,7 +118,7 @@
     <comp ref="J5">
       <value>Conn_01x02</value>
       <footprint>EER:MOLEX_0705530001</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>WM4900-ND</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC30749</tstamp>
@@ -124,7 +126,7 @@
     <comp ref="J6">
       <value>Conn_01x02</value>
       <footprint>EER:MOLEX_0705530001</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>WM4900-ND</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC307BD</tstamp>
@@ -132,7 +134,7 @@
     <comp ref="C6">
       <value>47uF</value>
       <footprint>Capacitors_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-13665-ND</datasheet>
       <libsource lib="Device" part="CP1" description="Polarised capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC348E4</tstamp>
@@ -140,7 +142,7 @@
     <comp ref="C8">
       <value>220uF</value>
       <footprint>Capacitors_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-13664-ND</datasheet>
       <libsource lib="Device" part="CP1" description="Polarised capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC34952</tstamp>
@@ -148,7 +150,7 @@
     <comp ref="C10">
       <value>220uF</value>
       <footprint>Capacitors_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-13664-ND</datasheet>
       <libsource lib="Device" part="CP1" description="Polarised capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC3499A</tstamp>
@@ -172,7 +174,7 @@
     <comp ref="C5">
       <value>1uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-1284-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC65553</tstamp>
@@ -180,7 +182,7 @@
     <comp ref="C7">
       <value>1uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-1284-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC655B5</tstamp>
@@ -188,7 +190,7 @@
     <comp ref="C9">
       <value>1uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-1284-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC6B917</tstamp>
@@ -196,7 +198,7 @@
     <comp ref="C11">
       <value>1uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-1284-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC6B965</tstamp>
@@ -204,7 +206,7 @@
     <comp ref="C2">
       <value>0.1uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-1169-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC88A87</tstamp>
@@ -212,7 +214,7 @@
     <comp ref="D1">
       <value>LED</value>
       <footprint>LEDs:LED_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>732-4983-1-ND</datasheet>
       <libsource lib="Device" part="LED" description="LED generic"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC9A5C8</tstamp>
@@ -220,7 +222,7 @@
     <comp ref="R2">
       <value>10k</value>
       <footprint>Resistors_SMD:R_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>RNCP0805FTD10K0CT-ND</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC9A716</tstamp>
@@ -228,7 +230,7 @@
     <comp ref="R8">
       <value>1k</value>
       <footprint>Resistors_SMD:R_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>RNCP0805FTD1K00CT-ND</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BCE9AAE</tstamp>
@@ -236,7 +238,7 @@
     <comp ref="C1">
       <value>1uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-1284-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC88A13</tstamp>
@@ -260,7 +262,7 @@
     <comp ref="C12">
       <value>1uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-1284-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC5134E</tstamp>
@@ -268,15 +270,15 @@
     <comp ref="C13">
       <value>0.1uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>399-1169-1-ND</datasheet>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BC513C6</tstamp>
     </comp>
     <comp ref="R1">
-      <value>700k</value>
+      <value>698k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>RMCF0603FT698KCT-ND</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BCB877B</tstamp>
@@ -284,7 +286,7 @@
     <comp ref="R7">
       <value>200k</value>
       <footprint>Resistors_SMD:R_0603</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>RMCF0603JT200KCT-ND</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BCB87F5</tstamp>
@@ -292,7 +294,7 @@
     <comp ref="R9">
       <value>0</value>
       <footprint>Resistors_SMD:R_0603</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>RMCF0603ZT0R00CT-ND</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BD454F0</tstamp>
@@ -300,7 +302,7 @@
     <comp ref="Q1">
       <value>Q_NMOS_GDS</value>
       <footprint>TO_SOT_Packages_SMD:TO-252-2</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>DMTH6004SK3-13DICT-ND</datasheet>
       <libsource lib="Device" part="Q_NMOS_GDS" description="Transistor N-MOSFET with substrate diode (general)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5BD739CF</tstamp>
@@ -543,137 +545,137 @@
       <node ref="R8" pin="2"/>
     </net>
     <net code="2" name="Earth">
-      <node ref="R9" pin="2"/>
+      <node ref="R2" pin="2"/>
       <node ref="Q1" pin="3"/>
       <node ref="R7" pin="2"/>
+      <node ref="R9" pin="2"/>
       <node ref="U1" pin="4"/>
-      <node ref="R2" pin="2"/>
     </net>
     <net code="3" name="Net-(D1-Pad1)">
-      <node ref="D1" pin="1"/>
       <node ref="R2" pin="1"/>
+      <node ref="D1" pin="1"/>
     </net>
     <net code="4" name="VIOUT">
-      <node ref="U2" pin="11"/>
+      <node ref="TP1" pin="1"/>
       <node ref="C2" pin="1"/>
       <node ref="J6" pin="1"/>
       <node ref="C1" pin="1"/>
-      <node ref="TP1" pin="1"/>
+      <node ref="U2" pin="11"/>
     </net>
     <net code="5" name="+3V3">
-      <node ref="U2" pin="12"/>
-      <node ref="C11" pin="1"/>
-      <node ref="C13" pin="1"/>
       <node ref="U4" pin="5"/>
       <node ref="R8" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C13" pin="1"/>
       <node ref="C12" pin="1"/>
+      <node ref="U2" pin="12"/>
     </net>
-    <net code="6" name="GND">
-      <node ref="C8" pin="2"/>
-      <node ref="R4" pin="2"/>
-      <node ref="R3" pin="2"/>
-      <node ref="R6" pin="2"/>
-      <node ref="U4" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="J6" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="U1" pin="5"/>
-      <node ref="J3" pin="1"/>
-      <node ref="U1" pin="7"/>
-      <node ref="U1" pin="15"/>
-      <node ref="U1" pin="13"/>
-      <node ref="U2" pin="7"/>
-      <node ref="U2" pin="5"/>
-      <node ref="U3" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C13" pin="2"/>
-    </net>
-    <net code="7" name="/5V">
-      <node ref="C9" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="TP2" pin="1"/>
-      <node ref="U3" pin="5"/>
-      <node ref="U4" pin="1"/>
-      <node ref="U4" pin="3"/>
-    </net>
-    <net code="8" name="Net-(U1-Pad14)">
-      <node ref="U1" pin="14"/>
-    </net>
-    <net code="9" name="Net-(Q1-Pad1)">
-      <node ref="R7" pin="1"/>
-      <node ref="Q1" pin="1"/>
-      <node ref="R1" pin="2"/>
-    </net>
-    <net code="10" name="Net-(J1-Pad1)">
-      <node ref="J1" pin="1"/>
-      <node ref="Q1" pin="2"/>
-    </net>
-    <net code="11" name="Net-(U1-Pad12)">
+    <net code="6" name="Net-(U1-Pad12)">
       <node ref="U1" pin="12"/>
     </net>
-    <net code="12" name="Net-(D1-Pad2)">
-      <node ref="U2" pin="1"/>
-      <node ref="U2" pin="1"/>
-      <node ref="D1" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="R1" pin="1"/>
+    <net code="7" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
     </net>
-    <net code="13" name="Net-(C3-Pad1)">
-      <node ref="U1" pin="9"/>
-      <node ref="R3" pin="1"/>
-      <node ref="C3" pin="1"/>
+    <net code="8" name="Net-(Q1-Pad1)">
+      <node ref="R7" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="Q1" pin="1"/>
     </net>
-    <net code="14" name="Net-(C4-Pad1)">
+    <net code="9" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1"/>
       <node ref="R4" pin="1"/>
       <node ref="U1" pin="8"/>
-      <node ref="C4" pin="1"/>
     </net>
-    <net code="15" name="/+48V">
+    <net code="10" name="Net-(J1-Pad1)">
+      <node ref="Q1" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="11" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="12" name="Net-(C3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="13" name="Net-(D3-Pad1)">
+      <node ref="R6" pin="1"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="14" name="/+48V">
       <node ref="U2" pin="3"/>
       <node ref="U2" pin="3"/>
       <node ref="J2" pin="1"/>
     </net>
-    <net code="16" name="Net-(R9-Pad1)">
-      <node ref="R9" pin="1"/>
+    <net code="15" name="Net-(R9-Pad1)">
       <node ref="U1" pin="2"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="16" name="SDA">
+      <node ref="J5" pin="1"/>
+      <node ref="U1" pin="11"/>
     </net>
     <net code="17" name="SCL">
-      <node ref="J5" pin="2"/>
       <node ref="U1" pin="10"/>
+      <node ref="J5" pin="2"/>
     </net>
-    <net code="18" name="SDA">
-      <node ref="U1" pin="11"/>
-      <node ref="J5" pin="1"/>
+    <net code="18" name="/5V">
+      <node ref="TP2" pin="1"/>
+      <node ref="U3" pin="5"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U4" pin="3"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C9" pin="1"/>
     </net>
-    <net code="19" name="Net-(U4-Pad4)">
-      <node ref="U4" pin="4"/>
-    </net>
-    <net code="20" name="Net-(U3-Pad4)">
+    <net code="19" name="Net-(U3-Pad4)">
       <node ref="U3" pin="4"/>
     </net>
-    <net code="21" name="+12V">
-      <node ref="D3" pin="2"/>
+    <net code="20" name="GND">
+      <node ref="C5" pin="2"/>
+      <node ref="U1" pin="13"/>
+      <node ref="U1" pin="15"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="J6" pin="2"/>
+      <node ref="U2" pin="7"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U1" pin="7"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U1" pin="5"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="21" name="Net-(U4-Pad4)">
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="22" name="+12V">
+      <node ref="C5" pin="1"/>
       <node ref="U1" pin="6"/>
+      <node ref="J4" pin="1"/>
+      <node ref="U1" pin="16"/>
+      <node ref="D3" pin="2"/>
       <node ref="U3" pin="3"/>
       <node ref="U3" pin="1"/>
-      <node ref="U1" pin="16"/>
-      <node ref="J4" pin="1"/>
       <node ref="C10" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="C6" pin="1"/>
       <node ref="C8" pin="1"/>
-    </net>
-    <net code="22" name="Net-(D3-Pad1)">
-      <node ref="R6" pin="1"/>
-      <node ref="D3" pin="1"/>
+      <node ref="C6" pin="1"/>
     </net>
   </nets>
 </export>
