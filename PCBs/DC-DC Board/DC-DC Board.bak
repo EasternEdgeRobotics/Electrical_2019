@@ -27,7 +27,7 @@ P 4850 3790
 F 0 "U1" H 4850 4655 50  0000 C CNN
 F 1 "DBQ0135V2" H 4850 4564 50  0000 C CNN
 F 2 "EER:MurataDC-DC" H 4850 3790 50  0001 C CNN
-F 3 "36-7770-ND" H 4850 3790 50  0001 C CNN
+F 3 "S5801-05-ND" H 4850 3790 50  0001 C CNN
 	1    4850 3790
 	1    0    0    -1  
 $EndComp
@@ -468,7 +468,7 @@ P 7140 5460
 F 0 "C5" H 7255 5506 50  0000 L CNN
 F 1 "1uF" H 7255 5415 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 7178 5310 50  0001 C CNN
-F 3 "~" H 7140 5460 50  0001 C CNN
+F 3 "399-1284-1-ND" H 7140 5460 50  0001 C CNN
 	1    7140 5460
 	1    0    0    -1  
 $EndComp
@@ -479,7 +479,7 @@ P 8140 5460
 F 0 "C7" H 8255 5506 50  0000 L CNN
 F 1 "1uF" H 8255 5415 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 8178 5310 50  0001 C CNN
-F 3 "~" H 8140 5460 50  0001 C CNN
+F 3 "399-1284-1-ND" H 8140 5460 50  0001 C CNN
 	1    8140 5460
 	1    0    0    -1  
 $EndComp
@@ -494,7 +494,7 @@ P 8640 5460
 F 0 "C9" H 8755 5506 50  0000 L CNN
 F 1 "1uF" H 8755 5415 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 8678 5310 50  0001 C CNN
-F 3 "~" H 8640 5460 50  0001 C CNN
+F 3 "399-1284-1-ND" H 8640 5460 50  0001 C CNN
 	1    8640 5460
 	1    0    0    -1  
 $EndComp
@@ -505,7 +505,7 @@ P 9640 5460
 F 0 "C11" H 9755 5506 50  0000 L CNN
 F 1 "1uF" H 9755 5415 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 9678 5310 50  0001 C CNN
-F 3 "1276-6471-1-ND" H 9640 5460 50  0001 C CNN
+F 3 "399-1284-1-ND" H 9640 5460 50  0001 C CNN
 	1    9640 5460
 	1    0    0    -1  
 $EndComp
@@ -1670,7 +1670,7 @@ P 3790 1995
 F 0 "C1" H 3905 2041 50  0000 L CNN
 F 1 "1uF" H 3905 1950 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3828 1845 50  0001 C CNN
-F 3 "1276-6471-1-ND" H 3790 1995 50  0001 C CNN
+F 3 "399-1284-1-ND" H 3790 1995 50  0001 C CNN
 	1    3790 1995
 	1    0    0    -1  
 $EndComp
@@ -1735,7 +1735,7 @@ P 10020 5460
 F 0 "C12" H 10135 5506 50  0000 L CNN
 F 1 "1uF" H 10135 5415 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 10058 5310 50  0001 C CNN
-F 3 "1276-6471-1-ND" H 10020 5460 50  0001 C CNN
+F 3 "399-1284-1-ND" H 10020 5460 50  0001 C CNN
 	1    10020 5460
 	1    0    0    -1  
 $EndComp
@@ -1801,7 +1801,7 @@ Wire Wire Line
 	2340 1790 2400 1790
 Text Notes 1500 1045 0    39   Italic 0
 Because of layout considerations, this current sensor is wired "backwards"\nfrom what it normally should be. This just means we are reading a negative \ncurrent when it should be positive. Simple software fix.\n
-Text Notes 1950 3960 0    50   Italic 10
+Text Notes 1910 3665 0    50   Italic 10
 Reverse Voltage\nPolarity Protection\n
 $Comp
 L Device:R R1
@@ -1872,13 +1872,13 @@ Wire Wire Line
 $Comp
 L Device:Q_NMOS_GDS Q1
 U 1 1 5BD739CF
-P 2340 4490
-F 0 "Q1" V 2683 4490 50  0000 C CNN
-F 1 "Q_NMOS_GDS" V 2592 4490 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TO-252-2" H 2540 4590 50  0001 C CNN
-F 3 "DMTH6004SK3-13DICT-ND" H 2340 4490 50  0001 C CNN
-	1    2340 4490
-	0    -1   -1   0   
+P 2340 4290
+F 0 "Q1" V 2683 4290 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 2592 4290 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-2" H 2540 4390 50  0001 C CNN
+F 3 "DMTH6004SK3-13DICT-ND" H 2340 4290 50  0001 C CNN
+	1    2340 4290
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	2540 4390 2960 4390
@@ -1887,12 +1887,6 @@ Wire Wire Line
 Connection ~ 2960 4390
 Wire Wire Line
 	2140 4390 1690 4390
-Wire Wire Line
-	2340 4690 2740 4690
-Wire Wire Line
-	2740 4690 2740 3780
-Wire Wire Line
-	2740 3780 2960 3780
 Connection ~ 2960 3780
 Wire Wire Line
 	2960 3780 2960 3840
@@ -1909,4 +1903,8 @@ Wire Wire Line
 Wire Wire Line
 	6050 3910 6050 4040
 Connection ~ 6850 3910
+Wire Wire Line
+	2340 3780 2340 4090
+Wire Wire Line
+	2340 3780 2960 3780
 $EndSCHEMATC
