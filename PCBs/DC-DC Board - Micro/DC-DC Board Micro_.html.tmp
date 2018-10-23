@@ -6,7 +6,7 @@
 <h2>KiBoM PCB Bill of Materials</h2>
 <table border="1">
 <tr><td>Source File</td><td>D:\ROV 2019\Github\2019\PCBs\DC-DC Board - Micro\DC-DC Board Micro.sch</td></tr>
-<tr><td>BoM Date</td><td>2018-10-22 1:18:04 AM</td></tr>
+<tr><td>BoM Date</td><td>2018-10-22 1:22:16 AM</td></tr>
 <tr><td>Schematic Version</td><td></td></tr>
 <tr><td>Schematic Date</td><td></td></tr>
 <tr><td>KiCad Version</td><td>Eeschema (5.0.0)</td></tr>
@@ -315,7 +315,7 @@
 	<td align="center" bgcolor=#FFE6B3>R_US</td>
 	<td align="center" bgcolor=#FFE6B3>R11</td>
 	<td align="center" bgcolor=#FFE6B3>150</td>
-	<td align="center" bgcolor=#FFE6B3>C_0603</td>
+	<td align="center" bgcolor=#FFE6B3>R_0603</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
 	<td align="center" bgcolor=#FFE6B3>RHM150DCT-ND</td>
 	<td align="center" bgcolor=#FF8080></td>
@@ -348,7 +348,7 @@
 	<td align="center" bgcolor=#FFE6B3>R_US</td>
 	<td align="center" bgcolor=#FFE6B3>R9</td>
 	<td align="center" bgcolor=#FFE6B3>330</td>
-	<td align="center" bgcolor=#FFE6B3>C_0603</td>
+	<td align="center" bgcolor=#FFE6B3>R_0603</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
 	<td align="center" bgcolor=#FFE6B3>RHM330DCT-ND</td>
 	<td align="center" bgcolor=#FF8080></td>
