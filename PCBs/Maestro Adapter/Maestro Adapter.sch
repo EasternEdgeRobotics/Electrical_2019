@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Maestro Adapter-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,28 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_01x12_Male J13
-U 1 1 5BCE744C
-P 1550 3800
-F 0 "J13" H 1656 4478 50  0000 C CNN
-F 1 "Conn_01x12_Male" H 1656 4387 50  0000 C CNN
-F 2 "through hole:1x12 through hole" H 1550 3800 50  0001 C CNN
-F 3 "~" H 1550 3800 50  0001 C CNN
-	1    1550 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x12_Male J12
-U 1 1 5BCE74E8
-P 2400 3800
-F 0 "J12" H 2506 4478 50  0000 C CNN
-F 1 "Conn_01x12_Male" H 2506 4387 50  0000 C CNN
-F 2 "through hole:1x12 through hole" H 2400 3800 50  0001 C CNN
-F 3 "~" H 2400 3800 50  0001 C CNN
-	1    2400 3800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Female J11
 U 1 1 5BCE7753
 P 4350 2600
@@ -48,38 +27,6 @@ F 3 "~" H 4350 2600 50  0001 C CNN
 $EndComp
 Text GLabel 4150 2700 0    50   Input ~ 0
 GND
-Wire Wire Line
-	1750 3300 1750 3400
-Connection ~ 1750 3400
-Wire Wire Line
-	1750 3400 1750 3500
-Connection ~ 1750 3500
-Wire Wire Line
-	1750 3500 1750 3600
-Connection ~ 1750 3600
-Wire Wire Line
-	1750 3600 1750 3700
-Connection ~ 1750 3700
-Wire Wire Line
-	1750 3700 1750 3800
-Connection ~ 1750 3800
-Wire Wire Line
-	1750 3800 1750 3900
-Connection ~ 1750 3900
-Wire Wire Line
-	1750 3900 1750 4000
-Connection ~ 1750 4000
-Wire Wire Line
-	1750 4000 1750 4100
-Connection ~ 1750 4100
-Wire Wire Line
-	1750 4100 1750 4200
-Connection ~ 1750 4200
-Wire Wire Line
-	1750 4200 1750 4300
-Connection ~ 1750 4300
-Wire Wire Line
-	1750 4300 1750 4400
 Text GLabel 1750 4400 3    50   Input ~ 0
 GND
 $Comp
@@ -255,44 +202,6 @@ Wire Wire Line
 	3250 3700 3250 3400
 Wire Wire Line
 	3250 3400 4150 3400
-Wire Wire Line
-	2600 3800 3350 3800
-Wire Wire Line
-	3350 3800 3350 3600
-Wire Wire Line
-	3350 3600 4150 3600
-Wire Wire Line
-	2600 3900 3450 3900
-Wire Wire Line
-	3450 3900 3450 3800
-Wire Wire Line
-	3450 3800 4150 3800
-Wire Wire Line
-	2600 4000 4150 4000
-Wire Wire Line
-	2600 4100 3450 4100
-Wire Wire Line
-	3450 4100 3450 4200
-Wire Wire Line
-	3450 4200 4150 4200
-Wire Wire Line
-	2600 4200 3350 4200
-Wire Wire Line
-	3350 4200 3350 4400
-Wire Wire Line
-	3350 4400 4150 4400
-Wire Wire Line
-	2600 4300 3250 4300
-Wire Wire Line
-	3250 4300 3250 4600
-Wire Wire Line
-	3250 4600 4150 4600
-Wire Wire Line
-	2600 4400 3150 4400
-Wire Wire Line
-	3150 4400 3150 4800
-Wire Wire Line
-	3150 4800 4150 4800
 $Bitmap
 Pos 9100 6900
 Scale 0.750000
@@ -1103,4 +1012,107 @@ A1 08 60 00 00 00 00 00 00 84 22 80 01 00 00 00 00 00 10 8A 00 06 00 00 00 00 00
 A6 F6 5E 0F BC D7 20 C5 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Connector:Conn_01x13_Male J12
+U 1 1 5BCF052F
+P 2400 3900
+F 0 "J12" H 2506 4678 50  0000 C CNN
+F 1 "Conn_01x13_Male" H 2506 4587 50  0000 C CNN
+F 2 "through hole:1x13 through hole" H 2400 3900 50  0001 C CNN
+F 3 "~" H 2400 3900 50  0001 C CNN
+	1    2400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x13_Male J13
+U 1 1 5BCF059F
+P 1550 3800
+F 0 "J13" H 1656 4578 50  0000 C CNN
+F 1 "Conn_01x13_Male" H 1656 4487 50  0000 C CNN
+F 2 "through hole:1x13 through hole" H 1550 3800 50  0001 C CNN
+F 3 "~" H 1550 3800 50  0001 C CNN
+	1    1550 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4500 2800 4500
+Wire Wire Line
+	2800 4500 2800 4800
+Wire Wire Line
+	2800 4800 4150 4800
+Wire Wire Line
+	2600 4400 2900 4400
+Wire Wire Line
+	2900 4400 2900 4600
+Wire Wire Line
+	2900 4600 4150 4600
+Wire Wire Line
+	2600 4300 3000 4300
+Wire Wire Line
+	3000 4300 3000 4400
+Wire Wire Line
+	3000 4400 4150 4400
+Wire Wire Line
+	2600 4200 4150 4200
+Wire Wire Line
+	2600 4100 3000 4100
+Wire Wire Line
+	3000 4100 3000 4000
+Wire Wire Line
+	3000 4000 4150 4000
+Wire Wire Line
+	2600 4000 2950 4000
+Wire Wire Line
+	2950 4000 2950 3900
+Wire Wire Line
+	2950 3900 3850 3900
+Wire Wire Line
+	3850 3900 3850 3800
+Wire Wire Line
+	3850 3800 4150 3800
+Wire Wire Line
+	2600 3900 2850 3900
+Wire Wire Line
+	2850 3900 2850 3800
+Wire Wire Line
+	2850 3800 3750 3800
+Wire Wire Line
+	3750 3800 3750 3600
+Wire Wire Line
+	3750 3600 4150 3600
+Wire Wire Line
+	1750 3200 1750 3300
+Connection ~ 1750 3300
+Wire Wire Line
+	1750 3300 1750 3400
+Connection ~ 1750 3400
+Wire Wire Line
+	1750 3400 1750 3500
+Connection ~ 1750 3500
+Wire Wire Line
+	1750 3500 1750 3600
+Connection ~ 1750 3600
+Wire Wire Line
+	1750 3600 1750 3700
+Connection ~ 1750 3700
+Wire Wire Line
+	1750 3700 1750 3800
+Connection ~ 1750 3800
+Wire Wire Line
+	1750 3800 1750 3900
+Connection ~ 1750 3900
+Wire Wire Line
+	1750 3900 1750 4000
+Connection ~ 1750 4000
+Wire Wire Line
+	1750 4000 1750 4100
+Connection ~ 1750 4100
+Wire Wire Line
+	1750 4100 1750 4200
+Connection ~ 1750 4200
+Wire Wire Line
+	1750 4200 1750 4300
+Connection ~ 1750 4300
+Wire Wire Line
+	1750 4300 1750 4400
 $EndSCHEMATC
