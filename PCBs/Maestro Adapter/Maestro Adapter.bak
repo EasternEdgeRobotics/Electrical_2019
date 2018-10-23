@@ -36,10 +36,10 @@ F 3 "~" H 2400 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Female J11
+L Connector:Conn_01x02_Female J0
 U 1 1 5BCE7753
 P 4350 2600
-F 0 "J11" H 4377 2576 50  0000 L CNN
+F 0 "J0" H 4377 2576 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 2485 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 2600 50  0001 C CNN
 F 3 "~" H 4350 2600 50  0001 C CNN
@@ -83,10 +83,10 @@ Wire Wire Line
 Text GLabel 1750 4400 3    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J10
+L Connector:Conn_01x02_Female J1
 U 1 1 5BCE786C
 P 4350 2800
-F 0 "J10" H 4377 2776 50  0000 L CNN
+F 0 "J1" H 4377 2776 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 2685 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 2800 50  0001 C CNN
 F 3 "~" H 4350 2800 50  0001 C CNN
@@ -96,10 +96,10 @@ $EndComp
 Text GLabel 4150 2900 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J9
+L Connector:Conn_01x02_Female J2
 U 1 1 5BCE7903
 P 4350 3000
-F 0 "J9" H 4377 2976 50  0000 L CNN
+F 0 "J2" H 4377 2976 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 2885 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 3000 50  0001 C CNN
 F 3 "~" H 4350 3000 50  0001 C CNN
@@ -109,10 +109,10 @@ $EndComp
 Text GLabel 4150 3100 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J8
+L Connector:Conn_01x02_Female J3
 U 1 1 5BCE79A1
 P 4350 3200
-F 0 "J8" H 4377 3176 50  0000 L CNN
+F 0 "J3" H 4377 3176 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3085 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 3200 50  0001 C CNN
 F 3 "~" H 4350 3200 50  0001 C CNN
@@ -122,10 +122,10 @@ $EndComp
 Text GLabel 4150 3300 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J7
+L Connector:Conn_01x02_Female J4
 U 1 1 5BCE7A3E
 P 4350 3400
-F 0 "J7" H 4377 3376 50  0000 L CNN
+F 0 "J4" H 4377 3376 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3285 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 3400 50  0001 C CNN
 F 3 "~" H 4350 3400 50  0001 C CNN
@@ -135,10 +135,10 @@ $EndComp
 Text GLabel 4150 3500 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J6
+L Connector:Conn_01x02_Female J5
 U 1 1 5BCE7ADE
 P 4350 3600
-F 0 "J6" H 4377 3576 50  0000 L CNN
+F 0 "J5" H 4377 3576 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3485 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 3600 50  0001 C CNN
 F 3 "~" H 4350 3600 50  0001 C CNN
@@ -148,10 +148,10 @@ $EndComp
 Text GLabel 4150 3700 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J5
+L Connector:Conn_01x02_Female J6
 U 1 1 5BCE7B81
 P 4350 3800
-F 0 "J5" H 4377 3776 50  0000 L CNN
+F 0 "J6" H 4377 3776 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3685 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 3800 50  0001 C CNN
 F 3 "~" H 4350 3800 50  0001 C CNN
@@ -161,10 +161,10 @@ $EndComp
 Text GLabel 4150 3900 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J4
+L Connector:Conn_01x02_Female J7
 U 1 1 5BCE7C21
 P 4350 4000
-F 0 "J4" H 4377 3976 50  0000 L CNN
+F 0 "J7" H 4377 3976 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3885 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 4000 50  0001 C CNN
 F 3 "~" H 4350 4000 50  0001 C CNN
@@ -174,10 +174,10 @@ $EndComp
 Text GLabel 4150 4100 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J3
+L Connector:Conn_01x02_Female J8
 U 1 1 5BCE7CC2
 P 4350 4200
-F 0 "J3" H 4377 4176 50  0000 L CNN
+F 0 "J8" H 4377 4176 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 4085 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 4200 50  0001 C CNN
 F 3 "~" H 4350 4200 50  0001 C CNN
@@ -187,10 +187,10 @@ $EndComp
 Text GLabel 4150 4300 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J2
+L Connector:Conn_01x02_Female J9
 U 1 1 5BCE7D64
 P 4350 4400
-F 0 "J2" H 4377 4376 50  0000 L CNN
+F 0 "J9" H 4377 4376 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 4285 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 4400 50  0001 C CNN
 F 3 "~" H 4350 4400 50  0001 C CNN
@@ -200,10 +200,10 @@ $EndComp
 Text GLabel 4150 4500 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J1
+L Connector:Conn_01x02_Female J10
 U 1 1 5BCE7E13
 P 4350 4600
-F 0 "J1" H 4377 4576 50  0000 L CNN
+F 0 "J10" H 4377 4576 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 4485 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 4600 50  0001 C CNN
 F 3 "~" H 4350 4600 50  0001 C CNN
@@ -213,10 +213,10 @@ $EndComp
 Text GLabel 4150 4700 0    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x02_Female J0
+L Connector:Conn_01x02_Female J11
 U 1 1 5BCE7EBF
 P 4350 4800
-F 0 "J0" H 4377 4776 50  0000 L CNN
+F 0 "J11" H 4377 4776 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 4685 50  0000 L CNN
 F 2 "through hole:1x2_molex_llc" H 4350 4800 50  0001 C CNN
 F 3 "~" H 4350 4800 50  0001 C CNN
