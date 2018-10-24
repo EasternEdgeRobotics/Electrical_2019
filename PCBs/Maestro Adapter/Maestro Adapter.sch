@@ -20,7 +20,7 @@ U 1 1 5BCE7753
 P 4350 2600
 F 0 "J11" H 4377 2576 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 2485 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 2600 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 2600 50  0001 C CNN
 F 3 "~" H 4350 2600 50  0001 C CNN
 	1    4350 2600
 	1    0    0    -1  
@@ -35,7 +35,7 @@ U 1 1 5BCE786C
 P 4350 2800
 F 0 "J10" H 4377 2776 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 2685 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 2800 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 2800 50  0001 C CNN
 F 3 "~" H 4350 2800 50  0001 C CNN
 	1    4350 2800
 	1    0    0    -1  
@@ -48,7 +48,7 @@ U 1 1 5BCE7903
 P 4350 3000
 F 0 "J9" H 4377 2976 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 2885 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 3000 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 3000 50  0001 C CNN
 F 3 "~" H 4350 3000 50  0001 C CNN
 	1    4350 3000
 	1    0    0    -1  
@@ -61,7 +61,7 @@ U 1 1 5BCE79A1
 P 4350 3200
 F 0 "J8" H 4377 3176 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3085 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 3200 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 3200 50  0001 C CNN
 F 3 "~" H 4350 3200 50  0001 C CNN
 	1    4350 3200
 	1    0    0    -1  
@@ -74,7 +74,7 @@ U 1 1 5BCE7A3E
 P 4350 3400
 F 0 "J7" H 4377 3376 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3285 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 3400 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 3400 50  0001 C CNN
 F 3 "~" H 4350 3400 50  0001 C CNN
 	1    4350 3400
 	1    0    0    -1  
@@ -87,7 +87,7 @@ U 1 1 5BCE7ADE
 P 4350 3600
 F 0 "J6" H 4377 3576 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3485 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 3600 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 3600 50  0001 C CNN
 F 3 "~" H 4350 3600 50  0001 C CNN
 	1    4350 3600
 	1    0    0    -1  
@@ -100,7 +100,7 @@ U 1 1 5BCE7B81
 P 4350 3800
 F 0 "J5" H 4377 3776 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3685 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 3800 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 3800 50  0001 C CNN
 F 3 "~" H 4350 3800 50  0001 C CNN
 	1    4350 3800
 	1    0    0    -1  
@@ -113,7 +113,7 @@ U 1 1 5BCE7C21
 P 4350 4000
 F 0 "J4" H 4377 3976 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 3885 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 4000 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 4000 50  0001 C CNN
 F 3 "~" H 4350 4000 50  0001 C CNN
 	1    4350 4000
 	1    0    0    -1  
@@ -126,7 +126,7 @@ U 1 1 5BCE7CC2
 P 4350 4200
 F 0 "J3" H 4377 4176 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 4085 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 4200 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 4200 50  0001 C CNN
 F 3 "~" H 4350 4200 50  0001 C CNN
 	1    4350 4200
 	1    0    0    -1  
@@ -139,7 +139,7 @@ U 1 1 5BCE7D64
 P 4350 4400
 F 0 "J2" H 4377 4376 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 4285 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 4400 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 4400 50  0001 C CNN
 F 3 "~" H 4350 4400 50  0001 C CNN
 	1    4350 4400
 	1    0    0    -1  
@@ -152,7 +152,7 @@ U 1 1 5BCE7E13
 P 4350 4600
 F 0 "J1" H 4377 4576 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 4485 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 4600 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 4600 50  0001 C CNN
 F 3 "~" H 4350 4600 50  0001 C CNN
 	1    4350 4600
 	1    0    0    -1  
@@ -165,7 +165,7 @@ U 1 1 5BCE7EBF
 P 4350 4800
 F 0 "J0" H 4377 4776 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4377 4685 50  0000 L CNN
-F 2 "through hole:1x2_molex_llc" H 4350 4800 50  0001 C CNN
+F 2 "EER:1x2_molex_llc" H 4350 4800 50  0001 C CNN
 F 3 "~" H 4350 4800 50  0001 C CNN
 	1    4350 4800
 	1    0    0    -1  
