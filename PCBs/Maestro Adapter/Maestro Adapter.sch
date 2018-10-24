@@ -25,10 +25,6 @@ F 3 "~" H 4350 2600 50  0001 C CNN
 	1    4350 2600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 2700 0    50   Input ~ 0
-GND
-Text GLabel 1750 4400 3    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J10
 U 1 1 5BCE786C
@@ -40,8 +36,6 @@ F 3 "~" H 4350 2800 50  0001 C CNN
 	1    4350 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 2900 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J9
 U 1 1 5BCE7903
@@ -53,8 +47,6 @@ F 3 "~" H 4350 3000 50  0001 C CNN
 	1    4350 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 3100 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J8
 U 1 1 5BCE79A1
@@ -66,8 +58,6 @@ F 3 "~" H 4350 3200 50  0001 C CNN
 	1    4350 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 3300 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J7
 U 1 1 5BCE7A3E
@@ -79,8 +69,6 @@ F 3 "~" H 4350 3400 50  0001 C CNN
 	1    4350 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 3500 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J6
 U 1 1 5BCE7ADE
@@ -92,8 +80,6 @@ F 3 "~" H 4350 3600 50  0001 C CNN
 	1    4350 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 3700 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J5
 U 1 1 5BCE7B81
@@ -105,8 +91,6 @@ F 3 "~" H 4350 3800 50  0001 C CNN
 	1    4350 3800
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 3900 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J4
 U 1 1 5BCE7C21
@@ -118,8 +102,6 @@ F 3 "~" H 4350 4000 50  0001 C CNN
 	1    4350 4000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 4100 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J3
 U 1 1 5BCE7CC2
@@ -131,8 +113,6 @@ F 3 "~" H 4350 4200 50  0001 C CNN
 	1    4350 4200
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 4300 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J2
 U 1 1 5BCE7D64
@@ -144,8 +124,6 @@ F 3 "~" H 4350 4400 50  0001 C CNN
 	1    4350 4400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 4500 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 5BCE7E13
@@ -157,8 +135,6 @@ F 3 "~" H 4350 4600 50  0001 C CNN
 	1    4350 4600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 4700 0    50   Input ~ 0
-GND
 $Comp
 L Connector:Conn_01x02_Female J0
 U 1 1 5BCE7EBF
@@ -170,8 +146,6 @@ F 3 "~" H 4350 4800 50  0001 C CNN
 	1    4350 4800
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 4900 0    50   Input ~ 0
-GND
 Wire Wire Line
 	2600 3300 2850 3300
 Wire Wire Line
@@ -1026,12 +1000,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x13_Male J13
 U 1 1 5BCF059F
-P 1550 3800
-F 0 "J13" H 1656 4578 50  0000 C CNN
-F 1 "Conn_01x13_Male" H 1656 4487 50  0000 C CNN
-F 2 "through hole:1x13 through hole" H 1550 3800 50  0001 C CNN
-F 3 "~" H 1550 3800 50  0001 C CNN
-	1    1550 3800
+P 1700 3900
+F 0 "J13" H 1806 4678 50  0000 C CNN
+F 1 "Conn_01x13_Male" H 1806 4587 50  0000 C CNN
+F 2 "through hole:1x13 through hole" H 1700 3900 50  0001 C CNN
+F 3 "~" H 1700 3900 50  0001 C CNN
+	1    1700 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1081,38 +1055,182 @@ Wire Wire Line
 Wire Wire Line
 	3750 3600 4150 3600
 Wire Wire Line
-	1750 3200 1750 3300
-Connection ~ 1750 3300
+	1900 3300 1900 3400
+Connection ~ 1900 3400
 Wire Wire Line
-	1750 3300 1750 3400
-Connection ~ 1750 3400
+	1900 3400 1900 3500
+Connection ~ 1900 3500
 Wire Wire Line
-	1750 3400 1750 3500
-Connection ~ 1750 3500
+	1900 3500 1900 3600
+Connection ~ 1900 3600
 Wire Wire Line
-	1750 3500 1750 3600
-Connection ~ 1750 3600
+	1900 3600 1900 3700
+Connection ~ 1900 3700
 Wire Wire Line
-	1750 3600 1750 3700
-Connection ~ 1750 3700
+	1900 3700 1900 3800
+Connection ~ 1900 3800
 Wire Wire Line
-	1750 3700 1750 3800
-Connection ~ 1750 3800
+	1900 3800 1900 3900
+Connection ~ 1900 3900
 Wire Wire Line
-	1750 3800 1750 3900
-Connection ~ 1750 3900
+	1900 3900 1900 4000
+Connection ~ 1900 4000
 Wire Wire Line
-	1750 3900 1750 4000
-Connection ~ 1750 4000
+	1900 4000 1900 4100
+Connection ~ 1900 4100
 Wire Wire Line
-	1750 4000 1750 4100
-Connection ~ 1750 4100
+	1900 4100 1900 4200
+Connection ~ 1900 4200
 Wire Wire Line
-	1750 4100 1750 4200
-Connection ~ 1750 4200
+	1900 4200 1900 4300
+Connection ~ 1900 4300
 Wire Wire Line
-	1750 4200 1750 4300
-Connection ~ 1750 4300
+	1900 4300 1900 4400
+Connection ~ 1900 4400
 Wire Wire Line
-	1750 4300 1750 4400
+	1900 4400 1900 4500
+$Comp
+L power:GND #PWR0101
+U 1 1 5BCFD261
+P 1900 4500
+F 0 "#PWR0101" H 1900 4250 50  0001 C CNN
+F 1 "GND" H 1905 4327 50  0000 C CNN
+F 2 "" H 1900 4500 50  0001 C CNN
+F 3 "" H 1900 4500 50  0001 C CNN
+	1    1900 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 4500
+$Comp
+L power:GND #PWR0102
+U 1 1 5BCFD44A
+P 4150 2700
+F 0 "#PWR0102" H 4150 2450 50  0001 C CNN
+F 1 "GND" V 4155 2572 50  0000 R CNN
+F 2 "" H 4150 2700 50  0001 C CNN
+F 3 "" H 4150 2700 50  0001 C CNN
+	1    4150 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5BCFD47F
+P 4150 2900
+F 0 "#PWR0103" H 4150 2650 50  0001 C CNN
+F 1 "GND" V 4155 2772 50  0000 R CNN
+F 2 "" H 4150 2900 50  0001 C CNN
+F 3 "" H 4150 2900 50  0001 C CNN
+	1    4150 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5BCFD4B4
+P 4150 3100
+F 0 "#PWR0104" H 4150 2850 50  0001 C CNN
+F 1 "GND" V 4155 2972 50  0000 R CNN
+F 2 "" H 4150 3100 50  0001 C CNN
+F 3 "" H 4150 3100 50  0001 C CNN
+	1    4150 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5BCFD4E9
+P 4150 3300
+F 0 "#PWR0105" H 4150 3050 50  0001 C CNN
+F 1 "GND" V 4155 3172 50  0000 R CNN
+F 2 "" H 4150 3300 50  0001 C CNN
+F 3 "" H 4150 3300 50  0001 C CNN
+	1    4150 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5BCFD51E
+P 4150 3500
+F 0 "#PWR0106" H 4150 3250 50  0001 C CNN
+F 1 "GND" V 4155 3372 50  0000 R CNN
+F 2 "" H 4150 3500 50  0001 C CNN
+F 3 "" H 4150 3500 50  0001 C CNN
+	1    4150 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5BCFD553
+P 4150 3700
+F 0 "#PWR0107" H 4150 3450 50  0001 C CNN
+F 1 "GND" V 4155 3572 50  0000 R CNN
+F 2 "" H 4150 3700 50  0001 C CNN
+F 3 "" H 4150 3700 50  0001 C CNN
+	1    4150 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5BCFD588
+P 4150 3900
+F 0 "#PWR0108" H 4150 3650 50  0001 C CNN
+F 1 "GND" V 4155 3772 50  0000 R CNN
+F 2 "" H 4150 3900 50  0001 C CNN
+F 3 "" H 4150 3900 50  0001 C CNN
+	1    4150 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5BCFD5BD
+P 4150 4100
+F 0 "#PWR0109" H 4150 3850 50  0001 C CNN
+F 1 "GND" V 4155 3972 50  0000 R CNN
+F 2 "" H 4150 4100 50  0001 C CNN
+F 3 "" H 4150 4100 50  0001 C CNN
+	1    4150 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5BCFD5F2
+P 4150 4300
+F 0 "#PWR0110" H 4150 4050 50  0001 C CNN
+F 1 "GND" V 4155 4172 50  0000 R CNN
+F 2 "" H 4150 4300 50  0001 C CNN
+F 3 "" H 4150 4300 50  0001 C CNN
+	1    4150 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5BCFD627
+P 4150 4500
+F 0 "#PWR0111" H 4150 4250 50  0001 C CNN
+F 1 "GND" V 4155 4372 50  0000 R CNN
+F 2 "" H 4150 4500 50  0001 C CNN
+F 3 "" H 4150 4500 50  0001 C CNN
+	1    4150 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5BCFD65C
+P 4150 4700
+F 0 "#PWR0112" H 4150 4450 50  0001 C CNN
+F 1 "GND" V 4155 4572 50  0000 R CNN
+F 2 "" H 4150 4700 50  0001 C CNN
+F 3 "" H 4150 4700 50  0001 C CNN
+	1    4150 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5BCFD691
+P 4150 4900
+F 0 "#PWR0113" H 4150 4650 50  0001 C CNN
+F 1 "GND" V 4155 4772 50  0000 R CNN
+F 2 "" H 4150 4900 50  0001 C CNN
+F 3 "" H 4150 4900 50  0001 C CNN
+	1    4150 4900
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
