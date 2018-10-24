@@ -1,0 +1,21 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Unpolarized capacitor,C,C1 C2 C3 C4,C,C_0805_HandSoldering,4,~
+2,,SFW15R-1STE1LF,J3 J4,Camera FPC Connector,CON15_1X15_DRB_SFW,2,609-1905-1-ND
+3,"Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x20_Odd_Even,J5,Raspberry Pi GPIO,Pin_Header_Straight_2x20_Pitch2.54mm,1,S9200-ND
+4,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02,J1 J2,Servo Input,MOLEX_0705530001,2,WM4900-ND
+5,,10029449-001RLF,P1 P2,HDMI Connector,FCI_10029449-001RLF,2,609-4614-1-ND
+
+
+
+
+
+Component Groups:,5
+Component Count:,11
+Fitted Components:,11
+Number of PCBs:,1
+Total components:,11
+Schematic Version:,
+Schematic Date:,
+BoM Date:,2018-10-19 10:46:09 PM
+Schematic Source:,D:\ROV 2019\Github\2019\PCBs\Dual CamCon\Dual CamCon.sch
+KiCad Version:,Eeschema (5.0.0)
