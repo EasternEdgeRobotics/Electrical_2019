@@ -1,13 +1,13 @@
 (export (version D)
   (design
-    (source "C:\\Users\\David\\Documents\\eastern_edge_git\\2019\\PCBs\\Maestro Adapter\\Maestro Adapter.sch")
-    (date "24/10/2018 9:59:21 PM")
-    (tool "Eeschema (5.0.0)")
+    (source "D:\\My Documents\\eastern_edge_git\\2019\\PCBs\\Maestro Adapter\\Maestro Adapter.sch")
+    (date "10/24/2018 10:25:13 PM")
+    (tool "Eeschema (5.0.1)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "Maetro Adapter")
         (company "Eastern Edge Robotics")
-        (rev)
+        (rev 4)
         (date)
         (source "Maestro Adapter.sch")
         (comment (number 1) (value ""))
@@ -209,9 +209,9 @@
         (pin (num 38) (name Pin_38) (type passive)))))
   (libraries
     (library (logical Connector)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib"))
+      (uri "D:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib"))
     (library (logical Connector_Generic)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector_Generic.lib")))
+      (uri "D:\\Program Files\\KiCad\\share\\kicad\\library/Connector_Generic.lib")))
   (nets
     (net (code 1) (name GND)
       (node (ref J18) (pin 35))
