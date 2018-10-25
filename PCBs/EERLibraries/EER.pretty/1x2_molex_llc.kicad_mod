@@ -1,4 +1,4 @@
-(module 1x2_molex_llc (layer F.Cu) (tedit 5BD12A9B)
+(module 1x2_molex_llc (layer F.Cu) (tedit 5BD1D88E)
   (fp_text reference "Channel " (at 5.87 -3.65 90) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
@@ -17,7 +17,7 @@
   (model "D:/ROV 2019/Github/2019/PCBs/EERLibraries/3D Models/705430001.STEP"
     (offset (xyz 2.51 3.8 7.93))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 -90))
+    (rotate (xyz 0 0 90))
   )
   (model "D:/My Documents/eastern_edge_git/2019/PCBs/EERLibraries/3D Models/705430001.STEP"
     (offset (xyz 2.51 3.8 7.93))
@@ -27,6 +27,6 @@
   (model "C:/Users/David/Documents/eastern_edge_git/2019/PCBs/EERLibraries/3D Models/705430001.STEP"
     (offset (xyz 2.51 3.8 7.93))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 -90))
+    (rotate (xyz 0 0 90))
   )
 )
