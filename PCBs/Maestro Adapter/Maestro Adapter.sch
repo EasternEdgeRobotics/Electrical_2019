@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Maetro Adapter"
 Date ""
-Rev ""
+Rev "4"
 Comp "Eastern Edge Robotics"
 Comment1 ""
 Comment2 ""
@@ -147,35 +147,15 @@ F 3 "~" H 4350 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 3300 2850 3300
+	3400 3300 3400 2600
 Wire Wire Line
-	2850 3300 2850 2600
+	3450 3400 3450 2800
 Wire Wire Line
-	2850 2600 4150 2600
+	3500 3500 3500 3000
 Wire Wire Line
-	2600 3400 2950 3400
+	3550 3600 3550 3200
 Wire Wire Line
-	2950 3400 2950 2800
-Wire Wire Line
-	2950 2800 4150 2800
-Wire Wire Line
-	2600 3500 3050 3500
-Wire Wire Line
-	3050 3500 3050 3000
-Wire Wire Line
-	3050 3000 4150 3000
-Wire Wire Line
-	2600 3600 3150 3600
-Wire Wire Line
-	3150 3600 3150 3200
-Wire Wire Line
-	3150 3200 4150 3200
-Wire Wire Line
-	2600 3700 3250 3700
-Wire Wire Line
-	3250 3700 3250 3400
-Wire Wire Line
-	3250 3400 4150 3400
+	3600 3700 3600 3400
 $Bitmap
 Pos 9100 6900
 Scale 0.750000
@@ -986,28 +966,6 @@ A1 08 60 00 00 00 00 00 00 84 22 80 01 00 00 00 00 00 10 8A 00 06 00 00 00 00 00
 A6 F6 5E 0F BC D7 20 C5 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-$Comp
-L Connector:Conn_01x13_Male J12
-U 1 1 5BCF052F
-P 2400 3900
-F 0 "J12" H 2506 4678 50  0000 C CNN
-F 1 "Conn_01x13_Male" H 2506 4587 50  0000 C CNN
-F 2 "through hole:1x13 through hole" H 2400 3900 50  0001 C CNN
-F 3 "~" H 2400 3900 50  0001 C CNN
-	1    2400 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x13_Male J13
-U 1 1 5BCF059F
-P 1700 3900
-F 0 "J13" H 1806 4678 50  0000 C CNN
-F 1 "Conn_01x13_Male" H 1806 4587 50  0000 C CNN
-F 2 "through hole:1x13 through hole" H 1700 3900 50  0001 C CNN
-F 3 "~" H 1700 3900 50  0001 C CNN
-	1    1700 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 4500 2800 4500
 Wire Wire Line
@@ -1045,62 +1003,9 @@ Wire Wire Line
 Wire Wire Line
 	3850 3800 4150 3800
 Wire Wire Line
-	2600 3900 2850 3900
-Wire Wire Line
-	2850 3900 2850 3800
-Wire Wire Line
-	2850 3800 3750 3800
-Wire Wire Line
 	3750 3800 3750 3600
 Wire Wire Line
 	3750 3600 4150 3600
-Wire Wire Line
-	1900 3300 1900 3400
-Connection ~ 1900 3400
-Wire Wire Line
-	1900 3400 1900 3500
-Connection ~ 1900 3500
-Wire Wire Line
-	1900 3500 1900 3600
-Connection ~ 1900 3600
-Wire Wire Line
-	1900 3600 1900 3700
-Connection ~ 1900 3700
-Wire Wire Line
-	1900 3700 1900 3800
-Connection ~ 1900 3800
-Wire Wire Line
-	1900 3800 1900 3900
-Connection ~ 1900 3900
-Wire Wire Line
-	1900 3900 1900 4000
-Connection ~ 1900 4000
-Wire Wire Line
-	1900 4000 1900 4100
-Connection ~ 1900 4100
-Wire Wire Line
-	1900 4100 1900 4200
-Connection ~ 1900 4200
-Wire Wire Line
-	1900 4200 1900 4300
-Connection ~ 1900 4300
-Wire Wire Line
-	1900 4300 1900 4400
-Connection ~ 1900 4400
-Wire Wire Line
-	1900 4400 1900 4500
-$Comp
-L power:GND #PWR0101
-U 1 1 5BCFD261
-P 1900 4500
-F 0 "#PWR0101" H 1900 4250 50  0001 C CNN
-F 1 "GND" H 1905 4327 50  0000 C CNN
-F 2 "" H 1900 4500 50  0001 C CNN
-F 3 "" H 1900 4500 50  0001 C CNN
-	1    1900 4500
-	1    0    0    -1  
-$EndComp
-Connection ~ 1900 4500
 $Comp
 L power:GND #PWR0102
 U 1 1 5BCFD44A
@@ -1233,4 +1138,270 @@ F 3 "" H 4150 4900 50  0001 C CNN
 	1    4150 4900
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x19_Counter_Clockwise J18
+U 1 1 5BD10CE4
+P 2400 3600
+F 0 "J18" H 2450 2475 50  0000 C CNN
+F 1 "Conn_02x19_Counter_Clockwise" H 2450 2566 50  0000 C CNN
+F 2 "EER:18ChannelMaestro" H 2400 3600 50  0001 C CNN
+F 3 "~" H 2400 3600 50  0001 C CNN
+	1    2400 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 3800 3750 3800
+$Comp
+L Connector:Conn_01x02_Female J12
+U 1 1 5BD128EC
+P 4350 2350
+F 0 "J12" H 4377 2326 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4377 2235 50  0000 L CNN
+F 2 "EER:1x2_molex_llc" H 4350 2350 50  0001 C CNN
+F 3 "~" H 4350 2350 50  0001 C CNN
+	1    4350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BD128F4
+P 4150 2450
+F 0 "#PWR0101" H 4150 2200 50  0001 C CNN
+F 1 "GND" V 4155 2322 50  0000 R CNN
+F 2 "" H 4150 2450 50  0001 C CNN
+F 3 "" H 4150 2450 50  0001 C CNN
+	1    4150 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J13
+U 1 1 5BD12F92
+P 4350 2150
+F 0 "J13" H 4377 2126 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4377 2035 50  0000 L CNN
+F 2 "EER:1x2_molex_llc" H 4350 2150 50  0001 C CNN
+F 3 "~" H 4350 2150 50  0001 C CNN
+	1    4350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5BD12F9A
+P 4150 2250
+F 0 "#PWR0114" H 4150 2000 50  0001 C CNN
+F 1 "GND" V 4155 2122 50  0000 R CNN
+F 2 "" H 4150 2250 50  0001 C CNN
+F 3 "" H 4150 2250 50  0001 C CNN
+	1    4150 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J14
+U 1 1 5BD13671
+P 4350 1950
+F 0 "J14" H 4377 1926 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4377 1835 50  0000 L CNN
+F 2 "EER:1x2_molex_llc" H 4350 1950 50  0001 C CNN
+F 3 "~" H 4350 1950 50  0001 C CNN
+	1    4350 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5BD13679
+P 4150 2050
+F 0 "#PWR0115" H 4150 1800 50  0001 C CNN
+F 1 "GND" V 4155 1922 50  0000 R CNN
+F 2 "" H 4150 2050 50  0001 C CNN
+F 3 "" H 4150 2050 50  0001 C CNN
+	1    4150 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J15
+U 1 1 5BD13DC1
+P 4350 1750
+F 0 "J15" H 4377 1726 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4377 1635 50  0000 L CNN
+F 2 "EER:1x2_molex_llc" H 4350 1750 50  0001 C CNN
+F 3 "~" H 4350 1750 50  0001 C CNN
+	1    4350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5BD13DC9
+P 4150 1850
+F 0 "#PWR0116" H 4150 1600 50  0001 C CNN
+F 1 "GND" V 4155 1722 50  0000 R CNN
+F 2 "" H 4150 1850 50  0001 C CNN
+F 3 "" H 4150 1850 50  0001 C CNN
+	1    4150 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J16
+U 1 1 5BD14590
+P 4350 1550
+F 0 "J16" H 4377 1526 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4377 1435 50  0000 L CNN
+F 2 "EER:1x2_molex_llc" H 4350 1550 50  0001 C CNN
+F 3 "~" H 4350 1550 50  0001 C CNN
+	1    4350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5BD14598
+P 4150 1650
+F 0 "#PWR0117" H 4150 1400 50  0001 C CNN
+F 1 "GND" V 4155 1522 50  0000 R CNN
+F 2 "" H 4150 1650 50  0001 C CNN
+F 3 "" H 4150 1650 50  0001 C CNN
+	1    4150 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J17
+U 1 1 5BD14DE6
+P 4350 1350
+F 0 "J17" H 4377 1326 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4377 1235 50  0000 L CNN
+F 2 "EER:1x2_molex_llc" H 4350 1350 50  0001 C CNN
+F 3 "~" H 4350 1350 50  0001 C CNN
+	1    4350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5BD14DEE
+P 4150 1450
+F 0 "#PWR0118" H 4150 1200 50  0001 C CNN
+F 1 "GND" V 4155 1322 50  0000 R CNN
+F 2 "" H 4150 1450 50  0001 C CNN
+F 3 "" H 4150 1450 50  0001 C CNN
+	1    4150 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 2700 3100 1350
+Wire Wire Line
+	3150 2800 3150 1550
+Wire Wire Line
+	3200 2900 3200 1750
+Wire Wire Line
+	3600 3400 4150 3400
+Wire Wire Line
+	3550 3200 4150 3200
+Wire Wire Line
+	3500 3000 4150 3000
+Wire Wire Line
+	3450 2800 4150 2800
+Wire Wire Line
+	3400 2600 4150 2600
+Wire Wire Line
+	2600 3300 3400 3300
+Wire Wire Line
+	2600 3400 3450 3400
+Wire Wire Line
+	2600 3500 3500 3500
+Wire Wire Line
+	2600 3600 3550 3600
+Wire Wire Line
+	2600 3700 3600 3700
+Wire Wire Line
+	2600 3200 3350 3200
+Wire Wire Line
+	3350 3200 3350 2350
+Wire Wire Line
+	3350 2350 4150 2350
+Wire Wire Line
+	2600 3100 3300 3100
+Wire Wire Line
+	3300 3100 3300 2150
+Wire Wire Line
+	3300 2150 4150 2150
+Wire Wire Line
+	2600 3000 3250 3000
+Wire Wire Line
+	3250 3000 3250 1950
+Wire Wire Line
+	3250 1950 4150 1950
+Wire Wire Line
+	3200 1750 4150 1750
+Wire Wire Line
+	3150 1550 4150 1550
+Wire Wire Line
+	3100 1350 4150 1350
+Wire Wire Line
+	2600 2700 3100 2700
+Wire Wire Line
+	2600 2800 3150 2800
+Wire Wire Line
+	2600 2900 3200 2900
+Wire Wire Line
+	2100 2700 2100 2800
+Connection ~ 2100 2800
+Wire Wire Line
+	2100 2800 2100 2900
+Connection ~ 2100 2900
+Wire Wire Line
+	2100 2900 2100 3000
+Connection ~ 2100 3000
+Wire Wire Line
+	2100 3000 2100 3100
+Connection ~ 2100 3100
+Wire Wire Line
+	2100 3100 2100 3200
+Connection ~ 2100 3200
+Wire Wire Line
+	2100 3200 2100 3300
+Connection ~ 2100 3300
+Wire Wire Line
+	2100 3300 2100 3400
+Connection ~ 2100 3400
+Wire Wire Line
+	2100 3400 2100 3500
+Connection ~ 2100 3500
+Wire Wire Line
+	2100 3500 2100 3600
+Connection ~ 2100 3600
+Wire Wire Line
+	2100 3600 2100 3700
+Connection ~ 2100 3700
+Wire Wire Line
+	2100 3700 2100 3800
+Connection ~ 2100 3800
+Wire Wire Line
+	2100 3800 2100 3900
+Connection ~ 2100 3900
+Wire Wire Line
+	2100 3900 2100 4000
+Connection ~ 2100 4000
+Wire Wire Line
+	2100 4000 2100 4100
+Connection ~ 2100 4100
+Wire Wire Line
+	2100 4100 2100 4200
+Connection ~ 2100 4200
+Wire Wire Line
+	2100 4200 2100 4300
+Connection ~ 2100 4300
+Wire Wire Line
+	2100 4300 2100 4400
+Connection ~ 2100 4400
+Wire Wire Line
+	2100 4400 2100 4500
+$Comp
+L power:GND #PWR0119
+U 1 1 5BD28C9A
+P 2100 4500
+F 0 "#PWR0119" H 2100 4250 50  0001 C CNN
+F 1 "GND" H 2105 4327 50  0000 C CNN
+F 2 "" H 2100 4500 50  0001 C CNN
+F 3 "" H 2100 4500 50  0001 C CNN
+	1    2100 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2100 4500
 $EndSCHEMATC
