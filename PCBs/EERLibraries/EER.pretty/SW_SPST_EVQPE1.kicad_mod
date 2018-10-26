@@ -1,4 +1,4 @@
-(module SW_SPST_EVQPE1 (layer F.Cu) (tedit 5BCD3366)
+(module SW_SPST_EVQPE1 (layer F.Cu) (tedit 5BD28B00)
   (descr "Light Touch Switch, https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000CE7.pdf")
   (attr smd)
   (fp_text reference SW1 (at -4.1 -1.3) (layer F.SilkS)
@@ -30,12 +30,7 @@
   )
   (pad 1 smd rect (at -2.7 0) (size 2 1.6) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 2.7 0) (size 2 1.6) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Buttons_Switches_SMD.3dshapes/SW_SPST_EVQPE1.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
-  (model "D:/ROV 2019/Github/2019/PCBs/EERLibraries/3D Models/KSR251GLFS.STEP"
+  (model "../EERLibraries/3D Models/KSR251GLFS.STEP"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

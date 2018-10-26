@@ -1,4 +1,4 @@
-(module MurataDC-DC locked (layer F.Cu) (tedit 5BC6985D)
+(module MurataDC-DC locked (layer F.Cu) (tedit 5BD28A45)
   (zone_connect 2)
   (fp_text reference U1 (at 0 16.51) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
@@ -36,7 +36,7 @@
     (zone_connect 2))
   (pad 15 thru_hole circle (at 26.4 4) (size 1.5 1.5) (drill 0.82) (layers *.Cu *.Mask)
     (zone_connect 2))
-  (model "D:/ROV 2019/Github/2019/PCBs/EERLibraries/3D Models/Murata DC_DC.STEP"
+  (model "../EERLibraries/3D Models/Murata DC_DC.STEP"
     (offset (xyz -25.47 -26.25 -51.31))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

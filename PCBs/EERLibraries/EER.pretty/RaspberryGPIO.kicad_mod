@@ -1,4 +1,4 @@
-(module RaspberryGPIO (layer F.Cu) (tedit 5BBA8730)
+(module RaspberryGPIO (layer F.Cu) (tedit 5BD28A8C)
   (descr "Through hole straight pin header, 2x20, 2.54mm pitch, double rows")
   (tags "Through hole pin header THT 2x20 2.54mm double row")
   (fp_text reference J5 (at 1.27 -2.33) (layer F.SilkS)
@@ -67,7 +67,7 @@
   (pad 3 thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad 2 thru_hole oval (at 2.54 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
-  (model "D:/ROV 2019/Github/2019/PCBs/EERLibraries/3D Models/66953-020LF.STEP"
+  (model "../EERLibraries/3D Models/66953-020LF.STEP"
     (offset (xyz 1.27 -24.15 -1.65))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 180 -90))

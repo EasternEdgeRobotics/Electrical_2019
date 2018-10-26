@@ -1,8 +1,8 @@
-(module CON15_1X15_DRB_SFW (layer F.Cu) (tedit 5BB95EBC)
+(module CON15_1X15_DRB_SFW (layer F.Cu) (tedit 5BD289C6)
   (fp_text reference J1 (at 12.7 -1.27) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)) (justify right top))
   )
-  (fp_text value "" (at 8.89 0) (layer F.SilkS) hide
+  (fp_text value Val** (at 8.89 0) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)) (justify right top))
   )
   (fp_line (start -10.414 -8.2804) (end -10.414 -2.7432) (layer F.Fab) (width 0.1524))
@@ -48,7 +48,7 @@
     (solder_mask_margin 0.1016))
   (pad 15 smd rect (at 7 -2.7559 270) (size 2.0066 0.6096) (layers F.Cu F.Paste F.Mask)
     (solder_mask_margin 0.1016))
-  (model "D:/ROV 2019/Github/2019/PCBs/EERLibraries/3D Models/ssfw15r_1_3st_lf.STEP"
+  (model "../EERLibraries/3D Models/ssfw15r_1_3st_lf.STEP"
     (offset (xyz -17.3 8.5 2.65))
     (scale (xyz 1 1 1))
     (rotate (xyz 90 0 0))
