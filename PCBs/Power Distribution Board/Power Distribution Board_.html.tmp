@@ -1,0 +1,270 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+<h2>KiBoM PCB Bill of Materials</h2>
+<table border="1">
+<tr><td>Source File</td><td>D:\ROV 2019\Github\2019\PCBs\Power Distribution Board\Power Distribution Board.sch</td></tr>
+<tr><td>BoM Date</td><td>2018-10-28 9:58:27 PM</td></tr>
+<tr><td>Schematic Version</td><td></td></tr>
+<tr><td>Schematic Date</td><td></td></tr>
+<tr><td>KiCad Version</td><td>Eeschema (5.0.0)</td></tr>
+<tr><td>Component Groups</td><td>21</td></tr>
+<tr><td>Component Count (per PCB)</td><td>106</td></tr>
+<tr><td>Fitted Components (per PCB)</td><td>106</td></tr>
+<tr><td>Number of PCBs</td><td>1</td></tr>
+<tr><td>Total Component Count<br>(for 1 PCBs)</td><td>106</td></tr>
+</table>
+<br>
+<h2>Component Groups</h2>
+<p style="background-color: #FFE6B3">KiCad Fields (default)</p>
+<p style="background-color: #E6FFEE">Generated Fields</p>
+<p style="background-color: #E6F9FF">User Fields</p>
+<p style="background-color: #FF8080">Empty Fields</p>
+<table border="1">
+<tr>
+	<th></th>
+	<th align="center" bgcolor="#FFE6B3">Description</th>
+	<th align="center" bgcolor="#FFE6B3">Part</th>
+	<th align="center" bgcolor="#FFE6B3">References</th>
+	<th align="center" bgcolor="#FFE6B3">Value</th>
+	<th align="center" bgcolor="#FFE6B3">Footprint</th>
+	<th align="center" bgcolor="#E6FFEE">Quantity Per PCB</th>
+	<th align="center" bgcolor="#FFE6B3">Datasheet</th>
+	<th align="center" bgcolor="#E6F9FF">Status</th>
+</tr>
+<tr>
+	<td align="center">1</td>
+	<td align="center" bgcolor=#FFE6B3>Unpolarized capacitor</td>
+	<td align="center" bgcolor=#FFE6B3>C</td>
+	<td align="center" bgcolor=#FFE6B3>C3 C4 C9 C10 C11 C12 C17 C18 C19 C20 C30 C34 C41</td>
+	<td align="center" bgcolor=#FFE6B3>0.1uF</td>
+	<td align="center" bgcolor=#FFE6B3>C_0603</td>
+	<td align="center" bgcolor=#E6FFEE>13</td>
+	<td align="center" bgcolor=#FFE6B3>1276-1258-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">2</td>
+	<td align="center" bgcolor=#FFE6B3>Unpolarized capacitor</td>
+	<td align="center" bgcolor=#FFE6B3>C</td>
+	<td align="center" bgcolor=#FFE6B3>C24 C26 C32</td>
+	<td align="center" bgcolor=#FFE6B3>10uF</td>
+	<td align="center" bgcolor=#FFE6B3>C_0805</td>
+	<td align="center" bgcolor=#E6FFEE>3</td>
+	<td align="center" bgcolor=#FFE6B3>1276-2399-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">3</td>
+	<td align="center" bgcolor=#FFE6B3>Unpolarized capacitor</td>
+	<td align="center" bgcolor=#FFE6B3>C</td>
+	<td align="center" bgcolor=#FFE6B3>C1 C2 C5 C6 C7 C8 C13 C14 C15 C16 C21 C22 C23 C25 C27 C28 C29 C31 C33 C35 C36 C39 C40</td>
+	<td align="center" bgcolor=#FFE6B3>1uF</td>
+	<td align="center" bgcolor=#FFE6B3>C_0603</td>
+	<td align="center" bgcolor=#E6FFEE>23</td>
+	<td align="center" bgcolor=#FFE6B3>1276-6524-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">4</td>
+	<td align="center" bgcolor=#FFE6B3>Unpolarized capacitor</td>
+	<td align="center" bgcolor=#FFE6B3>C</td>
+	<td align="center" bgcolor=#FFE6B3>C37 C38</td>
+	<td align="center" bgcolor=#FFE6B3>22pF</td>
+	<td align="center" bgcolor=#FFE6B3>C_0603</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#FFE6B3>311-3925-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">5</td>
+	<td align="center" bgcolor=#FFE6B3>LED generic</td>
+	<td align="center" bgcolor=#FFE6B3>LED</td>
+	<td align="center" bgcolor=#FFE6B3>D1</td>
+	<td align="center" bgcolor=#FFE6B3>BLUE</td>
+	<td align="center" bgcolor=#FFE6B3>LED_0805</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>732-4982-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">6</td>
+	<td align="center" bgcolor=#FFE6B3>LED generic</td>
+	<td align="center" bgcolor=#FFE6B3>LED</td>
+	<td align="center" bgcolor=#FFE6B3>D3 D4</td>
+	<td align="center" bgcolor=#FFE6B3>ORNGE</td>
+	<td align="center" bgcolor=#FFE6B3>LED_0805</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#FFE6B3>160-1413-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">7</td>
+	<td align="center" bgcolor=#FFE6B3>LED generic</td>
+	<td align="center" bgcolor=#FFE6B3>LED</td>
+	<td align="center" bgcolor=#FFE6B3>D2</td>
+	<td align="center" bgcolor=#FFE6B3>RED</td>
+	<td align="center" bgcolor=#FFE6B3>LED_0805</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>732-4984-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">8</td>
+	<td align="center" bgcolor=#FFE6B3>Fuse, generic</td>
+	<td align="center" bgcolor=#FFE6B3>Fuse</td>
+	<td align="center" bgcolor=#FFE6B3>F1</td>
+	<td align="center" bgcolor=#FFE6B3>500mA</td>
+	<td align="center" bgcolor=#FFE6B3>Fuse_SMD1206_HandSoldering</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>507-1075-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">9</td>
+	<td align="center" bgcolor=#FFE6B3>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</td>
+	<td align="center" bgcolor=#FFE6B3>Conn_01x01</td>
+	<td align="center" bgcolor=#FFE6B3>J1 J2 J3 J4 J5 J6 J7 J8 J9 J10 J11 J12 J13 J14 J15 J16 J17 J18 J19 J20 J21 J22 J23 J24 J25 J26 J27</td>
+	<td align="center" bgcolor=#FFE6B3>Conn_01x01</td>
+	<td align="center" bgcolor=#FFE6B3>RingTerminal</td>
+	<td align="center" bgcolor=#E6FFEE>27</td>
+	<td align="center" bgcolor=#FFE6B3>36-7770-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">10</td>
+	<td align="center" bgcolor=#FFE6B3>Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</td>
+	<td align="center" bgcolor=#FFE6B3>Conn_02x05_Odd_Even</td>
+	<td align="center" bgcolor=#FFE6B3>J29</td>
+	<td align="center" bgcolor=#FFE6B3>Conn_02x05_Odd_Even</td>
+	<td align="center" bgcolor=#FFE6B3>20021111-00010T4LF</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>609-3712-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">11</td>
+	<td align="center" bgcolor=#FFE6B3>USB Mini Type B connector</td>
+	<td align="center" bgcolor=#FFE6B3>USB_B_Mini</td>
+	<td align="center" bgcolor=#FFE6B3>J28</td>
+	<td align="center" bgcolor=#FFE6B3>USB_B_Mini</td>
+	<td align="center" bgcolor=#FFE6B3>32005-201</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>151-1206-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">12</td>
+	<td align="center" bgcolor=#FFE6B3>Ferrite bead</td>
+	<td align="center" bgcolor=#FFE6B3>Ferrite_Bead</td>
+	<td align="center" bgcolor=#FFE6B3>L1 L2</td>
+	<td align="center" bgcolor=#FFE6B3>Ferrite_Bead</td>
+	<td align="center" bgcolor=#FFE6B3>L_0805</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#FFE6B3>490-9706-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">13</td>
+	<td align="center" bgcolor=#FFE6B3>Resistor US symbol</td>
+	<td align="center" bgcolor=#FFE6B3>R_US</td>
+	<td align="center" bgcolor=#FFE6B3>R15</td>
+	<td align="center" bgcolor=#FFE6B3>10k</td>
+	<td align="center" bgcolor=#FFE6B3>R_0603</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>RNCP0603FTD10K0CT-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">14</td>
+	<td align="center" bgcolor=#FFE6B3>Resistor US symbol</td>
+	<td align="center" bgcolor=#FFE6B3>R_US</td>
+	<td align="center" bgcolor=#FFE6B3>R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R14</td>
+	<td align="center" bgcolor=#FFE6B3>1k</td>
+	<td align="center" bgcolor=#FFE6B3>R_0603</td>
+	<td align="center" bgcolor=#E6FFEE>12</td>
+	<td align="center" bgcolor=#FFE6B3>RNCP0603FTD1K00CT-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">15</td>
+	<td align="center" bgcolor=#FFE6B3>Resistor US symbol</td>
+	<td align="center" bgcolor=#FFE6B3>R_US</td>
+	<td align="center" bgcolor=#FFE6B3>R12</td>
+	<td align="center" bgcolor=#FFE6B3>330</td>
+	<td align="center" bgcolor=#FFE6B3>R_0603</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>RHM330DCT-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">16</td>
+	<td align="center" bgcolor=#FFE6B3>Resistor US symbol</td>
+	<td align="center" bgcolor=#FFE6B3>R_US</td>
+	<td align="center" bgcolor=#FFE6B3>R13</td>
+	<td align="center" bgcolor=#FFE6B3>680</td>
+	<td align="center" bgcolor=#FFE6B3>R_0603</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>RHM680DCT-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">17</td>
+	<td align="center" bgcolor=#FFE6B3>Push button switch, generic, two pins</td>
+	<td align="center" bgcolor=#FFE6B3>SW_Push</td>
+	<td align="center" bgcolor=#FFE6B3>SW1</td>
+	<td align="center" bgcolor=#FFE6B3>SW_Push</td>
+	<td align="center" bgcolor=#FFE6B3>SW_SPST_EVQPE1</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>401-1707-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">18</td>
+	<td align="center" bgcolor=#FF8080></td>
+	<td align="center" bgcolor=#FFE6B3>ACS711</td>
+	<td align="center" bgcolor=#FFE6B3>U1 U2 U3 U4 U5 U6 U7 U8 U9 U10</td>
+	<td align="center" bgcolor=#FFE6B3>ACS711</td>
+	<td align="center" bgcolor=#FFE6B3>ACS711</td>
+	<td align="center" bgcolor=#E6FFEE>10</td>
+	<td align="center" bgcolor=#FFE6B3>620-1482-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">19</td>
+	<td align="center" bgcolor=#FFE6B3>IC MCU 32BIT 64KB FLASH 48QFN</td>
+	<td align="center" bgcolor=#FFE6B3>ATSAMD21E16L-MFT</td>
+	<td align="center" bgcolor=#FFE6B3>U12</td>
+	<td align="center" bgcolor=#FFE6B3>ATSAMD21E16L-MFT</td>
+	<td align="center" bgcolor=#FFE6B3>QFN-32-1EP_5x5mm</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>1611-ATSAMD21E16L-MFTCT-ND</td>
+	<td align="center" bgcolor=#E6F9FF>Active</td>
+</tr>
+<tr>
+	<td align="center">20</td>
+	<td align="center" bgcolor=#FFE6B3>200 mA Low Dropout Voltage Regulator, Fixed Output 1.8V, SOT-23-5</td>
+	<td align="center" bgcolor=#FFE6B3>TLV70018_SOT23-5</td>
+	<td align="center" bgcolor=#FFE6B3>U11</td>
+	<td align="center" bgcolor=#FFE6B3>TLV733P</td>
+	<td align="center" bgcolor=#FFE6B3>SOT-23-5</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>296-40673-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+<tr>
+	<td align="center">21</td>
+	<td align="center" bgcolor=#FFE6B3>Two pin crystal</td>
+	<td align="center" bgcolor=#FFE6B3>Crystal</td>
+	<td align="center" bgcolor=#FFE6B3>Y1</td>
+	<td align="center" bgcolor=#FFE6B3>32.7680kHz</td>
+	<td align="center" bgcolor=#FFE6B3>Crystal_SMD_3215-2pin_3.2x1.5mm</td>
+	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#FFE6B3>887-2605-1-ND</td>
+	<td align="center" bgcolor=#FF8080></td>
+</tr>
+</table>
+<br><br>
+</body></html>
