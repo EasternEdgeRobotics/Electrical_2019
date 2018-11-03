@@ -1,0 +1,129 @@
+EESchema Schematic File Version 4
+LIBS:Actuator Board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 1393280-5:1393280-5 K?
+U 1 1 5BD47A2C
+P 3500 2600
+F 0 "K?" H 3500 3267 50  0000 C CNN
+F 1 "1393280-5" H 3500 3176 50  0000 C CNN
+F 2 "RELAY_1393280-5" H 3500 2600 50  0001 L BNN
+F 3 "Electromechanical Relay 12VDC 254Ohm SPST-NO_13.2x12.2x10.1_mm THT Automotive Relay Automotive" H 3500 2600 50  0001 L BNN
+F 4 "None" H 3500 2600 50  0001 L BNN "Field4"
+F 5 "1393280-5" H 3500 2600 50  0001 L BNN "Field5"
+F 6 "https://www.digikey.ca/product-detail/en/te-connectivity-potter-brumfield-relays/1393280-5/PB1977-ND/4581694?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 3500 2600 50  0001 L BNN "Field6"
+F 7 "TE Connectivity" H 3500 2600 50  0001 L BNN "Field7"
+F 8 "PB1977-ND" H 3500 2600 50  0001 L BNN "Field8"
+	1    3500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATSAMD21G18A-AUT:ATSAMD21G18A-AUT U?
+U 1 1 5BD47AE1
+P 8800 3250
+F 0 "U?" H 8800 5117 50  0000 C CNN
+F 1 "ATSAMD21G18A-AUT" H 8800 5026 50  0000 C CNN
+F 2 "QFP50P900X900X120-48N" H 8800 3250 50  0001 L BNN
+F 3 "MCU 32-bit SAM D21 ARM Cortex M0+ RISC 256KB Flash 3.3V 48-Pin TQFP T/R" H 8800 3250 50  0001 L BNN
+F 4 "TQFP-48 Microchip" H 8800 3250 50  0001 L BNN "Field4"
+F 5 "ATSAMD21G18A-AUT" H 8800 3250 50  0001 L BNN "Field5"
+F 6 "https://www.digikey.com/product-detail/en/microchip-technology/ATSAMD21G18A-AUT/ATSAMD21G18A-AUTCT-ND/4878879?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 8800 3250 50  0001 L BNN "Field6"
+F 7 "Microchip" H 8800 3250 50  0001 L BNN "Field7"
+F 8 "ATSAMD21G18A-AUTCT-ND" H 8800 3250 50  0001 L BNN "Field8"
+	1    8800 3250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2900 2500
+Wire Wire Line
+	9500 1650 10300 1650
+Wire Wire Line
+	9500 1750 10300 1750
+Wire Wire Line
+	10300 1750 10300 1650
+Connection ~ 10300 1650
+Wire Wire Line
+	10300 1650 10500 1650
+Wire Wire Line
+	10300 1750 10300 1850
+Wire Wire Line
+	10300 1850 9500 1850
+Connection ~ 10300 1750
+Wire Wire Line
+	9500 1950 10300 1950
+Wire Wire Line
+	10300 1950 10300 1850
+Connection ~ 10300 1850
+$Comp
+L Device:C C?
+U 1 1 5BD4DEED
+P 10300 3050
+F 0 "C?" H 10415 3096 50  0000 L CNN
+F 1 "C" H 10415 3005 50  0000 L CNN
+F 2 "" H 10338 2900 50  0001 C CNN
+F 3 "~" H 10300 3050 50  0001 C CNN
+	1    10300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 1950 10300 2900
+Connection ~ 10300 1950
+Wire Wire Line
+	10300 3200 10300 4350
+Wire Wire Line
+	10300 4350 9500 4350
+Wire Wire Line
+	9500 2050 10000 2050
+Wire Wire Line
+	10000 2050 10000 3150
+$Comp
+L Device:C C?
+U 1 1 5BD4E1EC
+P 10000 3300
+F 0 "C?" H 10115 3346 50  0000 L CNN
+F 1 "C" H 10115 3255 50  0000 L CNN
+F 2 "" H 10038 3150 50  0001 C CNN
+F 3 "~" H 10000 3300 50  0001 C CNN
+	1    10000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 3450 10000 4450
+Wire Wire Line
+	10000 4450 9500 4450
+Wire Wire Line
+	10000 4450 10000 4550
+Wire Wire Line
+	10000 4550 9500 4550
+Connection ~ 10000 4450
+Wire Wire Line
+	10000 4550 10000 4650
+Wire Wire Line
+	10000 4650 9500 4650
+Connection ~ 10000 4550
+Text GLabel 10500 1650 2    50   Input ~ 0
+3.63V_IN
+$Comp
+L TLE8209-2SA:TLE8209-2SA U?
+U 1 1 5BDA443F
+P 5350 4000
+F 0 "U?" H 5875 5815 50  0000 C CNN
+F 1 "TLE8209-2SA" H 5875 5724 50  0000 C CNN
+F 2 "" H 5900 5800 50  0001 C CNN
+F 3 "" H 5900 5800 50  0001 C CNN
+	1    5350 4000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
