@@ -17,104 +17,20 @@ $EndDescr
 $Comp
 L 1393280-5:1393280-5 K?
 U 1 1 5BD47A2C
-P 3500 2600
-F 0 "K?" H 3500 3267 50  0000 C CNN
-F 1 "1393280-5" H 3500 3176 50  0000 C CNN
-F 2 "RELAY_1393280-5" H 3500 2600 50  0001 L BNN
-F 3 "Electromechanical Relay 12VDC 254Ohm SPST-NO_13.2x12.2x10.1_mm THT Automotive Relay Automotive" H 3500 2600 50  0001 L BNN
-F 4 "None" H 3500 2600 50  0001 L BNN "Field4"
-F 5 "1393280-5" H 3500 2600 50  0001 L BNN "Field5"
-F 6 "https://www.digikey.ca/product-detail/en/te-connectivity-potter-brumfield-relays/1393280-5/PB1977-ND/4581694?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 3500 2600 50  0001 L BNN "Field6"
-F 7 "TE Connectivity" H 3500 2600 50  0001 L BNN "Field7"
-F 8 "PB1977-ND" H 3500 2600 50  0001 L BNN "Field8"
-	1    3500 2600
+P 4600 1900
+F 0 "K?" H 4600 2567 50  0000 C CNN
+F 1 "1393280-5" H 4600 2476 50  0000 C CNN
+F 2 "RELAY_1393280-5" H 4600 1900 50  0001 L BNN
+F 3 "Electromechanical Relay 12VDC 254Ohm SPST-NO_13.2x12.2x10.1_mm THT Automotive Relay Automotive" H 4600 1900 50  0001 L BNN
+F 4 "None" H 4600 1900 50  0001 L BNN "Field4"
+F 5 "1393280-5" H 4600 1900 50  0001 L BNN "Field5"
+F 6 "https://www.digikey.ca/product-detail/en/te-connectivity-potter-brumfield-relays/1393280-5/PB1977-ND/4581694?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 4600 1900 50  0001 L BNN "Field6"
+F 7 "TE Connectivity" H 4600 1900 50  0001 L BNN "Field7"
+F 8 "PB1977-ND" H 4600 1900 50  0001 L BNN "Field8"
+	1    4600 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L ATSAMD21G18A-AUT:ATSAMD21G18A-AUT U?
-U 1 1 5BD47AE1
-P 8800 3250
-F 0 "U?" H 8800 5117 50  0000 C CNN
-F 1 "ATSAMD21G18A-AUT" H 8800 5026 50  0000 C CNN
-F 2 "QFP50P900X900X120-48N" H 8800 3250 50  0001 L BNN
-F 3 "MCU 32-bit SAM D21 ARM Cortex M0+ RISC 256KB Flash 3.3V 48-Pin TQFP T/R" H 8800 3250 50  0001 L BNN
-F 4 "TQFP-48 Microchip" H 8800 3250 50  0001 L BNN "Field4"
-F 5 "ATSAMD21G18A-AUT" H 8800 3250 50  0001 L BNN "Field5"
-F 6 "https://www.digikey.com/product-detail/en/microchip-technology/ATSAMD21G18A-AUT/ATSAMD21G18A-AUTCT-ND/4878879?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 8800 3250 50  0001 L BNN "Field6"
-F 7 "Microchip" H 8800 3250 50  0001 L BNN "Field7"
-F 8 "ATSAMD21G18A-AUTCT-ND" H 8800 3250 50  0001 L BNN "Field8"
-	1    8800 3250
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2900 2500
-Wire Wire Line
-	9500 1650 10300 1650
-Wire Wire Line
-	9500 1750 10300 1750
-Wire Wire Line
-	10300 1750 10300 1650
-Connection ~ 10300 1650
-Wire Wire Line
-	10300 1650 10500 1650
-Wire Wire Line
-	10300 1750 10300 1850
-Wire Wire Line
-	10300 1850 9500 1850
-Connection ~ 10300 1750
-Wire Wire Line
-	9500 1950 10300 1950
-Wire Wire Line
-	10300 1950 10300 1850
-Connection ~ 10300 1850
-$Comp
-L Device:C C?
-U 1 1 5BD4DEED
-P 10300 3050
-F 0 "C?" H 10415 3096 50  0000 L CNN
-F 1 "C" H 10415 3005 50  0000 L CNN
-F 2 "" H 10338 2900 50  0001 C CNN
-F 3 "~" H 10300 3050 50  0001 C CNN
-	1    10300 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 1950 10300 2900
-Connection ~ 10300 1950
-Wire Wire Line
-	10300 3200 10300 4350
-Wire Wire Line
-	10300 4350 9500 4350
-Wire Wire Line
-	9500 2050 10000 2050
-Wire Wire Line
-	10000 2050 10000 3150
-$Comp
-L Device:C C?
-U 1 1 5BD4E1EC
-P 10000 3300
-F 0 "C?" H 10115 3346 50  0000 L CNN
-F 1 "C" H 10115 3255 50  0000 L CNN
-F 2 "" H 10038 3150 50  0001 C CNN
-F 3 "~" H 10000 3300 50  0001 C CNN
-	1    10000 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 3450 10000 4450
-Wire Wire Line
-	10000 4450 9500 4450
-Wire Wire Line
-	10000 4450 10000 4550
-Wire Wire Line
-	10000 4550 9500 4550
-Connection ~ 10000 4450
-Wire Wire Line
-	10000 4550 10000 4650
-Wire Wire Line
-	10000 4650 9500 4650
-Connection ~ 10000 4550
-Text GLabel 10500 1650 2    50   Input ~ 0
-3.3V_IN
+NoConn ~ 4000 1800
 $Comp
 L Device:C C?
 U 1 1 5BDB50FD
@@ -450,4 +366,240 @@ Wire Wire Line
 	7250 4950 7250 5050
 Wire Wire Line
 	7250 5050 7450 5050
+$Comp
+L Device:R_US R?
+U 1 1 5BDF7B59
+P 4850 650
+F 0 "R?" V 4750 650 50  0000 C CNN
+F 1 "590" V 4950 650 50  0000 C CNN
+F 2 "" V 4890 640 50  0001 C CNN
+F 3 "~" H 4850 650 50  0001 C CNN
+	1    4850 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5BDF7BA9
+P 2950 1200
+F 0 "R?" V 2745 1200 50  0000 C CNN
+F 1 "R_US" V 2836 1200 50  0000 C CNN
+F 2 "" V 2990 1190 50  0001 C CNN
+F 3 "~" H 2950 1200 50  0001 C CNN
+	1    2950 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5BDF7BDD
+P 2200 850
+F 0 "R?" H 2268 896 50  0000 L CNN
+F 1 "R_US" H 2268 805 50  0000 L CNN
+F 2 "" V 2240 840 50  0001 C CNN
+F 3 "~" H 2200 850 50  0001 C CNN
+	1    2200 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5BDF7C3A
+P 4350 650
+F 0 "D?" H 4350 750 50  0000 C CNN
+F 1 "LED" H 4350 500 50  0000 C CNN
+F 2 "" H 4350 650 50  0001 C CNN
+F 3 "~" H 4350 650 50  0001 C CNN
+	1    4350 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5BDF7C9B
+P 4650 950
+F 0 "D?" H 4650 850 50  0000 C CNN
+F 1 "D" H 4650 1050 50  0000 C CNN
+F 2 "" H 4650 950 50  0001 C CNN
+F 3 "~" H 4650 950 50  0001 C CNN
+	1    4650 950 
+	-1   0    0    1   
+$EndComp
+Text Notes 5050 1500 0    98   ~ 0
++
+Text Notes 4050 1500 0    98   ~ 0
+-\n
+Wire Wire Line
+	5200 1600 5400 1600
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 5BDFB8ED
+P 3550 1500
+F 0 "Q?" V 3786 1500 50  0000 C CNN
+F 1 "BC547" V 3877 1500 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3750 1425 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3550 1500 50  0001 L CNN
+	1    3550 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 1600 3800 1600
+Wire Wire Line
+	3550 1300 3550 1200
+Wire Wire Line
+	3550 1200 3100 1200
+Wire Wire Line
+	1900 1200 2200 1200
+Wire Wire Line
+	2200 1200 2200 1000
+Connection ~ 2200 1200
+Wire Wire Line
+	2200 1200 2800 1200
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BE1097E
+P 2200 700
+F 0 "#PWR?" H 2200 550 50  0001 C CNN
+F 1 "+3.3V" H 2215 873 50  0000 C CNN
+F 2 "" H 2200 700 50  0001 C CNN
+F 3 "" H 2200 700 50  0001 C CNN
+	1    2200 700 
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 1200 0    47   Input ~ 0
+UC_IN
+Wire Wire Line
+	5400 1600 5400 950 
+Wire Wire Line
+	5400 950  4800 950 
+Connection ~ 5400 1600
+Wire Wire Line
+	5400 1600 5600 1600
+Wire Wire Line
+	5400 950  5400 650 
+Wire Wire Line
+	5400 650  5000 650 
+Connection ~ 5400 950 
+Wire Wire Line
+	4700 650  4500 650 
+Wire Wire Line
+	4200 650  3800 650 
+Wire Wire Line
+	3800 650  3800 1600
+Connection ~ 3800 1600
+Wire Wire Line
+	3800 1600 3900 1600
+Wire Wire Line
+	4500 950  3900 950 
+Wire Wire Line
+	3900 950  3900 1600
+Connection ~ 3900 1600
+Wire Wire Line
+	3900 1600 4000 1600
+$Comp
+L power:+12V #PWR?
+U 1 1 5BE2D8C2
+P 5600 1600
+F 0 "#PWR?" H 5600 1450 50  0001 C CNN
+F 1 "+12V" V 5615 1728 50  0000 L CNN
+F 2 "" H 5600 1600 50  0001 C CNN
+F 3 "" H 5600 1600 50  0001 C CNN
+	1    5600 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 1600 3150 1600
+Wire Wire Line
+	3150 1600 3150 1800
+$Comp
+L power:Earth #PWR?
+U 1 1 5BE306B3
+P 3150 1800
+F 0 "#PWR?" H 3150 1550 50  0001 C CNN
+F 1 "Earth" H 3150 1650 50  0001 C CNN
+F 2 "" H 3150 1800 50  0001 C CNN
+F 3 "~" H 3150 1800 50  0001 C CNN
+	1    3150 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 1650 2    50   Input ~ 0
+3.3V_IN
+Wire Wire Line
+	10000 4650 9500 4650
+Wire Wire Line
+	10000 4550 10000 4650
+Wire Wire Line
+	10000 4550 9500 4550
+Connection ~ 10000 4550
+Wire Wire Line
+	10000 4450 10000 4550
+Wire Wire Line
+	10000 4450 9500 4450
+Connection ~ 10000 4450
+Wire Wire Line
+	10000 3450 10000 4450
+$Comp
+L Device:C C?
+U 1 1 5BD4E1EC
+P 10000 3300
+F 0 "C?" H 10115 3346 50  0000 L CNN
+F 1 "C" H 10115 3255 50  0000 L CNN
+F 2 "" H 10038 3150 50  0001 C CNN
+F 3 "~" H 10000 3300 50  0001 C CNN
+	1    10000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2050 10000 3150
+Wire Wire Line
+	9500 2050 10000 2050
+Wire Wire Line
+	10300 4350 9500 4350
+Wire Wire Line
+	10300 3200 10300 4350
+$Comp
+L Device:C C?
+U 1 1 5BD4DEED
+P 10300 3050
+F 0 "C?" H 10415 3096 50  0000 L CNN
+F 1 "C" H 10415 3005 50  0000 L CNN
+F 2 "" H 10338 2900 50  0001 C CNN
+F 3 "~" H 10300 3050 50  0001 C CNN
+	1    10300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 1950 10300 2900
+Connection ~ 10300 1950
+Wire Wire Line
+	9500 1950 10300 1950
+Wire Wire Line
+	10300 1950 10300 1850
+Connection ~ 10300 1850
+Wire Wire Line
+	10300 1850 9500 1850
+Wire Wire Line
+	10300 1650 10500 1650
+Wire Wire Line
+	10300 1750 10300 1850
+Wire Wire Line
+	10300 1750 10300 1650
+Connection ~ 10300 1750
+Wire Wire Line
+	9500 1750 10300 1750
+Connection ~ 10300 1650
+Wire Wire Line
+	9500 1650 10300 1650
+$Comp
+L ATSAMD21G18A-AUT:ATSAMD21G18A-AUT U?
+U 1 1 5BD47AE1
+P 8800 3250
+F 0 "U?" H 8800 5117 50  0000 C CNN
+F 1 "ATSAMD21G18A-AUT" H 8800 5026 50  0000 C CNN
+F 2 "QFP50P900X900X120-48N" H 8800 3250 50  0001 L BNN
+F 3 "MCU 32-bit SAM D21 ARM Cortex M0+ RISC 256KB Flash 3.3V 48-Pin TQFP T/R" H 8800 3250 50  0001 L BNN
+F 4 "TQFP-48 Microchip" H 8800 3250 50  0001 L BNN "Field4"
+F 5 "ATSAMD21G18A-AUT" H 8800 3250 50  0001 L BNN "Field5"
+F 6 "https://www.digikey.com/product-detail/en/microchip-technology/ATSAMD21G18A-AUT/ATSAMD21G18A-AUTCT-ND/4878879?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 8800 3250 50  0001 L BNN "Field6"
+F 7 "Microchip" H 8800 3250 50  0001 L BNN "Field7"
+F 8 "ATSAMD21G18A-AUTCT-ND" H 8800 3250 50  0001 L BNN "Field8"
+	1    8800 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
