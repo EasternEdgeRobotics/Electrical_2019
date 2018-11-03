@@ -7471,7 +7471,7 @@ Wire Wire Line
 	4100 2700 4100 2840
 Text GLabel 5440 2860 0    50   Input ~ 0
 VIOUT1
-Text GLabel 5490 3760 0    50   Input ~ 0
+Text GLabel 5450 3760 0    50   Input ~ 0
 VIOUT2
 Text GLabel 5440 2960 0    50   Input ~ 0
 VIOUT3
@@ -7508,7 +7508,7 @@ Wire Wire Line
 Wire Wire Line
 	5440 3660 5920 3660
 Wire Wire Line
-	5490 3760 5920 3760
+	5450 3760 5920 3760
 Wire Wire Line
 	5380 2700 5380 2760
 Wire Wire Line

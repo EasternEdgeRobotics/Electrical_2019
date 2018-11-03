@@ -6,7 +6,7 @@
 <h2>KiBoM PCB Bill of Materials</h2>
 <table border="1">
 <tr><td>Source File</td><td>D:\ROV 2019\Github\2019\PCBs\Power Distribution Board\Power Distribution Board.sch</td></tr>
-<tr><td>BoM Date</td><td>2018-10-28 9:56:43 PM</td></tr>
+<tr><td>BoM Date</td><td>2018-10-28 9:58:27 PM</td></tr>
 <tr><td>Schematic Version</td><td></td></tr>
 <tr><td>Schematic Date</td><td></td></tr>
 <tr><td>KiCad Version</td><td>Eeschema (5.0.0)</td></tr>
@@ -152,7 +152,7 @@
 	<td align="center" bgcolor=#FFE6B3>USB_B_Mini</td>
 	<td align="center" bgcolor=#FFE6B3>32005-201</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
-	<td align="center" bgcolor=#FFE6B3>~</td>
+	<td align="center" bgcolor=#FFE6B3>151-1206-1-ND</td>
 	<td align="center" bgcolor=#FF8080></td>
 </tr>
 <tr>
