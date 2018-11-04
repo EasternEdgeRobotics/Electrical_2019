@@ -6,15 +6,15 @@
 <h2>KiBoM PCB Bill of Materials</h2>
 <table border="1">
 <tr><td>Source File</td><td>D:\ROV 2019\Github\2019\PCBs\DC-DC Board\DC-DC Board.sch</td></tr>
-<tr><td>BoM Date</td><td>2018-10-18 8:40:03 PM</td></tr>
+<tr><td>BoM Date</td><td>2018-10-18 10:43:33 PM</td></tr>
 <tr><td>Schematic Version</td><td></td></tr>
 <tr><td>Schematic Date</td><td></td></tr>
 <tr><td>KiCad Version</td><td>Eeschema (5.0.0)</td></tr>
 <tr><td>Component Groups</td><td>19</td></tr>
 <tr><td>Component Count (per PCB)</td><td>34</td></tr>
 <tr><td>Fitted Components (per PCB)</td><td>34</td></tr>
-<tr><td>Number of PCBs</td><td>1</td></tr>
-<tr><td>Total Component Count<br>(for 1 PCBs)</td><td>34</td></tr>
+<tr><td>Number of PCBs</td><td>2</td></tr>
+<tr><td>Total Component Count<br>(for 2 PCBs)</td><td>68</td></tr>
 </table>
 <br>
 <h2>Component Groups</h2>
@@ -31,6 +31,7 @@
 	<th align="center" bgcolor="#FFE6B3">Value</th>
 	<th align="center" bgcolor="#FFE6B3">Footprint</th>
 	<th align="center" bgcolor="#E6FFEE">Quantity Per PCB</th>
+	<th align="center" bgcolor="#E6FFEE">Build Quantity</th>
 	<th align="center" bgcolor="#FFE6B3">Datasheet</th>
 </tr>
 <tr>
@@ -41,6 +42,7 @@
 	<td align="center" bgcolor=#FFE6B3>0.1uF</td>
 	<td align="center" bgcolor=#FFE6B3>C_0805</td>
 	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#E6FFEE>4</td>
 	<td align="center" bgcolor=#FFE6B3>399-1169-1-ND</td>
 </tr>
 <tr>
@@ -51,7 +53,8 @@
 	<td align="center" bgcolor=#FFE6B3>1uF</td>
 	<td align="center" bgcolor=#FFE6B3>C_0805</td>
 	<td align="center" bgcolor=#E6FFEE>6</td>
-	<td align="center" bgcolor=#FFE6B3>1276-6471-1-ND</td>
+	<td align="center" bgcolor=#E6FFEE>12</td>
+	<td align="center" bgcolor=#FFE6B3>399-1284-1-ND</td>
 </tr>
 <tr>
 	<td align="center">3</td>
@@ -61,6 +64,7 @@
 	<td align="center" bgcolor=#FFE6B3>220uF</td>
 	<td align="center" bgcolor=#FFE6B3>CP_Radial_D6.3mm_P2.50mm</td>
 	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#E6FFEE>4</td>
 	<td align="center" bgcolor=#FFE6B3>399-13664-ND</td>
 </tr>
 <tr>
@@ -71,6 +75,7 @@
 	<td align="center" bgcolor=#FFE6B3>4.7nF</td>
 	<td align="center" bgcolor=#FFE6B3>C_0805</td>
 	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#E6FFEE>4</td>
 	<td align="center" bgcolor=#FFE6B3>399-9092-1-ND</td>
 </tr>
 <tr>
@@ -81,6 +86,7 @@
 	<td align="center" bgcolor=#FFE6B3>47uF</td>
 	<td align="center" bgcolor=#FFE6B3>CP_Radial_D6.3mm_P2.50mm</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
 	<td align="center" bgcolor=#FFE6B3>399-13665-ND</td>
 </tr>
 <tr>
@@ -91,6 +97,7 @@
 	<td align="center" bgcolor=#FFE6B3>LED</td>
 	<td align="center" bgcolor=#FFE6B3>LED_0805</td>
 	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#E6FFEE>4</td>
 	<td align="center" bgcolor=#FFE6B3>732-4983-1-ND</td>
 </tr>
 <tr>
@@ -101,6 +108,7 @@
 	<td align="center" bgcolor=#FFE6B3>Conn_01x01</td>
 	<td align="center" bgcolor=#FFE6B3>RingTerminal</td>
 	<td align="center" bgcolor=#E6FFEE>4</td>
+	<td align="center" bgcolor=#E6FFEE>8</td>
 	<td align="center" bgcolor=#FFE6B3>36-7770-ND</td>
 </tr>
 <tr>
@@ -111,6 +119,7 @@
 	<td align="center" bgcolor=#FFE6B3>Conn_01x02</td>
 	<td align="center" bgcolor=#FFE6B3>MOLEX_0705530001</td>
 	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#E6FFEE>4</td>
 	<td align="center" bgcolor=#FFE6B3>WM4900-ND</td>
 </tr>
 <tr>
@@ -121,6 +130,7 @@
 	<td align="center" bgcolor=#FFE6B3>Q_NMOS_GDS</td>
 	<td align="center" bgcolor=#FFE6B3>TO-252-2</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
 	<td align="center" bgcolor=#FFE6B3>DMTH6004SK3-13DICT-ND</td>
 </tr>
 <tr>
@@ -131,6 +141,7 @@
 	<td align="center" bgcolor=#FFE6B3>0</td>
 	<td align="center" bgcolor=#FFE6B3>R_0805</td>
 	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#E6FFEE>4</td>
 	<td align="center" bgcolor=#FFE6B3>RMCF0805FT22K0CT-ND</td>
 </tr>
 <tr>
@@ -141,6 +152,7 @@
 	<td align="center" bgcolor=#FFE6B3>0</td>
 	<td align="center" bgcolor=#FFE6B3>R_0603</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
 	<td align="center" bgcolor=#FFE6B3>RMCF0603ZT0R00CT-ND</td>
 </tr>
 <tr>
@@ -151,6 +163,7 @@
 	<td align="center" bgcolor=#FFE6B3>10k</td>
 	<td align="center" bgcolor=#FFE6B3>R_0805</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
 	<td align="center" bgcolor=#FFE6B3>RNCP0805FTD10K0CT-ND</td>
 </tr>
 <tr>
@@ -161,6 +174,7 @@
 	<td align="center" bgcolor=#FFE6B3>1k</td>
 	<td align="center" bgcolor=#FFE6B3>R_0805</td>
 	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#E6FFEE>4</td>
 	<td align="center" bgcolor=#FFE6B3>RNCP0805FTD1K00CT-ND</td>
 </tr>
 <tr>
@@ -171,6 +185,7 @@
 	<td align="center" bgcolor=#FFE6B3>200k</td>
 	<td align="center" bgcolor=#FFE6B3>R_0603</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
 	<td align="center" bgcolor=#FFE6B3>RMCF0603JT200KCT-ND</td>
 </tr>
 <tr>
@@ -181,6 +196,7 @@
 	<td align="center" bgcolor=#FFE6B3>698k</td>
 	<td align="center" bgcolor=#FFE6B3>R_0603</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
 	<td align="center" bgcolor=#FFE6B3>RMCF0603FT698KCT-ND</td>
 </tr>
 <tr>
@@ -191,6 +207,7 @@
 	<td align="center" bgcolor=#FFE6B3>ACS711</td>
 	<td align="center" bgcolor=#FFE6B3>ACS711</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
 	<td align="center" bgcolor=#FFE6B3>620-1482-1-ND</td>
 </tr>
 <tr>
@@ -201,7 +218,8 @@
 	<td align="center" bgcolor=#FFE6B3>DBQ0135V2</td>
 	<td align="center" bgcolor=#FFE6B3>MurataDC-DC</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
-	<td align="center" bgcolor=#FFE6B3>36-7770-ND</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
+	<td align="center" bgcolor=#FFE6B3>S5801-05-ND</td>
 </tr>
 <tr>
 	<td align="center">18</td>
@@ -211,6 +229,7 @@
 	<td align="center" bgcolor=#FFE6B3>NCP551</td>
 	<td align="center" bgcolor=#FFE6B3>SOT-23-5</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
 	<td align="center" bgcolor=#FFE6B3>NCP551SN50T1GOSCT-ND</td>
 </tr>
 <tr>
@@ -221,6 +240,7 @@
 	<td align="center" bgcolor=#FFE6B3>TLV733P</td>
 	<td align="center" bgcolor=#FFE6B3>SOT-23-5</td>
 	<td align="center" bgcolor=#E6FFEE>1</td>
+	<td align="center" bgcolor=#E6FFEE>2</td>
 	<td align="center" bgcolor=#FFE6B3>296-40673-1-ND</td>
 </tr>
 </table>
