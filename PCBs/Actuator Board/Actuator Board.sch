@@ -176,8 +176,6 @@ Wire Wire Line
 	2350 5200 2350 5350
 Wire Wire Line
 	2350 5350 2050 5350
-Wire Wire Line
-	2050 5350 1700 5350
 Connection ~ 2050 5350
 Wire Wire Line
 	4300 5350 4950 5350
@@ -255,12 +253,12 @@ Connection ~ 4050 6950
 $Comp
 L power:Earth #PWR?
 U 1 1 5BDC04E8
-P 4050 6950
-F 0 "#PWR?" H 4050 6700 50  0001 C CNN
-F 1 "Earth" H 4050 6800 50  0001 C CNN
-F 2 "" H 4050 6950 50  0001 C CNN
-F 3 "~" H 4050 6950 50  0001 C CNN
-	1    4050 6950
+P 4050 7100
+F 0 "#PWR?" H 4050 6850 50  0001 C CNN
+F 1 "Earth" H 4050 6950 50  0001 C CNN
+F 2 "" H 4050 7100 50  0001 C CNN
+F 3 "~" H 4050 7100 50  0001 C CNN
+	1    4050 7100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -480,98 +478,14 @@ F 3 "~" H 3500 2450 50  0001 C CNN
 	1    3500 2450
 	1    0    0    -1  
 $EndComp
-Text GLabel 10500 1650 2    50   Input ~ 0
-3.3V_IN
-Wire Wire Line
-	10000 4650 9500 4650
-Wire Wire Line
-	10000 4550 10000 4650
-Wire Wire Line
-	10000 4550 9500 4550
-Connection ~ 10000 4550
-Wire Wire Line
-	10000 4450 10000 4550
-Wire Wire Line
-	10000 4450 9500 4450
-Connection ~ 10000 4450
-Wire Wire Line
-	10000 3450 10000 4450
-$Comp
-L Device:C C?
-U 1 1 5BD4E1EC
-P 10000 3300
-F 0 "C?" H 10115 3346 50  0000 L CNN
-F 1 "C" H 10115 3255 50  0000 L CNN
-F 2 "" H 10038 3150 50  0001 C CNN
-F 3 "~" H 10000 3300 50  0001 C CNN
-	1    10000 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 2050 10000 3150
-Wire Wire Line
-	9500 2050 10000 2050
-Wire Wire Line
-	10300 4350 9500 4350
-Wire Wire Line
-	10300 3200 10300 4350
-$Comp
-L Device:C C?
-U 1 1 5BD4DEED
-P 10300 3050
-F 0 "C?" H 10415 3096 50  0000 L CNN
-F 1 "C" H 10415 3005 50  0000 L CNN
-F 2 "" H 10338 2900 50  0001 C CNN
-F 3 "~" H 10300 3050 50  0001 C CNN
-	1    10300 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 1950 10300 2900
-Connection ~ 10300 1950
-Wire Wire Line
-	9500 1950 10300 1950
-Wire Wire Line
-	10300 1950 10300 1850
-Connection ~ 10300 1850
-Wire Wire Line
-	10300 1850 9500 1850
-Wire Wire Line
-	10300 1650 10500 1650
-Wire Wire Line
-	10300 1750 10300 1850
-Wire Wire Line
-	10300 1750 10300 1650
-Connection ~ 10300 1750
-Wire Wire Line
-	9500 1750 10300 1750
-Connection ~ 10300 1650
-Wire Wire Line
-	9500 1650 10300 1650
-$Comp
-L ATSAMD21G18A-AUT:ATSAMD21G18A-AUT U?
-U 1 1 5BD47AE1
-P 8800 3250
-F 0 "U?" H 8800 5117 50  0000 C CNN
-F 1 "ATSAMD21G18A-AUT" H 8800 5026 50  0000 C CNN
-F 2 "QFP50P900X900X120-48N" H 8800 3250 50  0001 L BNN
-F 3 "MCU 32-bit SAM D21 ARM Cortex M0+ RISC 256KB Flash 3.3V 48-Pin TQFP T/R" H 8800 3250 50  0001 L BNN
-F 4 "TQFP-48 Microchip" H 8800 3250 50  0001 L BNN "Field4"
-F 5 "ATSAMD21G18A-AUT" H 8800 3250 50  0001 L BNN "Field5"
-F 6 "https://www.digikey.com/product-detail/en/microchip-technology/ATSAMD21G18A-AUT/ATSAMD21G18A-AUTCT-ND/4878879?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 8800 3250 50  0001 L BNN "Field6"
-F 7 "Microchip" H 8800 3250 50  0001 L BNN "Field7"
-F 8 "ATSAMD21G18A-AUTCT-ND" H 8800 3250 50  0001 L BNN "Field8"
-	1    8800 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2250 1850 3150 1850
 Text GLabel 3050 5650 0    47   Input ~ 0
-UC_out
+UC_OUT
 Text GLabel 3050 5350 0    47   Input ~ 0
-UC_out
+UC_OUT
 Text GLabel 3050 5500 0    47   Input ~ 0
-UC_out
+UC_OUT
 $Comp
 L power:+12V #PWR?
 U 1 1 5BE05838
@@ -1452,4 +1366,329 @@ EndData
 $EndBitmap
 Text Notes 9450 7500 0    50   ~ 0
 Created by Patrick Whelan and David Drover
+Wire Wire Line
+	9200 1600 9200 1400
+Wire Wire Line
+	9200 1400 8950 1400
+Text GLabel 8950 1400 0    50   Input ~ 0
+3V3_FILT
+Wire Wire Line
+	9450 1600 9450 1100
+Wire Wire Line
+	9350 1600 9350 1250
+Wire Wire Line
+	9350 1250 10250 1250
+Wire Wire Line
+	10250 1250 10250 1400
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BE55940
+P 9450 1100
+F 0 "#PWR?" H 9450 950 50  0001 C CNN
+F 1 "+3.3V" H 9465 1273 50  0000 C CNN
+F 2 "" H 9450 1100 50  0001 C CNN
+F 3 "" H 9450 1100 50  0001 C CNN
+	1    9450 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BE5901E
+P 10250 1550
+F 0 "C?" H 10365 1596 50  0000 L CNN
+F 1 "0.1uF" H 10365 1505 50  0000 L CNN
+F 2 "" H 10288 1400 50  0001 C CNN
+F 3 "~" H 10250 1550 50  0001 C CNN
+	1    10250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 1700 10250 1900
+$Comp
+L power:Earth #PWR?
+U 1 1 5BE64A5D
+P 10250 1900
+F 0 "#PWR?" H 10250 1650 50  0001 C CNN
+F 1 "Earth" H 10250 1750 50  0001 C CNN
+F 2 "" H 10250 1900 50  0001 C CNN
+F 3 "~" H 10250 1900 50  0001 C CNN
+	1    10250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L EER:ATSAMD21E16L-MFT U?
+U 1 1 5BE4E582
+P 9300 3200
+F 0 "U?" H 9300 2056 60  0000 C CNN
+F 1 "ATSAMD21E16L-MFT" H 9300 1950 60  0000 C CNN
+F 2 "digikey-footprints:TQFP-48_7x7mm" H 10700 3300 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en590209" H 10700 3400 60  0001 L CNN
+F 4 "Active" H 9500 4400 60  0001 L CNN "Status"
+	1    9300 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2100 8550 2100
+Wire Wire Line
+	8550 2100 8550 1900
+Wire Wire Line
+	8550 1900 8150 1900
+Wire Wire Line
+	8800 2200 8550 2200
+Wire Wire Line
+	8550 2200 8550 2350
+Wire Wire Line
+	8550 2350 8150 2350
+$Comp
+L Device:Crystal Y?
+U 1 1 5BE706DC
+P 8150 2100
+F 0 "Y?" V 8104 2231 50  0000 L CNN
+F 1 "32.7680kHz" V 8195 2231 50  0000 L CNN
+F 2 "" H 8150 2100 50  0001 C CNN
+F 3 "~" H 8150 2100 50  0001 C CNN
+	1    8150 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 1950 8150 1900
+Connection ~ 8150 1900
+Wire Wire Line
+	8150 1900 7800 1900
+Wire Wire Line
+	8150 2250 8150 2350
+Connection ~ 8150 2350
+Wire Wire Line
+	8150 2350 7800 2350
+$Comp
+L Device:C C?
+U 1 1 5BE77161
+P 7650 1900
+F 0 "C?" V 7398 1900 50  0000 C CNN
+F 1 "22pF" V 7489 1900 50  0000 C CNN
+F 2 "" H 7688 1750 50  0001 C CNN
+F 3 "~" H 7650 1900 50  0001 C CNN
+	1    7650 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BE7BF3F
+P 7650 2350
+F 0 "C?" V 7400 2350 50  0000 C CNN
+F 1 "22pF" V 7500 2350 50  0000 C CNN
+F 2 "" H 7688 2200 50  0001 C CNN
+F 3 "~" H 7650 2350 50  0001 C CNN
+	1    7650 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 1900 7250 1900
+Wire Wire Line
+	7250 1900 7250 2350
+Wire Wire Line
+	7250 2350 7500 2350
+Connection ~ 7250 2350
+Wire Wire Line
+	7250 2350 7250 2850
+$Comp
+L power:Earth #PWR?
+U 1 1 5BE81878
+P 7250 2850
+F 0 "#PWR?" H 7250 2600 50  0001 C CNN
+F 1 "Earth" H 7250 2700 50  0001 C CNN
+F 2 "" H 7250 2850 50  0001 C CNN
+F 3 "~" H 7250 2850 50  0001 C CNN
+	1    7250 2850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8800 2300
+NoConn ~ 8800 2400
+NoConn ~ 8800 2500
+Wire Wire Line
+	8800 2600 8450 2600
+Wire Wire Line
+	8800 2700 8450 2700
+Wire Wire Line
+	8800 2800 8450 2800
+Text GLabel 8450 2600 0    50   Input ~ 0
+VIOUT1
+Text GLabel 8450 2700 0    50   Input ~ 0
+VIOUT2
+Text GLabel 8450 2800 0    50   Input ~ 0
+VIOUT3
+Text Notes 7950 2650 0    50   ~ 0
+AIN5
+Text Notes 7950 2750 0    50   ~ 0
+AIN6
+Text Notes 7950 2850 0    50   ~ 0
+AIN7
+NoConn ~ 8800 2900
+NoConn ~ 8800 3000
+NoConn ~ 8800 3100
+$Comp
+L Device:R_US R?
+U 1 1 5BE9752D
+P 8400 3200
+F 0 "R?" V 8195 3200 50  0000 C CNN
+F 1 "680" V 8286 3200 50  0000 C CNN
+F 2 "" V 8440 3190 50  0001 C CNN
+F 3 "~" H 8400 3200 50  0001 C CNN
+	1    8400 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 3200 8550 3200
+Wire Wire Line
+	7700 3200 7700 3100
+Wire Wire Line
+	7700 3200 8250 3200
+$Comp
+L Device:LED D?
+U 1 1 5BE9EF5B
+P 7700 2950
+F 0 "D?" V 7738 2833 50  0000 R CNN
+F 1 "LED" V 7647 2833 50  0000 R CNN
+F 2 "" H 7700 2950 50  0001 C CNN
+F 3 "~" H 7700 2950 50  0001 C CNN
+	1    7700 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BE9FE22
+P 7700 2700
+F 0 "#PWR?" H 7700 2550 50  0001 C CNN
+F 1 "+3.3V" H 7715 2873 50  0000 C CNN
+F 2 "" H 7700 2700 50  0001 C CNN
+F 3 "" H 7700 2700 50  0001 C CNN
+	1    7700 2700
+	1    0    0    -1  
+$EndComp
+Text Notes 8500 3300 0    50   ~ 0
+TESTIO
+NoConn ~ 8800 3350
+NoConn ~ 8800 3450
+NoConn ~ 8800 3550
+NoConn ~ 8800 3650
+NoConn ~ 8800 3750
+NoConn ~ 8800 3850
+Wire Wire Line
+	8250 4000 8800 4000
+Wire Wire Line
+	8250 4000 8250 3850
+$Comp
+L Device:R_US R?
+U 1 1 5BEBB03F
+P 8250 3700
+F 0 "R?" H 8182 3654 50  0000 R CNN
+F 1 "10k" H 8182 3745 50  0000 R CNN
+F 2 "" V 8290 3690 50  0001 C CNN
+F 3 "~" H 8250 3700 50  0001 C CNN
+	1    8250 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 3550 8250 3450
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5BEC081A
+P 8250 3450
+F 0 "#PWR?" H 8250 3300 50  0001 C CNN
+F 1 "+3.3V" H 8265 3623 50  0000 C CNN
+F 2 "" H 8250 3450 50  0001 C CNN
+F 3 "" H 8250 3450 50  0001 C CNN
+	1    8250 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4000 8250 4150
+Connection ~ 8250 4000
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5BEC62DD
+P 8250 4350
+F 0 "SW?" V 8296 4302 50  0000 R CNN
+F 1 "SW_Push" V 8205 4302 50  0000 R CNN
+F 2 "" H 8250 4550 50  0001 C CNN
+F 3 "" H 8250 4550 50  0001 C CNN
+	1    8250 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5BEC6B8C
+P 8250 4750
+F 0 "#PWR?" H 8250 4500 50  0001 C CNN
+F 1 "Earth" H 8250 4600 50  0001 C CNN
+F 2 "" H 8250 4750 50  0001 C CNN
+F 3 "~" H 8250 4750 50  0001 C CNN
+	1    8250 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4550 8250 4750
+Wire Wire Line
+	8250 4000 7950 4000
+Text GLabel 7950 4000 0    50   Input ~ 0
+~RESET~
+Wire Wire Line
+	9400 4250 9400 4650
+Wire Wire Line
+	9400 4650 9450 4650
+Wire Wire Line
+	9500 4650 9500 4250
+Wire Wire Line
+	9450 4650 9450 4800
+Connection ~ 9450 4650
+Wire Wire Line
+	9450 4650 9500 4650
+$Comp
+L power:Earth #PWR?
+U 1 1 5BED3928
+P 9450 4800
+F 0 "#PWR?" H 9450 4550 50  0001 C CNN
+F 1 "Earth" H 9450 4650 50  0001 C CNN
+F 2 "" H 9450 4800 50  0001 C CNN
+F 3 "~" H 9450 4800 50  0001 C CNN
+	1    9450 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9800 2400
+NoConn ~ 9800 2500
+Wire Wire Line
+	9800 2200 10050 2200
+Wire Wire Line
+	10050 2300 9800 2300
+Wire Wire Line
+	9800 2600 10050 2600
+Wire Wire Line
+	10050 2700 9800 2700
+Wire Wire Line
+	9800 2800 10000 2800
+Wire Wire Line
+	10000 2900 9800 2900
+Text GLabel 10050 2200 2    50   Input ~ 0
+SWDIO
+Text GLabel 10050 2300 2    50   Input ~ 0
+SWCLK
+Text GLabel 10050 2600 2    50   Input ~ 0
+USB+
+Text GLabel 10050 2700 2    50   Input ~ 0
+USB-
+Text GLabel 10000 2800 2    50   Input ~ 0
+SCL
+Text GLabel 10000 2900 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	4050 6950 4050 7100
+Wire Wire Line
+	7700 2700 7700 2800
+Wire Wire Line
+	1600 5350 2050 5350
+Wire Wire Line
+	2400 6250 2150 6250
+Connection ~ 2400 6250
+Text GLabel 2150 6250 0    50   Input ~ 0
+UC_OUT
 $EndSCHEMATC
