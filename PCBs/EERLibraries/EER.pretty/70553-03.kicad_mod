@@ -1,4 +1,4 @@
-(module 70553-03 (layer F.Cu) (tedit 5BCA94E9)
+(module 70553-03 (layer F.Cu) (tedit 5BD28970)
   (descr "<b>2.54mm Pitch SL™ Header, Low Profile, Single Row, Right Angle, 3.05mm Pocket, Shrouded, 4 Circuits, 0.38µm Gold (Au) Selective Plating, Tin (Sn) PC Tail Plating</b><p><a href =http://www.molex.com/pdm_docs/sd/705530003_sd.pdf>Datasheet </a>")
   (fp_text reference X4 (at -5.715 5.715 90) (layer F.SilkS) hide
     (effects (font (size 0.9652 0.9652) (thickness 0.1016)) (justify left bottom))
@@ -62,7 +62,7 @@
     (solder_mask_margin 0.1016))
   (pad 3 thru_hole oval (at 2.54 7.62 90) (size 3.2766 1.6383) (drill 1.0922) (layers *.Cu *.Mask)
     (solder_mask_margin 0.1016))
-  (model "D:/ROV 2019/Github/2019/PCBs/EERLibraries/3D Models/705530002.STEP"
+  (model "../EERLibraries/3D Models/705530002.STEP"
     (offset (xyz 0 -0.46 2.8))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 180))
