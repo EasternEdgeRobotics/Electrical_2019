@@ -1,0 +1,52 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Status
+1,Unpolarized capacitor,C,C11 C13 C21,0.1uF,C_0603,3,1276-1258-1-ND,
+2,Unpolarized capacitor,C,C2,0.1uF,C_0805,1,399-1169-1-ND,
+3,Unpolarized capacitor,C,C9 C12 C14,10uF,C_0603,3,490-7201-1-ND,
+4,Unpolarized capacitor,C,C1 C5,1uF,C_0805,2,399-1284-1-ND,
+5,Unpolarized capacitor,C,C10 C15 C16 C17 C20,1uF,C_0603,5,1276-6524-1-ND,
+6,Polarised capacitor,CP1,C7 C8,220uF,CP_Radial_D6.3mm_P2.50mm,2,399-13664-ND,
+7,Unpolarized capacitor,C,C18 C19,22pF,C_0603,2,311-3925-1-ND,
+8,Unpolarized capacitor,C,C3 C4,4.7nF,C_0805,2,399-9092-1-ND,
+9,Polarised capacitor,CP1,C6,47uF,CP_Radial_D6.3mm_P2.50mm,1,399-13665-ND,
+10,LED generic,LED,D2,BLUE,LED_0805,1,732-4982-1-ND,
+11,LED generic,LED,D1,GRN,LED_0805,1,732-4983-1-ND,
+12,LED generic,LED,D4,ORNGE,LED_0805,1,160-1413-1-ND,
+13,LED generic,LED,D3,RED,LED_0805,1,732-4984-1-ND,
+14,"Fuse, generic",Fuse,F1,500mA,Fuse_SMD1206_Reflow,1,507-1075-1-ND,
+15,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x01,J1 J2 J5 J6,Conn_01x01,RingTerminal,4,36-7770-ND,
+16,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02,J3,Conn_01x02,70553-02,1,WM4900-ND,
+17,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J4,Conn_01x03,70553-03,1,WM4901-ND,
+18,"Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x05_Odd_Even,J8,Conn_02x05_Odd_Even,Pin_Header_Straight_2x05_Pitch1.27mm,1,609-3712-ND,
+19,USB Mini Type B connector,USB_B_Mini,J7,USB_B_Mini,32005-201,1,151-1206-1-ND,
+20,Ferrite bead,Ferrite_Bead,L1 L2,Ferrite_Bead,L_0805,2,490-9706-1-ND,
+21,Transistor N-MOSFET with substrate diode (general),Q_NMOS_GDS,Q1,Q_NMOS_GDS,TO-252-2,1,DMTH6004SK3-13DICT-ND,
+22,Resistor,R,R5,0,R_0603,1,RMCF0603ZT0R00CT-ND,
+23,Resistor,R,R6 R7,0,R_0805,2,RMCF0805FT22K0CT-ND,
+24,Resistor,R,R1,10k,R_0805,1,RNCP0805FTD10K0CT-ND,
+25,Resistor US symbol,R_US,R10,10k,R_0805,1,RNCP0805FTD10K0CT-ND,
+26,Resistor US symbol,R_US,R11,150,R_0603,1,RHM150DCT-ND,
+27,Resistor,R,R4 R8,1k,R_0805,2,RNCP0805FTD1K00CT-ND,
+28,Resistor,R,R3,200k,R_0603,1,RMCF0603JT200KCT-ND,
+29,Resistor US symbol,R_US,R9,330,R_0603,1,RHM330DCT-ND,
+30,Resistor,R,R2,698k,R_0603,1,RMCF0603FT698KCT-ND,
+31,"Push button switch, generic, two pins",SW_Push,SW1,SW_Push,SW_SPST_EVQPE1,1,401-1707-1-ND,
+32,,ACS711,U1,ACS711,ACS711,1,620-1482-1-ND,
+33,IC MCU 32BIT 64KB FLASH 48QFN,ATSAMD21E16L-MFT,U4,ATSAMD21E16L-MFT,QFN-32-1EP_5x5mm,1,1611-ATSAMD21E16L-MFTCT-ND,Active
+34,,MurataDC-DC,U2,DBQ0135V2,MurataDC-DC,1,S5801-05-ND,
+35,"200 mA Low Dropout Voltage Regulator, Fixed Output 1.8V, SOT-23-5",TLV70018_SOT23-5,U3,TLV733P,SOT-23-5,1,296-40673-1-ND,
+36,Two pin crystal,Crystal,Y1,32.7680kHz,Crystal_SMD_3215-2pin_3.2x1.5mm,1,887-2605-1-ND,
+
+
+
+
+
+Component Groups:,36
+Component Count:,54
+Fitted Components:,54
+Number of PCBs:,1
+Total components:,54
+Schematic Version:,
+Schematic Date:,
+BoM Date:,2018-10-22 1:23:54 AM
+Schematic Source:,D:\ROV 2019\Github\2019\PCBs\DC-DC Board - Micro\DC-DC Board Micro.sch
+KiCad Version:,Eeschema (5.0.0)
