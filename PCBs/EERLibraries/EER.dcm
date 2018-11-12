@@ -1,6 +1,6 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP ATSAMD21E16L-MFT
+$CMP ATSAMD21E18A-MFT
 D IC MCU 32BIT 64KB FLASH 48QFN
 K ATSAMD21G16B-MFT
 F http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en590209
