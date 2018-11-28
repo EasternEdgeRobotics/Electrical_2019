@@ -5,39 +5,39 @@ Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
   0 .text         00000414  00000000  00000000  00010000  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .relocate     00000434  20000000  00000414  00020000  2**3
-                  CONTENTS, ALLOC, LOAD, DATA
-  2 .bss          00000040  20000434  00000848  00020434  2**2
+  1 .relocate     0000043c  20000000  00000414  00020000  2**3
+                  CONTENTS, ALLOC, LOAD, CODE
+  2 .bss          00000040  2000043c  00000850  0002043c  2**2
                   ALLOC
-  3 .stack        00002004  20000474  00000888  00020434  2**0
+  3 .stack        00002004  2000047c  00000890  0002043c  2**0
                   ALLOC
-  4 .ARM.attributes 00000028  00000000  00000000  00020434  2**0
+  4 .ARM.attributes 00000028  00000000  00000000  0002043c  2**0
                   CONTENTS, READONLY
-  5 .comment      00000059  00000000  00000000  0002045c  2**0
+  5 .comment      00000059  00000000  00000000  00020464  2**0
                   CONTENTS, READONLY
-  6 .debug_info   00003c16  00000000  00000000  000204b5  2**0
+  6 .debug_info   00003c29  00000000  00000000  000204bd  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_abbrev 0000034d  00000000  00000000  000240cb  2**0
+  7 .debug_abbrev 00000380  00000000  00000000  000240e6  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_loc    000000dd  00000000  00000000  00024418  2**0
+  8 .debug_loc    00000060  00000000  00000000  00024466  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_aranges 00000070  00000000  00000000  000244f5  2**0
+  9 .debug_aranges 00000078  00000000  00000000  000244c6  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_ranges 00000040  00000000  00000000  00024565  2**0
+ 10 .debug_ranges 00000048  00000000  00000000  0002453e  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_macro  000104ad  00000000  00000000  000245a5  2**0
+ 11 .debug_macro  000104b1  00000000  00000000  00024586  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_line   0000140d  00000000  00000000  00034a52  2**0
+ 12 .debug_line   0000142f  00000000  00000000  00034a37  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_str    00069b24  00000000  00000000  00035e5f  2**0
+ 13 .debug_str    00069b2d  00000000  00000000  00035e66  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_frame  00000258  00000000  00000000  0009f984  2**2
+ 14 .debug_frame  00000270  00000000  00000000  0009f994  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
 
 00000000 <exception_table>:
-   0:	78 24 00 20 19 01 00 00 15 01 00 00 15 01 00 00     x$. ............
+   0:	80 24 00 20 19 01 00 00 15 01 00 00 15 01 00 00     .$. ............
 	...
   2c:	15 01 00 00 00 00 00 00 00 00 00 00 15 01 00 00     ................
   3c:	15 01 00 00 15 01 00 00 15 01 00 00 15 01 00 00     ................
@@ -64,7 +64,7 @@ Disassembly of section .text:
   ca:	2301      	movs	r3, #1
   cc:	7023      	strb	r3, [r4, #0]
   ce:	bd10      	pop	{r4, pc}
-  d0:	20000434 	.word	0x20000434
+  d0:	2000043c 	.word	0x2000043c
   d4:	00000000 	.word	0x00000000
   d8:	00000414 	.word	0x00000414
 
@@ -88,7 +88,7 @@ Disassembly of section .text:
   fc:	4798      	blx	r3
   fe:	e7f9      	b.n	f4 <frame_dummy+0x18>
  100:	00000000 	.word	0x00000000
- 104:	20000438 	.word	0x20000438
+ 104:	20000440 	.word	0x20000440
  108:	00000414 	.word	0x00000414
  10c:	00000414 	.word	0x00000414
  110:	00000000 	.word	0x00000000
@@ -210,10 +210,10 @@ void Dummy_Handler(void)
  1c2:	e7fe      	b.n	1c2 <Reset_Handler+0xaa>
  1c4:	00000414 	.word	0x00000414
  1c8:	20000000 	.word	0x20000000
- 1cc:	20000434 	.word	0x20000434
+ 1cc:	2000043c 	.word	0x2000043c
  1d0:	20000004 	.word	0x20000004
- 1d4:	20000434 	.word	0x20000434
- 1d8:	20000474 	.word	0x20000474
+ 1d4:	2000043c 	.word	0x2000043c
+ 1d8:	2000047c 	.word	0x2000047c
  1dc:	e000ed00 	.word	0xe000ed00
  1e0:	00000000 	.word	0x00000000
  1e4:	41007000 	.word	0x41007000
@@ -237,61 +237,59 @@ void SystemInit(void)
 }
  202:	4770      	bx	lr
  204:	000f4240 	.word	0x000f4240
- 208:	20000000 	.word	0x20000000
+ 208:	2000000c 	.word	0x2000000c
 
 0000020c <main>:
 
 #include "sam.h"
-
+#include "delay.h"
 
 int main(void)
 {
- 20c:	b510      	push	{r4, lr}
+ 20c:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
     /* Initialize the SAM system */
     SystemInit();
- 20e:	4b0a      	ldr	r3, [pc, #40]	; (238 <main+0x2c>)
+ 20e:	4b09      	ldr	r3, [pc, #36]	; (234 <main+0x28>)
  210:	4798      	blx	r3
 
-    /* Replace with your application code */
+    //PA11 is the test LED for EER's current 2019 boards
 	REG_PORT_DIRSET0 = PORT_PA11;
  212:	2280      	movs	r2, #128	; 0x80
  214:	0112      	lsls	r2, r2, #4
- 216:	4b09      	ldr	r3, [pc, #36]	; (23c <main+0x30>)
+ 216:	4b08      	ldr	r3, [pc, #32]	; (238 <main+0x2c>)
  218:	601a      	str	r2, [r3, #0]
 	
     while (1) 
     {
-		for (int i=0; i<30000; i++) {}
-			
+		//Delay a bit
+		//for (int i=0; i<30000; i++) {}
+		delay_us(10000);
+ 21a:	4e08      	ldr	r6, [pc, #32]	; (23c <main+0x30>)
+ 21c:	4d08      	ldr	r5, [pc, #32]	; (240 <main+0x34>)
 		REG_PORT_OUTSET0 = PORT_PA11;
- 21a:	4809      	ldr	r0, [pc, #36]	; (240 <main+0x34>)
+ 21e:	4f09      	ldr	r7, [pc, #36]	; (244 <main+0x38>)
+		delay_us(10000);
+ 220:	0030      	movs	r0, r6
+ 222:	47a8      	blx	r5
+		REG_PORT_OUTSET0 = PORT_PA11;
+ 224:	2480      	movs	r4, #128	; 0x80
+ 226:	0124      	lsls	r4, r4, #4
+ 228:	603c      	str	r4, [r7, #0]
 		
-		for (int i=0; i<30000; i++) {}
-		
+		//for (int i=0; i<30000; i++) {}
+		delay_us(10000);
+ 22a:	0030      	movs	r0, r6
+ 22c:	47a8      	blx	r5
 		REG_PORT_OUTCLR0 = PORT_PA11;
- 21c:	4909      	ldr	r1, [pc, #36]	; (244 <main+0x38>)
- 21e:	e000      	b.n	222 <main+0x16>
- 220:	600a      	str	r2, [r1, #0]
-{
- 222:	4b09      	ldr	r3, [pc, #36]	; (248 <main+0x3c>)
- 224:	3b01      	subs	r3, #1
-		for (int i=0; i<30000; i++) {}
- 226:	2b00      	cmp	r3, #0
- 228:	d1fc      	bne.n	224 <main+0x18>
-		REG_PORT_OUTSET0 = PORT_PA11;
- 22a:	6002      	str	r2, [r0, #0]
- 22c:	4b06      	ldr	r3, [pc, #24]	; (248 <main+0x3c>)
- 22e:	3b01      	subs	r3, #1
-		for (int i=0; i<30000; i++) {}
- 230:	2b00      	cmp	r3, #0
- 232:	d1fc      	bne.n	22e <main+0x22>
- 234:	e7f4      	b.n	220 <main+0x14>
- 236:	46c0      	nop			; (mov r8, r8)
- 238:	000001fd 	.word	0x000001fd
- 23c:	41004408 	.word	0x41004408
- 240:	41004418 	.word	0x41004418
- 244:	41004414 	.word	0x41004414
- 248:	00007530 	.word	0x00007530
+ 22e:	4b06      	ldr	r3, [pc, #24]	; (248 <main+0x3c>)
+ 230:	601c      	str	r4, [r3, #0]
+ 232:	e7f5      	b.n	220 <main+0x14>
+ 234:	000001fd 	.word	0x000001fd
+ 238:	41004408 	.word	0x41004408
+ 23c:	00002710 	.word	0x00002710
+ 240:	20000001 	.word	0x20000001
+ 244:	41004418 	.word	0x41004418
+ 248:	41004414 	.word	0x41004414
 
 0000024c <__libc_init_array>:
  24c:	b570      	push	{r4, r5, r6, lr}
@@ -492,12 +490,12 @@ int main(void)
  3da:	2001      	movs	r0, #1
  3dc:	4240      	negs	r0, r0
  3de:	e7b1      	b.n	344 <__register_exitproc+0x4c>
- 3e0:	20000430 	.word	0x20000430
+ 3e0:	20000438 	.word	0x20000438
  3e4:	000003ec 	.word	0x000003ec
  3e8:	00000000 	.word	0x00000000
 
 000003ec <_global_impure_ptr>:
- 3ec:	20000008                                ... 
+ 3ec:	20000010                                ... 
 
 000003f0 <_init>:
  3f0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
@@ -523,3 +521,36 @@ int main(void)
 
 00000410 <__fini_array_start>:
  410:	000000b5 	.word	0x000000b5
+
+Disassembly of section .relocate:
+
+20000000 <delay_us>:
+__attribute__((section(".ramfunc"))) void delay_us(uint32_t n)
+{
+	__asm(
+20000000:	210f      	movs	r1, #15
+
+20000002 <mydelay1>:
+20000002:	3901      	subs	r1, #1
+20000004:	d1fd      	bne.n	20000002 <mydelay1>
+20000006:	3801      	subs	r0, #1
+20000008:	d1fa      	bne.n	20000000 <delay_us>
+	" sub  r1, r1, #1 \n"  // 1 cycle
+	" bne  mydelay1    \n" // 2 if taken, 1 otherwise
+	" sub  r0, r0, #1 \n"  // 1 cycle
+	" bne  mydelay    \n"  // 2 if taken, 1 otherwise
+	);
+2000000a:	4770      	bx	lr
+
+2000000c <SystemCoreClock>:
+2000000c:	4240 000f                                   @B..
+
+20000010 <impure_data>:
+20000010:	0000 0000 02fc 2000 0364 2000 03cc 2000     ....... d.. ... 
+	...
+200000b8:	0001 0000 0000 0000 330e abcd 1234 e66d     .........3..4.m.
+200000c8:	deec 0005 000b 0000 0000 0000 0000 0000     ................
+	...
+
+20000438 <__atexit_recursive_mutex>:
+20000438:	0458 2000                                   X.. 
