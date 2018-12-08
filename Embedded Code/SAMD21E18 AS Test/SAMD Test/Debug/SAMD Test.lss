@@ -249,44 +249,45 @@ int main(void)
  20c:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
     /* Initialize the SAM system */
     SystemInit();
- 20e:	4b09      	ldr	r3, [pc, #36]	; (234 <main+0x28>)
+ 20e:	4b0a      	ldr	r3, [pc, #40]	; (238 <main+0x2c>)
  210:	4798      	blx	r3
 
     //PA11 is the test LED for EER's current 2019 boards
 	REG_PORT_DIRSET0 = PORT_PA11;
  212:	2280      	movs	r2, #128	; 0x80
  214:	0112      	lsls	r2, r2, #4
- 216:	4b08      	ldr	r3, [pc, #32]	; (238 <main+0x2c>)
+ 216:	4b09      	ldr	r3, [pc, #36]	; (23c <main+0x30>)
  218:	601a      	str	r2, [r3, #0]
 	
     while (1) 
     {
 		//Delay a bit
 		//for (int i=0; i<30000; i++) {}
-		delay_us(10000);
- 21a:	4e08      	ldr	r6, [pc, #32]	; (23c <main+0x30>)
- 21c:	4d08      	ldr	r5, [pc, #32]	; (240 <main+0x34>)
+		delay_us(1000);
+ 21a:	26fa      	movs	r6, #250	; 0xfa
+ 21c:	00b6      	lsls	r6, r6, #2
+ 21e:	4d08      	ldr	r5, [pc, #32]	; (240 <main+0x34>)
 		REG_PORT_OUTSET0 = PORT_PA11;
- 21e:	4f09      	ldr	r7, [pc, #36]	; (244 <main+0x38>)
-		delay_us(10000);
- 220:	0030      	movs	r0, r6
- 222:	47a8      	blx	r5
+ 220:	4f08      	ldr	r7, [pc, #32]	; (244 <main+0x38>)
+		delay_us(1000);
+ 222:	0030      	movs	r0, r6
+ 224:	47a8      	blx	r5
 		REG_PORT_OUTSET0 = PORT_PA11;
- 224:	2480      	movs	r4, #128	; 0x80
- 226:	0124      	lsls	r4, r4, #4
- 228:	603c      	str	r4, [r7, #0]
+ 226:	2480      	movs	r4, #128	; 0x80
+ 228:	0124      	lsls	r4, r4, #4
+ 22a:	603c      	str	r4, [r7, #0]
 		
 		//for (int i=0; i<30000; i++) {}
-		delay_us(10000);
- 22a:	0030      	movs	r0, r6
- 22c:	47a8      	blx	r5
+		delay_us(1000);
+ 22c:	0030      	movs	r0, r6
+ 22e:	47a8      	blx	r5
 		REG_PORT_OUTCLR0 = PORT_PA11;
- 22e:	4b06      	ldr	r3, [pc, #24]	; (248 <main+0x3c>)
- 230:	601c      	str	r4, [r3, #0]
- 232:	e7f5      	b.n	220 <main+0x14>
- 234:	000001fd 	.word	0x000001fd
- 238:	41004408 	.word	0x41004408
- 23c:	00002710 	.word	0x00002710
+ 230:	4b05      	ldr	r3, [pc, #20]	; (248 <main+0x3c>)
+ 232:	601c      	str	r4, [r3, #0]
+ 234:	e7f5      	b.n	222 <main+0x16>
+ 236:	46c0      	nop			; (mov r8, r8)
+ 238:	000001fd 	.word	0x000001fd
+ 23c:	41004408 	.word	0x41004408
  240:	20000001 	.word	0x20000001
  244:	41004418 	.word	0x41004418
  248:	41004414 	.word	0x41004414

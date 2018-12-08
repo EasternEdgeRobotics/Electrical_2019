@@ -22,11 +22,11 @@ int main(void)
     {
 		//Delay a bit
 		//for (int i=0; i<30000; i++) {}
-		delay_us(10000);
+		delay_us(1000);
 		REG_PORT_OUTSET0 = PORT_PA11;
 		
 		//for (int i=0; i<30000; i++) {}
-		delay_us(10000);
+		delay_us(1000);
 		REG_PORT_OUTCLR0 = PORT_PA11;
     }
 }

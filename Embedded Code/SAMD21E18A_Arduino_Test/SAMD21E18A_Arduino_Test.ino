@@ -1,19 +1,33 @@
 void setup() {
   // put your setup code here, to run once:
+  pinMode(2, INPUT);
+  pinMode(3, INPUT);
+  pinMode(4, INPUT);
   pinMode(5, INPUT);
   pinMode(6, INPUT);
-  pinMode(11, OUTPUT);
+  pinMode(7, INPUT);
+  pinMode(8, INPUT);
+  pinMode(9, INPUT);
+  pinMode(10, INPUT);
+  pinMode(11, INPUT);
+  pinMode(14, OUTPUT);
 }
 
 void loop() {
-  delay(500);
+  delay(250);
   Serial.println("Hey");
-  int current1 = analogRead(5);
-  int current2 = analogRead(6);
-  digitalWrite(11, HIGH);
+  digitalWrite(14, HIGH);
   
-  delay(500);
-  Serial.println(current1);
-  Serial.println(current2);
-  digitalWrite(11, LOW);
+  delay(250);
+  Serial.println(analogRead(2));
+  Serial.println(analogRead(3));
+  Serial.println(analogRead(4));
+  Serial.println(analogRead(5));
+  Serial.println(analogRead(6));
+  Serial.println(analogRead(7));
+  Serial.println(analogRead(8));
+  Serial.println(analogRead(9));
+  Serial.println(analogRead(10));
+  Serial.println(analogRead(11));
+  digitalWrite(14, LOW);
 }
