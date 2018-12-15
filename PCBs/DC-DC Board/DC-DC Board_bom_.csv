@@ -1,23 +1,23 @@
-Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Build Quantity,Datasheet
-1,Unpolarized capacitor,C,C2 C13,0.1uF,C_0805,2,4,399-1169-1-ND
-2,Unpolarized capacitor,C,C1 C5 C7 C9 C11 C12,1uF,C_0805,6,12,399-1284-1-ND
-3,Polarised capacitor,CP1,C8 C10,220uF,CP_Radial_D6.3mm_P2.50mm,2,4,399-13664-ND
-4,Unpolarized capacitor,C,C3 C4,4.7nF,C_0805,2,4,399-9092-1-ND
-5,Polarised capacitor,CP1,C6,47uF,CP_Radial_D6.3mm_P2.50mm,1,2,399-13665-ND
-6,LED generic,LED,D1 D3,LED,LED_0805,2,4,732-4983-1-ND
-7,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x01,J1 J2 J3 J4,Conn_01x01,RingTerminal,4,8,36-7770-ND
-8,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02,J5 J6,Conn_01x02,MOLEX_0705530001,2,4,WM4900-ND
-9,Transistor N-MOSFET with substrate diode (general),Q_NMOS_GDS,Q1,Q_NMOS_GDS,TO-252-2,1,2,DMTH6004SK3-13DICT-ND
-10,Resistor,R,R3 R4,0,R_0805,2,4,RMCF0805FT22K0CT-ND
-11,Resistor,R,R9,0,R_0603,1,2,RMCF0603ZT0R00CT-ND
-12,Resistor,R,R2,10k,R_0805,1,2,RNCP0805FTD10K0CT-ND
-13,Resistor,R,R6 R8,1k,R_0805,2,4,RNCP0805FTD1K00CT-ND
-14,Resistor,R,R7,200k,R_0603,1,2,RMCF0603JT200KCT-ND
-15,Resistor,R,R1,698k,R_0603,1,2,RMCF0603FT698KCT-ND
-16,,ACS711,U2,ACS711,ACS711,1,2,620-1482-1-ND
-17,,MurataDC-DC,U1,DBQ0135V2,MurataDC-DC,1,2,S5801-05-ND
-18,,MC33375,U3,NCP551,SOT-23-5,1,2,NCP551SN50T1GOSCT-ND
-19,"200 mA Low Dropout Voltage Regulator, Fixed Output 1.8V, SOT-23-5",TLV70018_SOT23-5,U4,TLV733P,SOT-23-5,1,2,296-40673-1-ND
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Unpolarized capacitor,C,C2 C13,0.1uF,C_0805,2,399-1169-1-ND
+2,Unpolarized capacitor,C,C1 C5 C7 C9 C11 C12,1uF,C_0805,6,399-1284-1-ND
+3,Polarised capacitor,CP1,C8 C10,220uF,CP_Radial_D6.3mm_P2.50mm,2,399-13664-ND
+4,Unpolarized capacitor,C,C3 C4,4.7nF,C_0805,2,399-9092-1-ND
+5,Polarised capacitor,CP1,C6,47uF,CP_Radial_D6.3mm_P2.50mm,1,399-13665-ND
+6,LED generic,LED,D1 D3,LED,LED_0805,2,732-4983-1-ND
+7,"Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x01,J1 J2 J3 J4,Conn_01x01,RingTerminal,4,36-7770-ND
+8,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02,J5 J6,Conn_01x02,70553-02,2,WM4900-ND
+9,Transistor N-MOSFET with substrate diode (general),Q_NMOS_GDS,Q1,Q_NMOS_GDS,TO-252-2,1,DMTH6004SK3-13DICT-ND
+10,Resistor,R,R3 R4,0,R_0805,2,RMCF0805FT22K0CT-ND
+11,Resistor,R,R9,0,R_0603,1,RMCF0603ZT0R00CT-ND
+12,Resistor,R,R2,10k,R_0805,1,RNCP0805FTD10K0CT-ND
+13,Resistor,R,R6 R8,1k,R_0805,2,RNCP0805FTD1K00CT-ND
+14,Resistor,R,R7,200k,R_0603,1,RMCF0603JT200KCT-ND
+15,Resistor,R,R1,698k,R_0603,1,RMCF0603FT698KCT-ND
+16,,ACS711,U2,ACS711,ACS711,1,620-1482-1-ND
+17,,MurataDC-DC,U1,DBQ0135V2,MurataDC-DC,1,S5801-05-ND
+18,,MC33375,U3,NCP551,SOT-23-5,1,NCP551SN50T1GOSCT-ND
+19,"200 mA Low Dropout Voltage Regulator, Fixed Output 1.8V, SOT-23-5",TLV70018_SOT23-5,U4,TLV733P,SOT-23-5,1,296-40673-1-ND
 
 
 
@@ -26,10 +26,10 @@ Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Build Qua
 Component Groups:,19
 Component Count:,34
 Fitted Components:,34
-Number of PCBs:,2
-Total components:,68
+Number of PCBs:,1
+Total components:,34
 Schematic Version:,
 Schematic Date:,
-BoM Date:,2018-10-18 10:43:22 PM
+BoM Date:,2018-11-03 11:35:13 PM
 Schematic Source:,D:\ROV 2019\Github\2019\PCBs\DC-DC Board\DC-DC Board.sch
 KiCad Version:,Eeschema (5.0.0)

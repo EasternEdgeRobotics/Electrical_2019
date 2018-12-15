@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>D:\ROV 2019\Github\2019\PCBs\Dual CamCon\Dual CamCon.sch</source>
-    <date>2018-10-19 10:46:09 PM</date>
+    <date>2018-11-03 11:19:18 PM</date>
     <tool>Eeschema (5.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -37,7 +37,7 @@
     </comp>
     <comp ref="J2">
       <value>Servo Input</value>
-      <footprint>EER:MOLEX_0705530001</footprint>
+      <footprint>EER:70553-02</footprint>
       <datasheet>WM4900-ND</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -45,7 +45,7 @@
     </comp>
     <comp ref="J1">
       <value>Servo Input</value>
-      <footprint>EER:MOLEX_0705530001</footprint>
+      <footprint>EER:70553-02</footprint>
       <datasheet>WM4900-ND</datasheet>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
