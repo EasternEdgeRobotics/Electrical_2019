@@ -16,7 +16,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1350 1200 2250 1050
+S 800  850  2250 1050
 U 5BDA2A5C
 F0 "PhSensor" 50
 F1 "PhSensor.sch" 50
