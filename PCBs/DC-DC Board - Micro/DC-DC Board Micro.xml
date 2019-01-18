@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>D:\ROV 2019\Github\2019\PCBs\DC-DC Board - Micro\DC-DC Board Micro.sch</source>
-    <date>2018-10-22 9:36:20 PM</date>
+    <date>2018-11-03 11:54:16 PM</date>
     <tool>Eeschema (5.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -428,9 +428,9 @@
       <tstamp>5BDC5DCA</tstamp>
     </comp>
     <comp ref="R11">
-      <value>150</value>
+      <value>680</value>
       <footprint>Resistors_SMD:R_0603</footprint>
-      <datasheet>RHM150DCT-ND</datasheet>
+      <datasheet>RHM680DCT-ND</datasheet>
       <libsource lib="Device" part="R_US" description="Resistor US symbol"/>
       <sheetpath names="/MicroController/" tstamps="/5BCC3BA6/"/>
       <tstamp>5BDD760F</tstamp>

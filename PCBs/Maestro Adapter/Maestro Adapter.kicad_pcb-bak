@@ -17,11 +17,11 @@
   )
 
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
-    (32 B.Adhes user hide)
-    (33 F.Adhes user hide)
-    (34 B.Paste user hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
+    (32 B.Adhes user)
+    (33 F.Adhes user)
+    (34 B.Paste user)
     (35 F.Paste user hide)
     (36 B.SilkS user hide)
     (37 F.SilkS user hide)
@@ -68,8 +68,8 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFF7FF)
     (pcbplotparams
-      (layerselection 0x010fc_ffffffff)
-      (usegerberextensions false)
+      (layerselection 0x010f0_ffffffff)
+      (usegerberextensions true)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
@@ -91,9 +91,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "Gerbers/"))
   )
 
   (net 0 "")
@@ -1818,7 +1818,7 @@
   (gr_line (start 81.39 122.52) (end 81.39 131.93) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 71 165.27) (end 71 125.52) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 112.92 168.27) (end 74 168.27) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 115.92 125.53) (end 115.92 165.27) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 115.92 125.52) (end 115.92 165.27) (layer Edge.Cuts) (width 0.2))
 
   (segment (start 102.71 125.28) (end 101.49 124.06) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 108.17 126.14) (end 107.31 125.28) (width 0.25) (layer F.Cu) (net 1))
@@ -1944,7 +1944,7 @@
   (segment (start 103.99 141.78) (end 101.49 139.28) (width 0.25) (layer F.Cu) (net 21))
   (segment (start 103.99 142.68) (end 103.99 141.78) (width 0.25) (layer F.Cu) (net 21))
 
-  (zone (net 2) (net_name GND) (layer B.Cu) (tstamp 5BD4A27A) (hatch edge 0.508)
+  (zone (net 2) (net_name GND) (layer B.Cu) (tstamp 5BDE3A08) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))

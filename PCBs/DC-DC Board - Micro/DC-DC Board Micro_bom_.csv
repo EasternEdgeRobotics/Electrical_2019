@@ -24,10 +24,10 @@ Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
 23,Resistor,R,R6 R7,0,R_0805,2,RMCF0805FT22K0CT-ND,
 24,Resistor,R,R1,10k,R_0805,1,RNCP0805FTD10K0CT-ND,
 25,Resistor US symbol,R_US,R10,10k,R_0805,1,RNCP0805FTD10K0CT-ND,
-26,Resistor US symbol,R_US,R11,150,R_0603,1,RHM150DCT-ND,
-27,Resistor,R,R4 R8,1k,R_0805,2,RNCP0805FTD1K00CT-ND,
-28,Resistor,R,R3,200k,R_0603,1,RMCF0603JT200KCT-ND,
-29,Resistor US symbol,R_US,R9,330,R_0603,1,RHM330DCT-ND,
+26,Resistor,R,R4 R8,1k,R_0805,2,RNCP0805FTD1K00CT-ND,
+27,Resistor,R,R3,200k,R_0603,1,RMCF0603JT200KCT-ND,
+28,Resistor US symbol,R_US,R9,330,R_0603,1,RHM330DCT-ND,
+29,Resistor US symbol,R_US,R11,680,R_0603,1,RHM680DCT-ND,
 30,Resistor,R,R2,698k,R_0603,1,RMCF0603FT698KCT-ND,
 31,"Push button switch, generic, two pins",SW_Push,SW1,SW_Push,SW_SPST_EVQPE1,1,401-1707-1-ND,
 32,,ACS711,U1,ACS711,ACS711,1,620-1482-1-ND,
@@ -47,6 +47,6 @@ Number of PCBs:,1
 Total components:,54
 Schematic Version:,
 Schematic Date:,
-BoM Date:,2018-10-22 1:23:54 AM
+BoM Date:,2018-11-03 11:54:16 PM
 Schematic Source:,D:\ROV 2019\Github\2019\PCBs\DC-DC Board - Micro\DC-DC Board Micro.sch
 KiCad Version:,Eeschema (5.0.0)
