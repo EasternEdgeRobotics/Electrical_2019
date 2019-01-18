@@ -17,8 +17,8 @@
 #define TESTLED 11
 
 //I2C Addresses and Commands
-#define DCDC_A        (0x01)      //DCDC A (Micro) I2C address
-#define DCDC_B        (0x02)      //DCDC B I2C address
+#define DCDC_A        (0x77)      //DCDC A (Micro) address (Default address)
+#define DCDC_B        (0x02)      //DCDC B address
 #define DCDC_C        (0x03)      //DCDC C address
 #define READ_VIN      (0x88)
 #define READ_VOUT     (0x8B)
@@ -33,6 +33,7 @@ TwoWire myWire(&sercom3, 22, 23);
 uint16_t value;
 
 void setup() {
+  //Let DC-DCs "boot", make sure we don't lock up the PMBus
   delay(100);
   
   Serial.begin(115200);
@@ -50,13 +51,13 @@ void setup() {
 }
 
 void loop() {
-  myWire.beginTransmission(119);
+  myWire.beginTransmission(DCDC_A);
   myWire.write(READ_TEMP);
   myWire.endTransmission(false);
 
   delayMicroseconds(100);
   
-  myWire.requestFrom(119, (uint8_t)2, (uint8_t)true);
+  myWire.requestFrom(DCDC_A, (uint8_t)2, (uint8_t)true);
   if (myWire.available()) {
     value = myWire.read();   //Low byte
     value = ((myWire.read() << 8) | value);   //High byte
@@ -69,45 +70,21 @@ void loop() {
   Serial.print("TEMP: ");
   Serial.println(actual);
 
-  
-  /*
-  uint8_t readingLOW = myWire.read();  
-  uint8_t readingHIGH = myWire.read();  
-  Serial.print("Low Byte: "); 
-  Serial.print(readingLOW, HEX); 
-  Serial.print(" High Byte: "); 
-  Serial.print(readingHIGH, HEX);
-  Serial.println();
-  */
-
   delay(1);
-  
-  /*
-  delay(500);
-  Serial.println("Hey");
-  digitalWrite(TESTLED, HIGH);
-  
-  delay(500);
-  Serial.println(analogRead(VIOUT1));
-  Serial.println(analogRead(VIOUT2));
-  Serial.println(analogRead(VIOUT3));
-  digitalWrite(TESTLED, LOW);
-  */
+
 }
 
-float convertPMBus_normal(uint16_t reading) {
+float convertPMBus(uint16_t reading) {
   
   int16_t Y = reading & 0b0000011111111111;
   if ((int)Y >= 1024) {
-    Y = ~Y + 1; //Get Y from twos compliment
-    Y = -Y;
+    Y = -(~Y + 1); //Get Y from twos compliment
   }
   
   int16_t N = reading >> 11;
   if ((int)N >= 16) {
    N = ~N + 1;
-   N = N & 0b0000000000011111;
-   N = -N;
+   N = -(N & 0b0000000000011111);
   }
   
   float value = Y * pow(2, N);
@@ -117,7 +94,7 @@ float convertPMBus_normal(uint16_t reading) {
 
 float convertPMBus_VOUT(uint16_t reading) {
 
-  uint16_t V = reading;
+  uint16_t V = reading; //No twos compliment here
   
   int16_t N = -9; //Found from VOUT_MODE command, lower 5 bits of the byte sent.
                   //This should be constant for all the DC-DCs at any time.
