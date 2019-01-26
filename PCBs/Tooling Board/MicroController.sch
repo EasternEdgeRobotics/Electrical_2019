@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -7489,29 +7489,13 @@ Wire Wire Line
 Wire Wire Line
 	5940 4100 6000 4100
 Wire Wire Line
-	7000 2750 7070 2750
-Wire Wire Line
 	7000 2650 7070 2650
 Text GLabel 7070 2650 2    50   Input ~ 0
 DirB2
-Text GLabel 7070 2750 2    50   Input ~ 0
-DirA3
-Text GLabel 5920 2950 0    50   Input ~ 0
-EnableA3
-Text GLabel 5920 3050 0    50   Input ~ 0
-EnableB3
-Wire Wire Line
-	5920 3050 6000 3050
-Wire Wire Line
-	6000 2950 5920 2950
 Text GLabel 5940 3900 0    50   Input ~ 0
 DirA2
 Wire Wire Line
 	5810 2750 6000 2750
-Text GLabel 5840 2550 0    50   Input ~ 0
-DirB3
-Wire Wire Line
-	5840 2550 6000 2550
 NoConn ~ 6000 2650
 Wire Wire Line
 	6000 3350 5910 3350
@@ -7519,4 +7503,8 @@ Text GLabel 5910 3350 0    50   Input ~ 0
 T_DATA
 Text Notes 5250 2790 0    50   ~ 0
 AIN4
+NoConn ~ 6000 2950
+NoConn ~ 6000 3050
+NoConn ~ 7000 2750
+NoConn ~ 6000 2550
 $EndSCHEMATC

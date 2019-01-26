@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -32,14 +32,6 @@ F1 "DCMotor3-4.sch" 50
 $EndSheet
 Text Notes 5100 2680 0    157  Italic 31
 DC Motors 3-4
-$Sheet
-S 7650 1540 2330 2030
-U 5C4D49A1
-F0 "DCMotor5-6" 50
-F1 "DCMotor5-6.sch" 50
-$EndSheet
-Text Notes 7890 2680 0    157  Italic 31
-DC Motors 5-6
 Text HLabel 1410 5450 0    50   Input ~ 0
 +12V
 Wire Wire Line
