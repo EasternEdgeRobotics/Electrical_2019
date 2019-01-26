@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -7079,7 +7079,7 @@ Wire Wire Line
 	3250 2500 3250 2700
 Connection ~ 3250 2500
 Wire Wire Line
-	3250 2500 3800 2500
+	3250 2500 3630 2500
 Connection ~ 2800 2500
 Wire Wire Line
 	2800 2500 3250 2500
@@ -7481,4 +7481,20 @@ Text GLabel 5800 2950 0    50   Input ~ 0
 VIOUT2
 Text GLabel 5800 2850 0    50   Input ~ 0
 VIOUT1
+$Comp
+L power:+5V #PWR?
+U 1 1 5C4C3747
+P 3630 2290
+F 0 "#PWR?" H 3630 2140 50  0001 C CNN
+F 1 "+5V" H 3645 2463 50  0000 C CNN
+F 2 "" H 3630 2290 50  0001 C CNN
+F 3 "" H 3630 2290 50  0001 C CNN
+	1    3630 2290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3630 2290 3630 2500
+Connection ~ 3630 2500
+Wire Wire Line
+	3630 2500 3800 2500
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -14,339 +14,30 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:C C?
-U 1 1 5BDB50FD
-P 3390 1110
-F 0 "C?" H 3505 1156 50  0000 L CNN
-F 1 "10000pF" H 3505 1065 50  0000 L CNN
-F 2 "" H 3428 960 50  0001 C CNN
-F 3 "~" H 3390 1110 50  0001 C CNN
-	1    3390 1110
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3390 1410 3390 1260
-Wire Wire Line
-	3240 1410 3240 960 
-Wire Wire Line
-	3240 960  3090 960 
-Wire Wire Line
-	3090 1410 3090 960 
-Connection ~ 3090 960 
-Wire Wire Line
-	3390 960  3240 960 
-Connection ~ 3240 960 
-$Comp
-L Device:C C?
-U 1 1 5BDB5A63
-P 2440 1310
-F 0 "C?" H 2490 1410 50  0000 L CNN
-F 1 "0.1uF" H 2490 1210 50  0000 L CNN
-F 2 "" H 2478 1160 50  0001 C CNN
-F 3 "~" H 2440 1310 50  0001 C CNN
-	1    2440 1310
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1540 960  1740 960 
-$Comp
-L Device:CP C?
-U 1 1 5BDB5E13
-P 2090 1310
-F 0 "C?" H 2140 1410 50  0000 L CNN
-F 1 "100uF" H 2140 1210 50  0000 L CNN
-F 2 "" H 2128 1160 50  0001 C CNN
-F 3 "~" H 2090 1310 50  0001 C CNN
-	1    2090 1310
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Zener D?
-U 1 1 5BDB5E60
-P 1740 1310
-F 0 "D?" V 1640 1360 50  0000 L CNN
-F 1 "40V" V 1840 1360 50  0000 L CNN
-F 2 "" H 1740 1310 50  0001 C CNN
-F 3 "~" H 1740 1310 50  0001 C CNN
-	1    1740 1310
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2440 1160 2440 960 
-Connection ~ 2440 960 
-Wire Wire Line
-	2440 960  3090 960 
-Wire Wire Line
-	2090 1160 2090 960 
-Connection ~ 2090 960 
-Wire Wire Line
-	2090 960  2440 960 
-Wire Wire Line
-	1740 1160 1740 960 
-Connection ~ 1740 960 
-Wire Wire Line
-	1740 960  2090 960 
-$Comp
-L TLE8209-2SA:TLE8209-2SA U?
-U 1 1 5BDBB657
-P 2740 3160
-F 0 "U?" H 3931 3856 50  0000 L CNN
-F 1 "TLE8209-2SA" H 3931 3765 50  0000 L CNN
-F 2 "" H 3340 3610 50  0001 C CNN
-F 3 "" H 3340 3610 50  0001 C CNN
-	1    2740 3160
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 5BDBBC0F
-P 2440 1560
-F 0 "#PWR?" H 2440 1310 50  0001 C CNN
-F 1 "Earth" H 2440 1410 50  0001 C CNN
-F 2 "" H 2440 1560 50  0001 C CNN
-F 3 "~" H 2440 1560 50  0001 C CNN
-	1    2440 1560
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 5BDBBE4F
-P 2090 1560
-F 0 "#PWR?" H 2090 1310 50  0001 C CNN
-F 1 "Earth" H 2090 1410 50  0001 C CNN
-F 2 "" H 2090 1560 50  0001 C CNN
-F 3 "~" H 2090 1560 50  0001 C CNN
-	1    2090 1560
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 5BDBBE6C
-P 1740 1560
-F 0 "#PWR?" H 1740 1310 50  0001 C CNN
-F 1 "Earth" H 1740 1410 50  0001 C CNN
-F 2 "" H 1740 1560 50  0001 C CNN
-F 3 "~" H 1740 1560 50  0001 C CNN
-	1    1740 1560
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1740 1460 1740 1560
-Wire Wire Line
-	2090 1460 2090 1560
-Wire Wire Line
-	2440 1460 2440 1560
-Wire Wire Line
-	1290 1860 1640 1860
-$Comp
-L Device:R_US R?
-U 1 1 5BDBD7FF
-P 1640 2010
-F 0 "R?" H 1708 2056 50  0000 L CNN
-F 1 "8.2K" H 1708 1965 50  0000 L CNN
-F 2 "" V 1680 2000 50  0001 C CNN
-F 3 "~" H 1640 2010 50  0001 C CNN
-	1    1640 2010
-	1    0    0    -1  
-$EndComp
-Connection ~ 1640 1860
-Wire Wire Line
-	1640 1860 2640 1860
-Wire Wire Line
-	2640 2010 1940 2010
-Wire Wire Line
-	1940 2010 1940 2160
-Wire Wire Line
-	1940 2160 1640 2160
-Wire Wire Line
-	1640 2160 1290 2160
-Connection ~ 1640 2160
-Wire Wire Line
-	3890 2160 4540 2160
-Wire Wire Line
-	3890 2360 4840 2360
-Wire Wire Line
-	4540 2160 4540 2760
-Connection ~ 4540 2160
-$Comp
-L Device:C C?
-U 1 1 5BDC7C78
-P 4540 2910
-F 0 "C?" H 4590 3010 50  0000 L CNN
-F 1 "0.027uF" H 4240 2810 50  0000 L CNN
-F 2 "" H 4578 2760 50  0001 C CNN
-F 3 "~" H 4540 2910 50  0001 C CNN
-	1    4540 2910
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4540 2160 5090 2160
-$Comp
-L Device:C C?
-U 1 1 5BDC98C1
-P 4840 2910
-F 0 "C?" H 4955 2956 50  0000 L CNN
-F 1 "0.027uF" H 4955 2865 50  0000 L CNN
-F 2 "" H 4878 2760 50  0001 C CNN
-F 3 "~" H 4840 2910 50  0001 C CNN
-	1    4840 2910
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4840 2760 4840 2360
-Connection ~ 4840 2360
-Wire Wire Line
-	4840 2360 5090 2360
-Text Notes 2740 3960 0    50   ~ 0
-VDD GND
-$Comp
-L power:Earth #PWR?
-U 1 1 5BDC43A4
-P 2890 3760
-F 0 "#PWR?" H 2890 3510 50  0001 C CNN
-F 1 "Earth" H 2890 3610 50  0001 C CNN
-F 2 "" H 2890 3760 50  0001 C CNN
-F 3 "~" H 2890 3760 50  0001 C CNN
-	1    2890 3760
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2890 3610 2890 3760
-Wire Wire Line
-	3490 3760 3640 3760
-Connection ~ 3490 3760
-Wire Wire Line
-	3490 3610 3490 3760
-Wire Wire Line
-	3340 3760 3490 3760
-Connection ~ 3340 3760
-Wire Wire Line
-	3340 3610 3340 3760
-Wire Wire Line
-	3190 3760 3340 3760
-Wire Wire Line
-	3040 3760 3190 3760
-Connection ~ 3190 3760
-Wire Wire Line
-	3190 3610 3190 3760
-Wire Wire Line
-	3040 3610 3040 3760
-Wire Wire Line
-	3640 3610 3640 3760
-Connection ~ 3640 3760
-$Comp
-L power:Earth #PWR?
-U 1 1 5BDC04E8
-P 3640 3760
-F 0 "#PWR?" H 3640 3510 50  0001 C CNN
-F 1 "Earth" H 3640 3610 50  0001 C CNN
-F 2 "" H 3640 3760 50  0001 C CNN
-F 3 "~" H 3640 3760 50  0001 C CNN
-	1    3640 3760
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 5BDBCA11
-P 4540 3160
-F 0 "#PWR?" H 4540 2910 50  0001 C CNN
-F 1 "Earth" H 4540 3010 50  0001 C CNN
-F 2 "" H 4540 3160 50  0001 C CNN
-F 3 "~" H 4540 3160 50  0001 C CNN
-	1    4540 3160
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 5BDBCA34
-P 4840 3160
-F 0 "#PWR?" H 4840 2910 50  0001 C CNN
-F 1 "Earth" H 4840 3010 50  0001 C CNN
-F 2 "" H 4840 3160 50  0001 C CNN
-F 3 "~" H 4840 3160 50  0001 C CNN
-	1    4840 3160
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4840 3060 4840 3160
-Wire Wire Line
-	4540 3060 4540 3160
-Text GLabel 1290 1860 0    50   Input ~ 0
-5V_IN
-Text GLabel 1440 2760 0    50   Input ~ 0
-3.3V_IN
-Wire Wire Line
-	1990 3060 1990 2760
-Wire Wire Line
-	1990 2760 1840 2760
-$Comp
-L Device:R_US R?
-U 1 1 5BDE5423
-P 1690 2760
-F 0 "R?" V 1485 2760 50  0000 C CNN
-F 1 "47K" V 1576 2760 50  0000 C CNN
-F 2 "" V 1730 2750 50  0001 C CNN
-F 3 "~" H 1690 2760 50  0001 C CNN
-	1    1690 2760
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1540 2760 1440 2760
-Wire Wire Line
-	1990 3060 2640 3060
-Wire Wire Line
-	1840 3060 1990 3060
-Connection ~ 1990 3060
-$Comp
-L power:Earth #PWR?
-U 1 1 5BDEC93A
-P 2140 2610
-F 0 "#PWR?" H 2140 2360 50  0001 C CNN
-F 1 "Earth" H 2140 2460 50  0001 C CNN
-F 2 "" H 2140 2610 50  0001 C CNN
-F 3 "~" H 2140 2610 50  0001 C CNN
-	1    2140 2610
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2640 3210 2240 3210
-Wire Wire Line
-	2240 3210 2240 2910
-Wire Wire Line
-	2640 2610 2240 2610
-Connection ~ 2240 2610
-Wire Wire Line
-	2640 2760 2240 2760
-Connection ~ 2240 2760
-Wire Wire Line
-	2240 2760 2240 2610
-Wire Wire Line
-	2640 2910 2240 2910
-Connection ~ 2240 2910
-Wire Wire Line
-	2240 2910 2240 2760
-Wire Wire Line
-	2240 2610 2140 2610
-$Comp
-L Motor:Motor_DC M?
-U 1 1 5BDF467F
-P 5290 2160
-F 0 "M?" H 5448 2156 50  0000 L CNN
-F 1 "Motor_DC" H 5448 2065 50  0000 L CNN
-F 2 "" H 5290 2070 50  0001 C CNN
-F 3 "~" H 5290 2070 50  0001 C CNN
-	1    5290 2160
-	1    0    0    -1  
-$EndComp
-Text GLabel 1540 960  0    50   Input ~ 0
-12V_IN
-Wire Wire Line
-	5090 2160 5090 1960
-Wire Wire Line
-	5090 1960 5290 1960
-Wire Wire Line
-	5090 2360 5090 2460
-Wire Wire Line
-	5090 2460 5290 2460
+Text Notes 8340 6970 0    197  Italic 39
+Actuators
+$Sheet
+S 2020 1540 2330 2030
+U 5C4C657D
+F0 "DCMotor1-2" 50
+F1 "DCMotor1-2.sch" 50
+$EndSheet
+Text Notes 2380 2670 0    157  Italic 31
+DCMotor1-2
+$Sheet
+S 4860 1540 2330 2030
+U 5C4D499E
+F0 "DCMotor3-4" 50
+F1 "DCMotor3-4.sch" 50
+$EndSheet
+Text Notes 5220 2670 0    157  Italic 31
+DCMotor3-4
+$Sheet
+S 7650 1540 2330 2030
+U 5C4D49A1
+F0 "DCMotor5-6" 50
+F1 "DCMotor5-6.sch" 50
+$EndSheet
+Text Notes 8010 2660 0    157  Italic 31
+DCMotor5-6
 $EndSCHEMATC
