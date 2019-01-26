@@ -4305,7 +4305,7 @@
   )
 
   (module EER:IMU (layer F.Cu) (tedit 5C4CBFC5) (tstamp 5C518305)
-    (at 50.6 59)
+    (at -159.624999 10.235001)
     (path /5C4A7771/5C56FA6A)
     (fp_text reference U701 (at -20.32 -10.93) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
