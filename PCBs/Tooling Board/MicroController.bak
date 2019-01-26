@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -7212,12 +7212,12 @@ Wire Wire Line
 Wire Wire Line
 	6000 3050 5800 3050
 Wire Wire Line
-	7000 3150 7200 3150
+	7000 3150 7660 3150
 Wire Wire Line
-	7000 3050 7200 3050
-Text GLabel 7200 3150 2    50   Input ~ 0
+	7000 3050 7950 3050
+Text GLabel 8030 3150 2    50   Input ~ 0
 SDA
-Text GLabel 7200 3050 2    50   Input ~ 0
+Text GLabel 8030 3050 2    50   Input ~ 0
 SCL
 $Comp
 L Device:C C?
@@ -7497,4 +7497,62 @@ Wire Wire Line
 Connection ~ 3630 2500
 Wire Wire Line
 	3630 2500 3800 2500
+Wire Wire Line
+	7660 3150 7660 2880
+Connection ~ 7660 3150
+Wire Wire Line
+	7660 3150 8030 3150
+Wire Wire Line
+	7950 3050 7950 2880
+Connection ~ 7950 3050
+Wire Wire Line
+	7950 3050 8030 3050
+$Comp
+L Device:R_US R?
+U 1 1 5C4EC3B3
+P 7660 2730
+F 0 "R?" H 7728 2776 50  0000 L CNN
+F 1 "10k" H 7728 2685 50  0000 L CNN
+F 2 "" V 7700 2720 50  0001 C CNN
+F 3 "" H 7660 2730 50  0001 C CNN
+	1    7660 2730
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C4F7260
+P 7950 2730
+F 0 "R?" H 8018 2776 50  0000 L CNN
+F 1 "10k" H 8018 2685 50  0000 L CNN
+F 2 "" V 7990 2720 50  0001 C CNN
+F 3 "" H 7950 2730 50  0001 C CNN
+	1    7950 2730
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C4F72E4
+P 7660 2510
+F 0 "#PWR?" H 7660 2360 50  0001 C CNN
+F 1 "+3.3V" H 7675 2683 50  0000 C CNN
+F 2 "" H 7660 2510 50  0001 C CNN
+F 3 "" H 7660 2510 50  0001 C CNN
+	1    7660 2510
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C4F73BE
+P 7950 2510
+F 0 "#PWR?" H 7950 2360 50  0001 C CNN
+F 1 "+3.3V" H 7965 2683 50  0000 C CNN
+F 2 "" H 7950 2510 50  0001 C CNN
+F 3 "" H 7950 2510 50  0001 C CNN
+	1    7950 2510
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2580 7950 2510
+Wire Wire Line
+	7660 2580 7660 2510
 $EndSCHEMATC

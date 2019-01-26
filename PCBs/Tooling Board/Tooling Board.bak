@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -1379,6 +1379,48 @@ Wire Wire Line
 Wire Wire Line
 	3230 1550 3230 1260
 Wire Wire Line
-	3230 1260 7860 1260
+	3230 1260 3660 1260
 Connection ~ 2870 1550
+$Comp
+L Device:LED D?
+U 1 1 5C529958
+P 3660 1800
+F 0 "D?" V 3698 1683 50  0000 R CNN
+F 1 "BLUE" V 3607 1683 50  0000 R CNN
+F 2 "" H 3660 1800 50  0001 C CNN
+F 3 "~" H 3660 1800 50  0001 C CNN
+	1    3660 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C529A77
+P 3660 2060
+F 0 "#PWR?" H 3660 1810 50  0001 C CNN
+F 1 "GND" H 3665 1887 50  0000 C CNN
+F 2 "" H 3660 2060 50  0001 C CNN
+F 3 "" H 3660 2060 50  0001 C CNN
+	1    3660 2060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3660 2060 3660 1950
+$Comp
+L Device:R_US R?
+U 1 1 5C52AA47
+P 3660 1450
+F 0 "R?" H 3728 1496 50  0000 L CNN
+F 1 "1k" H 3728 1405 50  0000 L CNN
+F 2 "" V 3700 1440 50  0001 C CNN
+F 3 "~" H 3660 1450 50  0001 C CNN
+	1    3660 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3660 1650 3660 1600
+Wire Wire Line
+	3660 1300 3660 1260
+Connection ~ 3660 1260
+Wire Wire Line
+	3660 1260 7860 1260
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -57,7 +57,7 @@ F 3 "" H 1650 5380 50  0001 C CNN
 	1    1650 5380
 	1    0    0    -1  
 $EndComp
-Text Notes 5050 4360 0    79   ~ 16
+Text Notes 6170 4240 0    79   ~ 16
 LED Control 
 $Comp
 L Connector_Generic:Conn_01x02 J?

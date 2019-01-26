@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -14,4 +14,257 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 8370 6950 0    197  Italic 39
+Sensors
+$Sheet
+S 1120 1180 1540 1090
+U 5C4DFB6C
+F0 "pH Sensor" 79
+F1 "pH Sensor.sch" 79
+$EndSheet
+Text Notes 1240 1810 0    157  Italic 31
+pH Sensor
+Text Notes 8560 4350 0    118  ~ 24
+Pressure Sensor
+Text Notes 4900 1080 0    118  ~ 24
+IMU
+Text Notes 8320 2860 0    118  ~ 24
+Temperature Sensor
+Text Notes 8630 1130 0    118  ~ 24
+Metal Detector
+Text Notes 910  5640 0    118  ~ 24
+Extra Pins
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5C4E1094
+P 9750 4910
+F 0 "J?" H 9830 4902 50  0000 L CNN
+F 1 "Conn_01x04" H 9830 4811 50  0000 L CNN
+F 2 "" H 9750 4910 50  0001 C CNN
+F 3 "~" H 9750 4910 50  0001 C CNN
+	1    9750 4910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4810 9410 4810
+Wire Wire Line
+	9410 4810 9410 4700
+Wire Wire Line
+	9550 5110 9420 5110
+Wire Wire Line
+	9420 5110 9420 5250
+$Comp
+L power:+5V #PWR?
+U 1 1 5C4E12E2
+P 9410 4700
+F 0 "#PWR?" H 9410 4550 50  0001 C CNN
+F 1 "+5V" H 9425 4873 50  0000 C CNN
+F 2 "" H 9410 4700 50  0001 C CNN
+F 3 "" H 9410 4700 50  0001 C CNN
+	1    9410 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C4E130D
+P 9420 5250
+F 0 "#PWR?" H 9420 5000 50  0001 C CNN
+F 1 "GND" H 9425 5077 50  0000 C CNN
+F 2 "" H 9420 5250 50  0001 C CNN
+F 3 "" H 9420 5250 50  0001 C CNN
+	1    9420 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4910 9290 4910
+Wire Wire Line
+	9550 5010 9290 5010
+Text GLabel 9290 4910 0    50   Input ~ 0
+SDA
+Text GLabel 9290 5010 0    50   Input ~ 0
+SCL
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5C4FD052
+P 9730 3420
+F 0 "J?" H 9810 3462 50  0000 L CNN
+F 1 "Conn_01x03" H 9810 3371 50  0000 L CNN
+F 2 "" H 9730 3420 50  0001 C CNN
+F 3 "~" H 9730 3420 50  0001 C CNN
+	1    9730 3420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9530 3320 9410 3320
+Wire Wire Line
+	9410 3320 9410 3190
+Wire Wire Line
+	9530 3520 9410 3520
+Wire Wire Line
+	9410 3520 9410 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5C4FD201
+P 9410 3700
+F 0 "#PWR?" H 9410 3450 50  0001 C CNN
+F 1 "GND" H 9415 3527 50  0000 C CNN
+F 2 "" H 9410 3700 50  0001 C CNN
+F 3 "" H 9410 3700 50  0001 C CNN
+	1    9410 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8880 3420 0    50   Input ~ 0
+T_DATA
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C4FD472
+P 9410 3190
+F 0 "#PWR?" H 9410 3040 50  0001 C CNN
+F 1 "+3V3" H 9425 3363 50  0000 C CNN
+F 2 "" H 9410 3190 50  0001 C CNN
+F 3 "" H 9410 3190 50  0001 C CNN
+	1    9410 3190
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C4FD49F
+P 9210 3320
+F 0 "R?" V 9005 3320 50  0000 C CNN
+F 1 "4.7k" V 9096 3320 50  0000 C CNN
+F 2 "" V 9250 3310 50  0001 C CNN
+F 3 "~" H 9210 3320 50  0001 C CNN
+	1    9210 3320
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8880 3420 8990 3420
+Wire Wire Line
+	9060 3320 8990 3320
+Wire Wire Line
+	8990 3320 8990 3420
+Connection ~ 8990 3420
+Wire Wire Line
+	8990 3420 9530 3420
+Wire Wire Line
+	9360 3320 9410 3320
+Connection ~ 9410 3320
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5C4FDAEC
+P 9780 1690
+F 0 "J?" H 9860 1732 50  0000 L CNN
+F 1 "Conn_01x03" H 9860 1641 50  0000 L CNN
+F 2 "" H 9780 1690 50  0001 C CNN
+F 3 "~" H 9780 1690 50  0001 C CNN
+	1    9780 1690
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9580 1590 9410 1590
+Wire Wire Line
+	9410 1590 9410 1410
+Wire Wire Line
+	9580 1790 9410 1790
+Wire Wire Line
+	9410 1790 9410 1950
+Wire Wire Line
+	8700 1690 8700 1780
+$Comp
+L Device:R_US R?
+U 1 1 5C4FE095
+P 8700 1930
+F 0 "R?" H 8632 1884 50  0000 R CNN
+F 1 "75k" H 8632 1975 50  0000 R CNN
+F 2 "" V 8740 1920 50  0001 C CNN
+F 3 "~" H 8700 1930 50  0001 C CNN
+	1    8700 1930
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C4FE116
+P 8700 2260
+F 0 "R?" H 8632 2214 50  0000 R CNN
+F 1 "25k" H 8632 2305 50  0000 R CNN
+F 2 "" V 8740 2250 50  0001 C CNN
+F 3 "~" H 8700 2260 50  0001 C CNN
+	1    8700 2260
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C4FE600
+P 9410 1410
+F 0 "#PWR?" H 9410 1260 50  0001 C CNN
+F 1 "+12V" H 9425 1583 50  0000 C CNN
+F 2 "" H 9410 1410 50  0001 C CNN
+F 3 "" H 9410 1410 50  0001 C CNN
+	1    9410 1410
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C4FE61E
+P 9410 1950
+F 0 "#PWR?" H 9410 1700 50  0001 C CNN
+F 1 "GND" H 9415 1777 50  0000 C CNN
+F 2 "" H 9410 1950 50  0001 C CNN
+F 3 "" H 9410 1950 50  0001 C CNN
+	1    9410 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C4FE677
+P 8700 2460
+F 0 "#PWR?" H 8700 2210 50  0001 C CNN
+F 1 "GND" H 8705 2287 50  0000 C CNN
+F 2 "" H 8700 2460 50  0001 C CNN
+F 3 "" H 8700 2460 50  0001 C CNN
+	1    8700 2460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2460 8700 2410
+Wire Wire Line
+	8700 2110 8700 2100
+Wire Wire Line
+	8700 2100 8370 2100
+Connection ~ 8700 2100
+Wire Wire Line
+	8700 2100 8700 2080
+Text GLabel 8370 2100 0    50   Input ~ 0
+V_METAL
+$Comp
+L Device:C C?
+U 1 1 5C4FF49D
+P 9070 1920
+F 0 "C?" H 9185 1966 50  0000 L CNN
+F 1 "1uF" H 9185 1875 50  0000 L CNN
+F 2 "" H 9108 1770 50  0001 C CNN
+F 3 "~" H 9070 1920 50  0001 C CNN
+	1    9070 1920
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1690 9070 1690
+Wire Wire Line
+	9070 1770 9070 1690
+Connection ~ 9070 1690
+Wire Wire Line
+	9070 1690 9580 1690
+Wire Wire Line
+	9070 2070 9070 2200
+$Comp
+L power:GND #PWR?
+U 1 1 5C500307
+P 9070 2200
+F 0 "#PWR?" H 9070 1950 50  0001 C CNN
+F 1 "GND" H 9075 2027 50  0000 C CNN
+F 2 "" H 9070 2200 50  0001 C CNN
+F 3 "" H 9070 2200 50  0001 C CNN
+	1    9070 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

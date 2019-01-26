@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -16,7 +16,7 @@ Comment4 ""
 $EndDescr
 $Comp
 L EER:LN298P U?
-U 1 1 5C4C7247
+U 1 1 5C4E06F8
 P 5730 3140
 F 0 "U?" H 5730 4305 50  0000 C CNN
 F 1 "LN298P" H 5730 4214 50  0000 C CNN
@@ -27,7 +27,7 @@ F 3 "https://www.digikey.ca/product-detail/en/stmicroelectronics/L298P/497-1396-
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x01 J?
-U 1 1 5C4C7477
+U 1 1 5C4E06FA
 P 8200 2840
 F 0 "J?" H 8279 2882 50  0000 L CNN
 F 1 "Screw Terminal" H 8279 2791 50  0000 L CNN
@@ -40,7 +40,7 @@ Wire Wire Line
 	6330 2840 8000 2840
 $Comp
 L Connector:Screw_Terminal_01x01 J?
-U 1 1 5C4C754E
+U 1 1 5C4E06FD
 P 8200 3040
 F 0 "J?" H 8279 3082 50  0000 L CNN
 F 1 "Screw Terminal" H 8279 2991 50  0000 L CNN
@@ -53,7 +53,7 @@ Wire Wire Line
 	6330 3040 8000 3040
 $Comp
 L Connector:Screw_Terminal_01x01 J?
-U 1 1 5C4C7825
+U 1 1 5C4E06FF
 P 3260 3040
 F 0 "J?" H 3339 3082 50  0000 L CNN
 F 1 "Screw Terminal" H 3339 2991 50  0000 L CNN
@@ -64,7 +64,7 @@ F 3 "~" H 3260 3040 50  0001 C CNN
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x01 J?
-U 1 1 5C4C782C
+U 1 1 5C4E0701
 P 3260 2840
 F 0 "J?" H 3339 2882 50  0000 L CNN
 F 1 "Screw Terminal" H 3339 2791 50  0000 L CNN
@@ -113,7 +113,7 @@ F 3 "" H 4500 2600 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 5C4C7C2A
+U 1 1 5C4E0706
 P 4660 4370
 F 0 "#PWR?" H 4660 4120 50  0001 C CNN
 F 1 "GND" H 4665 4197 50  0000 C CNN
@@ -145,7 +145,7 @@ Text GLabel 6750 3440 2    50   Input ~ 0
 EnableB1
 $Comp
 L Device:C C?
-U 1 1 5C4C8744
+U 1 1 5C4E070A
 P 3980 3490
 F 0 "C?" H 4095 3536 50  0000 L CNN
 F 1 "100nF" H 4095 3445 50  0000 L CNN
@@ -160,7 +160,7 @@ Wire Wire Line
 	3980 3240 3980 3340
 $Comp
 L power:GND #PWR?
-U 1 1 5C4C8C0E
+U 1 1 5C4E070D
 P 3980 3790
 F 0 "#PWR?" H 3980 3540 50  0001 C CNN
 F 1 "GND" H 3985 3617 50  0000 C CNN
@@ -222,7 +222,7 @@ F 3 "" H 7320 3760 50  0001 C CNN
 $EndComp
 $Comp
 L power:+12V #PWR?
-U 1 1 5C4C9FF7
+U 1 1 5C4E0715
 P 4210 3190
 F 0 "#PWR?" H 4210 3040 50  0001 C CNN
 F 1 "+12V" H 4370 3270 50  0000 C CNN
@@ -246,7 +246,7 @@ F 3 "~" H 6650 2440 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R_US R?
-U 1 1 5C4CAD2B
+U 1 1 5C4E0719
 P 4810 2440
 F 0 "R?" V 4700 2610 50  0000 C CNN
 F 1 "0.5" V 4700 2280 50  0000 C CNN
@@ -339,7 +339,7 @@ Wire Wire Line
 Connection ~ 2010 5380
 $Comp
 L power:+5V #PWR?
-U 1 1 5C4D3A94
+U 1 1 5C4E071E
 P 3040 5050
 F 0 "#PWR?" H 3040 4900 50  0001 C CNN
 F 1 "+5V" H 3150 5120 50  0000 C CNN
