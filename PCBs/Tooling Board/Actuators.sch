@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Actuator Board-cache
+LIBS:Tooling Board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -116,7 +116,7 @@ Wire Wire Line
 Wire Wire Line
 	4940 5270 5250 5270
 Text GLabel 4940 5270 0    50   Input ~ 0
-LED1
+LED
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5C4DD714
@@ -173,8 +173,6 @@ Wire Wire Line
 	7970 5260 7680 5260
 Wire Wire Line
 	7370 5260 7680 5260
-Text GLabel 7370 5260 0    50   Input ~ 0
-LED2
 $Comp
 L Device:R_US R?
 U 1 1 5C4DDAFC
@@ -233,4 +231,6 @@ Wire Wire Line
 	4820 4740 5940 4740
 Connection ~ 5250 5270
 Connection ~ 7680 5260
+Text GLabel 7370 5260 0    50   Input ~ 0
+LED
 $EndSCHEMATC

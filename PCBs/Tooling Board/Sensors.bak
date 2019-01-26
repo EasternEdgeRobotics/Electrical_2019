@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Actuator Board-cache
+LIBS:Tooling Board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -267,4 +267,63 @@ F 3 "" H 9070 2200 50  0001 C CNN
 	1    9070 2200
 	1    0    0    -1  
 $EndComp
+$Comp
+L EER:ADA_IMU U?
+U 1 1 5C56FA6A
+P 5060 2000
+F 0 "U?" H 5060 2665 50  0000 C CNN
+F 1 "ADA_IMU" H 5060 2574 50  0000 C CNN
+F 2 "" H 5060 2000 50  0001 C CNN
+F 3 "" H 5060 2000 50  0001 C CNN
+	1    5060 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4660 1600 4550 1600
+Wire Wire Line
+	4550 1600 4550 1500
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C56FF97
+P 4550 1500
+F 0 "#PWR?" H 4550 1350 50  0001 C CNN
+F 1 "+3V3" H 4565 1673 50  0000 C CNN
+F 2 "" H 4550 1500 50  0001 C CNN
+F 3 "" H 4550 1500 50  0001 C CNN
+	1    4550 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5460 1750
+NoConn ~ 5460 1900
+NoConn ~ 5460 2100
+NoConn ~ 5460 2250
+Wire Wire Line
+	4660 2100 4400 2100
+Wire Wire Line
+	4660 2250 4400 2250
+Text GLabel 4400 2100 0    50   Input ~ 0
+SDA
+Text GLabel 4400 2250 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	4660 2400 4590 2400
+$Comp
+L power:GND #PWR?
+U 1 1 5C5728C0
+P 4590 2610
+F 0 "#PWR?" H 4590 2360 50  0001 C CNN
+F 1 "GND" H 4595 2437 50  0000 C CNN
+F 2 "" H 4590 2610 50  0001 C CNN
+F 3 "" H 4590 2610 50  0001 C CNN
+	1    4590 2610
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4660 1900 4590 1900
+Wire Wire Line
+	4590 1900 4590 2400
+Connection ~ 4590 2400
+Wire Wire Line
+	4590 2400 4590 2610
+NoConn ~ 4660 1750
 $EndSCHEMATC

@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Actuator Board-cache
+LIBS:Tooling Board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -421,8 +421,8 @@ $Comp
 L Device:R R?
 U 1 1 5BE3019B
 P 8510 4190
-F 0 "R?" H 8303 4190 50  0000 C CNN
-F 1 "1k" H 8394 4190 50  0000 C CNN
+F 0 "R?" H 8390 4280 50  0000 C CNN
+F 1 "1k" H 8400 4140 50  0000 C CNN
 F 2 "" V 8440 4190 50  0001 C CNN
 F 3 "~" H 8510 4190 50  0001 C CNN
 	1    8510 4190
@@ -551,7 +551,7 @@ $EndComp
 Wire Wire Line
 	5980 1490 5980 1550
 Text GLabel 9220 2790 2    50   Input ~ 0
-V_pH
+V_PH
 $Comp
 L Device:R R?
 U 1 1 5C52E8F2
