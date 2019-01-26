@@ -140,9 +140,9 @@ Wire Wire Line
 Wire Wire Line
 	6330 3440 6750 3440
 Text GLabel 4710 3640 0    50   Input ~ 0
-EnableA1
+EnableA3
 Text GLabel 6750 3440 2    50   Input ~ 0
-EnableB1
+EnableB3
 $Comp
 L Device:C C?
 U 1 1 5C4C8744
@@ -353,9 +353,9 @@ Input1
 Text Label 2920 4880 0    50   ~ 0
 Input2
 Text GLabel 1430 4620 0    50   Input ~ 0
-DirA1
+DirA3
 Text GLabel 1660 5380 0    50   Input ~ 0
-DirB1
+DirB3
 Text Label 2920 5380 0    50   ~ 0
 Input4
 Text Label 2050 5580 0    50   ~ 0
@@ -365,9 +365,9 @@ Logic Inverter
 Text Notes 5480 1790 0    50   ~ 0
 Dual H-Bridge
 Text Notes 2860 2620 0    50   ~ 10
-Motor A1
+Motor A3
 Text Notes 8160 2690 0    50   ~ 10
-Motor B1
+Motor B3
 Text Notes 7830 6980 0    197  Italic 39
 DC Motor Driver
 $EndSCHEMATC

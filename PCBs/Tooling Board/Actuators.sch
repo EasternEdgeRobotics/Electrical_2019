@@ -22,22 +22,215 @@ U 5C4C657D
 F0 "DCMotor1-2" 50
 F1 "DCMotor1-2.sch" 50
 $EndSheet
-Text Notes 2380 2670 0    157  Italic 31
-DCMotor1-2
+Text Notes 2230 2660 0    157  Italic 31
+DC Motors 1-2
 $Sheet
 S 4860 1540 2330 2030
 U 5C4D499E
 F0 "DCMotor3-4" 50
 F1 "DCMotor3-4.sch" 50
 $EndSheet
-Text Notes 5220 2670 0    157  Italic 31
-DCMotor3-4
+Text Notes 5100 2680 0    157  Italic 31
+DC Motors 3-4
 $Sheet
 S 7650 1540 2330 2030
 U 5C4D49A1
 F0 "DCMotor5-6" 50
 F1 "DCMotor5-6.sch" 50
 $EndSheet
-Text Notes 8010 2660 0    157  Italic 31
-DCMotor5-6
+Text Notes 7890 2680 0    157  Italic 31
+DC Motors 5-6
+Text HLabel 1410 5450 0    50   Input ~ 0
++12V
+Wire Wire Line
+	1410 5450 1650 5450
+Wire Wire Line
+	1650 5450 1650 5380
+$Comp
+L power:+12V #PWR?
+U 1 1 5C4DB93C
+P 1650 5380
+F 0 "#PWR?" H 1650 5230 50  0001 C CNN
+F 1 "+12V" H 1665 5553 50  0000 C CNN
+F 2 "" H 1650 5380 50  0001 C CNN
+F 3 "" H 1650 5380 50  0001 C CNN
+	1    1650 5380
+	1    0    0    -1  
+$EndComp
+Text Notes 6170 4240 0    79   ~ 16
+LED Control 
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C4DC4EB
+P 6140 4740
+F 0 "J?" H 6220 4732 50  0000 L CNN
+F 1 "Conn_01x02" H 6220 4641 50  0000 L CNN
+F 2 "" H 6140 4740 50  0001 C CNN
+F 3 "~" H 6140 4740 50  0001 C CNN
+	1    6140 4740
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5940 4840 5840 4840
+$Comp
+L power:GND #PWR?
+U 1 1 5C4DC54D
+P 5840 5680
+F 0 "#PWR?" H 5840 5430 50  0001 C CNN
+F 1 "GND" H 5845 5507 50  0000 C CNN
+F 2 "" H 5840 5680 50  0001 C CNN
+F 3 "" H 5840 5680 50  0001 C CNN
+	1    5840 5680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4820 4740 4820 4620
+$Comp
+L power:+12V #PWR?
+U 1 1 5C4DC71D
+P 4820 4620
+F 0 "#PWR?" H 4820 4470 50  0001 C CNN
+F 1 "+12V" H 4835 4793 50  0000 C CNN
+F 2 "" H 4820 4620 50  0001 C CNN
+F 3 "" H 4820 4620 50  0001 C CNN
+	1    4820 4620
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5C4DC8F0
+P 5740 5270
+F 0 "Q?" H 5945 5316 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5945 5225 50  0000 L CNN
+F 2 "" H 5940 5370 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/diodes-incorporated/DMN2020UFCL-7/DMN2020UFCL-7DICT-ND/4794805" H 5740 5270 50  0001 C CNN
+	1    5740 5270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5840 4840 5840 5070
+Wire Wire Line
+	5840 5470 5840 5680
+Wire Wire Line
+	5540 5270 5250 5270
+Wire Wire Line
+	4940 5270 5250 5270
+Text GLabel 4940 5270 0    50   Input ~ 0
+LED1
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C4DD714
+P 8570 4730
+F 0 "J?" H 8650 4722 50  0000 L CNN
+F 1 "Conn_01x02" H 8650 4631 50  0000 L CNN
+F 2 "" H 8570 4730 50  0001 C CNN
+F 3 "~" H 8570 4730 50  0001 C CNN
+	1    8570 4730
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8370 4830 8270 4830
+$Comp
+L power:GND #PWR?
+U 1 1 5C4DD71B
+P 8270 5680
+F 0 "#PWR?" H 8270 5430 50  0001 C CNN
+F 1 "GND" H 8275 5507 50  0000 C CNN
+F 2 "" H 8270 5680 50  0001 C CNN
+F 3 "" H 8270 5680 50  0001 C CNN
+	1    8270 5680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4730 7250 4610
+$Comp
+L power:+12V #PWR?
+U 1 1 5C4DD723
+P 7250 4610
+F 0 "#PWR?" H 7250 4460 50  0001 C CNN
+F 1 "+12V" H 7265 4783 50  0000 C CNN
+F 2 "" H 7250 4610 50  0001 C CNN
+F 3 "" H 7250 4610 50  0001 C CNN
+	1    7250 4610
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5C4DD729
+P 8170 5260
+F 0 "Q?" H 8375 5306 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 8375 5215 50  0000 L CNN
+F 2 "" H 8370 5360 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/diodes-incorporated/DMN2020UFCL-7/DMN2020UFCL-7DICT-ND/4794805" H 8170 5260 50  0001 C CNN
+	1    8170 5260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8270 4830 8270 5060
+Wire Wire Line
+	8270 5460 8270 5680
+Wire Wire Line
+	7970 5260 7680 5260
+Wire Wire Line
+	7370 5260 7680 5260
+Text GLabel 7370 5260 0    50   Input ~ 0
+LED2
+$Comp
+L Device:R_US R?
+U 1 1 5C4DDAFC
+P 5250 5480
+F 0 "R?" H 5318 5526 50  0000 L CNN
+F 1 "100k" H 5318 5435 50  0000 L CNN
+F 2 "" V 5290 5470 50  0001 C CNN
+F 3 "~" H 5250 5480 50  0001 C CNN
+	1    5250 5480
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C4DDB70
+P 7680 5470
+F 0 "R?" H 7748 5516 50  0000 L CNN
+F 1 "100k" H 7748 5425 50  0000 L CNN
+F 2 "" V 7720 5460 50  0001 C CNN
+F 3 "~" H 7680 5470 50  0001 C CNN
+	1    7680 5470
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5330 5250 5270
+Wire Wire Line
+	5250 5630 5250 5680
+$Comp
+L power:GND #PWR?
+U 1 1 5C4DDF92
+P 5250 5680
+F 0 "#PWR?" H 5250 5430 50  0001 C CNN
+F 1 "GND" H 5255 5507 50  0000 C CNN
+F 2 "" H 5250 5680 50  0001 C CNN
+F 3 "" H 5250 5680 50  0001 C CNN
+	1    5250 5680
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C4DE205
+P 7680 5680
+F 0 "#PWR?" H 7680 5430 50  0001 C CNN
+F 1 "GND" H 7685 5507 50  0000 C CNN
+F 2 "" H 7680 5680 50  0001 C CNN
+F 3 "" H 7680 5680 50  0001 C CNN
+	1    7680 5680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7680 5680 7680 5620
+Wire Wire Line
+	7680 5320 7680 5260
+Wire Wire Line
+	7250 4730 8370 4730
+Wire Wire Line
+	4820 4740 5940 4740
+Connection ~ 5250 5270
+Connection ~ 7680 5260
 $EndSCHEMATC

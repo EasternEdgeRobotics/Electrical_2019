@@ -1006,6 +1006,7 @@ S 7860 1100 1860 1250
 U 5C4A7756
 F0 "Actuators" 79
 F1 "Actuators.sch" 79
+F2 "+12V" I L 7860 1260 50 
 $EndSheet
 $Sheet
 S 7850 3580 1820 1270
@@ -1310,4 +1311,74 @@ Wire Wire Line
 	2110 3860 2110 3240
 Wire Wire Line
 	2110 3240 1820 3240
+$Comp
+L Device:C C?
+U 1 1 5C4D7023
+P 1950 1720
+F 0 "C?" H 2065 1766 50  0000 L CNN
+F 1 "220uF" H 2065 1675 50  0000 L CNN
+F 2 "" H 1988 1570 50  0001 C CNN
+F 3 "~" H 1950 1720 50  0001 C CNN
+	1    1950 1720
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C4D7167
+P 2410 1720
+F 0 "C?" H 2525 1766 50  0000 L CNN
+F 1 "220uF" H 2525 1675 50  0000 L CNN
+F 2 "" H 2448 1570 50  0001 C CNN
+F 3 "~" H 2410 1720 50  0001 C CNN
+	1    2410 1720
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C4D7199
+P 2870 1720
+F 0 "C?" H 2985 1766 50  0000 L CNN
+F 1 "220uF" H 2985 1675 50  0000 L CNN
+F 2 "" H 2908 1570 50  0001 C CNN
+F 3 "~" H 2870 1720 50  0001 C CNN
+	1    2870 1720
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1570 1950 1550
+Wire Wire Line
+	1950 1550 1730 1550
+Connection ~ 1730 1550
+Wire Wire Line
+	1950 1550 2410 1550
+Wire Wire Line
+	2410 1550 2410 1570
+Connection ~ 1950 1550
+Wire Wire Line
+	2410 1550 2870 1550
+Wire Wire Line
+	2870 1550 2870 1570
+Connection ~ 2410 1550
+Wire Wire Line
+	1950 1870 1950 1900
+Wire Wire Line
+	1950 1900 1730 1900
+Connection ~ 1730 1900
+Wire Wire Line
+	2410 1870 2410 1900
+Wire Wire Line
+	2410 1900 1950 1900
+Connection ~ 1950 1900
+Wire Wire Line
+	2870 1870 2870 1900
+Wire Wire Line
+	2870 1900 2410 1900
+Connection ~ 2410 1900
+Wire Wire Line
+	2870 1550 3230 1550
+Wire Wire Line
+	3230 1550 3230 1260
+Wire Wire Line
+	3230 1260 7860 1260
+Connection ~ 2870 1550
 $EndSCHEMATC
