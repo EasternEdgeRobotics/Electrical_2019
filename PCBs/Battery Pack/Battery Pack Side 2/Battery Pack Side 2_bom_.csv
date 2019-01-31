@@ -1,0 +1,18 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Digikey
+1,,+BattTerminal,BT2 BT4 BT6,+BattTerminal,+Batt Terminal,3,http://www.memoryprotectiondevices.com/datasheets/SN-T5-2-datasheet.pdf,SN-T5-2-ND
+2,,-BattTerminal,BT1 BT3 BT5,-BattTerminal,-Batt Terminal,3,,36-240-ND
+
+
+
+
+
+Component Groups:,2
+Component Count:,6
+Fitted Components:,6
+Number of PCBs:,1
+Total components:,6
+Schematic Version:,
+Schematic Date:,
+BoM Date:,2019-01-30 8:44:34 PM
+Schematic Source:,C:\Users\pwhel\Documents\KiCAD Projects\Battery Pack\Battery Pack Side 2\Battery Pack Side 2.sch
+KiCad Version:,Eeschema (5.0.1)-3

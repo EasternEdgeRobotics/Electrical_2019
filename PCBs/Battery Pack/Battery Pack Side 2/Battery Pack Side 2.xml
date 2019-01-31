@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\pwhel\Documents\KiCAD Projects\Battery Pack\Battery Pack Side 2\Battery Pack Side 2.sch</source>
+    <date>2019-01-30 8:44:42 PM</date>
+    <tool>Eeschema (5.0.1)-3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Battery Pack Side 2.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT2">
+      <value>+BattTerminal</value>
+      <footprint>EER:+Batt Terminal</footprint>
+      <datasheet>http://www.memoryprotectiondevices.com/datasheets/SN-T5-2-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Digikey">SN-T5-2-ND</field>
+      </fields>
+      <libsource lib="EER" part="+BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4D05C2</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>-BattTerminal</value>
+      <footprint>EER:-Batt Terminal</footprint>
+      <fields>
+        <field name="Digikey">36-240-ND</field>
+      </fields>
+      <libsource lib="EER" part="-BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4D0624</tstamp>
+    </comp>
+    <comp ref="BT6">
+      <value>+BattTerminal</value>
+      <footprint>EER:+Batt Terminal</footprint>
+      <datasheet>http://www.memoryprotectiondevices.com/datasheets/SN-T5-2-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Digikey">SN-T5-2-ND</field>
+      </fields>
+      <libsource lib="EER" part="+BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4D06EF</tstamp>
+    </comp>
+    <comp ref="BT4">
+      <value>+BattTerminal</value>
+      <footprint>EER:+Batt Terminal</footprint>
+      <datasheet>http://www.memoryprotectiondevices.com/datasheets/SN-T5-2-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Digikey">SN-T5-2-ND</field>
+      </fields>
+      <libsource lib="EER" part="+BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4D0727</tstamp>
+    </comp>
+    <comp ref="BT3">
+      <value>-BattTerminal</value>
+      <footprint>EER:-Batt Terminal</footprint>
+      <fields>
+        <field name="Digikey">36-240-ND</field>
+      </fields>
+      <libsource lib="EER" part="-BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4D07F4</tstamp>
+    </comp>
+    <comp ref="BT5">
+      <value>-BattTerminal</value>
+      <footprint>EER:-Batt Terminal</footprint>
+      <fields>
+        <field name="Digikey">36-240-ND</field>
+      </fields>
+      <libsource lib="EER" part="-BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4D0826</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="EER" part="+BattTerminal">
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">+BattTerminal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="EER" part="-BattTerminal">
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">-BattTerminal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="EER">
+      <uri>C:/Users/pwhel/Documents/Eastern Edge Github/2019/PCBs/EERLibraries/EER.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(BT1-Pad1)">
+      <node ref="BT2" pin="1"/>
+      <node ref="BT1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(BT3-Pad1)">
+      <node ref="BT4" pin="1"/>
+      <node ref="BT3" pin="1"/>
+    </net>
+    <net code="3" name="Net-(BT5-Pad1)">
+      <node ref="BT6" pin="1"/>
+      <node ref="BT5" pin="1"/>
+    </net>
+  </nets>
+</export>

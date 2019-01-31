@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\pwhel\Documents\KiCAD Projects\Battery Pack\Battery Pack Side 1\Battery Pack.sch</source>
+    <date>2019-01-30 8:38:04 PM</date>
+    <tool>Eeschema (5.0.1)-3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Battery Pack.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT2">
+      <value>-BattTerminal</value>
+      <footprint>EER:-Batt Terminal</footprint>
+      <fields>
+        <field name="Digikey">36-240-ND</field>
+      </fields>
+      <libsource lib="EER" part="-BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4CA021</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>+BattTerminal</value>
+      <footprint>EER:+Batt Terminal</footprint>
+      <datasheet>http://www.memoryprotectiondevices.com/datasheets/SN-T5-2-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Digikey">SN-T5-2-ND</field>
+      </fields>
+      <libsource lib="EER" part="+BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4C9B3C</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>WirePad</value>
+      <footprint>EER:Wire Pad</footprint>
+      <libsource lib="EER" part="WirePad" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4CAB37</tstamp>
+    </comp>
+    <comp ref="BT4">
+      <value>-BattTerminal</value>
+      <footprint>EER:-Batt Terminal</footprint>
+      <fields>
+        <field name="Digikey">36-240-ND</field>
+      </fields>
+      <libsource lib="EER" part="-BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4CB272</tstamp>
+    </comp>
+    <comp ref="BT3">
+      <value>+BattTerminal</value>
+      <footprint>EER:+Batt Terminal</footprint>
+      <datasheet>http://www.memoryprotectiondevices.com/datasheets/SN-T5-2-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Digikey">SN-T5-2-ND</field>
+      </fields>
+      <libsource lib="EER" part="+BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4CB6E8</tstamp>
+    </comp>
+    <comp ref="BT5">
+      <value>+BattTerminal</value>
+      <footprint>EER:+Batt Terminal</footprint>
+      <datasheet>http://www.memoryprotectiondevices.com/datasheets/SN-T5-2-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Digikey">SN-T5-2-ND</field>
+      </fields>
+      <libsource lib="EER" part="+BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4CB990</tstamp>
+    </comp>
+    <comp ref="BT6">
+      <value>-BattTerminal</value>
+      <footprint>EER:-Batt Terminal</footprint>
+      <fields>
+        <field name="Digikey">36-240-ND</field>
+      </fields>
+      <libsource lib="EER" part="-BattTerminal" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4CA4B3</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>WirePad</value>
+      <footprint>EER:Wire Pad</footprint>
+      <libsource lib="EER" part="WirePad" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4CA92E</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>FuseHolder</value>
+      <footprint>EER:Glass Fuse Holder</footprint>
+      <datasheet>https://www.littelfuse.com/data/en/data_sheets/littelfuse_fuse-clips.pdf</datasheet>
+      <fields>
+        <field name="Digikey">F4236-ND</field>
+      </fields>
+      <libsource lib="EER" part="FuseHolder" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4CEE3B</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>Q_NMOS_DGS</value>
+      <footprint>Battery Pack:TRANS_DMN2020UFCL-7</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/DMN2020UFCL.pdf</datasheet>
+      <fields>
+        <field name="Digikey">DMN2020UFCL-7DICT-ND</field>
+      </fields>
+      <libsource lib="Device" part="Q_NMOS_DGS" description="N-MOSFET transistor, drain/gate/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4D0B89</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <datasheet>https://www.rohm.com/datasheet/ESR01MZPF/esr-e</datasheet>
+      <fields>
+        <field name="Digikey">RHM100KKCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4D119F</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>WirePad</value>
+      <footprint>EER:Small Wire Pad</footprint>
+      <libsource lib="EER" part="WirePad" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C4D13AC</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="Q_NMOS_DGS">
+      <description>N-MOSFET transistor, drain/gate/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_DGS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EER" part="+BattTerminal">
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">+BattTerminal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="EER" part="-BattTerminal">
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">-BattTerminal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="EER" part="FuseHolder">
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">FuseHolder</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="EER" part="WirePad">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">WirePad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="EER">
+      <uri>C:/Users/pwhel/Documents/Eastern Edge Github/2019/PCBs/EERLibraries/EER.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(P3-Pad1)">
+      <node ref="P3" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(BT6-Pad1)">
+      <node ref="R1" pin="2"/>
+      <node ref="BT6" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="3" name="Net-(P2-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="4" name="Net-(F1-Pad1)">
+      <node ref="P1" pin="1"/>
+      <node ref="F1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(BT1-Pad1)">
+      <node ref="BT1" pin="1"/>
+      <node ref="F1" pin="2"/>
+    </net>
+    <net code="6" name="Net-(BT2-Pad1)">
+      <node ref="BT3" pin="1"/>
+      <node ref="BT2" pin="1"/>
+    </net>
+    <net code="7" name="Net-(BT4-Pad1)">
+      <node ref="BT5" pin="1"/>
+      <node ref="BT4" pin="1"/>
+    </net>
+  </nets>
+</export>
