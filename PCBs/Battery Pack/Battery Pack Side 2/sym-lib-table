@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Battery-Pack-Side-2-rescue)(type Legacy)(uri "${KIPRJMOD}/Battery Pack Side 2-rescue.lib")(options "")(descr ""))
-)
