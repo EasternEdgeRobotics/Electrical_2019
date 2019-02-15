@@ -7,12 +7,14 @@
 
 //Contributers: David Drover
 
-#include <Adafruit_Sensor.h>
-#include <Adafruit_BNO055.h>
-#include <utility/imumaths.h>
-#include "MS5837.h"
-#include <Wire.h>
-#include "wiring_private.h"
+#include <Adafruit_Sensor.h> //imu
+#include <Adafruit_BNO055.h> //imu
+#include <utility/imumaths.h> //pressure
+#include "MS5837.h" //pressure
+#include <OneWire.h> //Temperature
+#include <DallasTemperature.h>//Temperature
+#include <Wire.h> //i2c
+#include "wiring_private.h" //i2c
 
 //Pin Definitions
 #define VMetal 4
@@ -39,6 +41,11 @@ int duty1, duty2, duty3, duty4;
 int LedDuty;
 int sensors = 0;
 
+//Define one wire comunication
+OneWire oneWire(TempData);
+
+//Define temperature sensor
+DallasTemperature temp(&oneWire);
 
 //Define I2C Wire
 TwoWire myWire(&sercom3, SDA_Pin, SCL_Pin);
@@ -52,13 +59,13 @@ Adafruit_BNO055 bno = Adafruit_BNO055();
 void returnImuPressureData(int mode = 1);
 void changeMotor(int motorNum, int dir, int duty);
 void Led(int duty);
-void returnSensorData();
-float calculateTemp();
-String metal();
-float ph();
+void returnSensorData(void);
+float calculateTemp(void);
+String metal(void);
+float ph(void);
 
 
-void setup() 
+void setup(void) 
 {
 
   analogReadResolution(12); // sets the ADC to 12 bit mode
@@ -75,6 +82,8 @@ void setup()
   sensor.setFluidDensity(997);
   
   bno.begin();
+
+  temp.begin();
 
   //Setup pins
   pinMode(VMetal, INPUT); 
@@ -100,7 +109,7 @@ void setup()
 
 }
 
-void loop() 
+void loop(void) 
 {
   while(Serial.available() == 0)
   {
@@ -177,7 +186,7 @@ void Led(int duty)
   analogWrite(LED, (255.0*(duty/100.0)));
 }
 
-void returnSensorData()
+void returnSensorData(void)
 {
   Serial.print("temperature:");
   Serial.print(calculateTemp());
@@ -191,14 +200,14 @@ void returnSensorData()
   Serial.print(" }");
 }
 
-float calculateTemp()
+float calculateTemp(void)
 {
-  //TempData;
-  float temp = 0.0;
-  return temp;
+  temp.requestTemperatures();
+  float temperature = temp.getTempCByIndex(0);
+  return temperature;
 }
 
-String metal()
+String metal(void)
 {
   if(analogRead(VMetal) > 2054)
   {
@@ -208,7 +217,7 @@ String metal()
   }
 }
 
-float ph()
+float ph(void)
 {
   int raw = analogRead(VPH);
   float ph = 0.0;
