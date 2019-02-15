@@ -1028,6 +1028,7 @@ F 0 "J101" H 1220 1325 50  0000 C CNN
 F 1 "Screw Terminal" H 1220 1416 50  0000 C CNN
 F 2 "EER:RingTerminal" H 1300 1550 50  0001 C CNN
 F 3 "~" H 1300 1550 50  0001 C CNN
+F 4 "36-7770-ND" H 1300 1550 50  0001 C CNN "Digikey"
 	1    1300 1550
 	-1   0    0    1   
 $EndComp
@@ -1039,6 +1040,7 @@ F 0 "J102" H 1220 1675 50  0000 C CNN
 F 1 "Screw Terminal" H 1220 1766 50  0000 C CNN
 F 2 "EER:RingTerminal" H 1300 1900 50  0001 C CNN
 F 3 "~" H 1300 1900 50  0001 C CNN
+F 4 "36-7770-ND" H 1300 1900 50  0001 C CNN "Digikey"
 	1    1300 1900
 	-1   0    0    1   
 $EndComp
@@ -1084,6 +1086,7 @@ F 0 "J103" H 1575 3607 50  0000 C CNN
 F 1 "USB_B_Mini" H 1575 3516 50  0000 C CNN
 F 2 "EER:32005-201" H 1670 3090 50  0001 C CNN
 F 3 "~" H 1670 3090 50  0001 C CNN
+F 4 "151-1206-1-ND" H 1520 3140 50  0001 C CNN "Digikey"
 	1    1520 3140
 	1    0    0    -1  
 $EndComp
@@ -1094,7 +1097,8 @@ P 2230 2940
 F 0 "F101" V 2033 2940 50  0000 C CNN
 F 1 "500mA" V 2124 2940 50  0000 C CNN
 F 2 "EER:Fuse_SMD1206_Reflow" V 2160 2940 50  0001 C CNN
-F 3 "~" H 2230 2940 50  0001 C CNN
+F 3 "https://belfuse.com/resources/datasheets/circuitprotection/ds-cp-c1q-series.pdf" H 2230 2940 50  0001 C CNN
+F 4 "507-1075-1-ND" V 2230 2940 50  0001 C CNN "Digikey"
 	1    2230 2940
 	0    1    1    0   
 $EndComp
@@ -1134,7 +1138,8 @@ P 3000 3040
 F 0 "U101" H 3000 3382 50  0000 C CNN
 F 1 "TLV733P" H 3000 3291 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 3000 3365 50  0001 C CIN
-F 3 "296-40673-1-ND" H 3000 3090 50  0001 C CNN
+F 3 "" H 3000 3090 50  0001 C CNN
+F 4 "296-40673-1-ND" H 3000 3040 50  0001 C CNN "Digikey"
 	1    3000 3040
 	1    0    0    -1  
 $EndComp
@@ -1154,7 +1159,8 @@ P 2500 3240
 F 0 "C103" H 2615 3286 50  0000 L CNN
 F 1 "1uF" H 2615 3195 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2538 3090 50  0001 C CNN
-F 3 "~" H 2500 3240 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/07/23/CL21B105KBFNNNG.pdf" H 2500 3240 50  0001 C CNN
+F 4 "1276-6470-1-ND" H 2500 3240 50  0001 C CNN "Digikey"
 	1    2500 3240
 	1    0    0    -1  
 $EndComp
@@ -1165,7 +1171,8 @@ P 3410 3230
 F 0 "C105" H 3525 3276 50  0000 L CNN
 F 1 "10uF" H 3525 3185 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3448 3080 50  0001 C CNN
-F 3 "~" H 3410 3230 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/07/23/CL21B106KOQNNNE.pdf" H 3410 3230 50  0001 C CNN
+F 4 "1276-2872-1-ND" H 3410 3230 50  0001 C CNN "Digikey"
 	1    3410 3230
 	1    0    0    -1  
 $EndComp
@@ -1236,7 +1243,8 @@ P 3840 3230
 F 0 "C106" H 3955 3276 50  0000 L CNN
 F 1 "1uF" H 3955 3185 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 3878 3080 50  0001 C CNN
-F 3 "~" H 3840 3230 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/__icsFiles/afieldfile/2018/07/23/CL21B105KBFNNNG.pdf" H 3840 3230 50  0001 C CNN
+F 4 "1276-6470-1-ND" H 3840 3230 50  0001 C CNN "Digikey"
 	1    3840 3230
 	1    0    0    -1  
 $EndComp
@@ -1247,7 +1255,8 @@ P 4220 3230
 F 0 "C107" H 4335 3276 50  0000 L CNN
 F 1 "0.1uF" H 4335 3185 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 4258 3080 50  0001 C CNN
-F 3 "~" H 4220 3230 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/UPY-GPHC_X7R_6.3V-to-50V_18.pdf" H 4220 3230 50  0001 C CNN
+F 4 "311-1140-1-ND" H 4220 3230 50  0001 C CNN "Digikey"
 	1    4220 3230
 	1    0    0    -1  
 $EndComp
@@ -1318,7 +1327,8 @@ P 1950 1720
 F 0 "C101" H 2065 1766 50  0000 L CNN
 F 1 "220uF" H 2065 1675 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 1988 1570 50  0001 C CNN
-F 3 "~" H 1950 1720 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_A4067_A750.pdf" H 1950 1720 50  0001 C CNN
+F 4 "399-13664-ND" H 1950 1720 50  0001 C CNN "Digikey"
 	1    1950 1720
 	1    0    0    -1  
 $EndComp
@@ -1329,7 +1339,8 @@ P 2410 1720
 F 0 "C102" H 2525 1766 50  0000 L CNN
 F 1 "220uF" H 2525 1675 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 2448 1570 50  0001 C CNN
-F 3 "~" H 2410 1720 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_A4067_A750.pdf" H 2410 1720 50  0001 C CNN
+F 4 "399-13664-ND" H 2410 1720 50  0001 C CNN "Digikey"
 	1    2410 1720
 	1    0    0    -1  
 $EndComp
@@ -1340,7 +1351,8 @@ P 2870 1720
 F 0 "C104" H 2985 1766 50  0000 L CNN
 F 1 "220uF" H 2985 1675 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 2908 1570 50  0001 C CNN
-F 3 "~" H 2870 1720 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_A4067_A750.pdf" H 2870 1720 50  0001 C CNN
+F 4 "399-13664-ND" H 2870 1720 50  0001 C CNN "Digikey"
 	1    2870 1720
 	1    0    0    -1  
 $EndComp
@@ -1388,7 +1400,8 @@ P 3660 1800
 F 0 "D101" V 3698 1683 50  0000 R CNN
 F 1 "BLUE" V 3607 1683 50  0000 R CNN
 F 2 "LEDs:LED_0805" H 3660 1800 50  0001 C CNN
-F 3 "~" H 3660 1800 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150080BS75000.pdf" H 3660 1800 50  0001 C CNN
+F 4 "732-4982-1-ND" V 3660 1800 50  0001 C CNN "Digikey"
 	1    3660 1800
 	0    -1   -1   0   
 $EndComp
@@ -1412,7 +1425,8 @@ P 3660 1450
 F 0 "R101" H 3728 1496 50  0000 L CNN
 F 1 "1k" H 3728 1405 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 3700 1440 50  0001 C CNN
-F 3 "~" H 3660 1450 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf" H 3660 1450 50  0001 C CNN
+F 4 "YAG1820CT-ND" H 3660 1450 50  0001 C CNN "Digikey"
 	1    3660 1450
 	1    0    0    -1  
 $EndComp
