@@ -5,7 +5,9 @@
 /*-----------------------------------*/
 /*************************************/
 
-//Contributers: Mark Belbin -  
+/*Contributers: Mark Belbin - 
+ *              David Drover 
+ */
 
 #include <Wire.h>
 #include "wiring_private.h"
@@ -20,23 +22,40 @@
 #define DCDC_A        (0x77)      //DCDC A (Micro) address (Default address)
 #define DCDC_B        (0x02)      //DCDC B address
 #define DCDC_C        (0x03)      //DCDC C address
-#define READ_VIN      (0x88)
-#define READ_VOUT     (0x8B)
-#define READ_IOUT     (0x8C)
-#define READ_TEMP     (0x8D)
-#define VOUT_MODE     (0x20)
+#define READ_VIN      (0x88)      //Read Word (2 Bytes)
+#define READ_VOUT     (0x8B)      //Read Word (2 Bytes)
+#define READ_IOUT     (0x8C)      //Read Word (2 Bytes)
+#define READ_TEMP     (0x8D)      //Read Word (2 Bytes)
+#define VOUT_MODE     (0x20)      //Read Byte (1 Byte)
 
 
 //Define I2C Wire
 TwoWire myWire(&sercom3, 22, 23);
 
-uint16_t value;
+float ReadWord(uint8_t device,uint8_t action);
+float ReadByte(uint8_t device,uint8_t action);
+float convertPMBus_Word(uint16_t reading);
+float convertPMBus_Byte(uint16_t reading);
+float calculateCurrent(int channelNum);
+void printDCDC(char DCDC);
 
+String wordRead;
+String sendWord = "send"; //sends current values when string is printed to the console
+String DCDC_NAME [3] = { "DC-DC_A::", "DC-DC_B::", "DC-DC_C::" };
+uint8_t DCDC_ADR [3] = { DCDC_A, DCDC_B, DCDC_C };
+int channelPin [3] = { VIOUT1, VIOUT2, VIOUT3 };
+float zeroVoltage [10] = {1625.02,  //channel 1 zero amp voltage
+                          1628.64,  //channel 2 zero amp voltage
+                          1628.64}; //channel 3 zero amp voltage
+
+                    
 void setup() {
   //Let DC-DCs "boot", make sure we don't lock up the PMBus
   delay(100);
   
   Serial.begin(115200);
+
+  analogReadResolution(12); // sets the ADC to 12 bit mode
 
   myWire.begin();
   
@@ -50,8 +69,32 @@ void setup() {
   pinMode(TESTLED, OUTPUT); 
 }
 
-void loop() {
-  myWire.beginTransmission(DCDC_A);
+void loop() 
+{
+  digitalWrite(TESTLED, HIGH); //so LED won't start being on
+  while(Serial.available() == 0);
+  wordRead = Serial.readString();
+  if(wordRead.indexOf(sendWord) > -1)
+  {
+    digitalWrite(TESTLED, LOW); // signal data is starting to be sent
+
+    Serial.print("{ ");
+
+    printDCDC('A');
+    Serial.print(", ");
+    printDCDC('B');
+    Serial.print(", ");
+    printDCDC('C');
+
+    Serial.print(" }");
+    
+    delay(100);
+    digitalWrite(TESTLED, HIGH); //signals data is done being sent
+  }
+
+
+// Mark's test code  
+/*  myWire.beginTransmission(DCDC_A);
   myWire.write(READ_TEMP);
   myWire.endTransmission(false);
 
@@ -66,15 +109,52 @@ void loop() {
   Serial.print("Full Word: "); 
   Serial.print(value, HEX);
   Serial.println();
-  float actual = convertPMBus_normal(value);
+  float actual = convertPMBus_Word(value);
   Serial.print("TEMP: ");
   Serial.println(actual);
 
-  delay(1);
+  delay(1);*/
 
 }
 
-float convertPMBus(uint16_t reading) {
+
+
+
+float ReadWord(uint8_t device,uint8_t action)
+{
+  uint16_t bytes;
+  myWire.beginTransmission(device);
+  myWire.write(action);
+  myWire.endTransmission(false);
+
+  delayMicroseconds(100);
+  
+  myWire.requestFrom(device, (uint8_t)2, (uint8_t)true);
+  if (myWire.available()) {
+    bytes = myWire.read();   //Low byte
+    bytes = ((myWire.read() << 8) | bytes);   //High byte
+  }
+  return convertPMBus_Word(bytes);
+}
+
+float ReadByte(uint8_t device,uint8_t action)
+{
+  uint16_t bytes;
+  myWire.beginTransmission(device);
+  myWire.write(action);
+  myWire.endTransmission(false);
+
+  delayMicroseconds(100);
+  
+  myWire.requestFrom(device, (uint8_t)2, (uint8_t)true);
+  if (myWire.available()) {
+    bytes = myWire.read();   //Low byte
+    bytes = ((myWire.read() << 8) | bytes);   //High byte
+  }
+  return convertPMBus_Byte(bytes);
+}
+
+float convertPMBus_Word(uint16_t reading) {
   
   int16_t Y = reading & 0b0000011111111111;
   if ((int)Y >= 1024) {
@@ -92,7 +172,7 @@ float convertPMBus(uint16_t reading) {
   return value;
 }
 
-float convertPMBus_VOUT(uint16_t reading) {
+float convertPMBus_Byte(uint16_t reading) {
 
   uint16_t V = reading; //No twos compliment here
   
@@ -101,4 +181,30 @@ float convertPMBus_VOUT(uint16_t reading) {
                   
   float value = V * pow(2, N);
   return value;
+}
+
+float calculateCurrent(int channelNum)
+{
+  int raw = analogRead(channelPin[channelNum]);
+  float voltage = (raw / 4096.0) * 3300.0; // Gets you mV
+  float amps = ((voltage - zeroVoltage[channelNum]) / 45.0); //45mv/A
+  return amps;
+}
+
+void printDCDC(char DCDC)
+{
+  uint8_t address = DCDC_ADR[(DCDC - 65)];    
+  Serial.print(DCDC_NAME[(DCDC - 65)]);
+  Serial.print(" Current:");
+  Serial.print(calculateCurrent((DCDC - 65)));
+  Serial.print(", VIN:");
+  Serial.print(ReadWord( address, READ_VIN ));
+  Serial.print(", VOUT:");
+  Serial.print(ReadWord( address, READ_VOUT ));
+  Serial.print(", IOUT:");
+  Serial.print(ReadWord( address, READ_IOUT ));
+  Serial.print(", TEMP:");
+  Serial.print(ReadWord( address, READ_TEMP ));
+  Serial.print(", VOUT_MODE:");
+  Serial.print(ReadByte( address, VOUT_MODE ));//find out how reading bytes works
 }
