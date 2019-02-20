@@ -41,12 +41,12 @@ void printDCDC(char DCDC);
 
 String wordRead;
 String sendWord = "send"; //sends current values when string is printed to the console
-String DCDC_NAME [3] = { "DC-DC_A::", "DC-DC_B::", "DC-DC_C::" };
+String DCDC_NAME [3] = { "DC-DC_A::", ", DC-DC_B::", ", DC-DC_C::" };
 uint8_t DCDC_ADR [3] = { DCDC_A, DCDC_B, DCDC_C };
 int channelPin [3] = { VIOUT1, VIOUT2, VIOUT3 };
-float zeroVoltage [10] = {1625.02,  //channel 1 zero amp voltage
-                          1628.64,  //channel 2 zero amp voltage
-                          1628.64}; //channel 3 zero amp voltage
+float zeroVoltage [3] = {1625.02,  //channel 1 zero amp voltage
+                         1628.64,  //channel 2 zero amp voltage
+                         1628.64}; //channel 3 zero amp voltage
 
                     
 void setup() {
@@ -80,10 +80,9 @@ void loop()
 
     Serial.print("{ ");
 
+    //prints info on each DCDC
     printDCDC('A');
-    Serial.print(", ");
     printDCDC('B');
-    Serial.print(", ");
     printDCDC('C');
 
     Serial.print(" }");
@@ -119,7 +118,7 @@ void loop()
 
 
 
-
+//convert bytes into number to be printed
 float ReadWord(uint8_t device,uint8_t action)
 {
   uint16_t bytes;
@@ -137,6 +136,7 @@ float ReadWord(uint8_t device,uint8_t action)
   return convertPMBus_Word(bytes);
 }
 
+//converts a byte into a number to be printed
 float ReadByte(uint8_t device,uint8_t action)
 {
   uint16_t bytes;
@@ -154,6 +154,7 @@ float ReadByte(uint8_t device,uint8_t action)
   return convertPMBus_Byte(bytes);
 }
 
+//pm bus convertion for words
 float convertPMBus_Word(uint16_t reading) {
   
   int16_t Y = reading & 0b0000011111111111;
@@ -172,6 +173,7 @@ float convertPMBus_Word(uint16_t reading) {
   return value;
 }
 
+//pm bus convertion for bytes
 float convertPMBus_Byte(uint16_t reading) {
 
   uint16_t V = reading; //No twos compliment here
@@ -183,6 +185,7 @@ float convertPMBus_Byte(uint16_t reading) {
   return value;
 }
 
+//calculates current from current sensing chips
 float calculateCurrent(int channelNum)
 {
   int raw = analogRead(channelPin[channelNum]);
@@ -191,6 +194,7 @@ float calculateCurrent(int channelNum)
   return amps;
 }
 
+//prints info on the dc dc
 void printDCDC(char DCDC)
 {
   uint8_t address = DCDC_ADR[(DCDC - 65)];    
