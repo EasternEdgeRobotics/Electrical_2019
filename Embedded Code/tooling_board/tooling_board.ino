@@ -43,6 +43,9 @@ int sensors = 0;
 imu::Vector<3> euler;
 imu::Vector<3> accel;
 float Temp;
+char buf[90];
+char hold;
+int x;
 
 //Define one wire comunication
 OneWire oneWire(TempData);
@@ -109,7 +112,10 @@ void setup(void)
     changeMotor(i, 1, 0);
   }
   Led(0);
-
+  for(int i = 0; i < 90; i++)
+  {
+    buf[i]= ',';
+  }
 }
 
 void loop(void) 
@@ -124,10 +130,22 @@ void loop(void)
       returnImuPressureData();
     }
   }
-  char buf[90];
-  String input = Serial.readString();
-  input.toCharArray(buf, 90);
-  int n = sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
+  x = 0;
+  hold = ',';
+  while(hold != '}')
+  {
+    delay(4);
+    hold = Serial.read();
+    while( x == 0 and hold != '{')
+    {
+      hold = Serial.read();
+    }
+    buf[x] = hold;
+    x++;
+  }
+  //when printing to serial use two characters before the format
+  //int n = sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors); 
+  int n = sscanf(buf, "{ %d,%d,%d,%d,%d,%d,%d,%d,%d,%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
   changeMotor(1, dir1, duty1);
   changeMotor(2, dir2, duty2);
   changeMotor(3, dir3, duty3);
