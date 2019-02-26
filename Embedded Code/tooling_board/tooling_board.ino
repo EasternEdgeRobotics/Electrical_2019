@@ -40,6 +40,9 @@ int dir1, dir2, dir3, dir4;
 int duty1, duty2, duty3, duty4;
 int LedDuty;
 int sensors = 0;
+imu::Vector<3> euler;
+imu::Vector<3> accel;
+float Temp;
 
 //Define one wire comunication
 OneWire oneWire(TempData);
@@ -111,7 +114,7 @@ void setup(void)
 
 void loop(void) 
 {
-  while(Serial.available() == 0)
+  while(Serial.read() == -1)
   {
     if(sensors == 1)
     {
@@ -135,36 +138,44 @@ void loop(void)
 void returnImuPressureData(int mode)
 {
   sensor.read();
-  imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
-  imu::Vector<3> accel = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
-  float Temp = bno.getTemp();
+  euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
+  accel = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
+  Temp = bno.getTemp();
 
   Serial.print("{ ");
-  Serial.print("Pressure:"); 
+  //Serial.print("Pressure:"); 
   Serial.print(sensor.pressure()); 
   
-  Serial.print(", TemperaturePS:"); 
+  //Serial.print(", TemperaturePS:"); 
+  Serial.print(", ");
   Serial.print(sensor.temperature()); 
  
-  Serial.print(", GyroX:");
+  //Serial.print(", GyroX:");
+  Serial.print(", ");
   Serial.print(euler.x());
   
-  Serial.print(", GyroY:");
+  //Serial.print(", GyroY:");
+  Serial.print(", ");
   Serial.print(euler.y());
   
-  Serial.print(", GyroZ:");
+  //Serial.print(", GyroZ:");
+  Serial.print(", ");
   Serial.print(euler.z());
 
-  Serial.print(", Accelx:");
+  //Serial.print(", Accelx:");
+  Serial.print(", ");
   Serial.print(accel.x()); 
 
-  Serial.print(", Accely:");
+  //Serial.print(", Accely:");
+  Serial.print(", ");
   Serial.print(accel.y()); 
 
-  Serial.print(", Accelz:");
+  //Serial.print(", Accelz:");
+  Serial.print(", ");
   Serial.print(accel.z()); 
 
-  Serial.print(", TemperatureIMU:");
+  //Serial.print(", TemperatureIMU:");
+  Serial.print(", ");
   Serial.print(Temp);
 
   if(mode == 1)
@@ -188,13 +199,15 @@ void Led(int duty)
 
 void returnSensorData(void)
 {
-  Serial.print("temperature:");
+  //Serial.print("temperature:");
   Serial.print(calculateTemp());
 
-  Serial.print(", Metal:");
+  //Serial.print(", Metal:");
+  Serial.print(", ");
   Serial.print(metal());
 
-  Serial.print(", PH:");
+  //Serial.print(", PH:");
+  Serial.print(", ");
   Serial.print(ph());
 
   Serial.print(" }");

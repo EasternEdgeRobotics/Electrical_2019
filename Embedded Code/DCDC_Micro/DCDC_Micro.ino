@@ -44,9 +44,9 @@ String sendWord = "send"; //sends current values when string is printed to the c
 String DCDC_NAME [3] = { "DC-DC_A::", ", DC-DC_B::", ", DC-DC_C::" };
 uint8_t DCDC_ADR [3] = { DCDC_A, DCDC_B, DCDC_C };
 int channelPin [3] = { VIOUT1, VIOUT2, VIOUT3 };
-float zeroVoltage [3] = {1625.02,  //channel 1 zero amp voltage
-                         1628.64,  //channel 2 zero amp voltage
-                         1628.64}; //channel 3 zero amp voltage
+float zeroVoltage [3] = {1668.92,  //channel 1 zero amp voltage
+                         1671.64,  //channel 2 zero amp voltage
+                         1671.64}; //channel 3 zero amp voltage
 
                     
 void setup() {
@@ -72,7 +72,7 @@ void setup() {
 void loop() 
 {
   digitalWrite(TESTLED, HIGH); //so LED won't start being on
-  while(Serial.available() == 0);
+  while(Serial.read() == -1);
   wordRead = Serial.readString();
   if(wordRead.indexOf(sendWord) > -1)
   {
