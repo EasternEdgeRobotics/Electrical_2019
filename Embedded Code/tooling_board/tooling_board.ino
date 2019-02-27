@@ -36,8 +36,9 @@
 
 int motors[4] = {EnableA1, EnableA2, EnableB1, EnableB2};
 int dirControl[4] = {DirA1, DirA2, DirB1, DirB2};
-int dir1, dir2, dir3, dir4; 
-int duty1, duty2, duty3, duty4;
+int id;
+int dir, dir1, dir2, dir3, dir4; 
+int duty, duty1, duty2, duty3, duty4;
 int LedDuty;
 int sensors = 0;
 imu::Vector<3> euler;
@@ -120,6 +121,7 @@ void setup(void)
 
 void loop(void) 
 {
+  //waiting for a serial write
   while(Serial.read() == -1)
   {
     if(sensors == 1)
@@ -130,6 +132,10 @@ void loop(void)
       returnImuPressureData();
     }
   }
+  
+  
+  //serial reading code
+  // note when printing to serial use two characters before the format
   x = 0;
   hold = ',';
   while(hold != '}')
@@ -143,16 +149,35 @@ void loop(void)
     buf[x] = hold;
     x++;
   }
-  //when printing to serial use two characters before the format
-  //int n = sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors); 
-  int n = sscanf(buf, "{ %d,%d,%d,%d,%d,%d,%d,%d,%d,%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
-  changeMotor(1, dir1, duty1);
-  changeMotor(2, dir2, duty2);
-  changeMotor(3, dir3, duty3);
-  changeMotor(4, dir4, duty4);
-  Led(LedDuty);
+
+  //decides how to read the input and does the action
+  if(buf[2] == 'm' and buf[7] == '1')
+  {
+    int n = sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
+    changeMotor(1, dir1, duty1);
+    changeMotor(2, dir2, duty2);
+    changeMotor(3, dir3, duty3);
+    changeMotor(4, dir4, duty4);
+    Led(LedDuty);
+  }else if(buf[2] == 'm'){
+    int n = sscanf(buf, "{ motor:%d, %d, %d }", &id, &dir, &duty);
+    changeMotor(id, dir, duty);
+  }else if(buf[2] == 'L'){
+    int n = sscanf(buf, "{ LED:%d }", &LedDuty);
+    Led(LedDuty);
+  }else if(buf[2] == 's'){
+    int n = sscanf(buf, "{ sensorsreading:%d }", &sensors);
+  }else{
+    int n = sscanf(buf, "{ %d,%d,%d,%d,%d,%d,%d,%d,%d,%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
+    changeMotor(1, dir1, duty1);
+    changeMotor(2, dir2, duty2);
+    changeMotor(3, dir3, duty3);
+    changeMotor(4, dir4, duty4);
+    Led(LedDuty);
+  }
 }
 
+//prints out imu and pressure sensors data
 void returnImuPressureData(int mode)
 {
   sensor.read();
@@ -161,6 +186,7 @@ void returnImuPressureData(int mode)
   Temp = bno.getTemp();
 
   Serial.print("{ ");
+  
   //Serial.print("Pressure:"); 
   Serial.print(sensor.pressure()); 
   
@@ -204,17 +230,20 @@ void returnImuPressureData(int mode)
   }
 }
 
+//changes motor turn speed
 void changeMotor(int motorNum, int dir, int duty)
 {
   digitalWrite(dirControl[(motorNum - 1)], dir);
   analogWrite(motors[(motorNum - 1)], (255.0*(duty/100.0)));
 }
 
+//changes the brightness of the leds
 void Led(int duty)
 {
   analogWrite(LED, (255.0*(duty/100.0)));
 }
 
+//prints out ph, metal and tamperature sensor values
 void returnSensorData(void)
 {
   //Serial.print("temperature:");
@@ -231,6 +260,7 @@ void returnSensorData(void)
   Serial.print(" }");
 }
 
+//calculates temperature
 float calculateTemp(void)
 {
   temp.requestTemperatures();
@@ -238,6 +268,7 @@ float calculateTemp(void)
   return temperature;
 }
 
+//says if it is metal or not
 String metal(void)
 {
   if(analogRead(VMetal) > 2054)
@@ -248,6 +279,7 @@ String metal(void)
   }
 }
 
+//calculates ph level
 float ph(void)
 {
   int raw = analogRead(VPH);
