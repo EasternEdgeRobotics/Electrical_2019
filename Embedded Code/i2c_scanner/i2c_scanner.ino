@@ -1,11 +1,16 @@
 #include <Wire.h>
+#include "wiring_private.h"
 
+TwoWire myWire(&sercom3, 22, 23);
 
 void setup()
 {
-  Wire.begin();
+  myWire.begin();
+  
+  pinPeripheral(22, PIO_SERCOM);
+  pinPeripheral(23, PIO_SERCOM);
 
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("\nI2C Scanner");
 }
 
@@ -23,8 +28,8 @@ void loop()
     // The i2c_scanner uses the return value of
     // the Write.endTransmisstion to see if
     // a device did acknowledge to the address.
-    Wire.beginTransmission(address);
-    error = Wire.endTransmission();
+    myWire.beginTransmission(address);
+    error = myWire.endTransmission();
 
     if (error == 0)
     {
