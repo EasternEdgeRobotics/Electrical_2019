@@ -39,8 +39,6 @@ float convertPMBus_Byte(uint16_t reading);
 float calculateCurrent(int channelNum);
 void printDCDC(char DCDC);
 
-String wordRead;
-String sendWord = "send"; //sends current values when string is printed to the console
 String DCDC_NAME [3] = { "DC-DC_A::", ", DC-DC_B::", ", DC-DC_C::" };
 uint8_t DCDC_ADR [3] = { DCDC_A, DCDC_B, DCDC_C };
 int channelPin [3] = { VIOUT1, VIOUT2, VIOUT3 };
@@ -73,8 +71,7 @@ void loop()
 {
   digitalWrite(TESTLED, HIGH); //so LED won't start being on
   while(Serial.read() == -1);
-  wordRead = Serial.readString();
-  if(wordRead.indexOf(sendWord) > -1)
+  if(Serial.read() > -1)
   {
     digitalWrite(TESTLED, LOW); // signal data is starting to be sent
 
@@ -210,5 +207,5 @@ void printDCDC(char DCDC)
   Serial.print(", TEMP:");
   Serial.print(ReadWord( address, READ_TEMP ));
   Serial.print(", VOUT_MODE:");
-  Serial.print(ReadByte( address, VOUT_MODE ));//find out how reading bytes works
+  Serial.print(ReadByte( address, VOUT_MODE ));
 }

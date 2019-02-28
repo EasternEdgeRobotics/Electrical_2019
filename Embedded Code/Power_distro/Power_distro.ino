@@ -23,8 +23,6 @@
 
 float calculateCurrent(int channel, int channelNum);
 
-String wordRead;
-String sendWord = "send"; //sends current values when string is printed to the console
 float zeroVoltage [10] = {1625.02,  //channel 1 zero amp voltage
                           1628.64,  //channel 2 zero amp voltage
                           1630.66,  //channel 3 zero amp voltage
@@ -56,9 +54,8 @@ void setup()
 void loop() 
 {
   digitalWrite(LED, HIGH); //so LED won't start being on
-  while(Serial.available() == 0);
-  wordRead = Serial.readString();
-  if(wordRead.indexOf(sendWord) > -1)
+  while(Serial.read() == -1);
+  if(Serial.read() > -1)
   {
     digitalWrite(LED, LOW); // signal data is starting to be sent
     
