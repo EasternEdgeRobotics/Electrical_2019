@@ -10,6 +10,7 @@ while True:
     test = str(currentDT)
     print(test + ": " + decoded_bytes)
     x = decoded_bytes.split(',')
+    # x format pressure,temperaturePS,gyroX.gyroY,gyroZ,accelX,accelY,accelZ,TemperatureIMU
     currentDT = datetime.datetime.now()
     test = str(currentDT)
     print(test + ": " + x[0])
