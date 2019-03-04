@@ -68,7 +68,7 @@ void changeMotor(int motorNum, int dir, int duty);
 void Led(int duty);
 void returnSensorData(void);
 float calculateTemp(void);
-String metal(void);
+int metal(void);
 float ph(void);
 
 
@@ -122,6 +122,7 @@ void setup(void)
 void loop(void) 
 {
   //waiting for a serial write
+  hold = Serial.read();
   while(Serial.read() == -1)
   {
     if(sensors == 1)
@@ -130,18 +131,18 @@ void loop(void)
     }else{
       returnImuPressureData();
     }
+    hold = Serial.read();
   }
   
   
   //serial reading code
-  // note when printing to serial use two characters before the format
-  x = 0;
-  hold = ',';
-  while(hold != '}')
+  buf[0] = hold;
+  x = 1;
+  while(x <= 30 and hold != -1)
   {
     delay(4);
     hold = Serial.read();
-    while( x == 0 and hold != '{')
+    while( x == 0 and hold == -1)
     {
       hold = Serial.read();
     }
@@ -152,22 +153,22 @@ void loop(void)
   //decides how to read the input and does the action
   if(buf[2] == 'm' and buf[7] == '1')
   {
-    int n = sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
+    sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
     changeMotor(1, dir1, duty1);
     changeMotor(2, dir2, duty2);
     changeMotor(3, dir3, duty3);
     changeMotor(4, dir4, duty4);
     Led(LedDuty);
   }else if(buf[2] == 'm'){
-    int n = sscanf(buf, "{ motor:%d, %d, %d }", &id, &dir, &duty);
+    sscanf(buf, "{ motor:%d, %d, %d }", &id, &dir, &duty);
     changeMotor(id, dir, duty);
   }else if(buf[2] == 'L'){
-    int n = sscanf(buf, "{ LED:%d }", &LedDuty);
+    sscanf(buf, "{ LED:%d }", &LedDuty);
     Led(LedDuty);
   }else if(buf[2] == 's'){
-    int n = sscanf(buf, "{ sensorsreading:%d }", &sensors);
+    sscanf(buf, "{ sensorsreading:%d }", &sensors);
   }else{
-    int n = sscanf(buf, "{ %d,%d,%d,%d,%d,%d,%d,%d,%d,%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
+    sscanf(buf, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
     changeMotor(1, dir1, duty1);
     changeMotor(2, dir2, duty2);
     changeMotor(3, dir3, duty3);
