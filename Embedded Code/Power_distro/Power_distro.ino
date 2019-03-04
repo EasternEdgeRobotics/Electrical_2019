@@ -92,7 +92,7 @@ void loop()
     /*Serial.print(", Blank:");
     Serial.print(calculateCurrent(VIOUT10,10));*/
   
-    Serial.print(" }");
+    Serial.println(" }");
     
     delay(100);
     digitalWrite(LED, HIGH); //signals data is done being sent

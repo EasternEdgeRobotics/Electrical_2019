@@ -82,7 +82,7 @@ void loop()
     printDCDC('B');
     printDCDC('C');
 
-    Serial.print(" }");
+    Serial.println(" }");
     
     delay(100);
     digitalWrite(TESTLED, HIGH); //signals data is done being sent
