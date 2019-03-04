@@ -127,7 +127,6 @@ void loop(void)
     if(sensors == 1)
     {
       returnImuPressureData(2);
-      returnSensorData();
     }else{
       returnImuPressureData();
     }
@@ -185,48 +184,47 @@ void returnImuPressureData(int mode)
   accel = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
   Temp = bno.getTemp();
 
-  Serial.print("{ ");
-  
   //Serial.print("Pressure:"); 
   Serial.print(sensor.pressure()); 
   
   //Serial.print(", TemperaturePS:"); 
-  Serial.print(", ");
+  Serial.print(",");
   Serial.print(sensor.temperature()); 
  
   //Serial.print(", GyroX:");
-  Serial.print(", ");
+  Serial.print(",");
   Serial.print(euler.x());
   
   //Serial.print(", GyroY:");
-  Serial.print(", ");
+  Serial.print(",");
   Serial.print(euler.y());
   
   //Serial.print(", GyroZ:");
-  Serial.print(", ");
+  Serial.print(",");
   Serial.print(euler.z());
 
   //Serial.print(", Accelx:");
-  Serial.print(", ");
+  Serial.print(",");
   Serial.print(accel.x()); 
 
   //Serial.print(", Accely:");
-  Serial.print(", ");
+  Serial.print(",");
   Serial.print(accel.y()); 
 
   //Serial.print(", Accelz:");
-  Serial.print(", ");
+  Serial.print(",");
   Serial.print(accel.z()); 
 
-  //Serial.print(", TemperatureIMU:");
-  Serial.print(", ");
-  Serial.print(Temp);
-
-  if(mode == 1)
+  if(mode == 2)
   {
-    Serial.print(" }");
+    //Serial.print(", TemperatureIMU:");
+    Serial.print(",");
+    Serial.print(Temp);
+    returnSensorData();
   }else{
-    Serial.print(", ");
+    //Serial.print(", TemperatureIMU:");
+    Serial.print(",");
+    Serial.println(Temp);
   }
 }
 
@@ -247,17 +245,17 @@ void Led(int duty)
 void returnSensorData(void)
 {
   //Serial.print("temperature:");
+  Serial.print(",");
   Serial.print(calculateTemp());
 
   //Serial.print(", Metal:");
-  Serial.print(", ");
+  Serial.print(",");
   Serial.print(metal());
 
   //Serial.print(", PH:");
-  Serial.print(", ");
-  Serial.print(ph());
+  Serial.print(",");
+  Serial.println(ph());
 
-  Serial.print(" }");
 }
 
 //calculates temperature
@@ -269,13 +267,13 @@ float calculateTemp(void)
 }
 
 //says if it is metal or not
-String metal(void)
+int metal(void)
 {
   if(analogRead(VMetal) > 2054)
   {
-    return "true";
+    return 1;
   }else{
-    return "false";    
+    return 2;    
   }
 }
 
