@@ -123,7 +123,7 @@ void loop(void)
 {
   //waiting for a serial write
   hold = Serial.read();
-  while(Serial.read() == -1)
+  while(hold == -1)
   {
     if(sensors == 1)
     {
@@ -282,6 +282,6 @@ int metal(void)
 float ph(void)
 {
   int raw = analogRead(VPH);
-  float ph = 0.0;
+  float ph = 3.5 * (raw * (3.3 / 4096.0)) ;
   return ph;
 }
