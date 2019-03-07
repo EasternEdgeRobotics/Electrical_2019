@@ -151,6 +151,7 @@ void loop(void)
   }
 
   //decides how to read the input and does the action
+  /*
   if(buf[2] == 'm' and buf[7] == '1')
   {
     sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
@@ -167,14 +168,14 @@ void loop(void)
     Led(LedDuty);
   }else if(buf[2] == 's'){
     sscanf(buf, "{ sensorsreading:%d }", &sensors);
-  }else{
+  }else{*/
     sscanf(buf, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
     changeMotor(1, dir1, duty1);
     changeMotor(2, dir2, duty2);
     changeMotor(3, dir3, duty3);
     changeMotor(4, dir4, duty4);
     Led(LedDuty);
-  }
+  //}
 }
 
 //prints out imu and pressure sensors data
