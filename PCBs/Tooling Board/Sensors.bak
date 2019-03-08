@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -296,7 +296,6 @@ $EndComp
 NoConn ~ 5460 1750
 NoConn ~ 5460 1900
 NoConn ~ 5460 2100
-NoConn ~ 5460 2250
 Wire Wire Line
 	4660 2100 4400 2100
 Wire Wire Line
@@ -326,4 +325,19 @@ Connection ~ 4590 2400
 Wire Wire Line
 	4590 2400 4590 2610
 NoConn ~ 4660 1750
+Wire Wire Line
+	5460 2250 5650 2250
+Wire Wire Line
+	5650 2250 5650 2170
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C4E87C6
+P 5650 2170
+F 0 "#PWR?" H 5650 2020 50  0001 C CNN
+F 1 "+3V3" H 5665 2343 50  0000 C CNN
+F 2 "" H 5650 2170 50  0001 C CNN
+F 3 "" H 5650 2170 50  0001 C CNN
+	1    5650 2170
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
