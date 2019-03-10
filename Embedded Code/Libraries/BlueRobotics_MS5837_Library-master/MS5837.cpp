@@ -1,7 +1,8 @@
 #include "MS5837.h"
 #include <Wire.h>
+#include "wiring_private.h"
 
-#define MS5837_ADDR               0x76  
+#define MS5837_ADDR               0x76
 #define MS5837_RESET              0x1E
 #define MS5837_ADC_READ           0x00
 #define MS5837_PROM_READ          0xA0
@@ -15,27 +16,34 @@ const float MS5837::mbar = 1.0f;
 const uint8_t MS5837::MS5837_30BA = 0;
 const uint8_t MS5837::MS5837_02BA = 1;
 
+//defining i2c pins
+TwoWire myWire(&sercom3, 22, 23);
+
 MS5837::MS5837() {
 	fluidDensity = 1029;
 }
 
 bool MS5837::init() {
+	//setting up i2c pins
+	myWire.begin();
+	pinPeripheral(22, PIO_SERCOM);
+	pinPeripheral(23, PIO_SERCOM);
 	// Reset the MS5837, per datasheet
-	Wire.beginTransmission(MS5837_ADDR);
-	Wire.write(MS5837_RESET);
-	Wire.endTransmission();
+	myWire.beginTransmission(MS5837_ADDR);
+	myWire.write(MS5837_RESET);
+	myWire.endTransmission();
 
 	// Wait for reset to complete
 	delay(10);
 
 	// Read calibration values and CRC
 	for ( uint8_t i = 0 ; i < 7 ; i++ ) {
-		Wire.beginTransmission(MS5837_ADDR);
-		Wire.write(MS5837_PROM_READ+i*2);
-		Wire.endTransmission();
+		myWire.beginTransmission(MS5837_ADDR);
+		myWire.write(MS5837_PROM_READ+i*2);
+		myWire.endTransmission();
 
-		Wire.requestFrom(MS5837_ADDR,2);
-		C[i] = (Wire.read() << 8) | Wire.read();
+		myWire.requestFrom(MS5837_ADDR,2);
+		C[i] = (myWire.read() << 8) | myWire.read();
 	}
 
 	// Verify that data is correct with CRC
@@ -59,38 +67,38 @@ void MS5837::setFluidDensity(float density) {
 
 void MS5837::read() {
 	// Request D1 conversion
-	Wire.beginTransmission(MS5837_ADDR);
-	Wire.write(MS5837_CONVERT_D1_8192);
-	Wire.endTransmission();
+	myWire.beginTransmission(MS5837_ADDR);
+	myWire.write(MS5837_CONVERT_D1_8192);
+	myWire.endTransmission();
 
 	delay(20); // Max conversion time per datasheet
-	
-	Wire.beginTransmission(MS5837_ADDR);
-	Wire.write(MS5837_ADC_READ);
-	Wire.endTransmission();
 
- 	Wire.requestFrom(MS5837_ADDR,3);
+	myWire.beginTransmission(MS5837_ADDR);
+	myWire.write(MS5837_ADC_READ);
+	myWire.endTransmission();
+
+ 	myWire.requestFrom(MS5837_ADDR,3);
 	D1 = 0;
-	D1 = Wire.read();
-	D1 = (D1 << 8) | Wire.read();
-	D1 = (D1 << 8) | Wire.read();
-	
+	D1 = myWire.read();
+	D1 = (D1 << 8) | myWire.read();
+	D1 = (D1 << 8) | myWire.read();
+
 	// Request D2 conversion
-	Wire.beginTransmission(MS5837_ADDR);
-	Wire.write(MS5837_CONVERT_D2_8192);
-	Wire.endTransmission();
+	myWire.beginTransmission(MS5837_ADDR);
+	myWire.write(MS5837_CONVERT_D2_8192);
+	myWire.endTransmission();
 
 	delay(20); // Max conversion time per datasheet
-	
-	Wire.beginTransmission(MS5837_ADDR);
-	Wire.write(MS5837_ADC_READ);
-	Wire.endTransmission();
 
-	Wire.requestFrom(MS5837_ADDR,3);
+	myWire.beginTransmission(MS5837_ADDR);
+	myWire.write(MS5837_ADC_READ);
+	myWire.endTransmission();
+
+	myWire.requestFrom(MS5837_ADDR,3);
 	D2 = 0;
-	D2 = Wire.read();
-	D2 = (D2 << 8) | Wire.read();
-	D2 = (D2 << 8) | Wire.read();
+	D2 = myWire.read();
+	D2 = (D2 << 8) | myWire.read();
+	D2 = (D2 << 8) | myWire.read();
 
 	calculate();
 }
@@ -98,16 +106,16 @@ void MS5837::read() {
 void MS5837::calculate() {
 	// Given C1-C6 and D1, D2, calculated TEMP and P
 	// Do conversion first and then second order temp compensation
-	
+
 	int32_t dT = 0;
 	int64_t SENS = 0;
 	int64_t OFF = 0;
 	int32_t SENSi = 0;
-	int32_t OFFi = 0;  
-	int32_t Ti = 0;    
+	int32_t OFFi = 0;
+	int32_t Ti = 0;
 	int64_t OFF2 = 0;
 	int64_t SENS2 = 0;
-	
+
 	// Terms called
 	dT = D2-uint32_t(C[5])*256l;
 	if ( _model == MS5837_02BA ) {
@@ -119,10 +127,10 @@ void MS5837::calculate() {
 		OFF = int64_t(C[2])*65536l+(int64_t(C[4])*dT)/128l;
 		P = (D1*SENS/(2097152l)-OFF)/(8192l);
 	}
-	
+
 	// Temp conversion
 	TEMP = 2000l+int64_t(dT)*C[6]/8388608LL;
-	
+
 	//Second order compensation
 	if ( _model == MS5837_02BA ) {
 		if((TEMP/100)<20){         //Low temp
@@ -146,10 +154,10 @@ void MS5837::calculate() {
 			SENSi = 0;
 		}
 	}
-	
+
 	OFF2 = OFF-OFFi;           //Calculate pressure and temp second order
 	SENS2 = SENS-SENSi;
-	
+
 	if ( _model == MS5837_02BA ) {
 		TEMP = (TEMP-Ti);
 		P = (((D1*SENS2)/2097152l-OFF2)/32768l)/100;
@@ -196,7 +204,7 @@ uint8_t MS5837::crc4(uint16_t n_prom[]) {
 			}
 		}
 	}
-	
+
 	n_rem = ((n_rem >> 12) & 0x000F);
 
 	return n_rem ^ 0x00;

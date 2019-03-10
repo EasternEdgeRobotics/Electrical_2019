@@ -54,9 +54,6 @@ OneWire oneWire(TempData);
 //Define temperature sensor
 DallasTemperature temp(&oneWire);
 
-//Define I2C Wire
-TwoWire myWire(&sercom3, SDA_Pin, SCL_Pin);
-
 //Define pressure sensor
 MS5837 sensor;
 
@@ -78,11 +75,6 @@ void setup(void)
   analogReadResolution(12); // sets the ADC to 12 bit mode
   
   Serial.begin(115200);
-
-  myWire.begin();
-
-  pinPeripheral(SDA_Pin, PIO_SERCOM);
-  pinPeripheral(SCL_Pin, PIO_SERCOM);  
 
   sensor.init();
   sensor.setModel(MS5837::MS5837_02BA);
@@ -124,7 +116,8 @@ void loop(void)
   //waiting for a serial write
   hold = Serial.read();
   while(hold == -1)
-  {
+  {   
+    //Serial.println("test");
     if(sensors == 1)
     {
       returnImuPressureData(2);
@@ -133,7 +126,7 @@ void loop(void)
     }
     hold = Serial.read();
   }
-  
+
   
   //serial reading code
   buf[0] = hold;
@@ -177,6 +170,7 @@ void loop(void)
     Led(LedDuty);
   //}
 }
+
 
 //prints out imu and pressure sensors data
 void returnImuPressureData(int mode)
