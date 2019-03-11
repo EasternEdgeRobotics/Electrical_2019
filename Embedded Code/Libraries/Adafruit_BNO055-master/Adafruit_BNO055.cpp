@@ -27,11 +27,11 @@
 #include <limits.h>
 
 #include "Adafruit_BNO055.h"
-#include <Wire.h>
-#include "wiring_private.h"
 
-//defining i2c pins
-TwoWire myWire2(&sercom3, 22, 23);
+#include <Wire.h> //i2c
+#include "wiring_private.h" //i2c
+ //defining i2c pins
+TwoWire mywire(&sercom3, 22, 23);
 
 /***************************************************************************
  CONSTRUCTOR
@@ -59,15 +59,13 @@ Adafruit_BNO055::Adafruit_BNO055(int32_t sensorID, uint8_t address)
 /**************************************************************************/
 bool Adafruit_BNO055::begin(adafruit_bno055_opmode_t mode)
 {
-  /* Enable I2C */
-  myWire2.begin();
 
-  pinPeripheral(22, PIO_SERCOM);
-  pinPeripheral(23, PIO_SERCOM);
+  /* Enable I2C */
+  mywire.begin();
 
   // BNO055 clock stretches for 500us or more!
 #ifdef ESP8266
-  myWire.setClockStretchLimit(1000); // Allow for 1000us of clock stretching
+  mywire.setClockStretchLimit(1000); // Allow for 1000us of clock stretching
 #endif
 
   /* Make sure we have the right device */
@@ -637,15 +635,15 @@ bool Adafruit_BNO055::isFullyCalibrated(void)
 /**************************************************************************/
 bool Adafruit_BNO055::write8(adafruit_bno055_reg_t reg, byte value)
 {
-  myWire2.beginTransmission(_address);
+  mywire.beginTransmission(_address);
   #if ARDUINO >= 100
-    myWire2.write((uint8_t)reg);
-    myWire2.write((uint8_t)value);
+    mywire.write((uint8_t)reg);
+    mywire.write((uint8_t)value);
   #else
-    myWire2.send(reg);
-    myWire2.send(value);
+    mywire.send(reg);
+    mywire.send(value);
   #endif
-  myWire2.endTransmission();
+  mywire.endTransmission();
 
   /* ToDo: Check for error! */
   return true;
@@ -660,18 +658,18 @@ byte Adafruit_BNO055::read8(adafruit_bno055_reg_t reg )
 {
   byte value = 0;
 
-  myWire2.beginTransmission(_address);
+  mywire.beginTransmission(_address);
   #if ARDUINO >= 100
-    myWire2.write((uint8_t)reg);
+    mywire.write((uint8_t)reg);
   #else
-    myWire2.send(reg);
+    mywire.send(reg);
   #endif
-  myWire2.endTransmission();
-  myWire2.requestFrom(_address, (byte)1);
+  mywire.endTransmission();
+  mywire.requestFrom(_address, (byte)1);
   #if ARDUINO >= 100
-    value = myWire2.read();
+    value = mywire.read();
   #else
-    value = myWire2.receive();
+    value = mywire.receive();
   #endif
 
   return value;
@@ -684,21 +682,21 @@ byte Adafruit_BNO055::read8(adafruit_bno055_reg_t reg )
 /**************************************************************************/
 bool Adafruit_BNO055::readLen(adafruit_bno055_reg_t reg, byte * buffer, uint8_t len)
 {
-  myWire2.beginTransmission(_address);
+  mywire.beginTransmission(_address);
   #if ARDUINO >= 100
-    myWire2.write((uint8_t)reg);
+    mywire.write((uint8_t)reg);
   #else
-    myWire2.send(reg);
+    mywire.send(reg);
   #endif
-  myWire2.endTransmission();
-  myWire2.requestFrom(_address, (byte)len);
+  mywire.endTransmission();
+  mywire.requestFrom(_address, (byte)len);
 
   for (uint8_t i = 0; i < len; i++)
   {
     #if ARDUINO >= 100
-      buffer[i] = myWire2.read();
+      buffer[i] = mywire.read();
     #else
-      buffer[i] = myWire2.receive();
+      buffer[i] = mywire.receive();
     #endif
   }
 
