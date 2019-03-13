@@ -1,4 +1,5 @@
 import serial
+from PyQt5 import QtGui
 from PyQt5.QtCore import (Qt)
 from PyQt5.QtWidgets import (QApplication, QLabel, QWidget,
                              QHBoxLayout, QLineEdit, QVBoxLayout,
@@ -174,6 +175,7 @@ start = QWidget()
 start.setLayout(set)
 start.setFixedSize(700, 100)
 start.setWindowTitle('Tool Board test')
+start.setWindowIcon(QtGui.QIcon('ee_logo_l8z_icon.ico'))
 start.show()
 
 app.exec_()

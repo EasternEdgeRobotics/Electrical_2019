@@ -244,7 +244,7 @@ void Led(int duty)
 {
   duty = (256.0 *(duty / 100.0));
   analogWrite(LED, duty);
-  analogWrite(LED_IN, duty);
+  analogWrite(LED_IN, (256 - duty));
 }
 
 //prints out ph, metal and tamperature sensor values
