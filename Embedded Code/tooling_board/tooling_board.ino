@@ -233,8 +233,8 @@ void returnImuPressureData(int mode)
 //changes motor turn speed
 void changeMotor(int motorNum, int dir, int duty)
 {
-  int motors[4] = {EnableA1, EnableA2, EnableB1, EnableB2};
-  int dirControl[4] = {DirA1, DirA2, DirB1, DirB2};
+  int motors[4] = {EnableA2, EnableB2, EnableA1, EnableB1};
+  int dirControl[4] = {DirA2, DirB2, DirA1, DirB1};
   digitalWrite(dirControl[(motorNum - 1)], dir);
   analogWrite(motors[(motorNum - 1)], (256.0*(duty/100.0)));
 }
