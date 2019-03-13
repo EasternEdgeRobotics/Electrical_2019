@@ -9,10 +9,10 @@
 
 #include <Adafruit_Sensor.h> //imu
 #include <Adafruit_BNO055.h> //imu
-//#include <utility/imumaths.h> //pressure
-//#include "MS5837.h" //pressure
-//#include <OneWire.h> //Temperature
-//#include <DallasTemperature.h>//Temperature
+#include <utility/imumaths.h> //pressure
+#include "MS5837.h" //pressure
+#include <OneWire.h> //Temperature
+#include <DallasTemperature.h>//Temperature
 #include <Wire.h> //i2c
 #include "wiring_private.h" //i2c
 
@@ -33,30 +33,26 @@
 #define SCL_Pin 23
 #define SDA_Pin 22
 
-
-int motors[4] = {EnableA1, EnableA2, EnableB1, EnableB2};
-int dirControl[4] = {DirA1, DirA2, DirB1, DirB2};
+//global variables
 int id;
 int dir, dir1, dir2, dir3, dir4; 
 int duty, duty1, duty2, duty3, duty4;
 int LedDuty;
 int sensors = 0;
-imu::Vector<3> euler;
-imu::Vector<3> accel;
-float Temp;
 char buf[90];
 char hold;
 int x;
-int test = 0; //testing sensor
+bool gyroSen = true; //testing gyro
+bool pressureSen = true; //testing pressure
 
 //Define one wire comunication
-//OneWire oneWire(TempData);
+OneWire oneWire(TempData);
 
 //Define temperature sensor
-//DallasTemperature temp(&oneWire);
+DallasTemperature temp(&oneWire);
 
 //Define pressure sensor
-//MS5837 sensor;
+MS5837 sensor;
 
 //Define Gyro sensor
 Adafruit_BNO055 bno = Adafruit_BNO055();
@@ -65,7 +61,7 @@ void returnImuPressureData(int mode = 1);
 void changeMotor(int motorNum, int dir, int duty);
 void Led(int duty);
 void returnSensorData(void);
-//float calculateTemp(void);
+float calculateTemp(void);
 int metal(void);
 float ph(void);
 
@@ -79,16 +75,20 @@ void setup(void)
   
   Serial.begin(115200);
 
-  //sensor.init();
-  //sensor.setModel(MS5837::MS5837_02BA);
-  //sensor.setFluidDensity(997);
+  if(!sensor.init())
+  {
+    pressureSen = false;
+  }
+  
+  sensor.setModel(MS5837::MS5837_02BA);
+  sensor.setFluidDensity(997);
   
   if(!bno.begin())
   {
-    test = 1;
+    gyroSen = false;
   }
 
-  //temp.begin();
+  temp.begin();
 
   //Setup pins
   pinMode(VMetal, INPUT); 
@@ -106,16 +106,15 @@ void setup(void)
   pinMode(LED_IN, OUTPUT);
   
   //ensure nothing run from not being set
-  /*for(int i = 1; i<=4; i++)
+  for(int i = 1; i<=4; i++)
   {
     changeMotor(i, 1, 0);
-  }*/
-  //Led(0);
+  }
+  Led(0);
   for(int i = 0; i < 90; i++)
   {
     buf[i]= ',';
   }
-  Serial.println("finished init");
 }
 
 void loop(void) 
@@ -126,13 +125,18 @@ void loop(void)
   {   
     if(sensors == 1)
     {
-      returnImuPressureData(2);
+      returnSensorData();
+      sensors = 0;
     }else{
-      returnImuPressureData();
-      if (test==1)
+      if(gyroSen == false)
       {
         Serial.print("gyro not found");
       }
+      if(pressureSen == false)
+      {
+        Serial.print("pressure not found");
+      }
+      returnImuPressureData();
     }
     hold = Serial.read();
     
@@ -152,7 +156,6 @@ void loop(void)
     buf[x] = hold;
     x++;
   }
-  Serial.println(buf);
 
   //decides how to read the input and does the action
   /*
@@ -186,17 +189,17 @@ void loop(void)
 //prints out imu and pressure sensors data
 void returnImuPressureData(int mode)
 {
-  //sensor.read();
-  euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
-  accel = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
-  Temp = bno.getTemp();
+  sensor.read();
+  imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
+  imu::Vector<3> accel = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
+  float Temp = bno.getTemp();
 
   //Serial.print("Pressure:"); 
-  //Serial.print(sensor.pressure()); 
+  Serial.print(sensor.pressure()); 
   
   //Serial.print(", TemperaturePS:"); 
-  //Serial.print(",");
-  //Serial.print(sensor.temperature()); 
+  Serial.print(",");
+  Serial.print(sensor.temperature()); 
  
   //Serial.print(", GyroX:");
   Serial.print(",");
@@ -222,38 +225,33 @@ void returnImuPressureData(int mode)
   Serial.print(",");
   Serial.print(accel.z()); 
 
-  if(mode == 2)
-  {
-    //Serial.print(", TemperatureIMU:");
-    Serial.print(",");
-    Serial.print(Temp);
-    returnSensorData();
-  }else{
-    //Serial.print(", TemperatureIMU:");
-    Serial.print(",");
-    Serial.println(Temp);
-  }
+  //Serial.print(", TemperatureIMU:");
+  Serial.print(",");
+  Serial.println(Temp);
 }
 
 //changes motor turn speed
 void changeMotor(int motorNum, int dir, int duty)
 {
+  int motors[4] = {EnableA1, EnableA2, EnableB1, EnableB2};
+  int dirControl[4] = {DirA1, DirA2, DirB1, DirB2};
   digitalWrite(dirControl[(motorNum - 1)], dir);
-  analogWrite(motors[(motorNum - 1)], (255.0*(duty/100.0)));
+  analogWrite(motors[(motorNum - 1)], (256.0*(duty/100.0)));
 }
 
 //changes the brightness of the leds
 void Led(int duty)
 {
-  analogWrite(LED, (255.0*(duty/100.0)));
+  duty = (256.0 *(duty / 100.0));
+  analogWrite(LED, duty);
+  analogWrite(LED_IN, duty);
 }
 
 //prints out ph, metal and tamperature sensor values
 void returnSensorData(void)
 {
   //Serial.print("temperature:");
-  //Serial.print(",");
-  //Serial.print(calculateTemp());
+  Serial.print(calculateTemp());
 
   //Serial.print(", Metal:");
   Serial.print(",");
@@ -265,7 +263,6 @@ void returnSensorData(void)
 
 }
 
-/*
 //calculates temperature
 float calculateTemp(void)
 {
@@ -273,7 +270,6 @@ float calculateTemp(void)
   float temperature = temp.getTempCByIndex(0);
   return temperature;
 }
-*/
 
 //says if it is metal or not
 int metal(void)
@@ -282,7 +278,7 @@ int metal(void)
   {
     return 1;
   }else{
-    return 2;    
+    return 0;    
   }
 }
 

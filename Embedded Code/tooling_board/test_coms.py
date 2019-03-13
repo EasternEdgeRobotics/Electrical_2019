@@ -15,7 +15,7 @@ duty3 = 0
 duty4 = 0
 sensors = 0
 
-ser = serial.Serial('COM11', 115200)
+ser = serial.Serial('COM19', 115200)
 
 
 def printSerial():
@@ -29,7 +29,7 @@ def printSerial():
     global duty4
     global ledduty
     global sensors
-    send = ("1"+","+str(dir1)+","+str(duty1)+","+"2"+","+str(dir2)+","+str(duty2)+","+"3"+","+str(dir3)+","+str(duty3)+","+"4"+","+str(dir4)+","+str(duty4)+","+str(ledduty)+","+str(sensors))
+    send = (str(dir1)+","+str(duty1)+","+str(dir2)+","+str(duty2)+","+str(dir3)+","+str(duty3)+","+str(dir4)+","+str(duty4)+","+str(ledduty)+","+str(sensors))
     print(send)
     if(ser.isOpen() is False):
         ser.open()
