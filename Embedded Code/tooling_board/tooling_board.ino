@@ -67,7 +67,8 @@ float ph(void);
 
 void setup(void) 
 {
-
+  pinPeripheral(14, PIO_MULTI);
+  pinPeripheral(15, PIO_MULTI);
   pinPeripheral(22, PIO_SERCOM);
   pinPeripheral(23, PIO_SERCOM);
 
