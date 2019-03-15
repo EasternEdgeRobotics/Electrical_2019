@@ -21,8 +21,8 @@
 #define VPH 5
 #define TempData 10
 #define EnableA1 9
-#define DirA1 14
-#define EnableA2 15
+#define DirA1 14    //dual pwm
+#define EnableA2 15 //dual pwm //doesn't support all pin mod
 #define DirA2 17
 #define EnableB1 8
 #define DirB1 16
@@ -234,7 +234,7 @@ void returnImuPressureData(int mode)
 //changes motor turn speed
 void changeMotor(int motorNum, int dir, int duty)
 {
-  int motors[4] = {EnableA2, EnableB2, EnableA1, EnableB1};
+  int motors[4] = {EnableA2/*no support?*/, EnableB2, EnableA1, EnableB1};
   int dirControl[4] = {DirA2, DirB2, DirA1, DirB1};
   digitalWrite(dirControl[(motorNum - 1)], dir);
   analogWrite(motors[(motorNum - 1)], (256.0*(duty/100.0)));
