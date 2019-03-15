@@ -236,8 +236,9 @@ void changeMotor(int motorNum, int dir, int duty)
 {
   int motors[4] = {EnableA2/*no support?*/, EnableB2, EnableA1, EnableB1};
   int dirControl[4] = {DirA2, DirB2, DirA1, DirB1};
-  digitalWrite(dirControl[(motorNum - 1)], dir);
-  analogWrite(motors[(motorNum - 1)], (256.0*(duty/100.0)));
+  motorNum--;
+  digitalWrite(dirControl[motorNum], dir);
+  analogWrite(motors[motorNum], (256.0*(duty/100.0)));
 }
 
 //changes the brightness of the leds

@@ -59,40 +59,48 @@ void loop()
   {
     digitalWrite(LED, LOW); // signal data is starting to be sent
     
-    Serial.print("{ ");
+    //Serial.print("{ ");
     
-    Serial.print("fore-star-horz:");
+    //Serial.print("fore-star-horz:");
     Serial.print(calculateCurrent(VIOUT1,1));
     
-    Serial.print(", fore-port-horz:");
+    //Serial.print(", fore-port-horz:");
+    Serial.print(",");
     Serial.print(calculateCurrent(VIOUT2,2));
     
-    Serial.print(", fore-star-vert:");
+    //Serial.print(", fore-star-vert:");
+    Serial.print(",");
     Serial.print(calculateCurrent(VIOUT3,3));
     
-    Serial.print(", aft-star-horz:");
+    //Serial.print(", aft-star-horz:");
+    Serial.print(",");
     Serial.print(calculateCurrent(VIOUT4,4));
     
-    Serial.print(", fore-port-vert:");
+    //Serial.print(", fore-port-vert:");
+    Serial.print(",");
     Serial.print(calculateCurrent(VIOUT5,5));
     
-    Serial.print(", aft-port-vert:");
+    //Serial.print(", aft-port-vert:");
+    Serial.print(",");
     Serial.print(calculateCurrent(VIOUT6,6));
     
-    Serial.print(", aft-star-vert:");
+    //Serial.print(", aft-star-vert:");
+    Serial.print(",");
     Serial.print(calculateCurrent(VIOUT7,7));
     
-    Serial.print(", aft-port-horz:");
+    //Serial.print(", aft-port-horz:");
+    Serial.print(",");
     Serial.print(calculateCurrent(VIOUT8,8));
     
-    Serial.print(", PI/Switch/Tooling:");
+    //Serial.print(", PI/Switch/Tooling:");
+    Serial.print(",");
     Serial.print(calculateCurrent(VIOUT9,9));
 
     //current chip not installed on pcb
     /*Serial.print(", Blank:");
     Serial.print(calculateCurrent(VIOUT10,10));*/
   
-    Serial.println(" }");
+    //Serial.println(" }");
     
     delay(100);
     digitalWrite(LED, HIGH); //signals data is done being sent

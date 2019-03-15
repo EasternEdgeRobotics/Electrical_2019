@@ -75,14 +75,16 @@ void loop()
   {
     digitalWrite(TESTLED, LOW); // signal data is starting to be sent
 
-    Serial.print("{ ");
+    //Serial.print("{ ");
 
     //prints info on each DCDC
     printDCDC('A');
+    Serial.print(",");
     printDCDC('B');
+    Serial.print(",");
     printDCDC('C');
 
-    Serial.println(" }");
+    //Serial.println(" }");
     
     delay(100);
     digitalWrite(TESTLED, HIGH); //signals data is done being sent
@@ -195,17 +197,28 @@ float calculateCurrent(int channelNum)
 void printDCDC(char DCDC)
 {
   uint8_t address = DCDC_ADR[(DCDC - 65)];    
-  Serial.print(DCDC_NAME[(DCDC - 65)]);
-  Serial.print(" Current:");
+  //Serial.print(DCDC_NAME[(DCDC - 65)]);
+  
+  //Serial.print(" Current:");
   Serial.print(calculateCurrent((DCDC - 65)));
-  Serial.print(", VIN:");
+  
+  //Serial.print(", VIN:");
+  Serial.print(",");
   Serial.print(ReadWord( address, READ_VIN ));
-  Serial.print(", VOUT:");
+  
+  //Serial.print(", VOUT:");
+  Serial.print(",");
   Serial.print(ReadWord( address, READ_VOUT ));
-  Serial.print(", IOUT:");
+  
+  //Serial.print(", IOUT:");
+  Serial.print(",");
   Serial.print(ReadWord( address, READ_IOUT ));
-  Serial.print(", TEMP:");
+  
+  //Serial.print(", TEMP:");
+  Serial.print(",");
   Serial.print(ReadWord( address, READ_TEMP ));
-  Serial.print(", VOUT_MODE:");
+  
+  //Serial.print(", VOUT_MODE:");
+  Serial.print(",");
   Serial.print(ReadByte( address, VOUT_MODE ));
 }
