@@ -21,14 +21,14 @@
 #define VPH 5
 #define TempData 10
 #define EnableA1 9
-#define DirA1 14    //dual pwm
-#define EnableA2 15 //dual pwm //doesn't support all pin mod
+#define DirA1 14
+#define EnableA2 15
 #define DirA2 17
 #define EnableB1 8
 #define DirB1 16
-#define EnableB2 19
+#define EnableB2 19 //analog not working
 #define DirB2 28
-#define LED 18
+#define LED 18      //Analog not working
 #define LED_IN 11
 #define SCL_Pin 23
 #define SDA_Pin 22
@@ -67,8 +67,8 @@ float ph(void);
 
 void setup(void) 
 {
-  pinPeripheral(14, PIO_MULTI);
-  pinPeripheral(15, PIO_MULTI);
+  //pinPeripheral(14, PIO_MULTI);
+  //pinPeripheral(15, PIO_MULTI);
   pinPeripheral(22, PIO_SERCOM);
   pinPeripheral(23, PIO_SERCOM);
 
@@ -116,6 +116,7 @@ void setup(void)
   {
     buf[i]= ',';
   }
+  
 }
 
 void loop(void) 
@@ -236,16 +237,23 @@ void changeMotor(int motorNum, int dir, int duty)
 {
   int motors[4] = {EnableA2/*no support?*/, EnableB2, EnableA1, EnableB1};
   int dirControl[4] = {DirA2, DirB2, DirA1, DirB1};
-  motorNum--;
-  digitalWrite(dirControl[motorNum], dir);
-  analogWrite(motors[motorNum], (256.0*(duty/100.0)));
+  if(motorNum == 2)
+  {
+    motorNum--;
+    digitalWrite(dirControl[motorNum], dir);
+    digitalWrite(motors[motorNum], (1.0*(duty/100.0)));
+  }else{
+    motorNum--;
+    digitalWrite(dirControl[motorNum], dir);
+    analogWrite(motors[motorNum], (256.0*(duty/100.0)));
+  }
 }
 
 //changes the brightness of the leds
 void Led(int duty)
 {
+  digitalWrite(LED, duty/100);
   duty = (256.0 *(duty / 100.0));
-  analogWrite(LED, duty);
   analogWrite(LED_IN, (256 - duty));
 }
 

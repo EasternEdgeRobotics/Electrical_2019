@@ -16,7 +16,7 @@ duty3 = 0
 duty4 = 0
 sensors = 0
 
-ser = serial.Serial('COM19', 115200)
+ser = serial.Serial('COM20', 115200)
 
 
 def printSerial():

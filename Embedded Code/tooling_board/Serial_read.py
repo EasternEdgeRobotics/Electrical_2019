@@ -1,7 +1,7 @@
 import serial
 import datetime
 
-ser = serial.Serial('COM11', 115200)
+ser = serial.Serial('COM20', 115200)
 
 while True:
     ser_bytes = ser.readline()
