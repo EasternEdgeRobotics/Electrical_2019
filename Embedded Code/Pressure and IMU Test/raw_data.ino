@@ -12,7 +12,6 @@ imu::Vector<3> euler;
 int input = 0;
 int mode = 0;
 
-
 void setup() {
   SerialUSB.begin(115200);
   Wire.begin();
@@ -20,11 +19,9 @@ void setup() {
   sensor.setModel(MS5837::MS5837_02BA);
   sensor.setFluidDensity(997);
   bno.begin();
-  
 }
 
 void loop() {
-
   sensor.read();
   euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
   accel = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
@@ -32,42 +29,40 @@ void loop() {
 
   //SerialUSB.print("{ ");
 
-    //SerialUSB.print("Pressure:"); 
-    SerialUSB.print(sensor.pressure()); 
-  
-    //SerialUSB.print(", TemperaturePS:");
-    SerialUSB.print(",");
-    SerialUSB.print(sensor.temperature()); 
- 
-    //SerialUSB.print(", GyroX:");
-    SerialUSB.print(",");
-    SerialUSB.print(euler.x());
-  
-    //SerialUSB.print(", GyroY:");
-    SerialUSB.print(",");
-    SerialUSB.print(euler.y());
-  
-    //SerialUSB.print(", GyroZ:");
-    SerialUSB.print(",");
-    SerialUSB.print(euler.z());
-    
+  //SerialUSB.print("Pressure:"); 
+  SerialUSB.print(sensor.pressure()); 
+
+  //SerialUSB.print(", TemperaturePS:");
+  SerialUSB.print(",");
+  SerialUSB.print(sensor.temperature()); 
+
+  //SerialUSB.print(", GyroX:");
+  SerialUSB.print(",");
+  SerialUSB.print(euler.x());
+
+  //SerialUSB.print(", GyroY:");
+  SerialUSB.print(",");
+  SerialUSB.print(euler.y());
+
+  //SerialUSB.print(", GyroZ:");
+  SerialUSB.print(",");
+  SerialUSB.print(euler.z());
+
   //SerialUSB.print(", Accelx:");
-    SerialUSB.print(",");
-    SerialUSB.print(accel.x()); 
+  SerialUSB.print(",");
+  SerialUSB.print(accel.x()); 
 
   //SerialUSB.print(", Accely:");
-    SerialUSB.print(",");
-    SerialUSB.print(accel.y()); 
+  SerialUSB.print(",");
+  SerialUSB.print(accel.y()); 
 
   //SerialUSB.print(", Accelz:")
-    SerialUSB.print(",");;
-    SerialUSB.print(accel.z()); 
-  
-  //SerialUSB.print(", TemperatureIMU:");
-    SerialUSB.print(",");
-    SerialUSB.println(Temp);
+  SerialUSB.print(",");;
+  SerialUSB.print(accel.z()); 
 
-    //SerialUSB.println(" }");
-  
-  
+  //SerialUSB.print(", TemperatureIMU:");
+  SerialUSB.print(",");
+  SerialUSB.println(Temp);
+
+  //SerialUSB.println(" }"); 
 }

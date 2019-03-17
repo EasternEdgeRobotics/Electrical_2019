@@ -5,18 +5,18 @@
 /*-----------------------------------*/
 /*************************************/
 
-//Contributers: David Drover
+// Contributers: David Drover
 
-#include <Adafruit_Sensor.h> //imu
-#include <Adafruit_BNO055.h> //imu
-#include <utility/imumaths.h> //pressure
-#include "MS5837.h" //pressure
-#include <OneWire.h> //Temperature
-#include <DallasTemperature.h>//Temperature
-#include <Wire.h> //i2c
-#include "wiring_private.h" //i2c
+#include <Adafruit_Sensor.h> // imu
+#include <Adafruit_BNO055.h> // imu
+#include <utility/imumaths.h> // Pressure
+#include "MS5837.h" // Pressure
+#include <OneWire.h> // Temperature
+#include <DallasTemperature.h>// Temperature
+#include <Wire.h> // i2c
+#include "wiring_private.h" // i2c
 
-//Pin Definitions
+// Pin Definitions
 #define VMetal 4
 #define VPH 5
 #define TempData 10
@@ -26,14 +26,14 @@
 #define DirA2 17
 #define EnableB1 8
 #define DirB1 16
-#define EnableB2 19 //analog not working
+#define EnableB2 19 // Analog not working
 #define DirB2 28
-#define LED 18      //Analog not working
+#define LED 18      // Analog not working
 #define LED_IN 11
 #define SCL_Pin 23
 #define SDA_Pin 22
 
-//global variables
+// Global variables
 int id;
 int dir, dir1, dir2, dir3, dir4; 
 int duty, duty1, duty2, duty3, duty4;
@@ -42,19 +42,19 @@ int sensors = 0;
 char buf[90];
 char hold;
 int x;
-bool gyroSen = true; //testing gyro
-bool pressureSen = true; //testing pressure
+bool gyroSen = true; // Testing gyro
+bool pressureSen = true; // Testing pressure
 
-//Define one wire comunication
+// Define one wire communication
 OneWire oneWire(TempData);
 
-//Define temperature sensor
+// Define temperature sensor
 DallasTemperature temp(&oneWire);
 
-//Define pressure sensor
+// Define pressure sensor
 MS5837 sensor;
 
-//Define Gyro sensor
+// Define Gyro sensor
 Adafruit_BNO055 bno = Adafruit_BNO055();
 
 void returnImuPressureData(int mode = 1);
@@ -72,7 +72,7 @@ void setup(void)
   pinPeripheral(22, PIO_SERCOM);
   pinPeripheral(23, PIO_SERCOM);
 
-  analogReadResolution(12); // sets the ADC to 12 bit mode
+  analogReadResolution(12); // Sets the ADC to 12 bit mode
   
   Serial.begin(115200);
 
@@ -91,7 +91,7 @@ void setup(void)
 
   temp.begin();
 
-  //Setup pins
+  // Setup pins
   pinMode(VMetal, INPUT); 
   pinMode(VPH, INPUT); 
   pinMode(TempData, INPUT); 
@@ -106,7 +106,7 @@ void setup(void)
   pinMode(LED, OUTPUT);
   pinMode(LED_IN, OUTPUT);
   
-  //ensure nothing run from not being set
+  // Ensure nothing run from not being set
   for(int i = 1; i<=4; i++)
   {
     changeMotor(i, 1, 0);
@@ -116,12 +116,11 @@ void setup(void)
   {
     buf[i]= ',';
   }
-  
 }
 
 void loop(void) 
 {
-  //waiting for a serial write
+  // Waiting for a serial write
   hold = Serial.read();
   while(hold == 255)
   {   
@@ -129,7 +128,9 @@ void loop(void)
     {
       returnSensorData();
       sensors = 0;
-    }else{
+    }
+    else
+    {
       if(gyroSen == false)
       {
         Serial.print("gyro not found");
@@ -140,11 +141,10 @@ void loop(void)
       }
       returnImuPressureData();
     }
-    hold = Serial.read();
-    
+    hold = Serial.read(); 
   }
 
-  //serial reading code
+  // Serial reading code
   buf[0] = hold;
   x = 1;
   while(x <= 30 and hold != 255)
@@ -159,7 +159,7 @@ void loop(void)
     x++;
   }
 
-  //decides how to read the input and does the action
+  // Decides how to read the input and does the action
   /*
   if(buf[2] == 'm' and buf[7] == '1')
   {
@@ -188,7 +188,7 @@ void loop(void)
 }
 
 
-//prints out imu and pressure sensors data
+// Prints out imu and pressure sensors data
 void returnImuPressureData(int mode)
 {
   sensor.read();
@@ -232,7 +232,7 @@ void returnImuPressureData(int mode)
   Serial.println(Temp);
 }
 
-//changes motor turn speed
+// Changes motor turn speed
 void changeMotor(int motorNum, int dir, int duty)
 {
   int motors[4] = {EnableA2/*no support?*/, EnableB2, EnableA1, EnableB1};
@@ -242,14 +242,16 @@ void changeMotor(int motorNum, int dir, int duty)
     motorNum--;
     digitalWrite(dirControl[motorNum], dir);
     digitalWrite(motors[motorNum], (1.0*(duty/100.0)));
-  }else{
+  }
+  else
+  {
     motorNum--;
     digitalWrite(dirControl[motorNum], dir);
     analogWrite(motors[motorNum], (256.0*(duty/100.0)));
   }
 }
 
-//changes the brightness of the leds
+// Changes the brightness of the leds
 void Led(int duty)
 {
   digitalWrite(LED, duty/100);
@@ -257,7 +259,7 @@ void Led(int duty)
   analogWrite(LED_IN, (256 - duty));
 }
 
-//prints out ph, metal and tamperature sensor values
+// Prints out ph, metal and temperature sensor values
 void returnSensorData(void)
 {
   //Serial.print("temperature:");
@@ -270,10 +272,9 @@ void returnSensorData(void)
   //Serial.print(", PH:");
   Serial.print(",");
   Serial.println(ph());
-
 }
 
-//calculates temperature
+// Calculates temperature
 float calculateTemp(void)
 {
   temp.requestTemperatures();
@@ -281,18 +282,20 @@ float calculateTemp(void)
   return temperature;
 }
 
-//says if it is metal or not
+// Says if it is metal or not
 int metal(void)
 {
   if(analogRead(VMetal) > 2054)
   {
     return 1;
-  }else{
+  }
+  else
+  {
     return 0;    
   }
 }
 
-//calculates ph level
+// Calculates ph level
 float ph(void)
 {
   int raw = analogRead(VPH);
