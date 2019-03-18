@@ -37,7 +37,7 @@ def printSerial():
 	ser.close()
 
 def button1():
-	"""Zero."""
+	"""Set LED."""
 	global ledduty
 	ledduty = e1.get()
 	printSerial()
@@ -67,7 +67,7 @@ def button2():
 	printSerial()
 
 def button3():
-	"""Set LED."""
+	"""Zero."""
 	global duty1
 	global duty2
 	global duty3
@@ -105,9 +105,9 @@ e3.grid(row=1, column=2, padx=5, pady=5)
 e4.grid(row=1, column=3, padx=5, pady=5)
 
 # Buttons
-Button(root, text='Zero', command=button1).grid(row=0, column=4, sticky=W, padx=5, pady=5)
+Button(root, text='Zero', command=button3).grid(row=0, column=4, sticky=W, padx=5, pady=5)
 Button(root, text='Set Motor', command=button2).grid(row=1, column=4, sticky=W, padx=5, pady=5)
-Button(root, text='Set LED', command=button3).grid(row=2, column=4, sticky=W, padx=5, pady=5)
+Button(root, text='Set LED', command=button1).grid(row=2, column=4, sticky=W, padx=5, pady=5)
 Button(root, text='Quit', command=root.quit).grid(row=3, column=4, sticky=W, padx=5, pady=5)
 
 mainloop( )
