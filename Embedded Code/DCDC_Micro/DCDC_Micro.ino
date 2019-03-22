@@ -40,6 +40,7 @@ float calculateCurrent(int channelNum);
 void printDCDC(char DCDC);
 
 String DCDC_NAME [3] = { "DC-DC_A::", ", DC-DC_B::", ", DC-DC_C::" };
+char hold;
 uint8_t DCDC_ADR [3] = { DCDC_A, DCDC_B, DCDC_C };
 int channelPin [3] = { VIOUT1, VIOUT2, VIOUT3 };
 float zeroVoltage [3] = {1668.92,  //channel 1 zero amp voltage
@@ -70,8 +71,12 @@ void setup() {
 void loop() 
 {
   digitalWrite(TESTLED, HIGH); //so LED won't start being on
-  while(Serial.read() == -1);
-  if(Serial.read() > -1)
+  hold = Serial.read();
+  while(hold == -1)
+  {
+    hold = Serial.read();
+  }
+  if(hold > -1 and hold < 255)
   {
     digitalWrite(TESTLED, LOW); // signal data is starting to be sent
 

@@ -23,6 +23,7 @@
 
 float calculateCurrent(int channel, int channelNum);
 
+char hold;
 float zeroVoltage [10] = {1625.02,  //channel 1 zero amp voltage
                           1628.64,  //channel 2 zero amp voltage
                           1630.66,  //channel 3 zero amp voltage
@@ -54,8 +55,12 @@ void setup()
 void loop() 
 {
   digitalWrite(LED, HIGH); //so LED won't start being on
-  while(Serial.read() == -1);
-  if(Serial.read() > -1)
+  hold = Serial.read();
+  while(hold == -1)
+  {
+    hold = Serial.read();
+  }
+  if(hold > -1 and hold < 255)
   {
     digitalWrite(LED, LOW); // signal data is starting to be sent
     
