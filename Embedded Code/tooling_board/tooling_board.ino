@@ -67,8 +67,6 @@ float ph(void);
 
 void setup(void) 
 {
-  //pinPeripheral(14, PIO_MULTI);
-  //pinPeripheral(15, PIO_MULTI);
   pinPeripheral(22, PIO_SERCOM);
   pinPeripheral(23, PIO_SERCOM);
 
@@ -235,27 +233,28 @@ void returnImuPressureData(int mode)
 // Changes motor turn speed
 void changeMotor(int motorNum, int dir, int duty)
 {
-  int motors[4] = {EnableA2/*no support?*/, EnableB2, EnableA1, EnableB1};
+  int motors[4] = {EnableA2, EnableB2, EnableA1, EnableB1};
   int dirControl[4] = {DirA2, DirB2, DirA1, DirB1};
-  if(motorNum == 2)
-  {
-    motorNum--;
-    digitalWrite(dirControl[motorNum], dir);
-    digitalWrite(motors[motorNum], (1.0*(duty/100.0)));
-  }
-  else
-  {
+  //if(motorNum == 2)
+  //{
+  //  motorNum--;
+  //  digitalWrite(dirControl[motorNum], dir);
+  //  digitalWrite(motors[motorNum], (1.0*(duty/100.0)));
+  //}
+  //else
+  //{
     motorNum--;
     digitalWrite(dirControl[motorNum], dir);
     analogWrite(motors[motorNum], (256.0*(duty/100.0)));
-  }
+  //}
 }
 
 // Changes the brightness of the leds
 void Led(int duty)
 {
-  digitalWrite(LED, duty/100);
+  //digitalWrite(LED, duty/100);
   duty = (256.0 *(duty / 100.0));
+  analogWrite(LED, duty);
   analogWrite(LED_IN, (256 - duty));
 }
 
