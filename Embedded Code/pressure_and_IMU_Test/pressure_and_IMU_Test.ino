@@ -1,16 +1,14 @@
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
-#include <Adafruit_BNO055.h>
+#include <Adafruit_BNO055_default.h>
 #include <utility/imumaths.h>
-#include "MS5837.h"
+#include "MS5837_default.h"
 
 MS5837 sensor;
 Adafruit_BNO055 bno = Adafruit_BNO055();
 float Temp;
 imu::Vector<3> accel;
 imu::Vector<3> euler;
-int input = 0;
-int mode = 0;
 
 void setup() {
   SerialUSB.begin(115200);
@@ -26,8 +24,6 @@ void loop() {
   euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
   accel = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
   Temp = bno.getTemp();
-
-  //SerialUSB.print("{ ");
 
   //SerialUSB.print("Pressure:"); 
   SerialUSB.print(sensor.pressure()); 
@@ -64,5 +60,4 @@ void loop() {
   SerialUSB.print(",");
   SerialUSB.println(Temp);
 
-  //SerialUSB.println(" }"); 
 }
