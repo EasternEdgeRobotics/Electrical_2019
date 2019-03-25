@@ -9,7 +9,7 @@
 
 #include <Adafruit_Sensor.h> // imu
 #include <Adafruit_BNO055.h> // imu
-#include <utility/imumaths.h> // Pressure
+#include <utility/imumaths.h> // imu
 #include "MS5837.h" // Pressure
 #include <OneWire.h> // Temperature
 #include <DallasTemperature.h>// Temperature
@@ -67,6 +67,9 @@ float ph(void);
 
 void setup(void) 
 {
+  pinPeripheral(15, PIO_TIMER_PWM);
+  pinPeripheral(18, PIO_TIMER_PWM);
+  pinPeripheral(19, PIO_TIMER_PWM);
   pinPeripheral(22, PIO_SERCOM);
   pinPeripheral(23, PIO_SERCOM);
 
@@ -158,7 +161,7 @@ void loop(void)
   }
 
   // Decides how to read the input and does the action
-  /*
+
   if(buf[2] == 'm' and buf[7] == '1')
   {
     sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
@@ -175,14 +178,14 @@ void loop(void)
     Led(LedDuty);
   }else if(buf[2] == 's'){
     sscanf(buf, "{ sensorsreading:%d }", &sensors);
-  }else{*/
+  }else{
     sscanf(buf, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
     changeMotor(1, dir1, duty1);
     changeMotor(2, dir2, duty2);
     changeMotor(3, dir3, duty3);
     changeMotor(4, dir4, duty4);
     Led(LedDuty);
-  //}
+  }
 }
 
 
