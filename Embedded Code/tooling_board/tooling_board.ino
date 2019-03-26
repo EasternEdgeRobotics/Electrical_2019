@@ -67,7 +67,7 @@ float ph(void);
 
 void setup(void) 
 {
-  pinPeripheral(15, PIO_TIMER_PWM);
+  pinPeripheral(11, PIO_TIMER_PWM);
   pinPeripheral(18, PIO_TIMER_PWM);
   pinPeripheral(19, PIO_TIMER_PWM);
   pinPeripheral(22, PIO_SERCOM);
@@ -255,9 +255,9 @@ void changeMotor(int motorNum, int dir, int duty)
 // Changes the brightness of the leds
 void Led(int duty)
 {
-  //digitalWrite(LED, duty/100);
+  int duty2 = (256.0 *(duty / 100.0));
   duty = (256.0 *(duty / 100.0));
-  analogWrite(LED, duty);
+  analogWrite(LED, duty2);
   analogWrite(LED_IN, (256 - duty));
 }
 
