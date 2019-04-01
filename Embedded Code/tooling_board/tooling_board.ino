@@ -17,8 +17,8 @@
 #include "wiring_private.h" // i2c
 
 // Pin Definitions
-#define VMetal 4
-#define VPH 5
+#define VMetal A4
+#define VPH A5
 #define TempData 10
 #define EnableA1 9
 #define DirA1 14
@@ -128,7 +128,7 @@ void loop(void)
     if(sensors == 1)
     {
       returnSensorData();
-      sensors = 0;
+      //sensors = 0;
     }
     else
     {
@@ -287,7 +287,8 @@ float calculateTemp(void)
 // Says if it is metal or not
 int metal(void)
 {
-  if(analogRead(VMetal) > 2054)
+  /*
+  if(analogRead(VMetal) < 3 )
   {
     return 1;
   }
@@ -295,12 +296,21 @@ int metal(void)
   {
     return 0;    
   }
+  */
+  return analogRead(VMetal);
+  
 }
 
 // Calculates ph level
 float ph(void)
 {
-  int raw = analogRead(VPH);
-  float ph = 3.5 * (raw * (3.3 / 4096.0)) ;
+  int rawAvg;
+  for( int i = 0; i < 4; i++)
+  {
+  rawAvg += analogRead(VPH);
+  delay(5);
+  }
+  rawAvg /= 4;
+  float ph = 3.5 * (rawAvg * (3.3 / 4096.0)) ;
   return ph;
 }
