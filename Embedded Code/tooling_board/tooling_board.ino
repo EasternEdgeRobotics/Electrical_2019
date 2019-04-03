@@ -194,7 +194,7 @@ void returnImuPressureData(int mode)
 {
   sensor.read();
   imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
-  imu::Vector<3> accel = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
+  imu::Vector<3> accel = bno.getVector(Adafruit_BNO055::VECTOR_LINEARACCEL);
   float Temp = bno.getTemp();
 
   //Serial.print("Pressure:"); 
