@@ -17,7 +17,7 @@
 #include "wiring_private.h" // i2c
 
 // Pin Definitions
-#define VMetal A4
+#define VMetal 4
 #define VPH A5
 #define TempData 10
 #define EnableA1 9
@@ -63,7 +63,7 @@ void Led(int duty);
 void returnSensorData(void);
 float calculateTemp(void);
 int metal(void);
-float ph(void);
+float ph(double offset);
 
 void setup(void) 
 {
@@ -273,7 +273,7 @@ void returnSensorData(void)
 
   //Serial.print(", PH:");
   Serial.print(",");
-  Serial.println(ph());
+  Serial.println(ph(0));
 }
 
 // Calculates temperature
@@ -287,8 +287,8 @@ float calculateTemp(void)
 // Says if it is metal or not
 int metal(void)
 {
-  /*
-  if(analogRead(VMetal) < 3 )
+  
+  if(analogRead(VMetal) > 100 )
   {
     return 1;
   }
@@ -296,21 +296,21 @@ int metal(void)
   {
     return 0;    
   }
-  */
-  return analogRead(VMetal);
+  
+  //return analogRead(VMetal);
   
 }
 
 // Calculates ph level
-float ph(void)
+float ph(double offset)
 {
-  int rawAvg;
+  int rawAvg = 0;
   for( int i = 0; i < 4; i++)
   {
   rawAvg += analogRead(VPH);
   delay(5);
   }
   rawAvg /= 4;
-  float ph = 3.5 * (rawAvg * (3.3 / 4096.0)) ;
+  float ph = ((3.5 * (rawAvg * (3.3 / 4096.0))) + offset) ;
   return ph;
 }
