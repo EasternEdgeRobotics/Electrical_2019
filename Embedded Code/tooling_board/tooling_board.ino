@@ -273,7 +273,7 @@ void returnSensorData(void)
 
   //Serial.print(", PH:");
   Serial.print(",");
-  Serial.println(ph(0));
+  Serial.println(ph(2.72));
 }
 
 // Calculates temperature
@@ -288,7 +288,7 @@ float calculateTemp(void)
 int metal(void)
 {
   
-  if(analogRead(VMetal) > 100 )
+  if(analogRead(VMetal) < 100 )
   {
     return 1;
   }
