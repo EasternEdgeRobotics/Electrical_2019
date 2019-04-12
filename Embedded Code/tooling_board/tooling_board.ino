@@ -38,7 +38,8 @@ int id;
 int dir, dir1, dir2, dir3, dir4; 
 int duty, duty1, duty2, duty3, duty4;
 int LedDuty;
-int sensors = 0;
+int tempPH = 0;
+int mDetect = 0;
 char buf[90];
 char hold;
 int x;
@@ -125,10 +126,9 @@ void loop(void)
   hold = Serial.read();
   while(hold == 255)
   {   
-    if(sensors == 1)
+    if(tempPH == 1 or mDetect == 1)
     {
       returnSensorData();
-      //sensors = 0;
     }
     else
     {
@@ -164,7 +164,7 @@ void loop(void)
 
   if(buf[2] == 'm' and buf[7] == '1')
   {
-    sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
+    sscanf(buf, "{ motor1:%d, %d, motor2:%d, %d, motor3:%d, %d, motor4:%d, %d, LED:%d, sensorsreading:%d,%d }", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &tempPH , &mDetect);
     changeMotor(1, dir1, duty1);
     changeMotor(2, dir2, duty2);
     changeMotor(3, dir3, duty3);
@@ -177,9 +177,9 @@ void loop(void)
     sscanf(buf, "{ LED:%d }", &LedDuty);
     Led(LedDuty);
   }else if(buf[2] == 's'){
-    sscanf(buf, "{ sensorsreading:%d }", &sensors);
+    sscanf(buf, "{ sensorsreading:%d,%d }", &tempPH , &mDetect);
   }else{
-    sscanf(buf, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &sensors);
+    sscanf(buf, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &tempPH);
     changeMotor(1, dir1, duty1);
     changeMotor(2, dir2, duty2);
     changeMotor(3, dir3, duty3);
@@ -197,7 +197,10 @@ void returnImuPressureData(int mode)
   imu::Vector<3> accel = bno.getVector(Adafruit_BNO055::VECTOR_LINEARACCEL);
   float Temp = bno.getTemp();
 
-  //Serial.print("Pressure:"); 
+  Serial.print("P");
+
+  //Serial.print("Pressure:");
+  Serial.print(",");
   Serial.print(sensor.pressure()); 
   
   //Serial.print(", TemperaturePS:"); 
@@ -264,16 +267,34 @@ void Led(int duty)
 // Prints out ph, metal and temperature sensor values
 void returnSensorData(void)
 {
+  Serial.print("S");
+  
   //Serial.print("temperature:");
-  Serial.print(calculateTemp());
-
+  Serial.print(",");
+  if(tempPH == 1)
+  {
+    Serial.print(calculateTemp());
+  }else{
+    Serial.print("F");
+  }
+  
   //Serial.print(", Metal:");
   Serial.print(",");
-  Serial.print(metal());
-
+  if(mDetect == 1)
+  {
+    Serial.print(metal());
+  }else{
+    Serial.print("F");
+  }
+  
   //Serial.print(", PH:");
   Serial.print(",");
-  Serial.println(ph(2.72));
+  if(tempPH == 1)
+  {
+    Serial.println(ph(2.72));
+  }else{
+    Serial.print("F");
+  }
 }
 
 // Calculates temperature
@@ -287,7 +308,6 @@ float calculateTemp(void)
 // Says if it is metal or not
 int metal(void)
 {
-  
   if(analogRead(VMetal) < 100 )
   {
     return 1;
@@ -295,10 +315,7 @@ int metal(void)
   else
   {
     return 0;    
-  }
-  
-  //return analogRead(VMetal);
-  
+  }  
 }
 
 // Calculates ph level
