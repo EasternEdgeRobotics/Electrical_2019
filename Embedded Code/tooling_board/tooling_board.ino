@@ -143,10 +143,12 @@ void loop(void)
       if(gyroSen == false)
       {
         Serial.print("gyro not found");
+        Serial.flush();
       }
       if(pressureSen == false)
       {
         Serial.print("pressure not found");
+        Serial.flush();
       }
       returnImuPressureData();
     }
@@ -206,42 +208,61 @@ void returnImuPressureData(int mode)
   Temp = bno.getTemp();
 
   Serial.print("P");
+  Serial.flush();
 
   //Serial.print("Pressure:");
   Serial.print(",");
-  Serial.print(sensor.pressure()); 
+  Serial.flush();
+  Serial.print(sensor.pressure());
+  Serial.flush(); 
   
   //Serial.print(", TemperaturePS:"); 
   Serial.print(",");
-  Serial.print(sensor.temperature()); 
+  Serial.flush();
+  Serial.print(sensor.temperature());
+  Serial.flush(); 
  
   //Serial.print(", GyroX:");
   Serial.print(",");
+  Serial.flush();
   Serial.print(euler.x());
+  Serial.flush();
   
   //Serial.print(", GyroY:");
   Serial.print(",");
+  Serial.flush();
   Serial.print(euler.y());
+  Serial.flush();
   
   //Serial.print(", GyroZ:");
   Serial.print(",");
+  Serial.flush();
   Serial.print(euler.z());
+  Serial.flush();
 
   //Serial.print(", Accelx:");
   Serial.print(",");
-  Serial.print(accel.x()); 
+  Serial.flush();
+  Serial.print(accel.x());
+  Serial.flush(); 
 
   //Serial.print(", Accely:");
   Serial.print(",");
-  Serial.print(accel.y()); 
+  Serial.flush();
+  Serial.print(accel.y());
+  Serial.flush(); 
 
   //Serial.print(", Accelz:");
   Serial.print(",");
-  Serial.print(accel.z()); 
+  Serial.flush();
+  Serial.print(accel.z());
+  Serial.flush(); 
 
   //Serial.print(", TemperatureIMU:");
   Serial.print(",");
+  Serial.flush();
   Serial.println(Temp);
+  Serial.flush();
 }
 
 // Changes motor turn speed
@@ -273,32 +294,42 @@ void Led(int duty)
 void returnSensorData(void)
 {
   Serial.print("S");
+  Serial.flush();
   
   //Serial.print("temperature:");
   Serial.print(",");
+  Serial.flush();
   if(tempPH == 1)
   {
     Serial.print(calculateTemp());
+    Serial.flush();
   }else{
     Serial.print("F");
+    Serial.flush();
   }
   
   //Serial.print(", Metal:");
   Serial.print(",");
+  Serial.flush();
   if(mDetect == 1)
   {
     Serial.print(metal());
+    Serial.flush();
   }else{
     Serial.print("F");
+    Serial.flush();
   }
   
   //Serial.print(", PH:");
   Serial.print(",");
+  Serial.flush();
   if(tempPH == 1)
   {
     Serial.println(ph(2.72));
+    Serial.flush();
   }else{
     Serial.println("F");
+    Serial.flush();
   }
 }
 
