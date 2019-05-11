@@ -26,9 +26,9 @@
 #define DirA2 17
 #define EnableB1 8
 #define DirB1 16
-#define EnableB2 19 // Analog not working
+#define EnableB2 19
 #define DirB2 28
-#define LED 18      // Analog not working
+#define LED 18
 #define LED_IN 11
 #define SCL_Pin 23
 #define SDA_Pin 22
@@ -43,8 +43,16 @@ int mDetect = 0;
 char buf[90];
 char hold;
 int x;
+imu::Vector<3> euler; //primary sensors
+imu::Vector<3> accel; //primary sensors
+float Temp; //primary sensors
 bool gyroSen = true; // Testing gyro
 bool pressureSen = true; // Testing pressure
+int motors[4] = {EnableA2, EnableB2, EnableA1, EnableB1}; //motors
+int dirControl[4] = {DirA2, DirB2, DirA1, DirB1}; //motors
+float temperature; // temperature sensor
+int rawAvg; // pH sensor
+float pH; // pH sensor
 
 // Define one wire communication
 OneWire oneWire(TempData);
@@ -179,7 +187,7 @@ void loop(void)
   }else if(buf[2] == 's'){
     sscanf(buf, "{ sensorsreading:%d,%d }", &tempPH , &mDetect);
   }else{
-    sscanf(buf, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &tempPH);
+    sscanf(buf, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d", &dir1, &duty1, &dir2, &duty2, &dir3, &duty3, &dir4, &duty4, &LedDuty, &tempPH, &mDetect);
     changeMotor(1, dir1, duty1);
     changeMotor(2, dir2, duty2);
     changeMotor(3, dir3, duty3);
@@ -193,9 +201,9 @@ void loop(void)
 void returnImuPressureData(int mode)
 {
   sensor.read();
-  imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
-  imu::Vector<3> accel = bno.getVector(Adafruit_BNO055::VECTOR_LINEARACCEL);
-  float Temp = bno.getTemp();
+  euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
+  accel = bno.getVector(Adafruit_BNO055::VECTOR_LINEARACCEL);
+  Temp = bno.getTemp();
 
   Serial.print("P");
 
@@ -239,8 +247,6 @@ void returnImuPressureData(int mode)
 // Changes motor turn speed
 void changeMotor(int motorNum, int dir, int duty)
 {
-  int motors[4] = {EnableA2, EnableB2, EnableA1, EnableB1};
-  int dirControl[4] = {DirA2, DirB2, DirA1, DirB1};
   //if(motorNum == 2)
   //{
   //  motorNum--;
@@ -258,9 +264,8 @@ void changeMotor(int motorNum, int dir, int duty)
 // Changes the brightness of the leds
 void Led(int duty)
 {
-  int duty2 = (256.0 *(duty / 100.0));
   duty = (256.0 *(duty / 100.0));
-  analogWrite(LED, duty2);
+  analogWrite(LED, duty);
   analogWrite(LED_IN, (256 - duty));
 }
 
@@ -293,15 +298,17 @@ void returnSensorData(void)
   {
     Serial.println(ph(2.72));
   }else{
-    Serial.print("F");
+    Serial.println("F");
   }
 }
 
 // Calculates temperature
 float calculateTemp(void)
 {
+  delay(40);
   temp.requestTemperatures();
-  float temperature = temp.getTempCByIndex(0);
+  delay(40);
+  temperature = temp.getTempCByIndex(0);
   return temperature;
 }
 
@@ -321,13 +328,13 @@ int metal(void)
 // Calculates ph level
 float ph(double offset)
 {
-  int rawAvg = 0;
+  rawAvg = 0;
   for( int i = 0; i < 4; i++)
   {
-  rawAvg += analogRead(VPH);
-  delay(5);
+    rawAvg += analogRead(VPH);
+    delay(5);
   }
   rawAvg /= 4;
-  float ph = ((3.5 * (rawAvg * (3.3 / 4096.0))) + offset) ;
-  return ph;
+  pH = ((3.5 * (rawAvg * (3.3 / 4096.0))) + offset);
+  return pH;
 }
